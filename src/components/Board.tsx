@@ -45,7 +45,13 @@ function buildConfig(props: BoardProps): Config {
     orientation,
     turnColor,
     check: check ?? false,
-    viewOnly,
+    // NEVER chessground's own viewOnly: when true at CREATION time, bindBoard()
+    // (chessground/dist/events.js) returns before attaching the touchstart/mousedown
+    // handlers and set() never re-binds them — a board mounted during the opponent's
+    // turn (e.g. every Black practice session) would be permanently un-draggable.
+    // View-only is emulated below via movable.color/draggable/selectable, which
+    // chessground checks per-event at runtime, so toggling works.
+    viewOnly: false,
     coordinates: false,
     disableContextMenu: true,
     lastMove: lastMove as Key[] | undefined,
@@ -54,7 +60,7 @@ function buildConfig(props: BoardProps): Config {
     movable: {
       free: false,
       color: viewOnly ? undefined : turnColor,
-      dests: dests as unknown as Dests | undefined,
+      dests: (viewOnly ? new Map() : dests) as unknown as Dests | undefined,
       showDests: true,
       events: {
         after: (orig, dest) => onMove?.(orig, dest),
@@ -63,6 +69,7 @@ function buildConfig(props: BoardProps): Config {
     premovable: { enabled: false },
     predroppable: { enabled: false },
     draggable: { enabled: !viewOnly, showGhost: true },
+    selectable: { enabled: !viewOnly },
     drawable: { enabled: false },
   };
 }
