@@ -7,9 +7,18 @@ import { useEffect, useRef, useState, type ChangeEvent } from "react";
 import { Link } from "react-router-dom";
 import type { CatalogEntry, MasterySnapshot, OpeningTree, SrsCard } from "../types";
 import { exportUserData, getTree, importUserData, listTrainingSet } from "../lib/content";
-import { bandColor, dueCards, masteryBand, subtreeMastery } from "../lib/srs";
+import {
+  bandColor,
+  dueCards,
+  masteryBand,
+  subtreeMastery,
+  weakestPracticedBranches,
+  type WeakBranchRow,
+} from "../lib/srs";
 import { currentStreak, getSnapshots, loadCards, recordDailySnapshot } from "../lib/srsStore";
+import { getLichessToken, setLichessToken } from "../lib/settings";
 import ProgressRing from "../components/ProgressRing";
+import MasteryBar from "../components/MasteryBar";
 import "./screens.css";
 
 interface OpeningRow {
@@ -18,12 +27,18 @@ interface OpeningRow {
   due: number;
 }
 
+/** A weakest-lines row (DESIGN §6 M5) with the opening name resolved for display. */
+interface WeakLineRow extends WeakBranchRow {
+  openingName: string;
+}
+
 interface DashboardData {
   rows: OpeningRow[];
   overallMastery: number;
   totalDue: number;
   streak: number;
   history: { date: string; mastery: number }[];
+  weakLines: WeakLineRow[];
 }
 
 function buildHistory(snapshots: MasterySnapshot[]): { date: string; mastery: number }[] {
@@ -47,7 +62,14 @@ async function loadDashboard(): Promise<DashboardData> {
   const now = new Date();
 
   if (entries.length === 0) {
-    return { rows: [], overallMastery: 0, totalDue: 0, streak: await currentStreak(now), history: [] };
+    return {
+      rows: [],
+      overallMastery: 0,
+      totalDue: 0,
+      streak: await currentStreak(now),
+      history: [],
+      weakLines: [],
+    };
   }
 
   const ids = entries.map((e) => e.id);
@@ -72,11 +94,19 @@ async function loadDashboard(): Promise<DashboardData> {
   const overallMastery = rows.reduce((sum, r) => sum + r.mastery, 0) / rows.length;
   const totalDue = rows.reduce((sum, r) => sum + r.due, 0);
 
+  // Weakest lines (DESIGN §6 M5): computed once here, off the same trees/cards
+  // already loaded for the rest of the dashboard — no extra IO.
+  const nameById = new Map(entries.map((e) => [e.id, e.name]));
+  const weakLines: WeakLineRow[] = weakestPracticedBranches(trees, cards, now).map((w) => ({
+    ...w,
+    openingName: nameById.get(w.openingId) ?? w.openingId,
+  }));
+
   // Daily snapshot: no-ops after the first call of the local day (see srsStore.ts).
   await recordDailySnapshot(entries, trees, cards, now);
   const snapshots = await getSnapshots();
 
-  return { rows, overallMastery, totalDue, streak, history: buildHistory(snapshots) };
+  return { rows, overallMastery, totalDue, streak, history: buildHistory(snapshots), weakLines };
 }
 
 export default function Home() {
@@ -91,7 +121,9 @@ export default function Home() {
         if (!cancelled) setData(d);
       })
       .catch(() => {
-        if (!cancelled) setData({ rows: [], overallMastery: 0, totalDue: 0, streak: 0, history: [] });
+        if (!cancelled) {
+          setData({ rows: [], overallMastery: 0, totalDue: 0, streak: 0, history: [], weakLines: [] });
+        }
       });
     return () => {
       cancelled = true;
@@ -186,7 +218,7 @@ export default function Home() {
                 const band = masteryBand(mastery);
                 const color = bandColor(band);
                 return (
-                  <li key={entry.id}>
+                  <li key={entry.id} className="home-opening-row-wrap">
                     <Link to={`/opening/${entry.id}`} className="home-opening-card">
                       <ProgressRing value={mastery} size={48} color={color} />
                       <div className="home-opening-card-main">
@@ -203,6 +235,15 @@ export default function Home() {
                         <span className="badge badge-accent home-opening-due">{due} due</span>
                       )}
                     </Link>
+                    {entry.mistakeCount > 0 && (
+                      <Link
+                        to="/practice"
+                        state={{ openingIds: [entry.id], mix: "mistakes" }}
+                        className="home-drill-traps-btn"
+                      >
+                        Drill traps
+                      </Link>
+                    )}
                   </li>
                 );
               })}
@@ -213,8 +254,34 @@ export default function Home() {
             <h2>Mastery history</h2>
             <MasteryHistoryChart history={data.history} />
           </section>
+
+          <section className="home-section">
+            <h2>Weakest lines</h2>
+            {data.weakLines.length === 0 ? (
+              <p className="text-dim">
+                Nothing to show yet — practice a few lines and the branches you're weakest
+                on will show up here.
+              </p>
+            ) : (
+              <ul className="weak-lines-list">
+                {data.weakLines.map((row) => (
+                  <li key={`${row.openingId}:${row.branchNodeId}`}>
+                    <Link to={`/opening/${row.openingId}`} className="weak-line-link">
+                      <div className="weak-line-main">
+                        <span className="weak-line-opening">{row.openingName}</span>
+                        <span className="text-dim weak-line-san">{row.sanLabel} line</span>
+                      </div>
+                      <MasteryBar value={row.mastery} color={bandColor(masteryBand(row.mastery))} />
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </section>
         </>
       )}
+
+      <SettingsSection />
 
       <section className="home-section">
         <h2>Data</h2>
@@ -236,6 +303,72 @@ export default function Home() {
         {status && <p className="text-dim">{status}</p>}
       </section>
     </div>
+  );
+}
+
+/** Lichess API token (DESIGN §4.4/§6 M5): the app is public on GitHub Pages, so no
+ *  token can ship in the bundle — this is a per-device value the user pastes in once,
+ *  read by src/screens/Explorer.tsx to gate its live club-games lookup. Persisted via
+ *  src/lib/settings.ts (db.meta), never sent anywhere from this screen. */
+function SettingsSection() {
+  const [token, setToken] = useState("");
+  const [loaded, setLoaded] = useState(false);
+  const [status, setStatus] = useState<string | null>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    getLichessToken().then((t) => {
+      if (!cancelled) {
+        setToken(t ?? "");
+        setLoaded(true);
+      }
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  async function handleSave() {
+    await setLichessToken(token);
+    setStatus(token.trim() ? "Saved." : "Cleared.");
+    window.setTimeout(() => setStatus(null), 2000);
+  }
+
+  return (
+    <section className="home-section">
+      <h2>Settings</h2>
+      <div className="settings-field">
+        <label className="settings-label" htmlFor="lichess-token-input">
+          Lichess API token (optional)
+        </label>
+        <input
+          id="lichess-token-input"
+          type="password"
+          autoComplete="off"
+          value={token}
+          disabled={!loaded}
+          placeholder="Paste a personal access token"
+          onChange={(e) => setToken(e.target.value)}
+        />
+        <div className="settings-row">
+          <button type="button" onClick={handleSave} disabled={!loaded}>
+            Save
+          </button>
+          <a
+            href="https://lichess.org/account/oauth/token"
+            target="_blank"
+            rel="noreferrer"
+            className="edit-link"
+          >
+            Get one at lichess.org/account/oauth/token
+          </a>
+        </div>
+        <p className="text-dim">
+          Stored only on this device. Enables live club-games lookups in Explorer.
+        </p>
+        {status && <p className="text-dim">{status}</p>}
+      </div>
+    </section>
   );
 }
 

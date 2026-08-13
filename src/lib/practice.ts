@@ -60,6 +60,16 @@ function sampleWeighted<T>(
 
 const DEFAULT_WEIGHT = 0.01;
 
+/** DESIGN §5: a FIRST attempt slower than this counts as "hesitated" and scales the
+ *  card's interval growth by 0.75 (src/lib/srs.ts's gradeCard). practice.ts itself has
+ *  no wall-clock/DOM access, so the actual timing lives in src/screens/Practice.tsx
+ *  (from when a fresh pending move appears to the first attempt at it) — this constant
+ *  is exported from here per DESIGN §6 M5 so it has one home next to the rest of the
+ *  session-tuning constants, and so a future test can import it instead of duplicating
+ *  the number. Hesitation on a *retry* run (DESIGN §4.1.5/§7) is never measured — those
+ *  moves don't feed scheduling anyway. */
+export const HESITATION_MS = 10_000;
+
 // ---------- Session config ----------
 
 export type MixMode = "theory" | "mix" | "mistakes";
@@ -321,12 +331,41 @@ export type AttemptOutcome =
   | { kind: "wrong"; feedback: DeviationFeedback }
   | { kind: "no-pending-move" };
 
+/** Lichess "king takes rook" castling UCI -> chess.js canonical king-destination UCI.
+ *  Some shipped/cached content (esp. stale copies on installed phones) stores castling
+ *  moves this way; the board (chess.js) only ever produces the canonical form. Keyed by
+ *  the Lichess encoding so a lookup miss just means "not one of the four castling
+ *  squares" — the caller still has to confirm via `san` before trusting a hit. */
+const CASTLING_UCI_LICHESS_TO_CANONICAL: Record<string, string> = {
+  e1h1: "e1g1", // White kingside
+  e1a1: "e1c1", // White queenside
+  e8h8: "e8g8", // Black kingside
+  e8a8: "e8c8", // Black queenside
+};
+
+/**
+ * Normalize a possibly-Lichess-encoded castling `uci` to chess.js canonical form, but
+ * ONLY when `san` confirms the move actually IS a castle ("O-O" or "O-O-O") — an
+ * "e1h1" uci on a non-castling san (e.g. a rook move to h1) must never be rewritten.
+ * Returns `uci` unchanged in every other case.
+ */
+function normalizeCastlingUci(uci: string, san: string): string {
+  if (!san.startsWith("O-O")) return uci;
+  return CASTLING_UCI_LICHESS_TO_CANONICAL[uci] ?? uci;
+}
+
 /**
  * The trainee attempts a move. `attemptedUci` is compared against the expected node's
  * `uci` (the dests offered to the board are ALL legal moves, not just tree moves — the
  * user must be able to play a wrong move). On a match the run advances; on a mismatch
  * the run is marked dirty and stays put — the same pending move must be played again
  * (DESIGN §4.1.3.2: no skip button, the board stays live).
+ *
+ * Castling robustness: the board (chess.js) always submits the canonical uci
+ * ("e1g1"), but some cached/stale content stores castling moves in Lichess's "king
+ * takes rook" form ("e1h1" etc. — see normalizeCastlingUci). A match also succeeds
+ * when the expected node's uci normalizes to the attempted one, so a stale cache never
+ * strands the user on a castle they in fact played correctly.
  */
 export function attemptUserMove(
   tree: OpeningTree,
@@ -339,7 +378,8 @@ export function attemptUserMove(
     return { run, outcome: { kind: "no-pending-move" } };
   }
 
-  if (attemptedUci === expected.uci) {
+  const expectedUciNormalized = normalizeCastlingUci(expected.uci, expected.san);
+  if (attemptedUci === expected.uci || attemptedUci === expectedUciNormalized) {
     const result: MoveResult = {
       nodeId: expected.id,
       firstTry: run.wrongAttemptsAtCurrent === 0,
@@ -376,6 +416,19 @@ export function playOpponentMove(tree: OpeningTree, run: LineRun): LineRun {
   const expected = expectedMove(tree, run.line, run.idx);
   if (!expected || expected.mover !== "opponent") return run;
   return { ...run, idx: run.idx + 1 };
+}
+
+/**
+ * In-drill analysis mode's "counts as a hint" rule: entering analysis while a user
+ * move is pending and not yet failed marks the run dirty — same consequence as a
+ * wrong attempt (the line will replay) — WITHOUT recording a phantom wrong attempt.
+ * `results` and `wrongAttemptsAtCurrent` are left untouched on purpose: stats must
+ * only ever reflect moves the trainee actually attempted on the board. Callers decide
+ * *whether* this penalty applies (only for the pending-and-unfailed case, per DESIGN);
+ * this function itself is unconditional once called.
+ */
+export function markHintUsed(run: LineRun): LineRun {
+  return { ...run, clean: false };
 }
 
 // ---------- Session ----------

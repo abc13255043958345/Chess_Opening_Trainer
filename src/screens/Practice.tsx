@@ -6,11 +6,12 @@
 // (src/lib/srsStore.ts) only.
 
 import { useEffect, useMemo, useRef, useState, type RefObject } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Chess } from "chess.js";
 import Board from "../components/Board";
 import EvalBar from "../components/EvalBar";
 import MoveList from "../components/MoveList";
+import AnalysisPanel from "../components/AnalysisPanel";
 import { getTree, listTrainingSet } from "../lib/content";
 import { numberedSan } from "../lib/tree";
 import { getEngine, EngineCancelledError } from "../lib/engine";
@@ -21,7 +22,9 @@ import {
   createSession,
   expectedMove,
   formatEvalPawns,
+  HESITATION_MS,
   isLineComplete,
+  markHintUsed,
   mulberry32,
   nextLine,
   nextMover,
@@ -48,7 +51,18 @@ type Phase =
   | { kind: "drill"; session: SessionState }
   | { kind: "summary"; session: SessionState };
 
+/** Shape of the location.state a caller can pass to jump straight into a drill,
+ *  skipping setup (DESIGN §6 M5's "Drill traps" shortcut on Home's per-opening cards —
+ *  see src/screens/Home.tsx — mix="mistakes" for a single opening; nothing else uses
+ *  this today, but it's not mix-specific). */
+export interface PracticeAutoStart {
+  openingIds: string[];
+  mix?: MixMode;
+}
+
 export default function Practice() {
+  const location = useLocation();
+  const autoStart = (location.state ?? null) as PracticeAutoStart | null;
   const [phase, setPhase] = useState<Phase>({ kind: "setup" });
   // The session's live SRS cards: loaded (a snapshot) at setup time, mutated in place
   // as grading events resolve during the drill, and persisted in batches at each line
@@ -60,6 +74,7 @@ export default function Practice() {
     return (
       <SetupScreen
         cardsRef={cardsRef}
+        autoStart={autoStart}
         onStart={(session) => setPhase({ kind: "drill", session })}
       />
     );
@@ -99,18 +114,21 @@ const SCOPE_OPTIONS: { value: Scope; label: string }[] = [
 
 function SetupScreen({
   cardsRef,
+  autoStart,
   onStart,
 }: {
   cardsRef: RefObject<Map<string, SrsCard>>;
+  autoStart: PracticeAutoStart | null;
   onStart: (session: SessionState) => void;
 }) {
   const [entries, setEntries] = useState<CatalogEntry[] | null>(null);
   const [selected, setSelected] = useState<Set<string>>(new Set());
-  const [mix, setMix] = useState<MixMode>("mix");
+  const [mix, setMix] = useState<MixMode>(autoStart?.mix ?? "mix");
   const [scope, setScope] = useState<Scope>("all");
   const [dueCounts, setDueCounts] = useState<Record<string, number>>({});
   const [starting, setStarting] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const autoStartedRef = useRef(false);
 
   useEffect(() => {
     listTrainingSet()
@@ -152,9 +170,27 @@ function SetupScreen({
     });
   }
 
-  async function handleStart() {
-    const ids = [...selected];
+  // Auto-start (DESIGN §6 M5's "Drill traps" shortcut): once the training set has
+  // loaded, jump straight into a session for the requested opening(s)/mix, skipping
+  // the setup form entirely — guarded so it only ever fires once per mount even if
+  // entries reload for some other reason.
+  useEffect(() => {
+    if (!entries || autoStartedRef.current) return;
+    if (!autoStart || autoStart.openingIds.length === 0) return;
+    const ids = autoStart.openingIds.filter((id) => entries.some((e) => e.id === id));
     if (ids.length === 0) return;
+    autoStartedRef.current = true;
+    setSelected(new Set(ids));
+    void handleStart(ids, autoStart.mix ?? mix);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [entries]);
+
+  async function handleStart(idsOverride?: string[], mixOverride?: MixMode) {
+    const ids = idsOverride ?? [...selected];
+    if (ids.length === 0) {
+      setError("Nothing selected to practice.");
+      return;
+    }
     setStarting(true);
     setError(null);
     try {
@@ -201,7 +237,13 @@ function SetupScreen({
         return multiplier;
       }
 
-      const session = createSession(trees, usableIds, mix, mulberry32(Date.now()), biasFn);
+      const session = createSession(
+        trees,
+        usableIds,
+        mixOverride ?? mix,
+        mulberry32(Date.now()),
+        biasFn
+      );
       onStart(session);
     } catch {
       setError("Couldn't start practice. Try again.");
@@ -211,6 +253,18 @@ function SetupScreen({
 
   const nothingDue =
     scope === "due" && entries !== null && entries.length > 0 && dueOpeningIds.size === 0;
+
+  // Skip the setup form entirely while an auto-start (DESIGN §6 M5's "Drill traps"
+  // shortcut) is in flight, so it doesn't flash on screen — unless it already failed
+  // (surfaced via `error`), in which case fall through to the normal form so the
+  // trainee isn't stuck on a bare loading screen forever.
+  if (autoStart && autoStart.openingIds.length > 0 && !error) {
+    return (
+      <div className="screen-padding practice-setup">
+        <p className="text-dim">Starting drill…</p>
+      </div>
+    );
+  }
 
   return (
     <div className="screen-padding practice-setup">
@@ -308,7 +362,7 @@ function SetupScreen({
             type="button"
             className="primary practice-start-button"
             disabled={selected.size === 0 || starting}
-            onClick={handleStart}
+            onClick={() => handleStart()}
           >
             {starting ? "Starting…" : "Start practice"}
           </button>
@@ -353,6 +407,11 @@ function DrillScreen({
   // failure/timeout just leaves this null and DeviationPanel silently falls back.
   const [liveEvalCp, setLiveEvalCp] = useState<number | null>(null);
   const liveEvalAbortRef = useRef<AbortController | null>(null);
+  // In-drill analysis mode (feature): non-null while the free-play overlay is showing,
+  // holding the FEN it was seeded from. The drill's own state below is never touched
+  // while this is set — see the guards on the opponent-advance effect and Board's
+  // viewOnly, and handleReturnFromAnalysis for what happens on the way back.
+  const [analysisSeedFen, setAnalysisSeedFen] = useState<string | null>(null);
 
   const { run, trees } = session;
   const tree = trees[run.line.openingId];
@@ -365,6 +424,22 @@ function DrillScreen({
   // given completed LineRun object only gets persisted once.
   const dirtyKeysRef = useRef<Set<string>>(new Set());
   const savedForLineRef = useRef<LineRun | null>(null);
+
+  // ---------- Hesitation timing (DESIGN §5/§6 M5) ----------
+  // Timed from when a *fresh* pending user move appears (opponent move animation
+  // landed / this is a brand-new node, not a retry at the same one) to that node's
+  // FIRST attempt — never shown in the UI mid-drill (no timer anxiety). A ref, not
+  // state: it drives a value read at the moment of the next attempt, not a render.
+  const turnStartRef = useRef<number | null>(null);
+  const pendingUserNode =
+    pendingMover === "user" && !lineComplete ? expectedMove(tree, run.line, idx) : undefined;
+  useEffect(() => {
+    if (pendingUserNode) turnStartRef.current = Date.now();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pendingUserNode?.id]);
+  // Slow-first-attempts seen so far THIS run — shown subtly on the line-complete card,
+  // never mid-drill. Reset alongside the rest of the per-line UI state below.
+  const hesitationCountRef = useRef(0);
 
   function flushDirtyCards() {
     const dirty = dirtyKeysRef.current;
@@ -379,14 +454,17 @@ function DrillScreen({
   // Apply a grading event as soon as a user move resolves correctly (DESIGN §4.1.5,
   // §7): grade the card on the line's first run, or just touch it (attempts/lastSeen,
   // no schedule change) on a replay. Batched to disk at line completion, below.
-  function applyGradingEvent(evt: GradingEvent) {
+  // `hesitated` (DESIGN §5/§6 M5) only ever affects the first-run grade path — a
+  // retry-run touch doesn't schedule anyway (DESIGN §4.1.5/§7), so it's simply ignored
+  // there, matching src/lib/srs.ts's GradeOptions doc.
+  function applyGradingEvent(evt: GradingEvent, hesitated: boolean) {
     const cards = cardsRef.current;
     const prev = cards.get(evt.key) ?? null;
     const now = new Date();
     const updated = evt.isFirstRun
       ? gradeCard(prev, {
           firstTry: evt.firstTry,
-          hesitated: false, // wired in M5 — see src/lib/srs.ts's GradeOptions doc.
+          hesitated,
           now,
           key: evt.key,
           openingId: evt.openingId,
@@ -425,6 +503,8 @@ function DrillScreen({
     setConfirmingEnd(false);
     liveEvalAbortRef.current?.abort();
     setLiveEvalCp(null);
+    hesitationCountRef.current = 0;
+    setAnalysisSeedFen(null);
   }, [run.line]);
 
   // Abort any in-flight live eval on unmount so a stale resolve can't fire after the
@@ -436,15 +516,18 @@ function DrillScreen({
   // Opponent's move is pinned; it just needs to visually land after a short delay.
   // The very first move of a line (idx 0, e.g. White's opening move when the trainee
   // plays Black) gets a slightly longer beat (~400ms) than mid-line replies (~350ms).
+  // Suspended while the analysis overlay is open (analysisSeedFen set) so the drill
+  // never silently advances underneath the trainee while they're exploring — it
+  // re-arms with a fresh delay once they return (analysisSeedFen back to null).
   useEffect(() => {
-    if (pendingMover !== "opponent" || lineComplete) return;
+    if (pendingMover !== "opponent" || lineComplete || analysisSeedFen != null) return;
     const delay = idx === 0 ? 400 : 350;
     const timer = window.setTimeout(() => {
       onSessionChange(advanceOpponentMove(session));
     }, delay);
     return () => window.clearTimeout(timer);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [pendingMover, lineComplete, idx, run.line]);
+  }, [pendingMover, lineComplete, idx, run.line, analysisSeedFen]);
 
   const lastMove: [string, string] | undefined =
     currentNode.uci.length >= 4
@@ -476,10 +559,21 @@ function DrillScreen({
       move = null;
     }
     if (!move) return;
+
+    // Hesitation (DESIGN §5/§6 M5): only the FIRST attempt at a node counts — read
+    // wrongAttemptsAtCurrent (and the turn-start timestamp) BEFORE submitMove resolves
+    // this attempt, since submitMove's returned state has already moved past it.
+    const isFirstAttempt = run.wrongAttemptsAtCurrent === 0;
+    const hesitated =
+      isFirstAttempt &&
+      turnStartRef.current != null &&
+      Date.now() - turnStartRef.current > HESITATION_MS;
+
     const attemptedUci = `${move.from}${move.to}${move.promotion ?? ""}`;
     const { state: nextSession, outcome } = submitMove(session, attemptedUci, move.san);
     if (outcome.kind === "correct") {
-      applyGradingEvent(outcome.gradingEvent);
+      applyGradingEvent(outcome.gradingEvent, hesitated);
+      if (hesitated) hesitationCountRef.current += 1;
       setFeedback(null);
       liveEvalAbortRef.current?.abort();
       setLiveEvalCp(null);
@@ -522,16 +616,47 @@ function DrillScreen({
     onEnd(session);
   }
 
+  // ---------- In-drill analysis mode ----------
+  // SRS honesty rule: entering analysis while a user move is pending and NOT yet
+  // failed counts as a hint (same consequence as a wrong attempt — the line replays).
+  // Entering from the deviation panel (the move already failed, `feedback` is set) or
+  // the line-complete card (no pending move at all) never costs anything.
+  const hintWouldApply = pendingMover === "user" && !lineComplete && !feedback;
+
+  function enterAnalysis(applyHintPenalty: boolean) {
+    setMenuOpen(false);
+    if (applyHintPenalty) {
+      onSessionChange({ ...session, run: markHintUsed(run) });
+    }
+    // Void the hesitation timer for whatever move is pending — time spent exploring
+    // must never turn into a bogus "hesitated" grade once they come back and play it.
+    turnStartRef.current = null;
+    // The overlay is seeded with exactly what's on the board right now: currentNode
+    // is the last move actually played, unaffected by a pending/failed attempt (the
+    // board never advances past it until a move is accepted).
+    setAnalysisSeedFen(currentNode.fen);
+  }
+
+  function handleExploreFromMenu() {
+    enterAnalysis(hintWouldApply);
+  }
+
+  function handleReturnFromAnalysis() {
+    setAnalysisSeedFen(null);
+    // Restart the timer fresh for whatever's still pending — same node, but the
+    // clock shouldn't include time spent away in analysis.
+    if (pendingMover === "user" && !lineComplete) {
+      turnStartRef.current = Date.now();
+    }
+  }
+
   return (
     <div className="screen-padding practice-drill">
       <header className="practice-header">
         <div className="practice-header-top">
-          <div>
-            <h1>{tree.name}</h1>
-            <div className="text-dim">
-              Move {moveNumber} of {totalPlies}
-            </div>
-          </div>
+          <h1 className="practice-header-title" title={tree.name}>
+            {tree.name}
+          </h1>
           <div className="practice-header-actions">
             {confirmingEnd ? (
               <div className="practice-confirm-end">
@@ -568,10 +693,19 @@ function DrillScreen({
                   >
                     Skip this line
                   </button>
+                  <button type="button" onClick={handleExploreFromMenu}>
+                    Explore from here
+                    {hintWouldApply && (
+                      <span className="practice-menu-hint-warning"> (counts as a hint)</span>
+                    )}
+                  </button>
                 </div>
               )}
             </div>
           </div>
+        </div>
+        <div className="practice-header-progress text-dim">
+          Move {moveNumber} of {totalPlies}
         </div>
         <div className="practice-stats-row text-dim">
           <span>{session.stats.linesCompleted} done</span>
@@ -588,7 +722,7 @@ function DrillScreen({
             orientation={tree.perspective}
             lastMove={lastMove}
             dests={dests}
-            viewOnly={pendingMover !== "user" || lineComplete}
+            viewOnly={pendingMover !== "user" || lineComplete || analysisSeedFen != null}
             onMove={handleBoardMove}
             check={inCheck}
             flash={flash}
@@ -605,6 +739,7 @@ function DrillScreen({
           perspective={tree.perspective}
           liveEvalCp={liveEvalCp}
           bookEvalCp={expectedMove(tree, run.line, idx)?.evalCp ?? null}
+          onExplore={() => enterAnalysis(false)}
         />
       )}
 
@@ -612,9 +747,19 @@ function DrillScreen({
         <LineCompleteCard
           tree={tree}
           session={session}
+          slowMoveCount={hesitationCountRef.current}
           onReplay={() => onSessionChange(replayLine(session))}
           onNext={() => onSessionChange(nextLine(session))}
           onEnd={() => onEnd(session)}
+          onExplore={() => enterAnalysis(false)}
+        />
+      )}
+
+      {analysisSeedFen != null && (
+        <AnalysisPanel
+          seedFen={analysisSeedFen}
+          orientation={tree.perspective}
+          onReturn={handleReturnFromAnalysis}
         />
       )}
     </div>
@@ -627,6 +772,7 @@ function DeviationPanel({
   perspective,
   liveEvalCp,
   bookEvalCp,
+  onExplore,
 }: {
   feedback: DeviationFeedback;
   idx: number;
@@ -636,6 +782,9 @@ function DeviationPanel({
   liveEvalCp?: number | null;
   /** Cached eval of the correct node, for the "vs book" half of the live comparison. */
   bookEvalCp?: number | null;
+  /** Opens the in-drill analysis overlay seeded at the current (pre-attempt) position.
+   *  The move already failed here, so this never costs a hint. */
+  onExplore: () => void;
 }) {
   const previewText =
     feedback.previewSans.length > 0 ? numberedSan(feedback.previewSans, idx + 1) : null;
@@ -670,6 +819,9 @@ function DeviationPanel({
       {previewText && <p className="text-dim">Play continues {previewText}…</p>}
       {lossText && <p className="practice-feedback-loss">{lossText}</p>}
       <p className="text-dim practice-feedback-hint">Play {feedback.correctSan} to continue.</p>
+      <button type="button" className="practice-explore-btn" onClick={onExplore}>
+        Explore from here
+      </button>
     </div>
   );
 }
@@ -677,15 +829,24 @@ function DeviationPanel({
 function LineCompleteCard({
   tree,
   session,
+  slowMoveCount,
   onReplay,
   onNext,
   onEnd,
+  onExplore,
 }: {
   tree: OpeningTree;
   session: SessionState;
+  /** First attempts that took >HESITATION_MS this run (DESIGN §5/§6 M5) — shown as a
+   *  subtle note only, never mid-drill. */
+  slowMoveCount: number;
   onReplay: () => void;
   onNext: () => void;
   onEnd: () => void;
+  /** Opens the in-drill analysis overlay seeded at the line's final position — stays
+   *  on /practice with drill state intact, unlike "Open in Explorer" below which
+   *  navigates away. The line is already complete, so this never costs a hint. */
+  onExplore: () => void;
 }) {
   const { run } = session;
   const finalNode = nodeAt(tree, run.line, run.idx);
@@ -694,8 +855,9 @@ function LineCompleteCard({
   const total = run.results.length;
   const firstTryCount = run.results.filter((r) => r.firstTry).length;
   const runAccuracy = total > 0 ? Math.round((firstTryCount / total) * 100) : 100;
-  // "Open in Explorer" only ever appears here — never mid-drill (DESIGN keeps free
-  // play out of the drill) — passing the finished line's own moves as a deep link.
+  // "Open in Explorer" navigates away to a fresh Explorer session (deep-linked with
+  // this line's moves); "Explore from here" (above it) opens the in-drill overlay
+  // instead, keeping the session live underneath.
   const lineMoves = run.line.nodeIds
     .map((id) => tree.nodes[id]?.uci)
     .filter((uci): uci is string => !!uci);
@@ -711,6 +873,11 @@ function LineCompleteCard({
       )}
       {plans && <p className="annotation-plans">{plans}</p>}
       <p className="text-dim">This run: {runAccuracy}% first-try ({firstTryCount}/{total || 0})</p>
+      {slowMoveCount > 0 && (
+        <p className="text-dim practice-slow-moves">
+          {slowMoveCount} slow move{slowMoveCount === 1 ? "" : "s"}
+        </p>
+      )}
       <div className="practice-line-complete-actions">
         {run.clean ? (
           <button type="button" className="primary" onClick={onNext}>
@@ -721,6 +888,9 @@ function LineCompleteCard({
             Replay this line
           </button>
         )}
+        <button type="button" className="practice-explore-btn" onClick={onExplore}>
+          Explore from here
+        </button>
         {lineMoves.length > 0 && (
           <Link to="/explorer" state={{ moves: lineMoves }} className="practice-analyze-link">
             Open in Explorer

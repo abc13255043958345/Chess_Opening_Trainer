@@ -227,6 +227,105 @@ function testWrongThenCorrectAccounting(engine, tree) {
   );
 }
 
+function testCastlingUciRobustness(engine) {
+  const { attemptUserMove } = engine;
+
+  // Content-agnostic, in-memory tree — this scenario is about attemptUserMove's own
+  // matching logic, not any particular shipped opening.
+  function makeTinyTree(expectedNode) {
+    const root = {
+      id: "root",
+      fen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      san: "",
+      uci: "",
+      parentId: null,
+      children: [expectedNode.id],
+      mover: "opponent",
+      moveKind: "mainline",
+    };
+    return {
+      id: "castling-test",
+      eco: "X",
+      name: "Castling robustness test",
+      perspective: "white",
+      rootId: "root",
+      nodes: { root, [expectedNode.id]: expectedNode },
+    };
+  }
+
+  function makeRun(tree, expectedNodeId) {
+    return {
+      line: { openingId: tree.id, nodeIds: ["root", expectedNodeId] },
+      idx: 0,
+      results: [],
+      clean: true,
+      wrongAttemptsAtCurrent: 0,
+      runIndex: 0,
+    };
+  }
+
+  // Positive: cached/stale content stores castling in Lichess's "king takes rook"
+  // form ("e1h1"); the board always submits the canonical "e1g1" — must be accepted.
+  const castleNode = {
+    id: "castle",
+    fen: "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R w KQkq - 0 1",
+    san: "O-O",
+    uci: "e1h1",
+    parentId: "root",
+    children: [],
+    mover: "user",
+    moveKind: "mainline",
+  };
+  const castleTree = makeTinyTree(castleNode);
+  const castleRun = makeRun(castleTree, "castle");
+  const castleResult = attemptUserMove(castleTree, castleRun, "e1g1", "O-O");
+  assert.equal(
+    castleResult.outcome.kind,
+    "correct",
+    'expected node stored as uci "e1h1" (san "O-O") must accept submitted "e1g1" as correct'
+  );
+
+  // Negative control: the SAME raw uci "e1h1" but on a non-castling san (a rook move)
+  // must NOT be rewritten — "e1g1" must still be rejected.
+  const rookNode = {
+    id: "rook-move",
+    fen: "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R w KQkq - 0 1",
+    san: "Rh1",
+    uci: "e1h1",
+    parentId: "root",
+    children: [],
+    mover: "user",
+    moveKind: "mainline",
+  };
+  const rookTree = makeTinyTree(rookNode);
+  const rookRun = makeRun(rookTree, "rook-move");
+  const rookResult = attemptUserMove(rookTree, rookRun, "e1g1", "Kg1");
+  assert.equal(
+    rookResult.outcome.kind,
+    "wrong",
+    'expected node stored as uci "e1h1" with a non-castling san ("Rh1") must NOT accept "e1g1"'
+  );
+}
+
+function testMarkHintUsed(engine, tree) {
+  const { createSession, mulberry32, markHintUsed } = engine;
+  const trees = { [tree.id]: tree };
+  const session = createSession(trees, [tree.id], "theory", mulberry32(11));
+  const before = session.run;
+
+  const after = markHintUsed(before);
+
+  assert.equal(after.clean, false, "markHintUsed should mark the run dirty");
+  assert.deepEqual(after.results, before.results, "markHintUsed must not touch results");
+  assert.equal(
+    after.wrongAttemptsAtCurrent,
+    before.wrongAttemptsAtCurrent,
+    "markHintUsed must not record a phantom attempt"
+  );
+  assert.equal(after.idx, before.idx, "markHintUsed must not move the run's position");
+  assert.equal(after.line, before.line, "markHintUsed must not change the pinned line");
+}
+
 // ---------- Runner ----------
 
 async function runTest(results, name, fn) {
@@ -258,6 +357,14 @@ async function main() {
       results,
       "wrong-then-correct on the punish move: firstTry=false, attempts=2, clean=false, accuracy checks out",
       () => testWrongThenCorrectAccounting(engine, tree)
+    );
+    await runTest(
+      results,
+      'castling uci robustness: Lichess-form "e1h1" accepted as "O-O", but not when san is a non-castling "Rh1"',
+      () => testCastlingUciRobustness(engine)
+    );
+    await runTest(results, "markHintUsed marks clean=false without touching results/attempts", () =>
+      testMarkHintUsed(engine, tree)
     );
 
     console.log("");

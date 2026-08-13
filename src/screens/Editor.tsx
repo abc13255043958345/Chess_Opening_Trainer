@@ -2,7 +2,7 @@
 // or already-customized tree — extend it with any legal move, mark move kinds,
 // edit annotations, set end-of-theory. PGN import/export is out of scope (M5).
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState, type ChangeEvent } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Chess } from "chess.js";
 import Board from "../components/Board";
@@ -10,6 +10,7 @@ import MoveList from "../components/MoveList";
 import { getEngine } from "../lib/engine";
 import { getTree } from "../lib/content";
 import { hasUserTree, revertUserTree, saveUserTree } from "../lib/userTree";
+import { pgnToTree, replayCheck, treeToPgn } from "../lib/pgn";
 import {
   addMove,
   deleteSubtree,
@@ -165,6 +166,20 @@ export default function Editor() {
     );
   }
 
+  // Full-tree replacement for PGN import (DESIGN §4.5/§6 M5) — distinct from
+  // commitTree, which re-derives state after an IN-PLACE mutation of the existing
+  // working copy. Import instead swaps in an entirely new OpeningTree (same id/eco/
+  // name/perspective, different nodes), so it owns setTree itself rather than routing
+  // through commitTree's mutate-then-reread pattern.
+  function importTree(next: OpeningTree) {
+    setTree(next);
+    setCurrentNodeId(next.rootId);
+    setProblems(validateTree(next));
+    setWarningDismissed(false);
+    setCustomized(true);
+    scheduleSave(next);
+  }
+
   return (
     <EditorReady
       id={id}
@@ -178,6 +193,7 @@ export default function Editor() {
       onDismissWarning={() => setWarningDismissed(true)}
       onRevert={handleRevert}
       commitTree={commitTree}
+      onImportTree={importTree}
     />
   );
 }
@@ -195,6 +211,8 @@ interface EditorReadyProps {
   onRevert: () => void;
   /** Re-derive React state + schedule an autosave after any in-place tree edit. */
   commitTree: () => void;
+  /** Wholesale-replace the working tree (PGN import) — see Editor()'s importTree. */
+  onImportTree: (next: OpeningTree) => void;
 }
 
 function EditorReady({
@@ -209,6 +227,7 @@ function EditorReady({
   onDismissWarning,
   onRevert,
   commitTree,
+  onImportTree,
 }: EditorReadyProps) {
   const currentNode = tree.nodes[currentNodeId] ?? tree.nodes[tree.rootId];
 
@@ -253,6 +272,67 @@ function EditorReady({
 
   function handleCancelEvals() {
     evalCancelRef.current = true;
+  }
+
+  // ---------- PGN import/export (DESIGN §4.5, §6 M5) ----------
+  const pgnFileInputRef = useRef<HTMLInputElement>(null);
+  const [pgnStatus, setPgnStatus] = useState<string | null>(null);
+
+  function handleExportPgn() {
+    const pgn = treeToPgn(tree);
+    const blob = new Blob([pgn], { type: "application/x-chess-pgn" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `${tree.id}.pgn`;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
+  }
+
+  async function handleImportPgnChange(e: ChangeEvent<HTMLInputElement>) {
+    const file = e.target.files?.[0];
+    e.target.value = "";
+    if (!file) return;
+    setPgnStatus(null);
+
+    let text: string;
+    try {
+      text = await file.text();
+    } catch {
+      setPgnStatus("Couldn't read that file.");
+      return;
+    }
+
+    let parsed: OpeningTree;
+    try {
+      parsed = pgnToTree(text, {
+        id: tree.id,
+        eco: tree.eco,
+        name: tree.name,
+        perspective: tree.perspective,
+      });
+    } catch (err) {
+      setPgnStatus(
+        `Import failed: ${err instanceof Error ? err.message : "couldn't parse that PGN."}`
+      );
+      return;
+    }
+
+    const importProblems = [...validateTree(parsed), ...replayCheck(parsed)];
+    const moveCount = Object.keys(parsed.nodes).length - 1;
+    const warningNote =
+      importProblems.length > 0
+        ? ` ${importProblems.length} validation warning${importProblems.length === 1 ? "" : "s"} will show after import.`
+        : "";
+    const confirmed = window.confirm(
+      `Replace this opening's moves with the imported PGN (${moveCount} moves)?${warningNote} This can't be undone (though "Revert to shipped" still works afterward).`
+    );
+    if (!confirmed) return;
+
+    onImportTree(parsed);
+    setPgnStatus(`Imported ${moveCount} moves.`);
   }
 
   const pathNodes = useMemo(
@@ -485,6 +565,22 @@ function EditorReady({
         <Link to={`/opening/${id}`} className="edit-link">
           ‹ Back to viewer
         </Link>
+        <div className="pgn-actions">
+          <button type="button" className="pgn-btn" onClick={handleExportPgn}>
+            Export PGN
+          </button>
+          <button type="button" className="pgn-btn" onClick={() => pgnFileInputRef.current?.click()}>
+            Import PGN
+          </button>
+          <input
+            ref={pgnFileInputRef}
+            type="file"
+            accept=".pgn,text/plain,application/x-chess-pgn"
+            style={{ display: "none" }}
+            onChange={handleImportPgnChange}
+          />
+        </div>
+        {pgnStatus && <p className="text-dim">{pgnStatus}</p>}
       </header>
 
       {problems.length > 0 && !warningDismissed && (

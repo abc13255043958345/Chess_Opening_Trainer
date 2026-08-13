@@ -87,13 +87,28 @@
   font-size: 15px;
 }
 
-/* ---------- Drill header ---------- */
+/* ---------- Drill header ----------
+   Three stacked rows so nothing can collide regardless of name length or viewport
+   width (verified at 375x812 and 320x568 — DESIGN's "phone testing" bug report):
+     1. title row — opening name (ellipsis-truncated, flex:1 min-width:0) + controls
+        (End session / … menu, flex-shrink:0) pinned top-right of that row.
+     2. progress row — "Move X of Y", own row, never sharing space with the title.
+     3. stats row — done/clean/accuracy, wraps if it ever has to. */
 
 .practice-header-top {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   gap: 10px;
+}
+
+.practice-header-title {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .practice-header-actions {
@@ -104,11 +119,17 @@
   position: relative;
 }
 
+.practice-header-progress {
+  margin-top: 4px;
+}
+
 .practice-confirm-end {
   display: flex;
   align-items: center;
   gap: 6px;
   font-size: 13px;
+  flex-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .practice-menu-wrap {
@@ -124,7 +145,7 @@
   border-radius: 8px;
   padding: 4px;
   z-index: 10;
-  min-width: 160px;
+  min-width: 190px;
 }
 
 .practice-menu button {
@@ -135,10 +156,17 @@
   white-space: nowrap;
 }
 
+.practice-menu-hint-warning {
+  color: var(--amber);
+  font-size: 12px;
+  white-space: normal;
+}
+
 .practice-stats-row {
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
-  margin-top: 8px;
+  margin-top: 6px;
   font-size: 13px;
 }
 
@@ -170,6 +198,18 @@
   font-style: italic;
 }
 
+/* ---------- In-drill analysis entry (feedback panel + line-complete card) ---------- */
+
+.practice-explore-btn {
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  margin-top: 10px;
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
 /* ---------- Line complete ---------- */
 
 .practice-clean-badge {
@@ -197,6 +237,11 @@
   font-size: 17px;
 }
 
+.practice-slow-moves {
+  margin: 2px 0 0;
+  font-style: italic;
+}
+
 .practice-line-complete-actions {
   display: flex;
   flex-direction: column;
@@ -206,6 +251,12 @@
 
 .practice-line-complete-actions button {
   min-height: 44px;
+}
+
+/* The actions column already spaces its children via `gap`, so the explore button's
+   own default margin-top (for its other home, the feedback panel) would double up. */
+.practice-line-complete-actions .practice-explore-btn {
+  margin-top: 0;
 }
 
 .practice-subtle-end {

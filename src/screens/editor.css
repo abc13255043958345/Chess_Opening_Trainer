@@ -185,6 +185,20 @@
   font-weight: 700;
 }
 
+/* ---------- PGN import/export (M5) ---------- */
+
+.pgn-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.pgn-btn {
+  flex: 1;
+  min-height: 40px;
+  font-size: 13px;
+}
+
 /* ---------- Delete ---------- */
 
 .delete-btn {

@@ -19,6 +19,7 @@ import { getEngine, EngineCancelledError, type EngineEvalResult } from "../lib/e
 import { getTree, listTrainingSet } from "../lib/content";
 import { saveUserTree } from "../lib/userTree";
 import { addMove, numberedSan, sideToMove, START_FEN } from "../lib/tree";
+import { getLichessToken } from "../lib/settings";
 import type { CatalogEntry, Mover, MoveKind, OpeningTree } from "../types";
 import "./screens.css";
 import "../components/evalbar.css";
@@ -114,6 +115,70 @@ function graftLineIntoTree(tree: OpeningTree, ucis: string[], sans: string[]): n
     parentId = created.id;
   }
   return added;
+}
+
+// ---------- Live Lichess Explorer lookup (DESIGN §4.4/§6 M5) ----------
+
+const LICHESS_EXPLORER_URL = "https://explorer.lichess.ovh/lichess";
+const LICHESS_EXPLORER_DEBOUNCE_MS = 600;
+
+interface ClubGamesRow {
+  san: string;
+  white: number;
+  draws: number;
+  black: number;
+  total: number;
+}
+
+interface ClubGamesState {
+  status: "idle" | "loading" | "ready" | "unauthorized" | "unavailable";
+  rows: ClubGamesRow[];
+}
+
+class LichessUnauthorizedError extends Error {
+  constructor() {
+    super("Lichess Explorer token invalid or expired");
+    this.name = "LichessUnauthorizedError";
+  }
+}
+
+interface LichessExplorerMoveJson {
+  san?: string;
+  white?: number;
+  draws?: number;
+  black?: number;
+}
+
+/** Fetches the "club games" reply distribution for `fen` — the 1600-1800 blitz/rapid/
+ *  classical Lichess pool, i.e. the opponents a club player actually faces (DESIGN.md
+ *  §8's default rating band) — never logs the token itself, only ever generic errors. */
+async function fetchClubGames(
+  fen: string,
+  token: string,
+  signal: AbortSignal
+): Promise<ClubGamesRow[]> {
+  const params = new URLSearchParams({
+    variant: "standard",
+    speeds: "blitz,rapid,classical",
+    ratings: "1600,1800",
+    fen,
+    moves: "8",
+    topGames: "0",
+    recentGames: "0",
+  });
+  const res = await fetch(`${LICHESS_EXPLORER_URL}?${params.toString()}`, {
+    headers: { Authorization: `Bearer ${token}` },
+    signal,
+  });
+  if (res.status === 401) throw new LichessUnauthorizedError();
+  if (!res.ok) throw new Error(`Lichess Explorer request failed (HTTP ${res.status})`);
+  const data = (await res.json()) as { moves?: LichessExplorerMoveJson[] };
+  return (data.moves ?? []).map((m) => {
+    const white = m.white ?? 0;
+    const draws = m.draws ?? 0;
+    const black = m.black ?? 0;
+    return { san: m.san ?? "?", white, draws, black, total: white + draws + black };
+  });
 }
 
 function allLegalDests(fen: string): Map<string, string[]> {
@@ -269,6 +334,61 @@ export default function Explorer() {
     return () => controller.abort();
   }, [currentFen]);
 
+  // ---------- Live Lichess Explorer lookup (DESIGN §4.4/§6 M5: "online-only,
+  // graceful offline"). The Explorer API now requires auth, and this app is public on
+  // GitHub Pages, so no token can ship in the bundle — src/screens/Home.tsx's Settings
+  // section lets the user paste in their own personal token (src/lib/settings.ts,
+  // stored on-device only). With no token, offline, or on any fetch error, this
+  // section just stays hidden — never a scary error banner. ----------
+  const [lichessToken, setLichessTokenState] = useState<string | null>(null);
+  useEffect(() => {
+    let cancelled = false;
+    getLichessToken().then((t) => {
+      if (!cancelled) setLichessTokenState(t);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  const [isOnline, setIsOnline] = useState(navigator.onLine);
+  useEffect(() => {
+    const goOnline = () => setIsOnline(true);
+    const goOffline = () => setIsOnline(false);
+    window.addEventListener("online", goOnline);
+    window.addEventListener("offline", goOffline);
+    return () => {
+      window.removeEventListener("online", goOnline);
+      window.removeEventListener("offline", goOffline);
+    };
+  }, []);
+
+  const [clubGames, setClubGames] = useState<ClubGamesState>({ status: "idle", rows: [] });
+
+  useEffect(() => {
+    if (!lichessToken || !isOnline) {
+      setClubGames({ status: "idle", rows: [] });
+      return;
+    }
+    const controller = new AbortController();
+    const timer = window.setTimeout(() => {
+      setClubGames((prev) => ({ ...prev, status: "loading" }));
+      fetchClubGames(currentFen, lichessToken, controller.signal)
+        .then((rows) => setClubGames({ status: "ready", rows }))
+        .catch((err) => {
+          if (err instanceof DOMException && err.name === "AbortError") return;
+          setClubGames({
+            status: err instanceof LichessUnauthorizedError ? "unauthorized" : "unavailable",
+            rows: [],
+          });
+        });
+    }, LICHESS_EXPLORER_DEBOUNCE_MS);
+    return () => {
+      window.clearTimeout(timer);
+      controller.abort();
+    };
+  }, [currentFen, lichessToken, isOnline]);
+
   // ---------- Repertoire overlay (fen -> tree index, built once per mount) ----------
   const [trainingEntries, setTrainingEntries] = useState<CatalogEntry[]>([]);
   const [trainingTrees, setTrainingTrees] = useState<OpeningTree[] | null>(null);
@@ -398,6 +518,55 @@ export default function Explorer() {
           <p className="text-dim">{thinking ? "Thinking…" : "No engine lines yet."}</p>
         )}
       </div>
+
+      {clubGames.status !== "idle" && (
+        <div className="explorer-lines-panel">
+          <div className="continuations-label">Club games (1600-1800 blitz/rapid/classical)</div>
+          {clubGames.status === "loading" && <p className="text-dim">Loading…</p>}
+          {clubGames.status === "unauthorized" && (
+            <p className="text-dim">Token invalid — check it in Home &gt; Settings.</p>
+          )}
+          {clubGames.status === "ready" && clubGames.rows.length === 0 && (
+            <p className="text-dim">No club games found for this position.</p>
+          )}
+          {clubGames.status === "ready" && clubGames.rows.length > 0 && (
+            <table className="explorer-club-table">
+              <tbody>
+                {(() => {
+                  const grandTotal = clubGames.rows.reduce((sum, r) => sum + r.total, 0) || 1;
+                  return clubGames.rows.map((row) => {
+                    const rowTotal = row.total || 1;
+                    return (
+                      <tr key={row.san}>
+                        <td className="explorer-club-move">{row.san}</td>
+                        <td className="explorer-club-share text-dim">
+                          {Math.round((row.total / grandTotal) * 100)}%
+                        </td>
+                        <td className="explorer-club-wdl-cell">
+                          <div className="explorer-wdl-bar">
+                            <div
+                              className="explorer-wdl-white"
+                              style={{ width: `${(row.white / rowTotal) * 100}%` }}
+                            />
+                            <div
+                              className="explorer-wdl-draw"
+                              style={{ width: `${(row.draws / rowTotal) * 100}%` }}
+                            />
+                            <div
+                              className="explorer-wdl-black"
+                              style={{ width: `${(row.black / rowTotal) * 100}%` }}
+                            />
+                          </div>
+                        </td>
+                      </tr>
+                    );
+                  });
+                })()}
+              </tbody>
+            </table>
+          )}
+        </div>
+      )}
 
       {canAdd && (
         <div className="explorer-add-section">

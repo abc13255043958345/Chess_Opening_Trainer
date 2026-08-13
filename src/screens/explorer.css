@@ -91,6 +91,55 @@
   min-height: 32px;
 }
 
+/* ---------- Live Lichess "club games" lookup (M5) ---------- */
+
+.explorer-club-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.explorer-club-table td {
+  padding: 5px 0;
+  vertical-align: middle;
+}
+
+.explorer-club-move {
+  font-weight: 700;
+  width: 20%;
+  white-space: nowrap;
+}
+
+.explorer-club-share {
+  width: 15%;
+  white-space: nowrap;
+}
+
+.explorer-club-wdl-cell {
+  width: 65%;
+}
+
+.explorer-wdl-bar {
+  display: flex;
+  width: 100%;
+  height: 10px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: var(--bg-input);
+}
+
+.explorer-wdl-white {
+  background: var(--text);
+}
+
+.explorer-wdl-draw {
+  background: var(--text-dim);
+}
+
+.explorer-wdl-black {
+  background: #14141f;
+}
+
 .explorer-toast {
   position: fixed;
   left: 16px;
