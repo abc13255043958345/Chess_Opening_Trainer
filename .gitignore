@@ -6,3 +6,4 @@ pipeline/cache/
 .env
 pipeline/.env
 scratch-test/
+.claude/
