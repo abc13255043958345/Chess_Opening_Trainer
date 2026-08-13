@@ -1,0 +1,828 @@
+{
+  "eco": "C",
+  "generatedAt": "2026-08-13T16:49:28.042Z",
+  "trees": {
+    "c42-petrov-s-defense-italian-variation": {
+      "id": "c42-petrov-s-defense-italian-variation",
+      "eco": "C42",
+      "name": "Petrov's Defense: Italian Variation",
+      "perspective": "white",
+      "rootId": "root",
+      "nodes": {
+        "9ed62e09126585fd": {
+          "id": "9ed62e09126585fd",
+          "fen": "rnbqkb1r/pppp1ppp/5n2/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+          "san": "Nf6",
+          "uci": "g8f6",
+          "parentId": "f9542a1fee280396",
+          "children": [
+            "e28e5201f871de11"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 1,
+          "evalCp": 31
+        },
+        "cf6a7b47ed52db7f": {
+          "id": "cf6a7b47ed52db7f",
+          "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+          "san": "e5",
+          "uci": "e7e5",
+          "parentId": "de126361ab1cc8a7",
+          "children": [
+            "f9542a1fee280396"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 1,
+          "evalCp": 20
+        },
+        "de126361ab1cc8a7": {
+          "id": "de126361ab1cc8a7",
+          "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+          "san": "e4",
+          "uci": "e2e4",
+          "parentId": "root",
+          "children": [
+            "cf6a7b47ed52db7f"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 22
+        },
+        "e28e5201f871de11": {
+          "id": "e28e5201f871de11",
+          "fen": "rnbqkb1r/pppp1ppp/5n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
+          "san": "Bc4",
+          "uci": "f1c4",
+          "parentId": "9ed62e09126585fd",
+          "children": [],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": -50,
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": -50
+          }
+        },
+        "f9542a1fee280396": {
+          "id": "f9542a1fee280396",
+          "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2",
+          "san": "Nf3",
+          "uci": "g1f3",
+          "parentId": "cf6a7b47ed52db7f",
+          "children": [
+            "9ed62e09126585fd"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 13
+        },
+        "root": {
+          "id": "root",
+          "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+          "san": "",
+          "uci": "",
+          "parentId": null,
+          "children": [
+            "de126361ab1cc8a7"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "evalCp": 19
+        }
+      }
+    },
+    "c47-four-knights-game-italian-variation": {
+      "id": "c47-four-knights-game-italian-variation",
+      "eco": "C47",
+      "name": "Four Knights Game: Italian Variation",
+      "perspective": "white",
+      "rootId": "root",
+      "nodes": {
+        "0add368f85c58c80": {
+          "id": "0add368f85c58c80",
+          "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+          "san": "Nf6",
+          "uci": "g8f6",
+          "parentId": "40665380b1073409",
+          "children": [
+            "a937abb51b534683"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 1,
+          "evalCp": 10
+        },
+        "40665380b1073409": {
+          "id": "40665380b1073409",
+          "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
+          "san": "Bc4",
+          "uci": "f1c4",
+          "parentId": "f46a5fdf14e7c905",
+          "children": [
+            "0add368f85c58c80"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 7
+        },
+        "a937abb51b534683": {
+          "id": "a937abb51b534683",
+          "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R b KQkq - 5 4",
+          "san": "Nc3",
+          "uci": "b1c3",
+          "parentId": "0add368f85c58c80",
+          "children": [],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 0,
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 0
+          }
+        },
+        "cf6a7b47ed52db7f": {
+          "id": "cf6a7b47ed52db7f",
+          "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+          "san": "e5",
+          "uci": "e7e5",
+          "parentId": "de126361ab1cc8a7",
+          "children": [
+            "f9542a1fee280396"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 1,
+          "evalCp": 20
+        },
+        "de126361ab1cc8a7": {
+          "id": "de126361ab1cc8a7",
+          "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+          "san": "e4",
+          "uci": "e2e4",
+          "parentId": "root",
+          "children": [
+            "cf6a7b47ed52db7f"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 22
+        },
+        "f46a5fdf14e7c905": {
+          "id": "f46a5fdf14e7c905",
+          "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+          "san": "Nc6",
+          "uci": "b8c6",
+          "parentId": "f9542a1fee280396",
+          "children": [
+            "40665380b1073409"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 1,
+          "evalCp": 22
+        },
+        "f9542a1fee280396": {
+          "id": "f9542a1fee280396",
+          "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2",
+          "san": "Nf3",
+          "uci": "g1f3",
+          "parentId": "cf6a7b47ed52db7f",
+          "children": [
+            "f46a5fdf14e7c905"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 13
+        },
+        "root": {
+          "id": "root",
+          "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+          "san": "",
+          "uci": "",
+          "parentId": null,
+          "children": [
+            "de126361ab1cc8a7"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "evalCp": 19
+        }
+      }
+    },
+    "c47-four-knights-game-italian-variation-noa-gambit": {
+      "id": "c47-four-knights-game-italian-variation-noa-gambit",
+      "eco": "C47",
+      "name": "Four Knights Game: Italian Variation, Noa Gambit",
+      "perspective": "white",
+      "rootId": "root",
+      "nodes": {
+        "07aa9959c78060e8": {
+          "id": "07aa9959c78060e8",
+          "fen": "r1bqkb1r/pppp1ppp/2n5/4p3/2B1n3/2N2N2/PPPP1PPP/R1BQK2R w KQkq - 0 5",
+          "san": "Nxe4",
+          "uci": "f6e4",
+          "parentId": "a937abb51b534683",
+          "children": [
+            "1eee3f120f0bca14"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 1,
+          "evalCp": -21
+        },
+        "0add368f85c58c80": {
+          "id": "0add368f85c58c80",
+          "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+          "san": "Nf6",
+          "uci": "g8f6",
+          "parentId": "40665380b1073409",
+          "children": [
+            "a937abb51b534683"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 1,
+          "evalCp": 10
+        },
+        "1eee3f120f0bca14": {
+          "id": "1eee3f120f0bca14",
+          "fen": "r1bqkb1r/pppp1Bpp/2n5/4p3/4n3/2N2N2/PPPP1PPP/R1BQK2R b KQkq - 0 5",
+          "san": "Bxf7+",
+          "uci": "c4f7",
+          "parentId": "07aa9959c78060e8",
+          "children": [],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": -115,
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": -115
+          }
+        },
+        "40665380b1073409": {
+          "id": "40665380b1073409",
+          "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
+          "san": "Bc4",
+          "uci": "f1c4",
+          "parentId": "f46a5fdf14e7c905",
+          "children": [
+            "0add368f85c58c80"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 7
+        },
+        "a937abb51b534683": {
+          "id": "a937abb51b534683",
+          "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R b KQkq - 5 4",
+          "san": "Nc3",
+          "uci": "b1c3",
+          "parentId": "0add368f85c58c80",
+          "children": [
+            "07aa9959c78060e8"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 0
+        },
+        "cf6a7b47ed52db7f": {
+          "id": "cf6a7b47ed52db7f",
+          "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+          "san": "e5",
+          "uci": "e7e5",
+          "parentId": "de126361ab1cc8a7",
+          "children": [
+            "f9542a1fee280396"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 1,
+          "evalCp": 20
+        },
+        "de126361ab1cc8a7": {
+          "id": "de126361ab1cc8a7",
+          "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+          "san": "e4",
+          "uci": "e2e4",
+          "parentId": "root",
+          "children": [
+            "cf6a7b47ed52db7f"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 22
+        },
+        "f46a5fdf14e7c905": {
+          "id": "f46a5fdf14e7c905",
+          "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+          "san": "Nc6",
+          "uci": "b8c6",
+          "parentId": "f9542a1fee280396",
+          "children": [
+            "40665380b1073409"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 1,
+          "evalCp": 22
+        },
+        "f9542a1fee280396": {
+          "id": "f9542a1fee280396",
+          "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2",
+          "san": "Nf3",
+          "uci": "g1f3",
+          "parentId": "cf6a7b47ed52db7f",
+          "children": [
+            "f46a5fdf14e7c905"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 13
+        },
+        "root": {
+          "id": "root",
+          "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+          "san": "",
+          "uci": "",
+          "parentId": null,
+          "children": [
+            "de126361ab1cc8a7"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "evalCp": 19
+        }
+      }
+    },
+    "c50-four-knights-game-italian-variation": {
+      "id": "c50-four-knights-game-italian-variation",
+      "eco": "C50",
+      "name": "Four Knights Game: Italian Variation",
+      "perspective": "black",
+      "rootId": "root",
+      "nodes": {
+        "40665380b1073409": {
+          "id": "40665380b1073409",
+          "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
+          "san": "Bc4",
+          "uci": "f1c4",
+          "parentId": "f46a5fdf14e7c905",
+          "children": [
+            "c011bf987904475d"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 1,
+          "evalCp": 7
+        },
+        "67409b9cbaeca508": {
+          "id": "67409b9cbaeca508",
+          "fen": "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R b KQkq - 5 4",
+          "san": "Nc3",
+          "uci": "b1c3",
+          "parentId": "c011bf987904475d",
+          "children": [
+            "6fd31657571b6727"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 1,
+          "evalCp": 13
+        },
+        "6fd31657571b6727": {
+          "id": "6fd31657571b6727",
+          "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R w KQkq - 6 5",
+          "san": "Nf6",
+          "uci": "g8f6",
+          "parentId": "67409b9cbaeca508",
+          "children": [],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 9,
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 9
+          }
+        },
+        "c011bf987904475d": {
+          "id": "c011bf987904475d",
+          "fen": "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+          "san": "Bc5",
+          "uci": "f8c5",
+          "parentId": "40665380b1073409",
+          "children": [
+            "67409b9cbaeca508"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 27
+        },
+        "cf6a7b47ed52db7f": {
+          "id": "cf6a7b47ed52db7f",
+          "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+          "san": "e5",
+          "uci": "e7e5",
+          "parentId": "de126361ab1cc8a7",
+          "children": [
+            "f9542a1fee280396"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 20
+        },
+        "de126361ab1cc8a7": {
+          "id": "de126361ab1cc8a7",
+          "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+          "san": "e4",
+          "uci": "e2e4",
+          "parentId": "root",
+          "children": [
+            "cf6a7b47ed52db7f"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 1,
+          "evalCp": 22
+        },
+        "f46a5fdf14e7c905": {
+          "id": "f46a5fdf14e7c905",
+          "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+          "san": "Nc6",
+          "uci": "b8c6",
+          "parentId": "f9542a1fee280396",
+          "children": [
+            "40665380b1073409"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 22
+        },
+        "f9542a1fee280396": {
+          "id": "f9542a1fee280396",
+          "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2",
+          "san": "Nf3",
+          "uci": "g1f3",
+          "parentId": "cf6a7b47ed52db7f",
+          "children": [
+            "f46a5fdf14e7c905"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 1,
+          "evalCp": 13
+        },
+        "root": {
+          "id": "root",
+          "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+          "san": "",
+          "uci": "",
+          "parentId": null,
+          "children": [
+            "de126361ab1cc8a7"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "evalCp": 19
+        }
+      }
+    },
+    "c50-italian-game": {
+      "id": "c50-italian-game",
+      "eco": "C50",
+      "name": "Italian Game",
+      "perspective": "white",
+      "rootId": "root",
+      "nodes": {
+        "0add368f85c58c80": {
+          "id": "0add368f85c58c80",
+          "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+          "san": "Nf6",
+          "uci": "g8f6",
+          "parentId": "40665380b1073409",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.25,
+          "evalCp": 10,
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 10
+          }
+        },
+        "0cb8b5a96b72b23a": {
+          "id": "0cb8b5a96b72b23a",
+          "fen": "r1bqkbnr/pppp1ppp/8/8/2BpP3/8/PPPP1PPP/RNBQ1RK1 b kq - 1 5",
+          "san": "O-O",
+          "uci": "e1h1",
+          "parentId": "46ea9330af387d75",
+          "children": [
+            "779706a4502ea19d"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "0e1c164354b0ca13": {
+          "id": "0e1c164354b0ca13",
+          "fen": "r1bqkbnr/pp3ppp/2pp4/8/2BpP3/8/PPPP1PPP/RNBQR1K1 w kq - 0 7",
+          "san": "d6",
+          "uci": "d7d6",
+          "parentId": "f2f1c8f554b50b38",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "40665380b1073409": {
+          "id": "40665380b1073409",
+          "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
+          "san": "Bc4",
+          "uci": "f1c4",
+          "parentId": "f46a5fdf14e7c905",
+          "children": [
+            "c011bf987904475d",
+            "0add368f85c58c80",
+            "73c265a7b33f0cc8",
+            "8c573e6ebe061a9a"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 7
+        },
+        "46ea9330af387d75": {
+          "id": "46ea9330af387d75",
+          "fen": "r1bqkbnr/pppp1ppp/8/8/2BpP3/8/PPPP1PPP/RNBQK2R w KQkq - 0 5",
+          "san": "exd4",
+          "uci": "e5d4",
+          "parentId": "ee7c0ee28757b0a1",
+          "children": [
+            "0cb8b5a96b72b23a"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "73c265a7b33f0cc8": {
+          "id": "73c265a7b33f0cc8",
+          "fen": "r1bqkbnr/ppp2ppp/2np4/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 4",
+          "san": "d6",
+          "uci": "d7d6",
+          "parentId": "40665380b1073409",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.08,
+          "evalCp": 36,
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 36
+          }
+        },
+        "779706a4502ea19d": {
+          "id": "779706a4502ea19d",
+          "fen": "r1bqkbnr/pp1p1ppp/2p5/8/2BpP3/8/PPPP1PPP/RNBQ1RK1 w kq - 0 6",
+          "san": "c6",
+          "uci": "c7c6",
+          "parentId": "0cb8b5a96b72b23a",
+          "children": [
+            "f2f1c8f554b50b38"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "8c573e6ebe061a9a": {
+          "id": "8c573e6ebe061a9a",
+          "fen": "r1bqkbnr/pppp1ppp/8/4p3/2BnP3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+          "san": "Nd4",
+          "uci": "c6d4",
+          "parentId": "40665380b1073409",
+          "children": [
+            "ee7c0ee28757b0a1"
+          ],
+          "mover": "opponent",
+          "moveKind": "opponent_mistake",
+          "weight": 0.075,
+          "evalCp": 103,
+          "annotation": {
+            "explanation": "Nd4? is popular at club level (8% of games) but rare in master play and it concedes 1.0 pawns. Meet it with Nxd4."
+          }
+        },
+        "c011bf987904475d": {
+          "id": "c011bf987904475d",
+          "fen": "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+          "san": "Bc5",
+          "uci": "f8c5",
+          "parentId": "40665380b1073409",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.6,
+          "evalCp": 27,
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 27
+          }
+        },
+        "cf6a7b47ed52db7f": {
+          "id": "cf6a7b47ed52db7f",
+          "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+          "san": "e5",
+          "uci": "e7e5",
+          "parentId": "de126361ab1cc8a7",
+          "children": [
+            "f9542a1fee280396"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 1,
+          "evalCp": 20
+        },
+        "de126361ab1cc8a7": {
+          "id": "de126361ab1cc8a7",
+          "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+          "san": "e4",
+          "uci": "e2e4",
+          "parentId": "root",
+          "children": [
+            "cf6a7b47ed52db7f"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 22
+        },
+        "ee7c0ee28757b0a1": {
+          "id": "ee7c0ee28757b0a1",
+          "fen": "r1bqkbnr/pppp1ppp/8/4p3/2BNP3/8/PPPP1PPP/RNBQK2R b KQkq - 0 4",
+          "san": "Nxd4",
+          "uci": "f3d4",
+          "parentId": "8c573e6ebe061a9a",
+          "children": [
+            "46ea9330af387d75"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 98,
+          "annotation": {
+            "explanation": "Punishes Nd4: Nxd4 wins the advantage (+1.0 → +1.0). Play continues exd4 O-O c6 Re1."
+          }
+        },
+        "f2f1c8f554b50b38": {
+          "id": "f2f1c8f554b50b38",
+          "fen": "r1bqkbnr/pp1p1ppp/2p5/8/2BpP3/8/PPPP1PPP/RNBQR1K1 b kq - 1 6",
+          "san": "Re1",
+          "uci": "f1e1",
+          "parentId": "779706a4502ea19d",
+          "children": [
+            "0e1c164354b0ca13"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "f46a5fdf14e7c905": {
+          "id": "f46a5fdf14e7c905",
+          "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+          "san": "Nc6",
+          "uci": "b8c6",
+          "parentId": "f9542a1fee280396",
+          "children": [
+            "40665380b1073409"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 1,
+          "evalCp": 22
+        },
+        "f9542a1fee280396": {
+          "id": "f9542a1fee280396",
+          "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2",
+          "san": "Nf3",
+          "uci": "g1f3",
+          "parentId": "cf6a7b47ed52db7f",
+          "children": [
+            "f46a5fdf14e7c905"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 13
+        },
+        "root": {
+          "id": "root",
+          "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+          "san": "",
+          "uci": "",
+          "parentId": null,
+          "children": [
+            "de126361ab1cc8a7"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "evalCp": 19
+        }
+      }
+    },
+    "c50-italian-game-anti-fried-liver-defense": {
+      "id": "c50-italian-game-anti-fried-liver-defense",
+      "eco": "C50",
+      "name": "Italian Game: Anti-Fried Liver Defense",
+      "perspective": "black",
+      "rootId": "root",
+      "nodes": {
+        "40665380b1073409": {
+          "id": "40665380b1073409",
+          "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
+          "san": "Bc4",
+          "uci": "f1c4",
+          "parentId": "f46a5fdf14e7c905",
+          "children": [
+            "639f554509ee4970"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 1,
+          "evalCp": 7
+        },
+        "639f554509ee4970": {
+          "id": "639f554509ee4970",
+          "fen": "r1bqkbnr/pppp1pp1/2n4p/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 4",
+          "san": "h6",
+          "uci": "h7h6",
+          "parentId": "40665380b1073409",
+          "children": [],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 56,
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 56
+          }
+        },
+        "cf6a7b47ed52db7f": {
+          "id": "cf6a7b47ed52db7f",
+          "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+          "san": "e5",
+          "uci": "e7e5",
+          "parentId": "de126361ab1cc8a7",
+          "children": [
+            "f9542a1fee280396"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 20
+        },
+        "de126361ab1cc8a7": {
+          "id": "de126361ab1cc8a7",
+          "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+          "san": "e4",
+          "uci": "e2e4",
+          "parentId": "root",
+          "children": [
+            "cf6a7b47ed52db7f"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 1,
+          "evalCp": 22
+        },
+        "f46a5fdf14e7c905": {
+          "id": "f46a5fdf14e7c905",
+          "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+          "san": "Nc6",
+          "uci": "b8c6",
+          "parentId": "f9542a1fee280396",
+          "children": [
+            "40665380b1073409"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 22
+        },
+        "f9542a1fee280396": {
+          "id": "f9542a1fee280396",
+          "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2",
+          "san": "Nf3",
+          "uci": "g1f3",
+          "parentId": "cf6a7b47ed52db7f",
+          "children": [
+            "f46a5fdf14e7c905"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 1,
+          "evalCp": 13
+        },
+        "root": {
+          "id": "root",
+          "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+          "san": "",
+          "uci": "",
+          "parentId": null,
+          "children": [
+            "de126361ab1cc8a7"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "evalCp": 19
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,179 @@
+/* Repertoire editor styles (DESIGN.md §4.5). Mirrors screens.css conventions —
+   same CSS variables, same 44px-min touch targets — and reuses its .badge/.chip/
+   .board-frame/.nav-row/.continuations-row classes directly in Editor.tsx. */
+
+.editor-header {
+  margin-bottom: 4px;
+}
+
+.badge-customized {
+  color: #10101c;
+  background: var(--accent);
+  border-color: var(--accent);
+  font-weight: 700;
+}
+
+.save-indicator {
+  font-size: 12px;
+  color: var(--text-dim);
+  min-height: 18px;
+}
+
+.save-indicator-unsaved,
+.save-indicator-saving {
+  color: var(--amber);
+}
+
+.revert-btn {
+  min-height: 40px;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+/* ---------- Warning strip ---------- */
+
+.warning-strip {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  background: rgba(217, 95, 95, 0.12);
+  border: 1px solid var(--red);
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin: 10px 0;
+}
+
+.warning-strip-body {
+  font-size: 13px;
+  color: var(--text);
+}
+
+.warning-strip-body strong {
+  color: var(--red);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.warning-strip-body ul {
+  margin: 6px 0 0;
+  padding-left: 18px;
+}
+
+.warning-strip button {
+  min-height: 36px;
+  flex-shrink: 0;
+  font-size: 12px;
+}
+
+/* ---------- Sideline badge (mirrors .badge-amber but neutral) ---------- */
+
+.badge-sideline {
+  color: var(--text-dim);
+  background: var(--bg);
+  border-color: var(--border);
+}
+
+/* ---------- Node panel ---------- */
+
+.node-panel {
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px;
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.node-panel-section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field-label {
+  font-size: 12px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-weight: 600;
+}
+
+.node-panel textarea,
+.node-panel input[type="number"] {
+  width: 100%;
+  font: inherit;
+  color: inherit;
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 12px;
+  resize: vertical;
+}
+
+.node-panel textarea {
+  min-height: 44px;
+  line-height: 1.4;
+}
+
+.field-with-clear {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.field-with-clear input {
+  flex: 1;
+  min-width: 0;
+}
+
+.clear-btn {
+  min-height: 40px;
+  font-size: 12px;
+  color: var(--text-dim);
+  flex-shrink: 0;
+}
+
+/* ---------- Segmented control (move kind / end of theory) ---------- */
+
+.segmented {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.segmented button {
+  flex: 1;
+  min-height: 40px;
+  min-width: 0;
+  font-size: 13px;
+  white-space: nowrap;
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+}
+
+.segmented button.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #10101c;
+  font-weight: 700;
+}
+
+/* ---------- Delete ---------- */
+
+.delete-btn {
+  min-height: 44px;
+  width: 100%;
+  background: rgba(217, 95, 95, 0.12);
+  border: 1px solid var(--red);
+  color: var(--red);
+  font-weight: 600;
+}
+
+.delete-btn:active {
+  background: rgba(217, 95, 95, 0.22);
+}

@@ -1,0 +1,8 @@
+node_modules/
+dist/
+dev-dist/
+pipeline/cache/
+*.log
+.env
+pipeline/.env
+scratch-test/

@@ -1,0 +1,243 @@
+/* Practice mode (DESIGN.md §4.1, §4.2, §6 M2): setup screen, drill loop, summary.
+   Reuses generic primitives from screens.css/index.css (button, .chip, .badge,
+   .annotation-panel, .board-frame, .screen-padding) — only new practice-specific
+   layout lives here. */
+
+/* ---------- Board flash (Board.tsx's own wrapper, see BoardProps.flash) ---------- */
+
+.board-wrap-flash-red,
+.board-wrap-flash-green {
+  border-radius: 6px;
+  transition: box-shadow 0.15s ease;
+}
+
+.board-wrap-flash-red {
+  box-shadow: 0 0 0 4px var(--red);
+}
+
+.board-wrap-flash-green {
+  box-shadow: 0 0 0 4px var(--green);
+}
+
+/* ---------- Setup ---------- */
+
+.practice-setup-section {
+  margin-top: 22px;
+}
+
+.practice-opening-list {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.practice-opening-row {
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 4px 12px;
+}
+
+.practice-opening-row label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  cursor: pointer;
+}
+
+.practice-opening-row input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.practice-opening-name {
+  flex: 1;
+  font-weight: 600;
+}
+
+.practice-error {
+  margin-top: 12px;
+  color: var(--red);
+}
+
+.practice-start-button {
+  width: 100%;
+  min-height: 48px;
+  margin-top: 24px;
+  font-size: 15px;
+}
+
+/* ---------- Drill header ---------- */
+
+.practice-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.practice-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.practice-confirm-end {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+}
+
+.practice-menu-wrap {
+  position: relative;
+}
+
+.practice-menu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 4px);
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 4px;
+  z-index: 10;
+  min-width: 160px;
+}
+
+.practice-menu button {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  white-space: nowrap;
+}
+
+.practice-stats-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+/* ---------- Feedback panel ---------- */
+
+.practice-feedback-panel {
+  border-color: var(--red);
+}
+
+.practice-feedback-attempted {
+  margin: 0 0 4px;
+  color: var(--red);
+}
+
+.practice-feedback-correct {
+  margin: 0 0 8px;
+  color: var(--green);
+}
+
+.practice-feedback-loss {
+  margin: 8px 0 0;
+  color: var(--amber);
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.practice-feedback-hint {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* ---------- Line complete ---------- */
+
+.practice-clean-badge {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 999px;
+  margin-bottom: 10px;
+}
+
+.practice-clean {
+  background: var(--green);
+  color: #10101c;
+}
+
+.practice-dirty {
+  background: var(--amber);
+  color: #10101c;
+}
+
+.practice-line-complete h2 {
+  color: var(--text);
+  text-transform: none;
+  font-size: 17px;
+}
+
+.practice-line-complete-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.practice-line-complete-actions button {
+  min-height: 44px;
+}
+
+.practice-subtle-end {
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  font-size: 13px;
+}
+
+/* ---------- Summary ---------- */
+
+.practice-summary-stats {
+  display: flex;
+  gap: 10px;
+  margin: 14px 0 24px;
+}
+
+.practice-summary-stat {
+  flex: 1;
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 8px;
+  text-align: center;
+}
+
+.practice-summary-stat-value {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.practice-summary-breakdown {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.practice-summary-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 14px;
+}
