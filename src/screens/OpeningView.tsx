@@ -1,16 +1,22 @@
-// The opening browser (core M1 screen, DESIGN.md §3, §6): step through a shipped or
-// customized tree on the board, jump around via the move list, see the opponent's
-// prepared replies (including mistake branches) at each branch point, and read the
-// annotation for the current position.
+// The opening browser (M1 core screen + M3 branch heat-map, DESIGN.md §3, §5, §6):
+// step through a shipped or customized tree on the board, jump around via the move
+// list, see the opponent's prepared replies (including mistake branches) at each
+// branch point tinted by that branch's mastery, read the annotation for the current
+// position, and — when there's more than one continuation — see a per-branch mastery
+// bar with its due count (the "Branches" section).
 
 import { useEffect, useMemo, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Chess } from "chess.js";
 import Board from "../components/Board";
 import MoveList from "../components/MoveList";
+import MasteryBar from "../components/MasteryBar";
+import ProgressRing from "../components/ProgressRing";
 import { getTree, isInTrainingSet, loadCatalog, toggleTrainingSet } from "../lib/content";
 import { isUserTurn, mainlineChild, pathToNode } from "../lib/tree";
-import type { CatalogEntry, OpeningTree, RepertoireNode } from "../types";
+import { bandColor, dueCountInSubtree, masteryBand, subtreeMastery } from "../lib/srs";
+import { loadCards } from "../lib/srsStore";
+import type { CatalogEntry, OpeningTree, RepertoireNode, SrsCard } from "../types";
 import "./screens.css";
 
 type LoadState =
@@ -88,6 +94,10 @@ function OpeningReady({ entry, tree }: { entry: CatalogEntry; tree: OpeningTree 
   const [currentNodeId, setCurrentNodeId] = useState(tree.rootId);
   const [inTrainingSet, setInTrainingSet] = useState(false);
   const [illegalFlash, setIllegalFlash] = useState(false);
+  const [cards, setCards] = useState<Map<string, SrsCard>>(new Map());
+  // Fixed for the life of this screen instance — mastery display shouldn't visibly
+  // "decay" while the user is just looking at it.
+  const [now] = useState(() => new Date());
 
   // Reset to the start whenever a different opening is loaded into this screen.
   useEffect(() => {
@@ -103,6 +113,22 @@ function OpeningReady({ entry, tree }: { entry: CatalogEntry; tree: OpeningTree 
       cancelled = true;
     };
   }, [entry.id]);
+
+  useEffect(() => {
+    let cancelled = false;
+    loadCards([entry.id]).then((c) => {
+      if (!cancelled) setCards(c);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [entry.id]);
+
+  const openingMastery = useMemo(
+    () => subtreeMastery(tree, tree.rootId, cards, now),
+    [tree, cards, now]
+  );
+  const openingBand = masteryBand(openingMastery);
 
   const currentNode = tree.nodes[currentNodeId] ?? tree.nodes[tree.rootId];
 
@@ -224,6 +250,10 @@ function OpeningReady({ entry, tree }: { entry: CatalogEntry; tree: OpeningTree 
                 {tree.perspective === "white" ? "White" : "Black"}
               </span>
             </div>
+            <div className="opening-mastery">
+              <ProgressRing value={openingMastery} size={40} color={bandColor(openingBand)} />
+              <span className="opening-mastery-band">{openingBand}</span>
+            </div>
           </div>
           <div className="opening-header-actions">
             <button
@@ -266,27 +296,56 @@ function OpeningReady({ entry, tree }: { entry: CatalogEntry; tree: OpeningTree 
         <div className="continuations-row">
           <div className="continuations-label">Opponent's replies</div>
           <div className="chip-row">
-            {opponentContinuations.map((child) => (
-              <button
-                key={child.id}
-                type="button"
-                className={`chip continuation-chip ${
-                  child.id === currentNodeId ? "chip-active" : ""
-                }`}
-                onClick={() => goToNode(child.id)}
-              >
-                {child.san}
-                {typeof child.weight === "number" && (
-                  <span className="continuation-weight">
-                    {Math.round(child.weight * 100)}%
-                  </span>
-                )}
-                {child.moveKind === "opponent_mistake" && (
-                  <span className="badge badge-amber">?!</span>
-                )}
-              </button>
-            ))}
+            {opponentContinuations.map((child) => {
+              const isActive = child.id === currentNodeId;
+              const color = bandColor(masteryBand(subtreeMastery(tree, child.id, cards, now)));
+              return (
+                <button
+                  key={child.id}
+                  type="button"
+                  className={`chip continuation-chip ${isActive ? "chip-active" : ""}`}
+                  style={
+                    isActive
+                      ? { borderColor: color }
+                      : { borderColor: color, background: `color-mix(in srgb, ${color} 16%, var(--bg-input))` }
+                  }
+                  onClick={() => goToNode(child.id)}
+                >
+                  {child.san}
+                  {typeof child.weight === "number" && (
+                    <span className="continuation-weight">
+                      {Math.round(child.weight * 100)}%
+                    </span>
+                  )}
+                  {child.moveKind === "opponent_mistake" && (
+                    <span className="badge badge-amber">?!</span>
+                  )}
+                </button>
+              );
+            })}
           </div>
+        </div>
+      )}
+
+      {childNodes.length > 1 && (
+        <div className="branches-section">
+          <div className="continuations-label">Branches</div>
+          <ul className="branches-list">
+            {childNodes.map((child) => {
+              const mastery = subtreeMastery(tree, child.id, cards, now);
+              const due = dueCountInSubtree(tree, child.id, cards, now);
+              return (
+                <li key={child.id}>
+                  <MasteryBar
+                    value={mastery}
+                    color={bandColor(masteryBand(mastery))}
+                    label={child.san}
+                    due={due}
+                  />
+                </li>
+              );
+            })}
+          </ul>
         </div>
       )}
 

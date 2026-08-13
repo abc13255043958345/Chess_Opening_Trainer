@@ -67,6 +67,13 @@ export type MixMode = "theory" | "mix" | "mistakes";
 export interface SessionConfig {
   openingIds: string[];
   mix: MixMode;
+  /** Optional low-mastery interleaving bias (DESIGN §4.2): multiplies each opponent
+   *  candidate child's sampling weight before it's normalized. Optional — and only
+   *  ever read here, never required — so existing callers/tests that never set it see
+   *  identical behavior (multiplier 1 everywhere). src/screens/Practice.tsx derives
+   *  one from src/lib/srs.ts's subtreeMastery + dueSubtreeSet; the engine itself has
+   *  no SRS/mastery knowledge. */
+  biasFn?: (tree: OpeningTree, node: RepertoireNode) => number;
 }
 
 /** Fraction of opponent-move samples that should come from the mistake pool, when both
@@ -107,7 +114,11 @@ function sampleOpponentChild(
   else if (mistakeChildren.length === 0) pool = theoryChildren;
   else pool = rng() < mistakeRatio(config.mix) ? mistakeChildren : theoryChildren;
 
-  return sampleWeighted(pool, (n) => n.weight ?? DEFAULT_WEIGHT, rng);
+  return sampleWeighted(
+    pool,
+    (n) => (n.weight ?? DEFAULT_WEIGHT) * (config.biasFn ? config.biasFn(tree, n) : 1),
+    rng
+  );
 }
 
 // ---------- Line generation ----------
@@ -272,6 +283,22 @@ export interface MoveResult {
   attempts: number;
 }
 
+/**
+ * Emitted whenever a user move resolves correctly (DESIGN §4.1.5, §7: "only first
+ * attempts feed SRS scheduling"). `isFirstRun` says whether this happened on a line's
+ * first run (runIndex 0) — the SRS consumer (src/screens/Practice.tsx) grades the
+ * card on a first run and just touches it (bumps attempts/lastSeen, no schedule
+ * change) on a replay.
+ */
+export interface GradingEvent {
+  /** `${openingId}:${nodeId}` — matches SrsCard.key in src/types.ts. */
+  key: string;
+  openingId: string;
+  nodeId: string;
+  firstTry: boolean;
+  isFirstRun: boolean;
+}
+
 export interface LineRun {
   line: PracticeLine;
   /** Position reached so far: line.nodeIds[idx] is the last move actually played. */
@@ -281,14 +308,16 @@ export interface LineRun {
   clean: boolean;
   /** Wrong attempts already made at the currently-pending user move (0 = none yet). */
   wrongAttemptsAtCurrent: number;
+  /** 0 = this line's first run; replayLine increments it (DESIGN §4.1.5/§7). */
+  runIndex: number;
 }
 
-export function createLineRun(line: PracticeLine): LineRun {
-  return { line, idx: 0, results: [], clean: true, wrongAttemptsAtCurrent: 0 };
+export function createLineRun(line: PracticeLine, runIndex = 0): LineRun {
+  return { line, idx: 0, results: [], clean: true, wrongAttemptsAtCurrent: 0, runIndex };
 }
 
 export type AttemptOutcome =
-  | { kind: "correct" }
+  | { kind: "correct"; gradingEvent: GradingEvent }
   | { kind: "wrong"; feedback: DeviationFeedback }
   | { kind: "no-pending-move" };
 
@@ -322,7 +351,14 @@ export function attemptUserMove(
       results: [...run.results, result],
       wrongAttemptsAtCurrent: 0,
     };
-    return { run: nextRun, outcome: { kind: "correct" } };
+    const gradingEvent: GradingEvent = {
+      key: `${tree.id}:${expected.id}`,
+      openingId: tree.id,
+      nodeId: expected.id,
+      firstTry: result.firstTry,
+      isFirstRun: run.runIndex === 0,
+    };
+    return { run: nextRun, outcome: { kind: "correct", gradingEvent } };
   }
 
   const feedback = buildDeviationFeedback(tree, expected, attemptedSan);
@@ -381,12 +417,13 @@ export function createSession(
   trees: Record<string, OpeningTree>,
   openingIds: string[],
   mix: MixMode,
-  rng: () => number
+  rng: () => number,
+  biasFn?: (tree: OpeningTree, node: RepertoireNode) => number
 ): SessionState {
   if (openingIds.length === 0) {
     throw new Error("createSession requires at least one opening");
   }
-  const config: SessionConfig = { openingIds, mix };
+  const config: SessionConfig = { openingIds, mix, ...(biasFn ? { biasFn } : {}) };
   const queue = shuffle(openingIds, rng);
   const firstId = queue.shift()!;
   const line = generateLine(trees[firstId], config, rng);
@@ -467,9 +504,11 @@ export function nextLine(state: SessionState): SessionState {
   return advanceToNextLine(state, { clean: true });
 }
 
-/** Replay-until-clean: same pinned line, fresh run (DESIGN §4.1.5). */
+/** Replay-until-clean: same pinned line, fresh run (DESIGN §4.1.5), one run deeper
+ *  (runIndex + 1) so grading events on this pass are marked as a replay, not a
+ *  first-run first attempt (DESIGN §7). */
 export function replayLine(state: SessionState): SessionState {
-  return { ...state, run: createLineRun(state.run.line) };
+  return { ...state, run: createLineRun(state.run.line, state.run.runIndex + 1) };
 }
 
 /** The buried escape hatch: mark the current line failed and move on regardless of

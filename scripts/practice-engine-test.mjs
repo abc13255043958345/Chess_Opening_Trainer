@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Unit tests for the practice-mode session engine (src/lib/practice.ts), driven
 // against the real shipped content (public/content/eco-C.json → "c50-italian-game",
-// which has a genuine opponent_mistake branch: 3...Nd4?! with a punish line — see
+// which has at least one genuine opponent_mistake branch with a punish line — see
 // DESIGN.md §4.1/§4.2).
 //
 // practice.ts has zero React/DOM imports, so it's transpiled standalone (no vite/vitest
@@ -71,32 +71,55 @@ async function loadItalianGameTree() {
 
 function testMistakesAlwaysPunish(engine, tree) {
   const { generateLine, mulberry32 } = engine;
-  const mistakeNode = Object.values(tree.nodes).find((n) => n.moveKind === "opponent_mistake");
-  assert.ok(mistakeNode, "expected an opponent_mistake node (3...Nd4?!) in c50-italian-game");
-  assert.equal(mistakeNode.san, "Nd4");
-  const punishId = mistakeNode.children[0];
-  assert.ok(punishId, "the mistake node has no punish child in the tree");
-  assert.equal(tree.nodes[punishId].san, "Nxd4");
+  // Content-agnostic (the pipeline regenerates trees from live data, so specific
+  // mistake moves change): assert the engine's INVARIANTS, not particular SANs.
+  const mistakeNodes = Object.values(tree.nodes).filter(
+    (n) => n.moveKind === "opponent_mistake"
+  );
+  assert.ok(mistakeNodes.length > 0, "expected ≥1 opponent_mistake node in c50-italian-game");
 
+  let linesWithMistake = 0;
   for (let seed = 1; seed <= 8; seed++) {
     const line = generateLine(tree, { openingIds: [tree.id], mix: "mistakes" }, mulberry32(seed * 97));
-    assert.ok(
-      line.nodeIds.includes(mistakeNode.id),
-      `seed ${seed}: mix="mistakes" line did not sample the Nd4 branch`
-    );
-    const mistakeIdx = line.nodeIds.indexOf(mistakeNode.id);
-    assert.equal(
-      line.nodeIds[mistakeIdx + 1],
-      punishId,
-      `seed ${seed}: node right after the mistake wasn't the punish move (Nxd4)`
-    );
-    // The whole punish sequence (Nxd4 exd4 O-O c6 Re1 d6) should be pinned all the way
-    // to the end of theory — the line shouldn't stop early.
-    assert.ok(
-      line.nodeIds.length - mistakeIdx - 1 >= 6,
-      `seed ${seed}: punish sequence pinned only ${line.nodeIds.length - mistakeIdx - 1} plies, expected >= 6`
-    );
+    for (let i = 0; i < line.nodeIds.length; i++) {
+      const node = tree.nodes[line.nodeIds[i]];
+      const nextId = line.nodeIds[i + 1];
+      // Invariant 1: wherever the sampled path passes an opponent decision that
+      // HAS a mistake child, mix="mistakes" must pick a mistake.
+      if (nextId) {
+        const next = tree.nodes[nextId];
+        const opponentDecision = next.mover === "opponent" && node.children.length > 0;
+        const mistakeChildren = node.children.filter(
+          (cid) => tree.nodes[cid]?.moveKind === "opponent_mistake"
+        );
+        if (opponentDecision && mistakeChildren.length > 0) {
+          assert.equal(
+            next.moveKind,
+            "opponent_mistake",
+            `seed ${seed}: opponent had a mistake child available but played ${next.san} (${next.moveKind})`
+          );
+        }
+        // Invariant 2: consecutive line nodes are parent→child (the punish chain
+        // after a mistake is pinned, never skipped).
+        assert.ok(
+          node.children.includes(nextId),
+          `seed ${seed}: line jumped from ${node.san || "root"} to non-child ${next.san}`
+        );
+      }
+    }
+    // Invariant 3: the line only stops at end-of-theory or a leaf.
+    const last = tree.nodes[line.nodeIds[line.nodeIds.length - 1]];
+    const canContinue =
+      !last.endOfTheory &&
+      last.children.some((cid) => tree.nodes[cid]?.moveKind !== "sideline");
+    assert.ok(!canContinue, `seed ${seed}: line stopped early at ${last.san}`);
+    if (line.nodeIds.some((id) => tree.nodes[id].moveKind === "opponent_mistake")) {
+      linesWithMistake++;
+    }
   }
+  // Invariant 4: with mix="mistakes", at least one seed's path should actually
+  // reach a mistake branch (they exist in this tree per the check above).
+  assert.ok(linesWithMistake > 0, 'mix="mistakes" never reached any mistake branch across 8 seeds');
 }
 
 function testTheoryNeverSamplesMistake(engine, tree) {
@@ -138,7 +161,17 @@ function testWrongThenCorrectAccounting(engine, tree) {
   const { createSession, mulberry32, submitMove, advanceOpponentMove, expectedMove, nextMover, isLineComplete, accuracy } =
     engine;
   const trees = { [tree.id]: tree };
-  let session = createSession(trees, [tree.id], "mistakes", mulberry32(7));
+  // Content-agnostic: find a seed whose pinned line actually passes through a
+  // mistake branch (specific mistakes change whenever the pipeline regenerates).
+  let session = null;
+  for (let seed = 1; seed <= 30 && !session; seed++) {
+    const candidate = createSession(trees, [tree.id], "mistakes", mulberry32(seed));
+    const hasMistake = candidate.run.line.nodeIds.some(
+      (id) => tree.nodes[id].moveKind === "opponent_mistake"
+    );
+    if (hasMistake) session = candidate;
+  }
+  assert.ok(session, "no seed in 1..30 produced a line through a mistake branch");
 
   let handledWrongAttempt = false;
   let guard = 0;
@@ -154,7 +187,7 @@ function testWrongThenCorrectAccounting(engine, tree) {
 
     const parent = tree.nodes[expected.parentId];
     if (!handledWrongAttempt && parent && parent.moveKind === "opponent_mistake") {
-      // This is the punish move (Nxd4) — play a wrong move first.
+      // This is the punish move (parent is a mistake) — play a wrong move first.
       const wrongUci = expected.uci === "e2e4" ? "d2d4" : "e2e4";
       const wrongAttempt = submitMove(session, wrongUci, "wrong-san");
       assert.equal(wrongAttempt.outcome.kind, "wrong");
@@ -212,7 +245,7 @@ async function main() {
     const tree = await loadItalianGameTree();
 
     const results = [];
-    await runTest(results, 'mix="mistakes" always samples the Nd4 branch and pins the full punish line', () =>
+    await runTest(results, 'mix="mistakes" samples mistake branches and pins full punish lines', () =>
       testMistakesAlwaysPunish(engine, tree)
     );
     await runTest(results, 'mix="theory" never samples a mistake child', () =>

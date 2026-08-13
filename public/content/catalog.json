@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-13T16:49:28.064Z",
+  "generatedAt": "2026-08-13T18:18:49.793Z",
   "sections": {
-    "C": "2026-08-13T16:49:28.042Z"
+    "C": "2026-08-13T18:18:49.778Z"
   },
   "entries": [
     {
@@ -12,9 +12,9 @@
       "perspective": "white",
       "line": "1. e4 e5 2. Nf3 Nf6 3. Bc4",
       "ply": 5,
-      "nodeCount": 6,
-      "userMoveCount": 3,
-      "mistakeCount": 0,
+      "nodeCount": 400,
+      "userMoveCount": 154,
+      "mistakeCount": 38,
       "file": "content/eco-C.json"
     },
     {
@@ -24,9 +24,9 @@
       "perspective": "white",
       "line": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Nc3",
       "ply": 7,
-      "nodeCount": 8,
-      "userMoveCount": 4,
-      "mistakeCount": 0,
+      "nodeCount": 128,
+      "userMoveCount": 51,
+      "mistakeCount": 10,
       "file": "content/eco-C.json"
     },
     {
@@ -48,9 +48,9 @@
       "perspective": "black",
       "line": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. Nc3 Nf6",
       "ply": 8,
-      "nodeCount": 9,
-      "userMoveCount": 4,
-      "mistakeCount": 0,
+      "nodeCount": 110,
+      "userMoveCount": 43,
+      "mistakeCount": 10,
       "file": "content/eco-C.json"
     },
     {
@@ -60,9 +60,9 @@
       "perspective": "white",
       "line": "1. e4 e5 2. Nf3 Nc6 3. Bc4",
       "ply": 5,
-      "nodeCount": 16,
-      "userMoveCount": 6,
-      "mistakeCount": 1,
+      "nodeCount": 402,
+      "userMoveCount": 169,
+      "mistakeCount": 37,
       "file": "content/eco-C.json"
     },
     {

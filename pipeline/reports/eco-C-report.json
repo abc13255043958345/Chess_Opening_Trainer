@@ -1,0 +1,15 @@
+{
+  "openings": 6,
+  "totalNodes": 1057,
+  "totalUserMoves": 425,
+  "totalMistakes": 95,
+  "liveRequests": 2,
+  "cacheHits": 351,
+  "cloudEvalMisses": 0,
+  "localEvals": 612,
+  "cloudSkippedBreakerOpen": 611,
+  "breakerOpened": true,
+  "punishLineMissing": 0,
+  "durationSec": 323.87,
+  "bytesWritten": 498204
+}

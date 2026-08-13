@@ -1,16 +1,18 @@
-// Practice mode — the core drill screen (DESIGN.md §4.1, §4.2, §6 M2). Two phases:
-// setup (pick openings + mix) and drill (board + deviation feedback + replay-until-
-// clean). All session logic lives in src/lib/practice.ts as pure functions/reducers;
-// this file is state plumbing + rendering only.
+// Practice mode — the core drill screen (DESIGN.md §4.1, §4.2, §5, §6 M2/M3). Three
+// phases: setup (pick openings + scope + mix), drill (board + deviation feedback +
+// replay-until-clean), summary. Session/line logic lives in src/lib/practice.ts as
+// pure functions/reducers; SRS grading/scheduling logic lives in src/lib/srs.ts
+// (also pure) — this file is state plumbing + rendering + the IO glue between them
+// (src/lib/srsStore.ts) only.
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState, type RefObject } from "react";
 import { Link } from "react-router-dom";
 import { Chess } from "chess.js";
 import Board from "../components/Board";
 import MoveList from "../components/MoveList";
 import { getTree, listTrainingSet } from "../lib/content";
 import { numberedSan } from "../lib/tree";
-import type { CatalogEntry, Color, OpeningTree } from "../types";
+import type { CatalogEntry, Color, OpeningTree, RepertoireNode, SrsCard } from "../types";
 import {
   accuracy,
   advanceOpponentMove,
@@ -27,9 +29,13 @@ import {
   skipLine,
   submitMove,
   type DeviationFeedback,
+  type GradingEvent,
+  type LineRun,
   type MixMode,
   type SessionState,
 } from "../lib/practice";
+import { dueCards, dueSubtreeSet, gradeCard, subtreeMastery, touchCard } from "../lib/srs";
+import { loadCards, recordActivity, saveCard } from "../lib/srsStore";
 import "./screens.css";
 import "./practice.css";
 
@@ -40,14 +46,25 @@ type Phase =
 
 export default function Practice() {
   const [phase, setPhase] = useState<Phase>({ kind: "setup" });
+  // The session's live SRS cards: loaded (a snapshot) at setup time, mutated in place
+  // as grading events resolve during the drill, and persisted in batches at each line
+  // completion (DESIGN §4.1.5/§7). A ref, not state — grading shouldn't trigger
+  // re-renders on its own; the session state already does that.
+  const cardsRef = useRef<Map<string, SrsCard>>(new Map());
 
   if (phase.kind === "setup") {
-    return <SetupScreen onStart={(session) => setPhase({ kind: "drill", session })} />;
+    return (
+      <SetupScreen
+        cardsRef={cardsRef}
+        onStart={(session) => setPhase({ kind: "drill", session })}
+      />
+    );
   }
   if (phase.kind === "drill") {
     return (
       <DrillScreen
         session={phase.session}
+        cardsRef={cardsRef}
         onSessionChange={(session) => setPhase({ kind: "drill", session })}
         onEnd={(session) => setPhase({ kind: "summary", session })}
       />
@@ -68,21 +85,59 @@ const MIX_OPTIONS: { value: MixMode; label: string }[] = [
   { value: "mistakes", label: "Mistakes only" },
 ];
 
-function SetupScreen({ onStart }: { onStart: (session: SessionState) => void }) {
+/** "All moves" vs "due only" session scoping (DESIGN §4.1 setup / §4.2 interleaving). */
+type Scope = "all" | "due";
+
+const SCOPE_OPTIONS: { value: Scope; label: string }[] = [
+  { value: "all", label: "All moves" },
+  { value: "due", label: "Due only" },
+];
+
+function SetupScreen({
+  cardsRef,
+  onStart,
+}: {
+  cardsRef: RefObject<Map<string, SrsCard>>;
+  onStart: (session: SessionState) => void;
+}) {
   const [entries, setEntries] = useState<CatalogEntry[] | null>(null);
   const [selected, setSelected] = useState<Set<string>>(new Set());
   const [mix, setMix] = useState<MixMode>("mix");
+  const [scope, setScope] = useState<Scope>("all");
+  const [dueCounts, setDueCounts] = useState<Record<string, number>>({});
   const [starting, setStarting] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     listTrainingSet()
-      .then((list) => {
+      .then(async (list) => {
         setEntries(list);
         setSelected(new Set(list.map((e) => e.id)));
+        const cards = await loadCards(list.map((e) => e.id));
+        const { perOpeningDueCount } = dueCards(cards, list.map((e) => e.id), new Date());
+        setDueCounts(perOpeningDueCount);
       })
       .catch(() => setEntries([]));
   }, []);
+
+  const dueOpeningIds = useMemo(
+    () => new Set(Object.keys(dueCounts).filter((id) => dueCounts[id] > 0)),
+    [dueCounts]
+  );
+
+  // "Due only" narrows the checkbox list to openings that actually have something due.
+  const visibleEntries = useMemo(() => {
+    if (!entries) return [];
+    return scope === "due" ? entries.filter((e) => dueOpeningIds.has(e.id)) : entries;
+  }, [entries, scope, dueOpeningIds]);
+
+  // Re-select "all visible" whenever the scope narrows/widens what's on screen, so a
+  // stale selection from the other scope doesn't linger unseen.
+  useEffect(() => {
+    if (!entries) return;
+    setSelected(new Set(visibleEntries.map((e) => e.id)));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [scope, entries]);
 
   function toggle(id: string) {
     setSelected((prev) => {
@@ -111,13 +166,47 @@ function SetupScreen({ onStart }: { onStart: (session: SessionState) => void }) 
         setStarting(false);
         return;
       }
-      const session = createSession(trees, usableIds, mix, mulberry32(Date.now()));
+
+      const cards = await loadCards(usableIds);
+      cardsRef.current = cards;
+      const now = new Date();
+
+      // Low-mastery interleaving (DESIGN §4.2): a candidate branch's sampling weight
+      // is multiplied by 1 + 1.5×(1 − mastery/100), so weak/unlearned branches come up
+      // more often; "due only" additionally triples that for any branch that actually
+      // contains a due node. Both the mastery numbers and the due-subtree sets are
+      // fixed snapshots taken now — a session's bias shouldn't shift under the
+      // trainee's feet as they grade cards mid-session.
+      const dueSubtrees: Record<string, Set<string>> = {};
+      if (scope === "due") {
+        for (const id of usableIds) {
+          const { due } = dueCards(cards, [id], now);
+          dueSubtrees[id] = dueSubtreeSet(trees[id], new Set(due.map((c) => c.nodeId)));
+        }
+      }
+      const masteryMemo = new Map<string, number>();
+      function biasFn(tree: OpeningTree, node: RepertoireNode): number {
+        const memoKey = `${tree.id}:${node.id}`;
+        let score = masteryMemo.get(memoKey);
+        if (score == null) {
+          score = subtreeMastery(tree, node.id, cards, now);
+          masteryMemo.set(memoKey, score);
+        }
+        let multiplier = 1 + 1.5 * (1 - score / 100);
+        if (scope === "due" && dueSubtrees[tree.id]?.has(node.id)) multiplier *= 3;
+        return multiplier;
+      }
+
+      const session = createSession(trees, usableIds, mix, mulberry32(Date.now()), biasFn);
       onStart(session);
     } catch {
       setError("Couldn't start practice. Try again.");
       setStarting(false);
     }
   }
+
+  const nothingDue =
+    scope === "due" && entries !== null && entries.length > 0 && dueOpeningIds.size === 0;
 
   return (
     <div className="screen-padding practice-setup">
@@ -137,9 +226,39 @@ function SetupScreen({ onStart }: { onStart: (session: SessionState) => void }) 
       {entries !== null && entries.length > 0 && (
         <>
           <section className="practice-setup-section">
-            <h2>Openings ({selected.size} of {entries.length})</h2>
+            <h2>Scope</h2>
+            <div className="chip-row">
+              {SCOPE_OPTIONS.map((opt) => (
+                <button
+                  key={opt.value}
+                  type="button"
+                  className={`chip ${scope === opt.value ? "chip-active" : ""}`}
+                  onClick={() => setScope(opt.value)}
+                >
+                  {opt.label}
+                </button>
+              ))}
+            </div>
+            {nothingDue && (
+              <p className="text-dim practice-nothing-due">
+                Nothing due —{" "}
+                <button
+                  type="button"
+                  className="practice-link-button"
+                  onClick={() => setScope("all")}
+                >
+                  practice everything?
+                </button>
+              </p>
+            )}
+          </section>
+
+          <section className="practice-setup-section">
+            <h2>
+              Openings ({selected.size} of {visibleEntries.length})
+            </h2>
             <ul className="practice-opening-list">
-              {entries.map((entry) => (
+              {visibleEntries.map((entry) => (
                 <li key={entry.id} className="practice-opening-row">
                   <label>
                     <input
@@ -151,6 +270,9 @@ function SetupScreen({ onStart }: { onStart: (session: SessionState) => void }) 
                     <span className={`badge badge-${entry.perspective}`}>
                       {entry.perspective === "white" ? "White" : "Black"}
                     </span>
+                    {(dueCounts[entry.id] ?? 0) > 0 && (
+                      <span className="badge badge-accent">{dueCounts[entry.id]} due</span>
+                    )}
                     {entry.mistakeCount > 0 && (
                       <span className="badge badge-amber">{entry.mistakeCount} traps</span>
                     )}
@@ -209,10 +331,12 @@ function allLegalDests(fen: string): Map<string, string[]> {
 
 function DrillScreen({
   session,
+  cardsRef,
   onSessionChange,
   onEnd,
 }: {
   session: SessionState;
+  cardsRef: RefObject<Map<string, SrsCard>>;
   onSessionChange: (session: SessionState) => void;
   onEnd: (session: SessionState) => void;
 }) {
@@ -227,6 +351,62 @@ function DrillScreen({
   const currentNode = nodeAt(tree, run.line, idx);
   const lineComplete = isLineComplete(run.line, idx);
   const pendingMover = nextMover(tree, run.line, idx);
+
+  // Cards touched (graded or just touched) since the last persist, and a guard so a
+  // given completed LineRun object only gets persisted once.
+  const dirtyKeysRef = useRef<Set<string>>(new Set());
+  const savedForLineRef = useRef<LineRun | null>(null);
+
+  function flushDirtyCards() {
+    const dirty = dirtyKeysRef.current;
+    if (dirty.size === 0) return;
+    const toSave = [...dirty]
+      .map((k) => cardsRef.current.get(k))
+      .filter((c): c is SrsCard => !!c);
+    dirty.clear();
+    if (toSave.length > 0) void saveCard(toSave);
+  }
+
+  // Apply a grading event as soon as a user move resolves correctly (DESIGN §4.1.5,
+  // §7): grade the card on the line's first run, or just touch it (attempts/lastSeen,
+  // no schedule change) on a replay. Batched to disk at line completion, below.
+  function applyGradingEvent(evt: GradingEvent) {
+    const cards = cardsRef.current;
+    const prev = cards.get(evt.key) ?? null;
+    const now = new Date();
+    const updated = evt.isFirstRun
+      ? gradeCard(prev, {
+          firstTry: evt.firstTry,
+          hesitated: false, // wired in M5 — see src/lib/srs.ts's GradeOptions doc.
+          now,
+          key: evt.key,
+          openingId: evt.openingId,
+          nodeId: evt.nodeId,
+        })
+      : touchCard(prev, { now, key: evt.key, openingId: evt.openingId, nodeId: evt.nodeId });
+    cards.set(evt.key, updated);
+    dirtyKeysRef.current.add(evt.key);
+  }
+
+  // Batch-persist graded/touched cards and log the day as active once a line finishes
+  // (DESIGN §6 M3: "save via srsStore after each line completes"). Guarded by run
+  // identity so it fires exactly once per completed LineRun object, not on every
+  // re-render while the completed state is showing.
+  useEffect(() => {
+    if (!lineComplete) return;
+    if (savedForLineRef.current === run) return;
+    savedForLineRef.current = run;
+    flushDirtyCards();
+    void recordActivity(new Date());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [lineComplete, run]);
+
+  // Flush on unmount too (e.g. navigating away mid-line) so a partially-graded line
+  // isn't silently lost.
+  useEffect(() => {
+    return () => flushDirtyCards();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   // Reset ephemeral, per-line UI state whenever a new line starts (fresh run object).
   useEffect(() => {
@@ -282,6 +462,7 @@ function DrillScreen({
     const attemptedUci = `${move.from}${move.to}${move.promotion ?? ""}`;
     const { state: nextSession, outcome } = submitMove(session, attemptedUci, move.san);
     if (outcome.kind === "correct") {
+      applyGradingEvent(outcome.gradingEvent);
       setFeedback(null);
       setFlash("green");
       window.setTimeout(() => setFlash(null), 260);
@@ -303,6 +484,7 @@ function DrillScreen({
       setConfirmingEnd(true);
       return;
     }
+    flushDirtyCards();
     onEnd(session);
   }
 
@@ -346,6 +528,7 @@ function DrillScreen({
                     type="button"
                     onClick={() => {
                       setMenuOpen(false);
+                      flushDirtyCards();
                       onSessionChange(skipLine(session));
                     }}
                   >
