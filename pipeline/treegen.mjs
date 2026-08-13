@@ -18,6 +18,18 @@
 //   - punish-line nodes past the first reply don't get a fresh cloud-eval /
 //     endOfTheory stamp (only the mistake node and the first punish reply do) -
 //     bounds API calls on a line whose length is already hard-capped.
+//   - thin-masters fallback (masters < CONFIG.mastersGamesFloor - openings
+//     masters never play, e.g. 1.e4 e5 2.Qh5, still get faced by club
+//     players constantly): the lichess pool becomes the theory-reply source
+//     for opponent-to-move nodes (same threshold/cap semantics as masters,
+//     weight = pool share), and the local engine (not raw pool popularity -
+//     a club player's top choice can be a blunder) picks the mainline child
+//     for user-to-move nodes. A branch only ends for lack of data when BOTH
+//     masters and the pool are below their floors (mastersGamesFloor /
+//     poolGamesFloor). Mistake-candidate detection is unchanged (pool+eval
+//     based); a pool-sourced theory reply that also qualifies as a mistake
+//     stays tagged opponent_mistake only, per the existing theoryUcis
+//     exclusion - not duplicated as a plain theory child too.
 
 import { Chess } from "chess.js";
 import { nodeIdForPath, ROOT_ID } from "../shared/id.mjs";
@@ -36,19 +48,38 @@ const START_FEN = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1";
 const CASTLING_UCI_FIX = { e1h1: "e1g1", e1a1: "e1c1", e8h8: "e8g8", e8a8: "e8c8" };
 
 /**
- * Applies one UCI move to a FEN using chess.js.
+ * Applies one UCI move to a FEN using chess.js and returns the CANONICAL uci
+ * (chess.js `lan`: castling as "e1g1"/"e1c1", promotion suffix included).
+ *
+ * Every caller must store/hash the returned `uci`, never the raw input — the
+ * app compares board moves against `node.uci` in chess.js form, and node ids
+ * hash the uci path, so a raw "e1h1" in either place breaks move matching
+ * (this exact bug shipped once: castling in practice was rejected as wrong).
+ *
+ * The CASTLING_UCI_FIX mapping is only consulted when the move is illegal as
+ * given: "e1h1" is ambiguous (it's also a legal rook lift Re1-h1), and chess.js
+ * accepts the rook reading directly — only the castling reading needs mapping.
  * @param {string} fen
  * @param {string} uci - e.g. "e2e4" or "e7e8q" (or a Lichess-style castling move, see above)
- * @returns {{san: string, fen: string, color: "w" | "b"}}
+ * @returns {{san: string, fen: string, color: "w" | "b", uci: string}}
  */
 function applyUci(fen, uci) {
-  const normalized = CASTLING_UCI_FIX[uci] ?? uci;
-  const chess = new Chess(fen);
-  const from = normalized.slice(0, 2);
-  const to = normalized.slice(2, 4);
-  const promotion = normalized.length > 4 ? normalized.slice(4) : undefined;
-  const move = chess.move({ from, to, promotion });
-  return { san: move.san, fen: chess.fen(), color: move.color };
+  const tryMove = (u) => {
+    const chess = new Chess(fen);
+    const move = chess.move({
+      from: u.slice(0, 2),
+      to: u.slice(2, 4),
+      promotion: u.length > 4 ? u.slice(4) : undefined,
+    });
+    return { san: move.san, fen: chess.fen(), color: move.color, uci: move.lan };
+  };
+  try {
+    return tryMove(uci);
+  } catch (err) {
+    const mapped = CASTLING_UCI_FIX[uci];
+    if (mapped) return tryMove(mapped);
+    throw err;
+  }
 }
 
 /**
@@ -66,14 +97,14 @@ function swingTowardUser(perspective, beforeCp, afterCp) {
 /**
  * Builds one OpeningTree for a catalog entry.
  * @param {{id: string, eco: string, name: string, perspective: "white"|"black", uciPath: string[]}} entry
- * @returns {Promise<{tree: import("../src/types.js").OpeningTree, stats: {punishLineMissing: number}}>}
+ * @returns {Promise<{tree: import("../src/types.js").OpeningTree, stats: {punishLineMissing: number, thinMastersNodes: number}}>}
  */
 export async function buildOpeningTree(entry) {
   const perspectiveColor = entry.perspective === "white" ? "w" : "b";
   /** @type {Record<string, any>} */
   const nodes = {};
   let nodeCount = 0;
-  const stats = { punishLineMissing: 0 };
+  const stats = { punishLineMissing: 0, thinMastersNodes: 0 };
 
   /** @param {any} node */
   function addNode(node) {
@@ -108,14 +139,14 @@ export async function buildOpeningTree(entry) {
   let current = root;
   let uciPath = [];
   for (const uci of entry.uciPath) {
-    const { san, fen, color } = applyUci(current.fen, uci);
-    uciPath = [...uciPath, uci];
+    const { san, fen, color, uci: canonicalUci } = applyUci(current.fen, uci);
+    uciPath = [...uciPath, canonicalUci];
     const mover = color === perspectiveColor ? "user" : "opponent";
     const node = {
       id: nodeIdForPath(uciPath),
       fen,
       san,
-      uci,
+      uci: canonicalUci,
       parentId: current.id,
       children: [],
       mover,
@@ -158,22 +189,60 @@ export async function buildOpeningTree(entry) {
     const isUserToMove = turnColor === perspectiveColor;
 
     const masters = await fetchMasters(node.fen);
-    const theoryRanOut = !masters || masters.totalGames < CONFIG.mastersGamesFloor || masters.moves.length === 0;
-    if (theoryRanOut) {
+    const mastersThin = !masters || masters.totalGames < CONFIG.mastersGamesFloor || masters.moves.length === 0;
+
+    // Openings masters never play (e.g. 1.e4 e5 2.Qh5, the Wayward Queen
+    // Attack) still get faced by club players constantly - thin masters data
+    // alone must not read as "theory has ended." Try the lichess pool before
+    // giving up on the branch.
+    let pool = null;
+    let poolThin = true;
+    if (mastersThin) {
+      pool = await fetchLichessPool(node.fen);
+      poolThin = !pool || pool.totalGames < CONFIG.poolGamesFloor || pool.moves.length === 0;
+    }
+
+    if (mastersThin && poolThin) {
       node.endOfTheory = { reason: "clear_plan", ...(typeof node.evalCp === "number" ? { evalCp: node.evalCp } : {}) };
       continue;
     }
 
+    // True exactly when masters was too thin to use and the pool is covering
+    // for it (mastersThin && !poolThin, since the joint-thin case already
+    // continued above).
+    const usingPoolFallback = mastersThin;
+    if (usingPoolFallback) stats.thinMastersNodes++;
+
     if (isUserToMove) {
-      const top = [...masters.moves].sort((a, b) => b.share - a.share)[0];
+      let bestUci;
+      let mainlineShare; // only meaningful for the masters-driven (non-fallback) branch
+      if (usingPoolFallback) {
+        // Club players' top pool choice can be a blunder - the repertoire
+        // move must come from the engine, never from raw pool popularity.
+        const evalResult = await getEval(node.fen, {
+          multiPv: 1,
+          localDepth: CONFIG.thinMastersUserMoveDepth,
+        });
+        bestUci = evalResult?.pvs?.[0]?.moves?.split(" ").filter(Boolean)[0];
+        if (!bestUci) {
+          // No engine PV to expand this branch with either - end it here.
+          node.endOfTheory = { reason: "clear_plan", ...(typeof node.evalCp === "number" ? { evalCp: node.evalCp } : {}) };
+          continue;
+        }
+      } else {
+        const top = [...masters.moves].sort((a, b) => b.share - a.share)[0];
+        bestUci = top.uci;
+        mainlineShare = top.share;
+      }
+
       if (nodeCount >= CONFIG.maxNodesPerOpening) break;
-      const { san, fen, color } = applyUci(node.fen, top.uci);
-      const childPath = [...path, top.uci];
+      const { san, fen, color, uci: canonicalUci } = applyUci(node.fen, bestUci);
+      const childPath = [...path, canonicalUci];
       const child = {
         id: nodeIdForPath(childPath),
         fen,
         san,
-        uci: top.uci,
+        uci: canonicalUci,
         parentId: node.id,
         children: [],
         mover: color === perspectiveColor ? "user" : "opponent",
@@ -183,14 +252,21 @@ export async function buildOpeningTree(entry) {
       node.children.push(child.id);
       await stampEval(child);
       child.annotation = {
-        explanation: explainMainlineMove({ san: child.san, share: top.share, evalCp: child.evalCp }),
+        explanation: usingPoolFallback
+          ? `Engine recommendation: ${child.san}.`
+          : explainMainlineMove({ san: child.san, share: mainlineShare, evalCp: child.evalCp }),
       };
       finalizeOrQueue(child, childPath);
       continue;
     }
 
-    // Opponent to move: theory children first, then curated mistake children.
-    const theoryMoves = masters.moves
+    // Opponent to move: theory children first (masters, or the pool when
+    // masters is thin - same threshold/cap semantics either way, weight =
+    // the source's own share), then curated mistake children (unchanged:
+    // pool+eval based, regardless of which source fed the theory replies
+    // above - see module header comment on opponent_mistake precedence).
+    const theorySource = usingPoolFallback ? pool : masters;
+    const theoryMoves = theorySource.moves
       .filter((m) => m.share >= CONFIG.popularityThreshold)
       .sort((a, b) => b.share - a.share)
       .slice(0, CONFIG.maxTheoryRepliesPerNode);
@@ -199,13 +275,13 @@ export async function buildOpeningTree(entry) {
 
     for (const m of theoryMoves) {
       if (nodeCount >= CONFIG.maxNodesPerOpening) break;
-      const { san, fen, color } = applyUci(node.fen, m.uci);
-      const childPath = [...path, m.uci];
+      const { san, fen, color, uci: canonicalUci } = applyUci(node.fen, m.uci);
+      const childPath = [...path, canonicalUci];
       const child = {
         id: nodeIdForPath(childPath),
         fen,
         san,
-        uci: m.uci,
+        uci: canonicalUci,
         parentId: node.id,
         children: [],
         mover: color === perspectiveColor ? "user" : "opponent",
@@ -220,11 +296,13 @@ export async function buildOpeningTree(entry) {
 
     if (nodeCount >= CONFIG.maxNodesPerOpening) break;
 
-    const pool = await fetchLichessPool(node.fen);
-    if (!pool) continue;
+    // Reuse the pool fetched above for the fallback/stop check when we
+    // already have it; masters-healthy nodes haven't fetched the pool yet.
+    const mistakePool = usingPoolFallback ? pool : await fetchLichessPool(node.fen);
+    if (!mistakePool) continue;
 
-    const mastersShareByUci = new Map(masters.moves.map((m) => [m.uci, m.share]));
-    const poolCandidates = pool.moves
+    const mastersShareByUci = new Map((masters?.moves ?? []).map((m) => [m.uci, m.share]));
+    const poolCandidates = mistakePool.moves
       .filter((m) => !theoryUcis.has(m.uci) && m.share >= CONFIG.mistakePopularityThreshold)
       .sort((a, b) => b.share - a.share)
       // Consider a bounded surplus beyond maxMistakesPerNode so rejected
@@ -239,7 +317,7 @@ export async function buildOpeningTree(entry) {
       const mastersShare = mastersShareByUci.get(m.uci) ?? 0;
       const isRareInMasters = mastersShare < CONFIG.mistakeMastersRarity;
 
-      const { san, fen } = applyUci(node.fen, m.uci);
+      const { san, fen, uci: canonicalUci } = applyUci(node.fen, m.uci);
       // This eval's top PV feeds the punish line below - only the top line
       // matters (multiPv 1), and if it comes from the local engine it should
       // be searched deeper than a routine stamp (the line needs to hold up).
@@ -254,12 +332,12 @@ export async function buildOpeningTree(entry) {
 
       if (!isRareInMasters && !evalDropTriggered) continue;
 
-      const mistakePath = [...path, m.uci];
+      const mistakePath = [...path, canonicalUci];
       const mistakeNode = {
         id: nodeIdForPath(mistakePath),
         fen,
         san,
-        uci: m.uci,
+        uci: canonicalUci,
         parentId: node.id,
         children: [],
         mover: "opponent",
@@ -334,8 +412,8 @@ async function buildPunishLine(mistakeNode, mistakePath, resultEval, entry, addN
   const steps = [];
   let fen = mistakeNode.fen;
   for (const uci of uciMoves) {
-    const { san, fen: nextFen, color } = applyUci(fen, uci);
-    steps.push({ uci, san, fen: nextFen, color });
+    const { san, fen: nextFen, color, uci: canonicalUci } = applyUci(fen, uci);
+    steps.push({ uci: canonicalUci, san, fen: nextFen, color });
     fen = nextFen;
   }
 

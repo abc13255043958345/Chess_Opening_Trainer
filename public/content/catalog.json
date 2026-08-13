@@ -1,9 +1,9 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-13T19:34:17.568Z",
+  "generatedAt": "2026-08-13T20:38:10.794Z",
   "sections": {
     "B": "2026-08-13T19:19:50.587Z",
-    "C": "2026-08-13T19:34:17.537Z"
+    "C": "2026-08-13T20:38:10.778Z"
   },
   "entries": [
     {
@@ -58,12 +58,12 @@
       "id": "c20-king-s-pawn-game-wayward-queen-attack",
       "eco": "C20",
       "name": "King's Pawn Game: Wayward Queen Attack",
-      "perspective": "white",
+      "perspective": "black",
       "line": "1. e4 e5 2. Qh5",
       "ply": 3,
-      "nodeCount": 4,
-      "userMoveCount": 2,
-      "mistakeCount": 0,
+      "nodeCount": 400,
+      "userMoveCount": 143,
+      "mistakeCount": 9,
       "file": "content/eco-C.json"
     },
     {
@@ -86,8 +86,8 @@
       "line": "1. e4 e5 2. Nf3 Nf6 3. Bc4",
       "ply": 5,
       "nodeCount": 400,
-      "userMoveCount": 154,
-      "mistakeCount": 38,
+      "userMoveCount": 158,
+      "mistakeCount": 27,
       "file": "content/eco-C.json"
     },
     {
@@ -133,9 +133,9 @@
       "perspective": "white",
       "line": "1. e4 e5 2. Nf3 Nc6 3. Bc4",
       "ply": 5,
-      "nodeCount": 402,
-      "userMoveCount": 169,
-      "mistakeCount": 37,
+      "nodeCount": 403,
+      "userMoveCount": 182,
+      "mistakeCount": 33,
       "file": "content/eco-C.json"
     },
     {

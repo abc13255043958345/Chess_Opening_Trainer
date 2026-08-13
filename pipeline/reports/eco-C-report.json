@@ -1,15 +1,16 @@
 {
   "openings": 1,
-  "totalNodes": 402,
-  "totalUserMoves": 165,
-  "totalMistakes": 37,
-  "liveRequests": 129,
-  "cacheHits": 18,
+  "totalNodes": 400,
+  "totalUserMoves": 143,
+  "totalMistakes": 9,
+  "liveRequests": 53,
+  "cacheHits": 450,
   "cloudEvalMisses": 0,
-  "localEvals": 235,
-  "cloudSkippedBreakerOpen": 235,
+  "localEvals": 470,
+  "cloudSkippedBreakerOpen": 470,
   "breakerOpened": false,
   "punishLineMissing": 0,
-  "durationSec": 430.89,
-  "bytesWritten": 1071607
+  "thinMastersNodes": 169,
+  "durationSec": 334.504,
+  "bytesWritten": 1279192
 }

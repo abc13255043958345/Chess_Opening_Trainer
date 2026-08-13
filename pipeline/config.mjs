@@ -13,6 +13,8 @@
  *   endOfTheoryEvalCp: number,
  *   maxPly: number,
  *   mastersGamesFloor: number,
+ *   poolGamesFloor: number,
+ *   thinMastersUserMoveDepth: number,
  *   maxNodesPerOpening: number,
  *   lichessSpeeds: string[],
  *   lichessRatings: number[],
@@ -46,8 +48,22 @@ export const CONFIG = {
   endOfTheoryEvalCp: 150,
   // Absolute max ply (half-moves from the start position) a branch can reach.
   maxPly: 24,
-  // Below this many total masters games at a position, theory has run out.
+  // Below this many total masters games at a position, masters theory is too
+  // thin to drive expansion (see poolGamesFloor: this alone does NOT stop the
+  // branch - the lichess pool is tried first).
   mastersGamesFloor: 100,
+  // Below this many total lichess-pool games (club-level: see lichessSpeeds/
+  // lichessRatings) at a position, the pool itself is too thin to fall back
+  // on - the line is genuinely out of play at both master and club level.
+  // Only when masters AND pool are both below their floors does a branch end
+  // for lack of data (see treegen.mjs).
+  poolGamesFloor: 200,
+  // Local-engine search depth used to pick OUR (the user's) mainline move
+  // when masters is thin but the pool covers the position (see
+  // poolGamesFloor). Deeper than localEvalDepth's routine stamp - a club
+  // player's most popular move here can be a blunder, so this can't come from
+  // raw pool popularity the way the masters-driven mainline choice does.
+  thinMastersUserMoveDepth: 18,
   // Hard safety cap on total nodes generated per opening (prevents runaway trees).
   maxNodesPerOpening: 400,
   // Lichess pool speeds used for the "club level" mistake-popularity query.

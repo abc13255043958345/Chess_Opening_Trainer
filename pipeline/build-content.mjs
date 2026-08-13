@@ -160,12 +160,14 @@ async function main() {
       userMoveCount,
       mistakeCount,
       punishLineMissing: stats.punishLineMissing,
+      thinMastersNodes: stats.thinMastersNodes,
       durationSec: openingDurationSec,
     });
 
     console.log(
       `[build-content] ${entry.name} (${entry.id}): ${nodeCount} nodes, ${userMoveCount} user moves, ` +
-        `${mistakeCount} mistakes in ${openingDurationSec.toFixed(1)}s | live=${httpCounters.liveRequests} cacheHits=${httpCounters.cacheHits} ` +
+        `${mistakeCount} mistakes, ${stats.thinMastersNodes} thin-masters-fallback nodes in ${openingDurationSec.toFixed(1)}s | ` +
+        `live=${httpCounters.liveRequests} cacheHits=${httpCounters.cacheHits} ` +
         `cloudEvalMisses=${cloudEvalMissCounter.count} localEvals=${engineCounters.localEvals} ` +
         `cloudSkippedBreakerOpen=${evalCounters.cloudSkippedBreakerOpen}` +
         `${evalCounters.breakerOpened ? " [breaker OPEN]" : ""}`,
@@ -221,6 +223,7 @@ async function main() {
   const totalUserMoves = perOpeningStats.reduce((sum, s) => sum + s.userMoveCount, 0);
   const totalMistakes = perOpeningStats.reduce((sum, s) => sum + s.mistakeCount, 0);
   const punishLineMissing = perOpeningStats.reduce((sum, s) => sum + s.punishLineMissing, 0);
+  const thinMastersNodes = perOpeningStats.reduce((sum, s) => sum + s.thinMastersNodes, 0);
   const bytesWritten = Buffer.byteLength(sectionJson, "utf8") + Buffer.byteLength(catalogJson, "utf8");
 
   const report = {
@@ -239,6 +242,10 @@ async function main() {
     cloudSkippedBreakerOpen: evalCounters.cloudSkippedBreakerOpen,
     breakerOpened: evalCounters.breakerOpened,
     punishLineMissing,
+    // Nodes whose theory-reply source (opponent-to-move) or mainline pick
+    // (user-to-move) fell back to the lichess pool / local engine because
+    // masters data was too thin (< CONFIG.mastersGamesFloor) - see treegen.mjs.
+    thinMastersNodes,
     durationSec: (Date.now() - startedAt) / 1000,
     bytesWritten,
   };
