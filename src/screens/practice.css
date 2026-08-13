@@ -215,6 +215,19 @@
   font-size: 13px;
 }
 
+.practice-analyze-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  border-radius: 8px;
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  color: var(--text);
+  text-decoration: none;
+  font-size: 14px;
+}
+
 /* ---------- Summary ---------- */
 
 .practice-summary-stats {

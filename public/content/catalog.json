@@ -1,10 +1,83 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-13T18:18:49.793Z",
+  "generatedAt": "2026-08-13T19:34:17.568Z",
   "sections": {
-    "C": "2026-08-13T18:18:49.778Z"
+    "B": "2026-08-13T19:19:50.587Z",
+    "C": "2026-08-13T19:34:17.537Z"
   },
   "entries": [
+    {
+      "id": "b00-king-s-pawn-game",
+      "eco": "B00",
+      "name": "King's Pawn Game",
+      "perspective": "white",
+      "line": "1. e4",
+      "ply": 1,
+      "nodeCount": 405,
+      "userMoveCount": 162,
+      "mistakeCount": 34,
+      "file": "content/eco-B.json"
+    },
+    {
+      "id": "b22-sicilian-defense-alapin-variation",
+      "eco": "B22",
+      "name": "Sicilian Defense: Alapin Variation",
+      "perspective": "white",
+      "line": "1. e4 c5 2. c3",
+      "ply": 3,
+      "nodeCount": 400,
+      "userMoveCount": 144,
+      "mistakeCount": 27,
+      "file": "content/eco-B.json"
+    },
+    {
+      "id": "b32-sicilian-defense-accelerated-dragon",
+      "eco": "B32",
+      "name": "Sicilian Defense: Accelerated Dragon",
+      "perspective": "black",
+      "line": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 g6",
+      "ply": 8,
+      "nodeCount": 405,
+      "userMoveCount": 168,
+      "mistakeCount": 38,
+      "file": "content/eco-B.json"
+    },
+    {
+      "id": "c00-french-defense",
+      "eco": "C00",
+      "name": "French Defense",
+      "perspective": "black",
+      "line": "1. e4 e6",
+      "ply": 2,
+      "nodeCount": 406,
+      "userMoveCount": 163,
+      "mistakeCount": 37,
+      "file": "content/eco-C.json"
+    },
+    {
+      "id": "c20-king-s-pawn-game-wayward-queen-attack",
+      "eco": "C20",
+      "name": "King's Pawn Game: Wayward Queen Attack",
+      "perspective": "white",
+      "line": "1. e4 e5 2. Qh5",
+      "ply": 3,
+      "nodeCount": 4,
+      "userMoveCount": 2,
+      "mistakeCount": 0,
+      "file": "content/eco-C.json"
+    },
+    {
+      "id": "c25-vienna-game",
+      "eco": "C25",
+      "name": "Vienna Game",
+      "perspective": "white",
+      "line": "1. e4 e5 2. Nc3",
+      "ply": 3,
+      "nodeCount": 400,
+      "userMoveCount": 147,
+      "mistakeCount": 31,
+      "file": "content/eco-C.json"
+    },
     {
       "id": "c42-petrov-s-defense-italian-variation",
       "eco": "C42",
@@ -75,6 +148,18 @@
       "nodeCount": 7,
       "userMoveCount": 3,
       "mistakeCount": 0,
+      "file": "content/eco-C.json"
+    },
+    {
+      "id": "c60-ruy-lopez",
+      "eco": "C60",
+      "name": "Ruy Lopez",
+      "perspective": "white",
+      "line": "1. e4 e5 2. Nf3 Nc6 3. Bb5",
+      "ply": 5,
+      "nodeCount": 402,
+      "userMoveCount": 165,
+      "mistakeCount": 37,
       "file": "content/eco-C.json"
     }
   ]

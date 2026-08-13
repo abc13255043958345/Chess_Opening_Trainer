@@ -1,15 +1,15 @@
 {
-  "openings": 6,
-  "totalNodes": 1057,
-  "totalUserMoves": 425,
-  "totalMistakes": 95,
-  "liveRequests": 2,
-  "cacheHits": 351,
+  "openings": 1,
+  "totalNodes": 402,
+  "totalUserMoves": 165,
+  "totalMistakes": 37,
+  "liveRequests": 129,
+  "cacheHits": 18,
   "cloudEvalMisses": 0,
-  "localEvals": 612,
-  "cloudSkippedBreakerOpen": 611,
-  "breakerOpened": true,
+  "localEvals": 235,
+  "cloudSkippedBreakerOpen": 235,
+  "breakerOpened": false,
   "punishLineMissing": 0,
-  "durationSec": 323.87,
-  "bytesWritten": 498204
+  "durationSec": 430.89,
+  "bytesWritten": 1071607
 }

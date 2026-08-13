@@ -1,0 +1,61 @@
+/* EvalBar.tsx (DESIGN.md §3, §4.3). Also defines .board-eval-row, the reusable
+   layout wrapper any screen can drop a <Board> + <EvalBar> pair into to get the
+   "thin vertical strip on the board's left edge" mobile layout without touching the
+   frozen src/screens/screens.css. */
+
+.board-eval-row {
+  display: flex;
+  align-items: stretch;
+  gap: 8px;
+  width: 100%;
+  max-width: calc(100vh - 340px);
+  margin: 12px auto;
+}
+
+.board-eval-row .board-frame {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  max-width: none;
+}
+
+.eval-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  width: 20px;
+}
+
+.eval-bar-track {
+  position: relative;
+  flex: 1;
+  width: 100%;
+  min-height: 60px;
+  background: #14141c;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.eval-bar-white-fill {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #e8e8ec;
+  transition: height 260ms ease;
+}
+
+.eval-bar-neutral .eval-bar-white-fill {
+  background: var(--text-dim);
+  opacity: 0.5;
+}
+
+.eval-bar-label {
+  margin-top: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-dim);
+  white-space: nowrap;
+}

@@ -9,15 +9,17 @@ import { useEffect, useMemo, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Chess } from "chess.js";
 import Board from "../components/Board";
+import EvalBar from "../components/EvalBar";
 import MoveList from "../components/MoveList";
 import MasteryBar from "../components/MasteryBar";
 import ProgressRing from "../components/ProgressRing";
 import { getTree, isInTrainingSet, loadCatalog, toggleTrainingSet } from "../lib/content";
-import { isUserTurn, mainlineChild, pathToNode } from "../lib/tree";
+import { isUserTurn, mainlineChild, pathToNode, uciPath } from "../lib/tree";
 import { bandColor, dueCountInSubtree, masteryBand, subtreeMastery } from "../lib/srs";
 import { loadCards } from "../lib/srsStore";
 import type { CatalogEntry, OpeningTree, RepertoireNode, SrsCard } from "../types";
 import "./screens.css";
+import "../components/evalbar.css";
 
 type LoadState =
   | { status: "loading" }
@@ -263,6 +265,13 @@ function OpeningReady({ entry, tree }: { entry: CatalogEntry; tree: OpeningTree 
             >
               {inTrainingSet ? "✓ In my set" : "+ Add"}
             </button>
+            <Link
+              to="/explorer"
+              state={{ moves: uciPath(tree, currentNode.id) }}
+              className="edit-link"
+            >
+              Analyze
+            </Link>
             <Link to={`/edit/${entry.id}`} className="edit-link">
               Edit
             </Link>
@@ -270,15 +279,18 @@ function OpeningReady({ entry, tree }: { entry: CatalogEntry; tree: OpeningTree 
         </div>
       </header>
 
-      <div className={`board-frame ${illegalFlash ? "board-frame-illegal" : ""}`}>
-        <Board
-          fen={currentNode.fen}
-          orientation={tree.perspective}
-          lastMove={lastMove}
-          dests={dests}
-          onMove={handleBoardMove}
-          check={inCheck}
-        />
+      <div className={`board-eval-row ${illegalFlash ? "board-frame-illegal" : ""}`}>
+        <EvalBar evalCp={currentNode.evalCp ?? currentNode.endOfTheory?.evalCp ?? null} />
+        <div className="board-frame">
+          <Board
+            fen={currentNode.fen}
+            orientation={tree.perspective}
+            lastMove={lastMove}
+            dests={dests}
+            onMove={handleBoardMove}
+            check={inCheck}
+          />
+        </div>
       </div>
 
       <MoveList sans={sans} currentPly={currentPly} onSelect={handleSelectPly} />

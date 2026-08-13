@@ -9,14 +9,17 @@ import { useEffect, useMemo, useRef, useState, type RefObject } from "react";
 import { Link } from "react-router-dom";
 import { Chess } from "chess.js";
 import Board from "../components/Board";
+import EvalBar from "../components/EvalBar";
 import MoveList from "../components/MoveList";
 import { getTree, listTrainingSet } from "../lib/content";
 import { numberedSan } from "../lib/tree";
+import { getEngine, EngineCancelledError } from "../lib/engine";
 import type { CatalogEntry, Color, OpeningTree, RepertoireNode, SrsCard } from "../types";
 import {
   accuracy,
   advanceOpponentMove,
   createSession,
+  expectedMove,
   formatEvalPawns,
   isLineComplete,
   mulberry32,
@@ -37,6 +40,7 @@ import {
 import { dueCards, dueSubtreeSet, gradeCard, subtreeMastery, touchCard } from "../lib/srs";
 import { loadCards, recordActivity, saveCard } from "../lib/srsStore";
 import "./screens.css";
+import "../components/evalbar.css";
 import "./practice.css";
 
 type Phase =
@@ -344,6 +348,11 @@ function DrillScreen({
   const [feedback, setFeedback] = useState<DeviationFeedback | null>(null);
   const [menuOpen, setMenuOpen] = useState(false);
   const [confirmingEnd, setConfirmingEnd] = useState(false);
+  // Live engine eval of the attempted (wrong) position, depth 12 (DESIGN §4.3): purely
+  // a nicer number for the feedback panel than the cached-eval fallback — engine
+  // failure/timeout just leaves this null and DeviationPanel silently falls back.
+  const [liveEvalCp, setLiveEvalCp] = useState<number | null>(null);
+  const liveEvalAbortRef = useRef<AbortController | null>(null);
 
   const { run, trees } = session;
   const tree = trees[run.line.openingId];
@@ -414,7 +423,15 @@ function DrillScreen({
     setFeedback(null);
     setMenuOpen(false);
     setConfirmingEnd(false);
+    liveEvalAbortRef.current?.abort();
+    setLiveEvalCp(null);
   }, [run.line]);
+
+  // Abort any in-flight live eval on unmount so a stale resolve can't fire after the
+  // screen (or the drill) is gone.
+  useEffect(() => {
+    return () => liveEvalAbortRef.current?.abort();
+  }, []);
 
   // Opponent's move is pinned; it just needs to visually land after a short delay.
   // The very first move of a line (idx 0, e.g. White's opening move when the trainee
@@ -464,6 +481,8 @@ function DrillScreen({
     if (outcome.kind === "correct") {
       applyGradingEvent(outcome.gradingEvent);
       setFeedback(null);
+      liveEvalAbortRef.current?.abort();
+      setLiveEvalCp(null);
       setFlash("green");
       window.setTimeout(() => setFlash(null), 260);
       onSessionChange(nextSession);
@@ -472,6 +491,21 @@ function DrillScreen({
       setFeedback(outcome.feedback);
       window.setTimeout(() => setFlash(null), 350);
       onSessionChange(nextSession);
+
+      // Live engine eval of the position the trainee actually reached (DESIGN §4.3):
+      // depth 12, cancels any still-pending eval from a previous wrong attempt at this
+      // same node. Best-effort — a failure/timeout just leaves liveEvalCp null and the
+      // feedback panel falls back to the cached-eval delta (if any).
+      liveEvalAbortRef.current?.abort();
+      const controller = new AbortController();
+      liveEvalAbortRef.current = controller;
+      setLiveEvalCp(null);
+      getEngine()
+        .evaluate(move.after, { depth: 12, signal: controller.signal })
+        .then((res) => setLiveEvalCp(res.cp))
+        .catch((err) => {
+          if (!(err instanceof EngineCancelledError)) setLiveEvalCp(null);
+        });
     }
   }
 
@@ -546,23 +580,32 @@ function DrillScreen({
         </div>
       </header>
 
-      <div className="board-frame">
-        <Board
-          fen={currentNode.fen}
-          orientation={tree.perspective}
-          lastMove={lastMove}
-          dests={dests}
-          viewOnly={pendingMover !== "user" || lineComplete}
-          onMove={handleBoardMove}
-          check={inCheck}
-          flash={flash}
-        />
+      <div className="board-eval-row">
+        <EvalBar evalCp={currentNode.evalCp ?? null} />
+        <div className="board-frame">
+          <Board
+            fen={currentNode.fen}
+            orientation={tree.perspective}
+            lastMove={lastMove}
+            dests={dests}
+            viewOnly={pendingMover !== "user" || lineComplete}
+            onMove={handleBoardMove}
+            check={inCheck}
+            flash={flash}
+          />
+        </div>
       </div>
 
       <MoveList sans={sans} currentPly={sans.length} onSelect={() => {}} />
 
       {feedback && !lineComplete && (
-        <DeviationPanel feedback={feedback} idx={idx} perspective={tree.perspective} />
+        <DeviationPanel
+          feedback={feedback}
+          idx={idx}
+          perspective={tree.perspective}
+          liveEvalCp={liveEvalCp}
+          bookEvalCp={expectedMove(tree, run.line, idx)?.evalCp ?? null}
+        />
       )}
 
       {lineComplete && (
@@ -582,21 +625,32 @@ function DeviationPanel({
   feedback,
   idx,
   perspective,
+  liveEvalCp,
+  bookEvalCp,
 }: {
   feedback: DeviationFeedback;
   idx: number;
   perspective: Color;
+  /** Live depth-12 eval of the position the trainee actually reached (DESIGN §4.3),
+   *  or null if it's still running / failed / timed out. */
+  liveEvalCp?: number | null;
+  /** Cached eval of the correct node, for the "vs book" half of the live comparison. */
+  bookEvalCp?: number | null;
 }) {
   const previewText =
     feedback.previewSans.length > 0 ? numberedSan(feedback.previewSans, idx + 1) : null;
 
-  // evalDeltaCp is a raw white-positive centipawn difference (expected − attempted,
-  // per src/lib/practice.ts). Whether that's actually a *loss* for the trainee depends
-  // on which side they're playing: White wants a higher (more positive) eval, Black
-  // wants a lower (more negative) one. Flip the sign accordingly and only show the
-  // line when the attempted move was genuinely worse.
+  // Prefer the live engine number (works for ANY attempted move) over the cached-eval
+  // delta (src/lib/practice.ts's evalDeltaCp, which only exists when the attempted
+  // move happens to also be a known tree child with its own cached eval).
   let lossText: string | null = null;
-  if (feedback.evalDeltaCp != null) {
+  if (liveEvalCp != null && bookEvalCp != null) {
+    lossText = `Your move: ${formatEvalPawns(liveEvalCp)} vs book ${formatEvalPawns(bookEvalCp)}`;
+  } else if (feedback.evalDeltaCp != null) {
+    // evalDeltaCp is a raw white-positive centipawn difference (expected − attempted).
+    // Whether that's actually a *loss* for the trainee depends on which side they're
+    // playing: White wants a higher (more positive) eval, Black a lower one. Flip the
+    // sign accordingly and only show the line when the attempted move was genuinely worse.
     const lossCp = perspective === "white" ? feedback.evalDeltaCp : -feedback.evalDeltaCp;
     const lossPawns = lossCp / 100;
     if (lossPawns >= 0.05) {
@@ -640,6 +694,11 @@ function LineCompleteCard({
   const total = run.results.length;
   const firstTryCount = run.results.filter((r) => r.firstTry).length;
   const runAccuracy = total > 0 ? Math.round((firstTryCount / total) * 100) : 100;
+  // "Open in Explorer" only ever appears here — never mid-drill (DESIGN keeps free
+  // play out of the drill) — passing the finished line's own moves as a deep link.
+  const lineMoves = run.line.nodeIds
+    .map((id) => tree.nodes[id]?.uci)
+    .filter((uci): uci is string => !!uci);
 
   return (
     <div className="annotation-panel practice-line-complete">
@@ -661,6 +720,11 @@ function LineCompleteCard({
           <button type="button" className="primary" onClick={onReplay}>
             Replay this line
           </button>
+        )}
+        {lineMoves.length > 0 && (
+          <Link to="/explorer" state={{ moves: lineMoves }} className="practice-analyze-link">
+            Open in Explorer
+          </Link>
         )}
         <button type="button" className="practice-subtle-end" onClick={onEnd}>
           End session

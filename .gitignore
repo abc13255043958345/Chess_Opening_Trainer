@@ -7,3 +7,4 @@ pipeline/cache/
 pipeline/.env
 scratch-test/
 .claude/
+public/engine/

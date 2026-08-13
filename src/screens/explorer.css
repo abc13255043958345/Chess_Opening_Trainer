@@ -1,0 +1,107 @@
+/* Explorer / theory calculator (DESIGN.md §4.4, §6 M4). Reuses screens.css's generic
+   primitives (.chip, .chip-row, .badge, .continuations-row, .nav-row, .board-frame)
+   the same way editor.css/practice.css do — only Explorer-specific layout lives here. */
+
+.explorer-header {
+  margin-bottom: 4px;
+}
+
+.explorer-controls-row {
+  display: flex;
+  gap: 8px;
+  margin: 4px 0 14px;
+}
+
+.explorer-controls-row button {
+  flex: 1;
+  min-height: 40px;
+  font-size: 13px;
+}
+
+.explorer-rep-chip {
+  cursor: default;
+}
+
+.explorer-lines-panel {
+  margin: 14px 0;
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+
+.explorer-thinking {
+  margin-left: 8px;
+  font-style: italic;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.explorer-lines-list {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.explorer-line-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.explorer-line-eval {
+  flex-shrink: 0;
+  min-width: 44px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.explorer-line-moves {
+  font-size: 13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.explorer-add-section {
+  margin: 14px 0;
+}
+
+.explorer-add-btn {
+  width: 100%;
+  min-height: 46px;
+}
+
+.explorer-picker {
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+
+.explorer-picker-cancel {
+  margin-top: 6px;
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  font-size: 13px;
+  min-height: 32px;
+}
+
+.explorer-toast {
+  position: fixed;
+  left: 16px;
+  right: 16px;
+  bottom: calc(64px + env(safe-area-inset-bottom));
+  background: var(--green);
+  color: #10101c;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  text-align: center;
+  z-index: 20;
+}

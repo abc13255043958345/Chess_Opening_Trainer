@@ -57,9 +57,19 @@ function parseArgs(argv) {
     else if (arg === "--limit") args.limit = Number(argv[++i]);
     else if (arg === "--match") args.match = argv[++i];
     else if (arg === "--opening") args.opening = argv[++i];
+    else if (arg === "--perspective") args.perspective = argv[++i];
     else throw new Error(`Unknown argument: ${arg}`);
   }
   if (!args.eco) throw new Error("--eco <letter> is required");
+  if (args.perspective && !["white", "black"].includes(args.perspective)) {
+    throw new Error(`--perspective must be "white" or "black", got: ${args.perspective}`);
+  }
+  if (args.perspective && !args.opening) {
+    // The trainee-color heuristic (color of the defining line's last move) is right
+    // for almost every opening; a blanket override only makes sense for one id at a
+    // time (e.g. training the Wayward Queen Attack as the DEFENDING side).
+    throw new Error("--perspective requires --opening <id> (it overrides one opening's trainee color)");
+  }
   return args;
 }
 
@@ -115,6 +125,18 @@ async function main() {
   }
   filtered.sort((a, b) => a.id.localeCompare(b.id));
   if (Number.isFinite(args.limit)) filtered = filtered.slice(0, args.limit);
+
+  if (args.perspective) {
+    // Explicit trainee-color override (validated in parseArgs to be a single
+    // --opening selection): e.g. train the Wayward Queen Attack as the side
+    // DEFENDING against 2.Qh5 rather than the side playing it.
+    filtered = filtered.map((e) =>
+      e.perspective === args.perspective ? e : { ...e, perspective: args.perspective }
+    );
+    for (const e of filtered) {
+      console.log(`[build-content] perspective override: ${e.id} -> ${args.perspective}`);
+    }
+  }
 
   console.log(`[build-content] ${filtered.length} openings selected for ECO ${ecoLetter}`);
 

@@ -4,6 +4,7 @@ import Catalog from "./screens/Catalog";
 import OpeningView from "./screens/OpeningView";
 import Editor from "./screens/Editor";
 import Practice from "./screens/Practice";
+import Explorer from "./screens/Explorer";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
           <Route path="/opening/:id" element={<OpeningView />} />
           <Route path="/edit/:id" element={<Editor />} />
           <Route path="/practice" element={<Practice />} />
+          <Route path="/explorer" element={<Explorer />} />
         </Routes>
       </main>
       <nav className="bottom-nav">
@@ -23,6 +25,7 @@ export default function App() {
         </NavLink>
         <NavLink to="/catalog">Openings</NavLink>
         <NavLink to="/practice">Practice</NavLink>
+        <NavLink to="/explorer">Explorer</NavLink>
       </nav>
     </div>
   );

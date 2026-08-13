@@ -7,6 +7,7 @@ import { Link, useParams } from "react-router-dom";
 import { Chess } from "chess.js";
 import Board from "../components/Board";
 import MoveList from "../components/MoveList";
+import { getEngine } from "../lib/engine";
 import { getTree } from "../lib/content";
 import { hasUserTree, revertUserTree, saveUserTree } from "../lib/userTree";
 import {
@@ -211,6 +212,49 @@ function EditorReady({
 }: EditorReadyProps) {
   const currentNode = tree.nodes[currentNodeId] ?? tree.nodes[tree.rootId];
 
+  // ---------- Eval precompute (DESIGN §4.3, §6 M4): stamp evalCp on every node
+  // missing one, sequentially (depth 12, one search at a time — no point requesting
+  // the engine's latest-wins cancellation here since nothing else is racing it),
+  // cancellable, autosaving whatever got stamped via the existing commit flow even if
+  // cancelled partway through. ----------
+  const [evalRunning, setEvalRunning] = useState(false);
+  const [evalProgress, setEvalProgress] = useState<{ done: number; total: number } | null>(null);
+  const evalCancelRef = useRef(false);
+
+  async function handleRunEvals() {
+    const missingIds = Object.values(tree.nodes)
+      .filter((n) => typeof n.evalCp !== "number")
+      .map((n) => n.id);
+    if (missingIds.length === 0) return;
+
+    setEvalRunning(true);
+    evalCancelRef.current = false;
+    setEvalProgress({ done: 0, total: missingIds.length });
+
+    const engine = getEngine();
+    for (let i = 0; i < missingIds.length; i++) {
+      if (evalCancelRef.current) break;
+      const node = tree.nodes[missingIds[i]];
+      if (node) {
+        try {
+          const result = await engine.evaluate(node.fen, { depth: 12 });
+          if (typeof result.cp === "number") node.evalCp = result.cp;
+        } catch {
+          // Engine failure on this node — skip it, keep going with the rest.
+        }
+      }
+      setEvalProgress({ done: i + 1, total: missingIds.length });
+    }
+
+    commitTree();
+    setEvalRunning(false);
+    setEvalProgress(null);
+  }
+
+  function handleCancelEvals() {
+    evalCancelRef.current = true;
+  }
+
   const pathNodes = useMemo(
     () => pathToNode(tree, currentNode.id).filter((n) => n.san !== ""),
     [tree, currentNode]
@@ -414,6 +458,20 @@ function EditorReady({
           </div>
           <div className="opening-header-actions">
             <span className={`save-indicator save-indicator-${saveStatus}`}>{saveLabel}</span>
+            {evalRunning ? (
+              <div className="evals-running">
+                <span className="text-dim">
+                  Evals… {evalProgress ? `${evalProgress.done}/${evalProgress.total}` : ""}
+                </span>
+                <button type="button" className="evals-cancel-btn" onClick={handleCancelEvals}>
+                  Cancel
+                </button>
+              </div>
+            ) : (
+              <button type="button" className="evals-btn" onClick={handleRunEvals} disabled={evalRunning}>
+                Evals
+              </button>
+            )}
             <button
               type="button"
               className="revert-btn"

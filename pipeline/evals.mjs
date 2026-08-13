@@ -26,7 +26,12 @@ export const counters = {
   breakerOpened: false,
 };
 
-let breakerOpen = false;
+// LICHESS_NO_CLOUD=1 starts the run with the breaker already open: bulk
+// generation runs (many cold positions) shouldn't pay a throttled live
+// cloud-eval attempt per node when the local engine answers in milliseconds.
+// Cloud-eval stays worthwhile for small/incremental runs where positions are
+// likely already in Lichess's cache — leave the flag unset there.
+let breakerOpen = process.env.LICHESS_NO_CLOUD === "1";
 
 /**
  * @param {string} fen
