@@ -1,9 +1,9 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-13T20:38:10.794Z",
+  "generatedAt": "2026-08-13T20:52:14.959Z",
   "sections": {
     "B": "2026-08-13T19:19:50.587Z",
-    "C": "2026-08-13T20:38:10.778Z"
+    "C": "2026-08-13T20:52:14.933Z"
   },
   "entries": [
     {
@@ -74,8 +74,8 @@
       "line": "1. e4 e5 2. Nc3",
       "ply": 3,
       "nodeCount": 400,
-      "userMoveCount": 147,
-      "mistakeCount": 31,
+      "userMoveCount": 145,
+      "mistakeCount": 17,
       "file": "content/eco-C.json"
     },
     {
