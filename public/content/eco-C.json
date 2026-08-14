@@ -1,6 +1,6 @@
 {
   "eco": "C",
-  "generatedAt": "2026-08-14T13:58:36.139Z",
+  "generatedAt": "2026-08-14T14:13:29.475Z",
   "trees": {
     "c00-french-defense": {
       "id": "c00-french-defense",
@@ -167,7 +167,7 @@
           "weight": 0.04583351541607993,
           "evalCp": -15,
           "annotation": {
-            "explanation": "c3? is popular at club level (5% of games) but rare in master play. Meet it with Bd6."
+            "explanation": "c3 is a slow, committal pawn move, appearing in about 5% of club games, that lets Black develop with tempo. Meet it with Bd6, keeping a comfortable edge."
           }
         },
         "062bba6e1db427b9": {
@@ -216,7 +216,7 @@
           "weight": 0.14199867882702816,
           "evalCp": -120,
           "annotation": {
-            "explanation": "Bb5? is popular at club level (14% of games) but rare in master play and it concedes 1.6 pawns. Meet it with Nxe5."
+            "explanation": "Bb5 pins the knight but ignores that the e5-pawn is simply hanging. It's popular at club level (14% of games) yet hands you over a pawn and a half. Meet it with Nxe5."
           }
         },
         "0719dc53a616f882": {
@@ -478,7 +478,7 @@
           "weight": 0.09599651449871714,
           "evalCp": -37,
           "annotation": {
-            "explanation": "h3? is popular at club level (10% of games) but rare in master play. Meet it with Be7."
+            "explanation": "h3 spends a tempo on prophylaxis that isn't needed yet, appearing in about 10% of club games. Meet it with Be7, continuing normal development."
           }
         },
         "161fd79375cc1cb4": {
@@ -494,7 +494,7 @@
           "moveKind": "mainline",
           "evalCp": -78,
           "annotation": {
-            "explanation": "Punishes f4: Nh6 wins the advantage (-0.7 → -0.8). Play continues Nf3 Qb6 Na3 cxd4."
+            "explanation": "Nh6 develops the knight to a slightly offbeat square after White's f4, but Black's position stays sound. Play continues Nf3 Qb6 Na3 cxd4, and Black is comfortable."
           }
         },
         "163a1fa39a8f6d3f": {
@@ -510,7 +510,7 @@
           "moveKind": "mainline",
           "evalCp": -34,
           "annotation": {
-            "explanation": "Punishes Bb5+: Bd7 wins the advantage (-0.3 → -0.3). Play continues Bxd7+ Qxd7 c3 Nc6."
+            "explanation": "After White's Bb5+, Bd7 is the answer: it keeps developing smoothly. Play continues Bxd7+ Qxd7 c3 Nc6."
           }
         },
         "17140d8b1ebaba71": {
@@ -617,7 +617,7 @@
           "weight": 0.03959610564714561,
           "evalCp": -33,
           "annotation": {
-            "explanation": "Bc4? is popular at club level (4% of games) but rare in master play. Meet it with d5."
+            "explanation": "Bc4 pops up in roughly 4% of club games, but it concedes roughly 0.7 pawns of ground. Meet it with d5."
           }
         },
         "1ba5f1fa54f8b65f": {
@@ -634,7 +634,7 @@
           "weight": 0.03258562658281414,
           "evalCp": -35,
           "annotation": {
-            "explanation": "Qe2+? is popular at club level (3% of games) but rare in master play and it concedes 0.7 pawns. Meet it with Ne7."
+            "explanation": "Qe2+ is a fairly common try here, seen in about 3% of games at this level, but it concedes roughly 0.7 pawns of ground. The simple answer is Ne7."
           }
         },
         "1ba978fa54fbd19b": {
@@ -735,7 +735,7 @@
           "moveKind": "mainline",
           "evalCp": -119,
           "annotation": {
-            "explanation": "Punishes Bb5: Nxe5 wins the advantage (-1.2 → -1.2). Play continues Nxe5 Bxb5 Na3 Bc6."
+            "explanation": "Once White plays Bb5, hit back with Nxe5: it grabs the pawn on e5. Play continues Nxe5 Bxb5 Na3 Bc6."
           }
         },
         "1fae9b970fe11be9": {
@@ -856,7 +856,7 @@
           "weight": 0.056614358210341796,
           "evalCp": -8,
           "annotation": {
-            "explanation": "f4? is popular at club level (6% of games) but rare in master play. Meet it with d5."
+            "explanation": "About 6% of club players reach for f4 in this spot, but it's slightly inaccurate. Just play d5."
           }
         },
         "2682e30ca366fa8d": {
@@ -872,7 +872,7 @@
           "moveKind": "mainline",
           "evalCp": -42,
           "annotation": {
-            "explanation": "Punishes h3: Be7 wins the advantage (-0.4 → -0.4). Play continues Nf3 c5 g3 b5."
+            "explanation": "Be7 punishes h3 directly: it's the calm, accurate follow-up. Play continues Nf3 c5 g3 b5."
           }
         },
         "26ebfc4cbac9ea2c": {
@@ -1078,7 +1078,7 @@
           "moveKind": "mainline",
           "evalCp": -35,
           "annotation": {
-            "explanation": "Punishes Qe2+: Ne7 wins the advantage (-0.3 → -0.3). Play continues a3 Ba5 Bd2 O-O."
+            "explanation": "The clean reply to Qe2+ is Ne7: it keeps everything under control. Play continues a3 Ba5 Bd2 O-O."
           }
         },
         "2f1bf17112ba801d": {
@@ -1094,7 +1094,7 @@
           "moveKind": "mainline",
           "evalCp": -23,
           "annotation": {
-            "explanation": "Punishes cxd5: Bb4+ wins the advantage (-0.2 → -0.2). Play continues Nc3 Nxd5 Bd2 O-O."
+            "explanation": "After White's cxd5, Bb4+ is the answer: it comes in with check on b4. Play continues Nc3 Nxd5 Bd2 O-O."
           }
         },
         "2fb6e1155724cf07": {
@@ -1187,7 +1187,7 @@
           "moveKind": "mainline",
           "evalCp": -21,
           "annotation": {
-            "explanation": "Punishes Nd2: Be7 wins the advantage (-0.3 → -0.2). Play continues Ngf3 c5 g3 Nc6."
+            "explanation": "Once White plays Nd2, hit back with Be7: it keeps your setup simple and sound. Play continues Ngf3 c5 g3 Nc6."
           }
         },
         "33ec8eefbb323df3": {
@@ -1204,7 +1204,7 @@
           "weight": 0.031910698929255514,
           "evalCp": -12,
           "annotation": {
-            "explanation": "c3? is popular at club level (3% of games) but rare in master play. Meet it with Bd6."
+            "explanation": "c3 shows up often enough at club level (3% of games), but it lets you keep the more comfortable position. Respond with Bd6."
           }
         },
         "33ec93efbb324672": {
@@ -1246,7 +1246,7 @@
           "moveKind": "mainline",
           "evalCp": -41,
           "annotation": {
-            "explanation": "Punishes Be3: cxd4 wins the advantage (-0.4 → -0.4). Play continues Bxd4 Nc6 a3 Ba5."
+            "explanation": "cxd4 punishes Be3 directly: it grabs the pawn on d4. Play continues Bxd4 Nc6 a3 Ba5."
           }
         },
         "3639513816c2f215": {
@@ -1345,7 +1345,7 @@
           "weight": 0.037976746929033474,
           "evalCp": -39,
           "annotation": {
-            "explanation": "Be3? is popular at club level (4% of games) but rare in master play and it concedes 1.0 pawns. Meet it with cxd4."
+            "explanation": "Be3 is played in around 4% of club games, but it concedes roughly 1 pawn of ground. Answer it with cxd4."
           }
         },
         "3c21f2de80581fac": {
@@ -1477,7 +1477,7 @@
           "moveKind": "mainline",
           "evalCp": 0,
           "annotation": {
-            "explanation": "Punishes Ndf3: Nf6 wins the advantage (-0.0 → +0.0). Play continues Ne2 Nc6 Nc3 Qd8."
+            "explanation": "The clean reply to Ndf3 is Nf6: it keeps everything under control. Play continues Ne2 Nc6 Nc3 Qd8."
           }
         },
         "423bc18977ae4615": {
@@ -1522,7 +1522,7 @@
           "weight": 0.03013278855975485,
           "evalCp": -39,
           "annotation": {
-            "explanation": "Bb5+? is popular at club level (3% of games) but rare in master play and it concedes 0.8 pawns. Meet it with Bd7."
+            "explanation": "Bb5+ pops up in roughly 3% of club games, but it concedes roughly 0.8 pawns of ground. Meet it with Bd7."
           }
         },
         "44aa51ae2c85e453": {
@@ -1538,7 +1538,7 @@
           "moveKind": "mainline",
           "evalCp": 11,
           "annotation": {
-            "explanation": "Punishes Nc3: Bd6 wins the advantage (+0.1 → +0.1). Play continues Bd3 O-O O-O Bg4."
+            "explanation": "After White's Nc3, Bd6 is the answer: it keeps developing smoothly. Play continues Bd3 O-O O-O Bg4."
           }
         },
         "45149ac82f50d45b": {
@@ -1604,7 +1604,7 @@
           "moveKind": "mainline",
           "evalCp": 32,
           "annotation": {
-            "explanation": "Punishes Nf3: Ne7 wins the advantage (+0.3 → +0.3). Play continues Bd2 cxd4 Nb5 Bxd2+."
+            "explanation": "Once White plays Nf3, hit back with Ne7: it keeps your setup simple and sound. Play continues Bd2 cxd4 Nb5 Bxd2+."
           }
         },
         "4a385cd8f9c1b62b": {
@@ -1642,7 +1642,7 @@
           "moveKind": "mainline",
           "evalCp": -12,
           "annotation": {
-            "explanation": "Punishes f4: d5 wins the advantage (-0.1 → -0.1). Play continues Nc3 dxe4 Nxe4 Bd7."
+            "explanation": "d5 punishes f4 directly: it's the calm, accurate follow-up. Play continues Nc3 dxe4 Nxe4 Bd7."
           }
         },
         "4c96364227641f8c": {
@@ -1723,7 +1723,7 @@
           "weight": 0.27923467266036556,
           "evalCp": -30,
           "annotation": {
-            "explanation": "exd5? is popular at club level (28% of games) but rare in master play. Meet it with exd5."
+            "explanation": "exd5 is a fairly common try here, seen in about 28% of games at this level, but it's slightly inaccurate. The simple answer is exd5."
           }
         },
         "4fa5d6d09a3b0258": {
@@ -1740,7 +1740,7 @@
           "weight": 0.08588679061964344,
           "evalCp": -19,
           "annotation": {
-            "explanation": "e5? is popular at club level (9% of games) but rare in master play. Meet it with c5."
+            "explanation": "About 9% of club players reach for e5 in this spot, but it doesn't really trouble you. Just play c5."
           }
         },
         "509dbd827f9fa783": {
@@ -1827,7 +1827,7 @@
           "moveKind": "mainline",
           "evalCp": -28,
           "annotation": {
-            "explanation": "Punishes exd5: exd5 wins the advantage (-0.3 → -0.3). Play continues Nf3 Bd6 Nc3 Nf6."
+            "explanation": "The clean reply to exd5 is exd5: it grabs the pawn on d5. Play continues Nf3 Bd6 Nc3 Nf6."
           }
         },
         "5472e7f1d53ac1c3": {
@@ -1886,7 +1886,7 @@
           "weight": 0.27495359620824517,
           "evalCp": -112,
           "annotation": {
-            "explanation": "b3? is popular at club level (27% of games) but rare in master play and it concedes 1.3 pawns. Meet it with cxd4."
+            "explanation": "b3 shows up often enough at club level (27% of games), but it concedes roughly 1.2 pawns of ground. Respond with cxd4."
           }
         },
         "565fa1a14c951c33": {
@@ -1931,7 +1931,7 @@
           "moveKind": "mainline",
           "evalCp": -42,
           "annotation": {
-            "explanation": "Punishes Be3: cxd4 wins the advantage (-0.4 → -0.4). Play continues Bxd4 Nxd4 Qxd4 Ne7."
+            "explanation": "After White's Be3, cxd4 is the answer: it grabs the pawn on d4. Play continues Bxd4 Nxd4 Qxd4 Ne7."
           }
         },
         "56d89aa9977cb6cf": {
@@ -2098,7 +2098,7 @@
           "weight": 0.052724842229614204,
           "evalCp": -113,
           "annotation": {
-            "explanation": "Bc4? is popular at club level (5% of games) but rare in master play and it concedes 1.4 pawns. Meet it with Qxg2."
+            "explanation": "Bc4 is played in around 5% of club games, but it concedes roughly 1.4 pawns of ground. Answer it with Qxg2."
           }
         },
         "5dc35f6f44e69bca": {
@@ -2200,7 +2200,7 @@
           "moveKind": "mainline",
           "evalCp": -10,
           "annotation": {
-            "explanation": "Punishes c3: Bd6 wins the advantage (-0.1 → -0.1). Play continues Bd3 Nf6 Ne2 O-O."
+            "explanation": "Once White plays c3, hit back with Bd6: it keeps your setup simple and sound. Play continues Bd3 Nf6 Ne2 O-O."
           }
         },
         "619cbcb183698da5": {
@@ -2277,7 +2277,7 @@
           "moveKind": "mainline",
           "evalCp": -29,
           "annotation": {
-            "explanation": "Punishes Bd2: Nf6 wins the advantage (-0.3 → -0.3). Play continues Nxe4 Bxd2+ Nxd2 O-O."
+            "explanation": "Nf6 punishes Bd2 directly: it's the calm, accurate follow-up. Play continues Nxe4 Bxd2+ Nxd2 O-O."
           }
         },
         "6520f91fbf8ad668": {
@@ -2367,7 +2367,7 @@
           "moveKind": "mainline",
           "evalCp": -35,
           "annotation": {
-            "explanation": "Punishes Bg5: Bb4+ wins the advantage (-0.3 → -0.3). Play continues Nc3 O-O Nf3 h6."
+            "explanation": "The clean reply to Bg5 is Bb4+: it comes in with check on b4. Play continues Nc3 O-O Nf3 h6."
           }
         },
         "689834fbd63f8f5c": {
@@ -2556,7 +2556,7 @@
           "moveKind": "mainline",
           "evalCp": -76,
           "annotation": {
-            "explanation": "Punishes Nb3: e5 wins the advantage (-0.8 → -0.8). Play continues c4 Bb4+ Bd2 Bxd2+."
+            "explanation": "After White's Nb3, e5 is the answer: it keeps developing smoothly. Play continues c4 Bb4+ Bd2 Bxd2+."
           }
         },
         "7068a60ed24c5f94": {
@@ -2683,7 +2683,7 @@
           "weight": 0.12027464443354585,
           "evalCp": -49,
           "annotation": {
-            "explanation": "Nb3? is popular at club level (12% of games) but rare in master play and it concedes 0.8 pawns. Meet it with e5."
+            "explanation": "Nb3 pops up in roughly 12% of club games, but it concedes roughly 0.8 pawns of ground. Meet it with e5."
           }
         },
         "749ab556966f7a00": {
@@ -2803,7 +2803,7 @@
           "moveKind": "mainline",
           "evalCp": -33,
           "annotation": {
-            "explanation": "Punishes Bc4: d5 wins the advantage (-0.3 → -0.3). Play continues exd5 exd5 Be2 Bd6."
+            "explanation": "Once White plays Bc4, hit back with d5: it keeps your setup simple and sound. Play continues exd5 exd5 Be2 Bd6."
           }
         },
         "7cfeb411e0156d5e": {
@@ -2843,7 +2843,7 @@
           "moveKind": "mainline",
           "evalCp": -110,
           "annotation": {
-            "explanation": "Punishes Bc4: Qxg2 wins the advantage (-1.1 → -1.1). Play continues Qf3 Qxf3 Ngxf3 Nf6."
+            "explanation": "Qxg2 punishes Bc4 directly: it grabs the pawn on g2. Play continues Qf3 Qxf3 Ngxf3 Nf6."
           }
         },
         "80bd6623eb51c2c3": {
@@ -2860,7 +2860,7 @@
           "weight": 0.06312102475166273,
           "evalCp": -34,
           "annotation": {
-            "explanation": "Bg5? is popular at club level (6% of games) but rare in master play. Meet it with Bb4+."
+            "explanation": "Bg5 is a fairly common try here, seen in about 6% of games at this level, but it lets you keep the more comfortable position. The simple answer is Bb4+."
           }
         },
         "8167b6027c64167f": {
@@ -3017,7 +3017,7 @@
           "weight": 0.13934684413150417,
           "evalCp": -32,
           "annotation": {
-            "explanation": "Bb5? is popular at club level (14% of games) but rare in master play. Meet it with Qa5."
+            "explanation": "About 14% of club players reach for Bb5 in this spot, but it concedes roughly 0.7 pawns of ground. Just play Qa5."
           }
         },
         "87485deb258ad986": {
@@ -3125,7 +3125,7 @@
           "moveKind": "mainline",
           "evalCp": -40,
           "annotation": {
-            "explanation": "Punishes Bb5+: Bd7 wins the advantage (-0.4 → -0.4). Play continues Nf3 Bxc3 Bxd7+ Qxd7."
+            "explanation": "The clean reply to Bb5+ is Bd7: it keeps everything under control. Play continues Nf3 Bxc3 Bxd7+ Qxd7."
           }
         },
         "89b04ad91ba2bc39": {
@@ -3318,7 +3318,7 @@
           "weight": 0.39920281504918526,
           "evalCp": -5,
           "annotation": {
-            "explanation": "Bd2? is popular at club level (40% of games) but rare in master play. Meet it with Nf6."
+            "explanation": "Bd2 shows up often enough at club level (40% of games), but it's a touch loose. Respond with Nf6."
           }
         },
         "8ef68bec92fb8144": {
@@ -3370,7 +3370,7 @@
           "moveKind": "mainline",
           "evalCp": -2,
           "annotation": {
-            "explanation": "Punishes c3: Nxd4 wins the advantage (-0.1 → -0.0). Play continues cxd4 dxe4 Nxe4 Bd7."
+            "explanation": "After White's c3, Nxd4 is the answer: it grabs the knight on d4. Play continues cxd4 dxe4 Nxe4 Bd7."
           }
         },
         "9230b19b68be7ca6": {
@@ -3408,7 +3408,7 @@
           "moveKind": "mainline",
           "evalCp": -33,
           "annotation": {
-            "explanation": "Punishes Bb5: cxd4 wins the advantage (-0.3 → -0.3). Play continues Nxd4 Bd7 Nxc6 Bxc6."
+            "explanation": "Once White plays Bb5, hit back with cxd4: it grabs the pawn on d4. Play continues Nxd4 Bd7 Nxc6 Bxc6."
           }
         },
         "92e37f86ef048de6": {
@@ -3480,7 +3480,7 @@
           "moveKind": "mainline",
           "evalCp": -103,
           "annotation": {
-            "explanation": "Punishes Bc4: Qxg2 wins the advantage (-1.0 → -1.0). Play continues Qf3 Qxf3 Ngxf3 Nf6."
+            "explanation": "Qxg2 punishes Bc4 directly: it grabs the pawn on g2. Play continues Qf3 Qxf3 Ngxf3 Nf6."
           }
         },
         "984a89f247104c3e": {
@@ -3579,7 +3579,7 @@
           "weight": 0.14772999612188606,
           "evalCp": -23,
           "annotation": {
-            "explanation": "cxd5? is popular at club level (15% of games) but rare in master play. Meet it with Bb4+."
+            "explanation": "cxd5 is played in around 15% of club games, but there's a sharper reply waiting for you. Answer it with Bb4+."
           }
         },
         "9a46556d7b7fef80": {
@@ -3655,7 +3655,7 @@
           "moveKind": "mainline",
           "evalCp": -33,
           "annotation": {
-            "explanation": "Punishes Bb5: Qa5 wins the advantage (-0.3 → -0.3). Play continues Bxc6+ bxc6 dxc5 Qxc5."
+            "explanation": "The clean reply to Bb5 is Qa5: it keeps everything under control. Play continues Bxc6+ bxc6 dxc5 Qxc5."
           }
         },
         "9f358706b3437688": {
@@ -3775,7 +3775,7 @@
           "moveKind": "mainline",
           "evalCp": -89,
           "annotation": {
-            "explanation": "Punishes Bd2: Nxd4 wins the advantage (-0.9 → -0.9). Play continues Nce2 Nc6 h3 Nf6."
+            "explanation": "After White's Bd2, Nxd4 is the answer: it grabs the pawn on d4. Play continues Nce2 Nc6 h3 Nf6."
           }
         },
         "a3c4292cd5f47a43": {
@@ -3792,7 +3792,7 @@
           "weight": 0.06331429450960416,
           "evalCp": -73,
           "annotation": {
-            "explanation": "f4? is popular at club level (6% of games) but rare in master play and it concedes 1.1 pawns. Meet it with Nh6."
+            "explanation": "f4 pops up in roughly 6% of club games, but it concedes roughly 1.1 pawns of ground. Meet it with Nh6."
           }
         },
         "a3f3db53ed787f42": {
@@ -3851,7 +3851,7 @@
           "moveKind": "mainline",
           "evalCp": -103,
           "annotation": {
-            "explanation": "Punishes b3: cxd4 wins the advantage (-1.1 → -1.0). Play continues Bxd4 Nxd4 Qxd4 Bc5."
+            "explanation": "Once White plays b3, hit back with cxd4: it grabs the pawn on d4. Play continues Bxd4 Nxd4 Qxd4 Bc5."
           }
         },
         "a60b478d6bc22970": {
@@ -3915,7 +3915,7 @@
           "moveKind": "mainline",
           "evalCp": -36,
           "annotation": {
-            "explanation": "Punishes N4b3: Nf6 wins the advantage (-0.4 → -0.4). Play continues Bd3 Be7 O-O O-O."
+            "explanation": "Nf6 punishes N4b3 directly: it's the calm, accurate follow-up. Play continues Bd3 Be7 O-O O-O."
           }
         },
         "a7e5f1e5832bd5d1": {
@@ -3955,7 +3955,7 @@
           "moveKind": "mainline",
           "evalCp": -62,
           "annotation": {
-            "explanation": "Punishes Nb3: e5 wins the advantage (-0.5 → -0.6). Play continues c3 Nc6 cxd4 Bg4."
+            "explanation": "The clean reply to Nb3 is e5: it keeps everything under control. Play continues c3 Nc6 cxd4 Bg4."
           }
         },
         "a8a5d1599c62881e": {
@@ -4088,7 +4088,7 @@
           "moveKind": "mainline",
           "evalCp": -65,
           "annotation": {
-            "explanation": "Punishes Qg4: cxd4 wins the advantage (-0.7 → -0.7). Play continues Qxd4 Nbc6 Qg4 O-O."
+            "explanation": "After White's Qg4, cxd4 is the answer: it grabs the pawn on d4. Play continues Qxd4 Nbc6 Qg4 O-O."
           }
         },
         "ae1146758b4aa34a": {
@@ -4161,7 +4161,7 @@
           "weight": 0.030059827812636802,
           "evalCp": -73,
           "annotation": {
-            "explanation": "Qg4? is popular at club level (3% of games) but rare in master play and it concedes 1.1 pawns. Meet it with cxd4."
+            "explanation": "Qg4 is a fairly common try here, seen in about 3% of games at this level, but it concedes roughly 1.1 pawns of ground. The simple answer is cxd4."
           }
         },
         "af2aa9b5316cb9d4": {
@@ -4276,7 +4276,7 @@
           "weight": 0.03780551339841892,
           "evalCp": -71,
           "annotation": {
-            "explanation": "Bc4? is popular at club level (4% of games) but rare in master play. Meet it with Nc6."
+            "explanation": "About 4% of club players reach for Bc4 in this spot, but it concedes roughly 0.7 pawns of ground. Just play Nc6."
           }
         },
         "b4e854e80882e4f1": {
@@ -4322,7 +4322,7 @@
           "weight": 0.10702310412934637,
           "evalCp": -10,
           "annotation": {
-            "explanation": "c3? is popular at club level (11% of games) but rare in master play. Meet it with Nxd4."
+            "explanation": "c3 shows up often enough at club level (11% of games), but it's not the most testing choice. Respond with Nxd4."
           }
         },
         "b6ca934c66bef4c3": {
@@ -4338,7 +4338,7 @@
           "moveKind": "mainline",
           "evalCp": -14,
           "annotation": {
-            "explanation": "Punishes c3: Bd6 wins the advantage (-0.1 → -0.1). Play continues Bg5 O-O Be2 h6."
+            "explanation": "Once White plays c3, hit back with Bd6: it keeps your setup simple and sound. Play continues Bg5 O-O Be2 h6."
           }
         },
         "b86240e6aa82347d": {
@@ -4459,7 +4459,7 @@
           "weight": 0.19504265403245755,
           "evalCp": 12,
           "annotation": {
-            "explanation": "Nc3? is popular at club level (20% of games) but rare in master play. Meet it with Bd6."
+            "explanation": "Nc3 is played in around 20% of club games, but it doesn't really trouble you. Answer it with Bd6."
           }
         },
         "becdd3fa63083e69": {
@@ -4592,7 +4592,7 @@
           "weight": 0.038499693473778074,
           "evalCp": -2,
           "annotation": {
-            "explanation": "Ndf3? is popular at club level (4% of games) but rare in master play. Meet it with Nf6."
+            "explanation": "Ndf3 pops up in roughly 4% of club games, but it gives away a bit more than it should. Meet it with Nf6."
           }
         },
         "c577f72ea3f1b071": {
@@ -4743,7 +4743,7 @@
           "weight": 0.03256347905406774,
           "evalCp": -32,
           "annotation": {
-            "explanation": "Bb5+? is popular at club level (3% of games) but rare in master play and it concedes 0.7 pawns. Meet it with Bd7."
+            "explanation": "Bb5+ is a fairly common try here, seen in about 3% of games at this level, but it concedes roughly 0.7 pawns of ground. The simple answer is Bd7."
           }
         },
         "cd95930cf09f0b8f": {
@@ -4874,7 +4874,7 @@
           "weight": 0.10511591416004146,
           "evalCp": 32,
           "annotation": {
-            "explanation": "Nf3? is popular at club level (11% of games) but rare in master play. Meet it with Ne7."
+            "explanation": "About 11% of club players reach for Nf3 in this spot, but it's slightly inaccurate. Just play Ne7."
           }
         },
         "cff2d4933f6dc60d": {
@@ -4937,7 +4937,7 @@
           "moveKind": "mainline",
           "evalCp": -8,
           "annotation": {
-            "explanation": "Punishes Bd2: Nf6 wins the advantage (-0.1 → -0.1). Play continues Bd3 O-O Nge2 Nbd7."
+            "explanation": "Nf6 punishes Bd2 directly: it's the calm, accurate follow-up. Play continues Bd3 O-O Nge2 Nbd7."
           }
         },
         "d2a351b052cd5964": {
@@ -4966,7 +4966,7 @@
           "weight": 0.04977985844061751,
           "evalCp": -104,
           "annotation": {
-            "explanation": "Bc4? is popular at club level (5% of games) but rare in master play and it concedes 1.4 pawns. Meet it with Qxg2."
+            "explanation": "Bc4 shows up often enough at club level (5% of games), but it concedes roughly 1.4 pawns of ground. Respond with Qxg2."
           }
         },
         "d3f21acba01f983c": {
@@ -4995,7 +4995,7 @@
           "weight": 0.12027464443354585,
           "evalCp": -81,
           "annotation": {
-            "explanation": "Nb3? is popular at club level (12% of games) but rare in master play and it concedes 1.1 pawns. Meet it with e5."
+            "explanation": "Nb3 is played in around 12% of club games, but it concedes roughly 1.1 pawns of ground. Answer it with e5."
           }
         },
         "d7b808bd8a9b3ea8": {
@@ -5150,7 +5150,7 @@
           "weight": 0.03189621537261022,
           "evalCp": -91,
           "annotation": {
-            "explanation": "Bd2? is popular at club level (3% of games) but rare in master play and it concedes 1.4 pawns. Meet it with Nxd4."
+            "explanation": "Bd2 pops up in roughly 3% of club games, but it concedes roughly 1.4 pawns of ground. Meet it with Nxd4."
           }
         },
         "e27aec902b3d958e": {
@@ -5232,7 +5232,7 @@
           "moveKind": "mainline",
           "evalCp": -72,
           "annotation": {
-            "explanation": "Punishes Bc4: Nc6 wins the advantage (-0.7 → -0.7). Play continues Ne2 Na5 Ba2 b6."
+            "explanation": "The clean reply to Bc4 is Nc6: it keeps everything under control. Play continues Ne2 Na5 Ba2 b6."
           }
         },
         "e8177c14813981d1": {
@@ -5249,7 +5249,7 @@
           "weight": 0.0879276094893215,
           "evalCp": -39,
           "annotation": {
-            "explanation": "Be3? is popular at club level (9% of games) but rare in master play and it concedes 0.8 pawns. Meet it with cxd4."
+            "explanation": "Be3 is a fairly common try here, seen in about 9% of games at this level, but it concedes roughly 0.8 pawns of ground. The simple answer is cxd4."
           }
         },
         "e8a97b0bdbe3d36b": {
@@ -5436,7 +5436,7 @@
           "weight": 0.04028294520233338,
           "evalCp": -38,
           "annotation": {
-            "explanation": "N4b3? is popular at club level (4% of games) but rare in master play. Meet it with Nf6."
+            "explanation": "About 4% of club players reach for N4b3 in this spot, but it lets you keep the more comfortable position. Just play Nf6."
           }
         },
         "f0191701915b4d11": {
@@ -5453,7 +5453,7 @@
           "weight": 0.04971680302076778,
           "evalCp": -25,
           "annotation": {
-            "explanation": "Nd2? is popular at club level (5% of games) but rare in master play. Meet it with Be7."
+            "explanation": "Nd2 shows up often enough at club level (5% of games), but it lets you seize the initiative. Respond with Be7."
           }
         },
         "f01ab45d307565b3": {
@@ -5600,7 +5600,7 @@
           "weight": 0.356376403201792,
           "evalCp": -31,
           "annotation": {
-            "explanation": "Bb5? is popular at club level (36% of games) but rare in master play and it concedes 0.7 pawns. Meet it with cxd4."
+            "explanation": "Bb5 is played in around 36% of club games, but it concedes roughly 0.7 pawns of ground. Answer it with cxd4."
           }
         },
         "f9c3d359328b0be6": {
@@ -5617,7 +5617,7 @@
           "weight": 0.09360512831887852,
           "evalCp": -32,
           "annotation": {
-            "explanation": "Bd2? is popular at club level (9% of games) but rare in master play. Meet it with Nf6."
+            "explanation": "Bd2 pops up in roughly 9% of club games, but it's slightly inaccurate. Meet it with Nf6."
           }
         },
         "fa12cf9a4abbc8e2": {
@@ -5633,7 +5633,7 @@
           "moveKind": "mainline",
           "evalCp": -17,
           "annotation": {
-            "explanation": "Punishes e5: c5 wins the advantage (-0.2 → -0.2). Play continues Nf3 Ne7 c3 Nbc6."
+            "explanation": "After White's e5, c5 is the answer: it keeps developing smoothly. Play continues Nf3 Ne7 c3 Nbc6."
           }
         },
         "fb8df2c0132cfe54": {
@@ -5853,7 +5853,7 @@
           "moveKind": "mainline",
           "evalCp": -77,
           "annotation": {
-            "explanation": "Punishes Na3: h6 wins the advantage (-0.7 → -0.8). Play continues Bxf6 Bxf6 h5 g5."
+            "explanation": "Once White plays Na3, hit back with h6: it keeps your setup simple and sound. Play continues Bxf6 Bxf6 h5 g5."
           }
         },
         "0583655cd6133d02": {
@@ -6347,7 +6347,7 @@
           "moveKind": "mainline",
           "evalCp": -79,
           "annotation": {
-            "explanation": "Punishes c3: d5 wins the advantage (-0.8 → -0.8). Play continues Bb3 O-O Ne2 Nbd7."
+            "explanation": "d5 punishes c3 directly: it's the calm, accurate follow-up. Play continues Bb3 O-O Ne2 Nbd7."
           }
         },
         "15417333087e8de9": {
@@ -6566,7 +6566,7 @@
           "weight": 0.03466204506065858,
           "evalCp": -73,
           "annotation": {
-            "explanation": "Na3? is popular at club level (3% of games) but rare in master play. Meet it with h6."
+            "explanation": "Na3 is a fairly common try here, seen in about 3% of games at this level, but it doesn't really trouble you. The simple answer is h6."
           }
         },
         "205e3b942c45354d": {
@@ -6631,7 +6631,7 @@
           "weight": 0.03836317135549872,
           "evalCp": -132,
           "annotation": {
-            "explanation": "O-O-O? is popular at club level (4% of games) but rare in master play. Meet it with Rb8."
+            "explanation": "About 4% of club players reach for O-O-O in this spot, but it gives away a bit more than it should. Just play Rb8."
           }
         },
         "23fedff2e1cb97a4": {
@@ -6689,7 +6689,7 @@
           "moveKind": "mainline",
           "evalCp": -80,
           "annotation": {
-            "explanation": "Punishes a4: d5 wins the advantage (-0.8 → -0.8). Play continues exd5 cxd5 Bb5+ Nc6."
+            "explanation": "The clean reply to a4 is d5: it keeps everything under control. Play continues exd5 cxd5 Bb5+ Nc6."
           }
         },
         "25ffb9b8c5f6aed6": {
@@ -6781,7 +6781,7 @@
           "weight": 0.030571198712791632,
           "evalCp": -99,
           "annotation": {
-            "explanation": "Bb5? is popular at club level (3% of games) but rare in master play. Meet it with O-O."
+            "explanation": "Bb5 shows up often enough at club level (3% of games), but it hands you an easy path to an edge. Respond with O-O."
           }
         },
         "272bacb10e365859": {
@@ -6985,7 +6985,7 @@
           "moveKind": "mainline",
           "evalCp": -132,
           "annotation": {
-            "explanation": "Punishes O-O-O: Rb8 wins the advantage (-1.3 → -1.3). Play continues h4 b5 Bb3 Nxb3+."
+            "explanation": "After White's O-O-O, Rb8 is the answer: it keeps developing smoothly. Play continues h4 b5 Bb3 Nxb3+."
           }
         },
         "3096f5a9838e2fc0": {
@@ -7088,7 +7088,7 @@
           "weight": 0.04128440366972477,
           "evalCp": -99,
           "annotation": {
-            "explanation": "a3? is popular at club level (4% of games) but rare in master play. Meet it with d5."
+            "explanation": "a3 is played in around 4% of club games, but it lets you seize the initiative. Answer it with d5."
           }
         },
         "32dca469f502802c": {
@@ -7167,7 +7167,7 @@
           "weight": 0.0639386189258312,
           "evalCp": -69,
           "annotation": {
-            "explanation": "h4? is popular at club level (6% of games) but rare in master play. Meet it with h6."
+            "explanation": "h4 pops up in roughly 6% of club games, but it's not a real test of your setup. Meet it with h6."
           }
         },
         "37018933b80bafbb": {
@@ -7627,7 +7627,7 @@
           "weight": 0.044274809160305344,
           "evalCp": -75,
           "annotation": {
-            "explanation": "a4? is popular at club level (4% of games) but rare in master play. Meet it with d5."
+            "explanation": "a4 is a fairly common try here, seen in about 4% of games at this level, but it gives away a bit more than it should. The simple answer is d5."
           }
         },
         "48a1914a7e724ced": {
@@ -8798,7 +8798,7 @@
           "moveKind": "mainline",
           "evalCp": -58,
           "annotation": {
-            "explanation": "Punishes h4: h6 wins the advantage (-0.7 → -0.6). Play continues Bxf6 Bxf6 h5 Bg5."
+            "explanation": "Once White plays h4, hit back with h6: it keeps your setup simple and sound. Play continues Bxf6 Bxf6 h5 Bg5."
           }
         },
         "7f83a0c95e862c04": {
@@ -8989,7 +8989,7 @@
           "weight": 0.041237113402061855,
           "evalCp": -85,
           "annotation": {
-            "explanation": "c3? is popular at club level (4% of games) but rare in master play. Meet it with d5."
+            "explanation": "About 4% of club players reach for c3 in this spot, but it's a touch loose. Just play d5."
           }
         },
         "89e1ac0765fea85c": {
@@ -9023,7 +9023,7 @@
           "moveKind": "mainline",
           "evalCp": -99,
           "annotation": {
-            "explanation": "Punishes a3: d5 wins the advantage (-1.0 → -1.0). Play continues Ba2 Na6 exd5 Nxd5."
+            "explanation": "d5 punishes a3 directly: it's the calm, accurate follow-up. Play continues Ba2 Na6 exd5 Nxd5."
           }
         },
         "8a5a85d483b2ef5c": {
@@ -10055,7 +10055,7 @@
           "moveKind": "mainline",
           "evalCp": -130,
           "annotation": {
-            "explanation": "Punishes g3: Na5 wins the advantage (-1.3 → -1.3). Play continues Bb5 c6 Ba4 b5."
+            "explanation": "The clean reply to g3 is Na5: it keeps everything under control. Play continues Bb5 c6 Ba4 b5."
           }
         },
         "b61cded824624683": {
@@ -10776,7 +10776,7 @@
           "weight": 0.04379124175164967,
           "evalCp": -79,
           "annotation": {
-            "explanation": "c3? is popular at club level (4% of games) but rare in master play. Meet it with d5."
+            "explanation": "c3 shows up often enough at club level (4% of games), but it's slightly inaccurate. Respond with d5."
           }
         },
         "cd38de904289284f": {
@@ -10808,7 +10808,7 @@
           "moveKind": "mainline",
           "evalCp": -84,
           "annotation": {
-            "explanation": "Punishes c3: d5 wins the advantage (-0.8 → -0.8). Play continues Bb3 a5 Bc2 a4."
+            "explanation": "After White's c3, d5 is the answer: it keeps developing smoothly. Play continues Bb3 a5 Bc2 a4."
           }
         },
         "ceef36216206e9a2": {
@@ -11273,7 +11273,7 @@
           "weight": 0.05178979436405179,
           "evalCp": -129,
           "annotation": {
-            "explanation": "g3? is popular at club level (5% of games) but rare in master play. Meet it with Na5."
+            "explanation": "g3 is played in around 5% of club games, but it lets you keep the more comfortable position. Answer it with Na5."
           }
         },
         "ddae045d9800f7ab": {
@@ -11640,7 +11640,7 @@
           "moveKind": "mainline",
           "evalCp": -105,
           "annotation": {
-            "explanation": "Punishes Bb5: O-O wins the advantage (-1.0 → -1.1). Play continues Bxc6 bxc6 Nd2 Bg5."
+            "explanation": "Once White plays Bb5, hit back with O-O: it tucks the king away kingside. Play continues Bxc6 bxc6 Nd2 Bg5."
           }
         },
         "e8f67709ad9422cd": {
@@ -12283,7 +12283,7 @@
           "moveKind": "mainline",
           "evalCp": 166,
           "annotation": {
-            "explanation": "Punishes Bxd4: Qxd4 wins the advantage (+1.6 → +1.7). Play continues d6 b3 Qf6 Qe3."
+            "explanation": "Qxd4 punishes Bxd4 directly: it grabs the bishop on d4. Play continues d6 b3 Qf6 Qe3."
           }
         },
         "088920f039b1e9f1": {
@@ -12341,7 +12341,7 @@
           "moveKind": "mainline",
           "evalCp": 181,
           "annotation": {
-            "explanation": "Punishes Bb4: dxe5 wins the advantage (+1.8 → +1.8). Play continues Bxc3+ bxc3 Ne7 Ba3."
+            "explanation": "The clean reply to Bb4 is dxe5: it grabs the knight on e5. Play continues Bxc3+ bxc3 Ne7 Ba3."
           }
         },
         "0b63cbf81e48bbcf": {
@@ -12358,7 +12358,7 @@
           "weight": 0.06488324939498986,
           "evalCp": 65,
           "annotation": {
-            "explanation": "Ng4? is popular at club level (6% of games) but rare in master play and it concedes 0.7 pawns. Meet it with O-O."
+            "explanation": "Ng4 pops up in roughly 6% of club games, but it concedes roughly 0.7 pawns of ground. Meet it with O-O."
           }
         },
         "0beaa56884586966": {
@@ -12547,7 +12547,7 @@
           "moveKind": "mainline",
           "evalCp": 347,
           "annotation": {
-            "explanation": "Punishes Bxf2+: Kxf2 wins the advantage (+3.5 → +3.5). Play continues Nc6 d4 exd4 Nxd4."
+            "explanation": "After Black's Bxf2+, Kxf2 is the answer: it grabs the bishop on f2. Play continues Nc6 d4 exd4 Nxd4."
           }
         },
         "12bde0e1d9ded6af": {
@@ -12798,7 +12798,7 @@
           "moveKind": "mainline",
           "evalCp": 77,
           "annotation": {
-            "explanation": "Punishes c6: d4 wins the advantage (+0.8 → +0.8). Play continues d6 f4 exd4 Qxd4."
+            "explanation": "Once Black plays c6, hit back with d4: it keeps your setup simple and sound. Play continues d6 f4 exd4 Qxd4."
           }
         },
         "202dc743bf4b97af": {
@@ -13067,7 +13067,7 @@
           "weight": 0.1447655139744197,
           "evalCp": 43,
           "annotation": {
-            "explanation": "c6? is popular at club level (14% of games) but rare in master play. Meet it with Nf3."
+            "explanation": "c6 is a fairly common try here, seen in about 14% of games at this level, but it's a touch loose. The simple answer is Nf3."
           }
         },
         "272f8431a9983189": {
@@ -13116,7 +13116,7 @@
           "weight": 0.0502200635449763,
           "evalCp": 346,
           "annotation": {
-            "explanation": "Bxf2+? is popular at club level (5% of games) but rare in master play and it concedes 3.0 pawns. Meet it with Kxf2."
+            "explanation": "About 5% of club players reach for Bxf2+ in this spot, but it trades a bishop for just a pawn. Just play Kxf2."
           }
         },
         "2adf02008ff1fa5b": {
@@ -13146,7 +13146,7 @@
           "moveKind": "mainline",
           "evalCp": 51,
           "annotation": {
-            "explanation": "Punishes c6: Nf3 wins the advantage (+0.4 → +0.5). Play continues Nxc3 bxc3 Bd6 d4."
+            "explanation": "Nf3 punishes c6 directly: it's the calm, accurate follow-up. Play continues Nxc3 bxc3 Bd6 d4."
           }
         },
         "2cd552ca217a1613": {
@@ -13196,7 +13196,7 @@
           "moveKind": "mainline",
           "evalCp": 65,
           "annotation": {
-            "explanation": "Punishes Ng4: O-O wins the advantage (+0.7 → +0.7). Play continues O-O h3 Nf6 Na4."
+            "explanation": "The clean reply to Ng4 is O-O: it tucks the king away kingside. Play continues O-O h3 Nf6 Na4."
           }
         },
         "2efc9445987b6ac9": {
@@ -13508,7 +13508,7 @@
           "moveKind": "mainline",
           "evalCp": 44,
           "annotation": {
-            "explanation": "Punishes Bb4: Nd5 wins the advantage (+0.4 → +0.4). Play continues Bc5 d4 Bxd4 Nf3."
+            "explanation": "After Black's Bb4, Nd5 is the answer: it keeps developing smoothly. Play continues Bc5 d4 Bxd4 Nf3."
           }
         },
         "46e9645a64b82bdb": {
@@ -13624,7 +13624,7 @@
           "moveKind": "mainline",
           "evalCp": 87,
           "annotation": {
-            "explanation": "Punishes Nf6: Nxe5 wins the advantage (+0.9 → +0.9). Play continues O-O d4 Bb4 Bg5."
+            "explanation": "Once Black plays Nf6, hit back with Nxe5: it grabs the pawn on e5. Play continues O-O d4 Bb4 Bg5."
           }
         },
         "4a2c91fd06d5db90": {
@@ -13641,7 +13641,7 @@
           "weight": 0.05056926738248735,
           "evalCp": 142,
           "annotation": {
-            "explanation": "c6? is popular at club level (5% of games) but concedes 0.9 pawns. Meet it with Nb3."
+            "explanation": "c6 shows up often enough at club level (5% of games), but it concedes roughly 0.9 pawns of ground. Respond with Nb3."
           }
         },
         "4ae121890ee22640": {
@@ -13684,7 +13684,7 @@
           "weight": 0.04238204139217895,
           "evalCp": 346,
           "annotation": {
-            "explanation": "Ng4? is popular at club level (4% of games) but rare in master play and it concedes 3.5 pawns. Meet it with Qxg4."
+            "explanation": "Ng4 is played in around 4% of club games, but it hangs the knight outright. Answer it with Qxg4."
           }
         },
         "4c9bb684d439c695": {
@@ -13743,7 +13743,7 @@
           "weight": 0.03100808375336401,
           "evalCp": 75,
           "annotation": {
-            "explanation": "c6? is popular at club level (3% of games) but rare in master play. Meet it with d4."
+            "explanation": "c6 pops up in roughly 3% of club games, but it's a touch loose. Meet it with d4."
           }
         },
         "4e1de44fc096262b": {
@@ -13868,7 +13868,7 @@
           "weight": 0.5171474204178638,
           "evalCp": 160,
           "annotation": {
-            "explanation": "Bxd4? is popular at club level (52% of games) but rare in master play and it concedes 0.8 pawns. Meet it with Qxd4."
+            "explanation": "Bxd4 grabs a pawn but ignores that Black's own knight on e5 is undefended too — Qxd4 wins it back with tempo and hands White about a 0.8-pawn edge. It's popular at club level (52%), so know Qxd4 cold."
           }
         },
         "550f0b457934d3aa": {
@@ -13901,7 +13901,7 @@
           "weight": 0.11921539909562436,
           "evalCp": 176,
           "annotation": {
-            "explanation": "Bb4? is popular at club level (12% of games) but concedes 1.0 pawns. Meet it with dxe5."
+            "explanation": "Bb4 pins the knight but leaves Black's knight on e5 hanging — dxe5 simply scoops it up, netting material for about a 1.0-pawn edge. It's seen in roughly 12% of club games, so remember dxe5."
           }
         },
         "55714ad8011e443e": {
@@ -13930,7 +13930,7 @@
           "weight": 0.03461651053864168,
           "evalCp": 36,
           "annotation": {
-            "explanation": "h6? is popular at club level (3% of games) but rare in master play. Meet it with Na4."
+            "explanation": "h6 doesn't meet any real threat and just loosens the kingside a touch. Answer with Na4, hopping toward c5 for a small but steady edge. Only about 3% of club players try this."
           }
         },
         "58638ef3f14b361b": {
@@ -13994,7 +13994,7 @@
           "moveKind": "mainline",
           "evalCp": 362,
           "annotation": {
-            "explanation": "Punishes Ng4: Qxg4 wins the advantage (+3.5 → +3.6). Play continues O-O Qd1 f5 exf5."
+            "explanation": "Ng4 just hangs the knight — Qxg4 wins it outright, stretching White's already big lead from about +3.5 to +3.6. Play continues O-O Qd1 f5 exf5."
           }
         },
         "5afcc443c26e9516": {
@@ -14541,7 +14541,7 @@
           "moveKind": "mainline",
           "evalCp": 61,
           "annotation": {
-            "explanation": "Punishes h6: O-O wins the advantage (+0.6 → +0.6). Play continues Bc5 Nd5 O-O Nxf6+."
+            "explanation": "h6 costs a tempo for nothing, so just castle with O-O and keep developing normally, holding a steady +0.6 edge. Play continues Bc5 Nd5 O-O Nxf6+."
           }
         },
         "6ed90950f8b51786": {
@@ -14621,7 +14621,7 @@
           "moveKind": "mainline",
           "evalCp": 74,
           "annotation": {
-            "explanation": "Punishes Bb4: Qh5 wins the advantage (+0.8 → +0.7). Play continues g6 Qf3 Nf6 Nd5."
+            "explanation": "Bb4 ignores the pressure building on f7 — Qh5 keeps it up, pushing Black to weaken the kingside while White holds a comfortable +0.7. Play continues g6 Qf3 Nf6 Nd5."
           }
         },
         "723d0df5fddb5a35": {
@@ -15118,7 +15118,7 @@
           "weight": 0.040910421545667444,
           "evalCp": 66,
           "annotation": {
-            "explanation": "Ng4? is popular at club level (4% of games) but rare in master play. Meet it with O-O."
+            "explanation": "Ng4 hops out without a real target and just loses time. Simply castle with O-O and come out with a modest, solid edge. Only about 4% of club players choose this."
           }
         },
         "87ff875106b76eb5": {
@@ -15506,7 +15506,7 @@
           "moveKind": "mainline",
           "evalCp": 67,
           "annotation": {
-            "explanation": "Punishes Ng4: O-O wins the advantage (+0.7 → +0.7). Play continues a5 Nd5 d6 c3."
+            "explanation": "Ng4 wastes time without threatening anything real, so just castle with O-O and continue normal development, keeping a steady +0.7. Play continues a5 Nd5 d6 c3."
           }
         },
         "9611a7bb2d722490": {
@@ -15540,7 +15540,7 @@
           "moveKind": "mainline",
           "evalCp": 65,
           "annotation": {
-            "explanation": "Punishes Ng4: O-O wins the advantage (+0.7 → +0.7). Play continues Re8 d4 exd4 Nxd4."
+            "explanation": "Ng4 doesn't achieve much here either — just castle with O-O and keep the position solid around +0.7. Play continues Re8 d4 exd4 Nxd4."
           }
         },
         "9a6b501d276f1acb": {
@@ -15895,7 +15895,7 @@
           "weight": 0.06488324939498986,
           "evalCp": 65,
           "annotation": {
-            "explanation": "Ng4? is popular at club level (6% of games) but rare in master play. Meet it with O-O."
+            "explanation": "Ng4 jumps out early with no follow-up — meet it with the simple O-O, developing safely for a modest edge. It appears in about 6% of club games."
           }
         },
         "ad6cb01ee32e72ff": {
@@ -16215,7 +16215,7 @@
           "weight": 0.04676793493817594,
           "evalCp": 75,
           "annotation": {
-            "explanation": "Bb4? is popular at club level (5% of games) but rare in master play and it concedes 0.8 pawns. Meet it with Qh5."
+            "explanation": "Bb4 pins the knight but ignores f7 — Qh5 piles onto the weak point at once, swinging the game about 0.8 pawns in White's favor. Only about 5% of club games see this, so remember Qh5."
           }
         },
         "b454cfd660cabaaf": {
@@ -16242,7 +16242,7 @@
           "weight": 0.047001486213002784,
           "evalCp": 22,
           "annotation": {
-            "explanation": "d6? is popular at club level (5% of games) but rare in master play. Meet it with Bg2."
+            "explanation": "d6 is a bit passive here, giving up the fight for the center too early. Just continue developing with Bg2 and edge ahead a little. About 5% of club players go for this."
           }
         },
         "b51a493e32eed8ba": {
@@ -17180,7 +17180,7 @@
           "moveKind": "mainline",
           "evalCp": 35,
           "annotation": {
-            "explanation": "Punishes h6: Na4 wins the advantage (+0.4 → +0.3). Play continues Be7 d4 d6 c4."
+            "explanation": "h6 costs a tempo, so hop the knight over with Na4, eyeing c5 and keeping a small, steady edge around +0.4. Play continues Be7 d4 d6 c4."
           }
         },
         "dabbd16348feb8dd": {
@@ -17319,7 +17319,7 @@
           "moveKind": "mainline",
           "evalCp": 24,
           "annotation": {
-            "explanation": "Punishes d6: Bg2 wins the advantage (+0.2 → +0.2). Play continues g6 Nge2 Bg7 d4."
+            "explanation": "d6 is a touch passive, so just fianchetto with Bg2 and keep developing naturally for a small edge near +0.2. Play continues g6 Nge2 Bg7 d4."
           }
         },
         "e283255f50d66ba9": {
@@ -17465,7 +17465,7 @@
           "moveKind": "mainline",
           "evalCp": 55,
           "annotation": {
-            "explanation": "Punishes Nd4: O-O wins the advantage (+0.5 → +0.6). Play continues O-O Nxd4 exd4 Ne2."
+            "explanation": "Nd4 offers a trade that doesn't really help Black, so just castle with O-O and keep a small, comfortable edge. Play continues O-O Nxd4 exd4 Ne2."
           }
         },
         "e95749ed9d775117": {
@@ -17514,7 +17514,7 @@
           "weight": 0.08976358227649914,
           "evalCp": 54,
           "annotation": {
-            "explanation": "Nd4? is popular at club level (9% of games) but rare in master play. Meet it with O-O."
+            "explanation": "Nd4 offers a trade but creates no real problems for White — just castle with O-O and keep developing, picking up a modest edge. It's played in about 9% of club games."
           }
         },
         "e99e03e60e59dd3b": {
@@ -17663,7 +17663,7 @@
           "weight": 0.03567779411717696,
           "evalCp": 44,
           "annotation": {
-            "explanation": "Bb4? is popular at club level (4% of games) but rare in master play. Meet it with Nd5."
+            "explanation": "Bb4 pins the knight too soon without support — Nd5 hits the bishop while eyeing c7, gaining White a small edge. It's rare, seen in only about 4% of club games."
           }
         },
         "ecfe6aaa97c594cc": {
@@ -17734,7 +17734,7 @@
           "weight": 0.1614908328558779,
           "evalCp": 86,
           "annotation": {
-            "explanation": "Nf6? is popular at club level (16% of games) but rare in master play. Meet it with Nxe5."
+            "explanation": "Nf6 lets the e5-pawn hang — Nxe5 just takes it, since Black's knight is already committed elsewhere. It's popular at club level (16% of games), so remember Nxe5."
           }
         },
         "f20cdef35bd93c26": {
@@ -17862,7 +17862,7 @@
           "moveKind": "mainline",
           "evalCp": 130,
           "annotation": {
-            "explanation": "Punishes c6: Nb3 wins the advantage (+1.4 → +1.3). Play continues Bb4 Qd4 Bxc3+ Qxc3."
+            "explanation": "c6 doesn't stop the pressure on the bishop, so just retreat with Nb3 and keep a healthy lead near +1.3. Play continues Bb4 Qd4 Bxc3+ Qxc3."
           }
         },
         "f43e2bf8687c9270": {
@@ -18093,7 +18093,7 @@
           "weight": 0.06851416940660716,
           "evalCp": 60,
           "annotation": {
-            "explanation": "h6? is popular at club level (7% of games) but rare in master play. Meet it with O-O."
+            "explanation": "h6 spends a move on nothing urgent — just castle with O-O and continue developing, picking up a healthy edge. It shows up in about 7% of club games."
           }
         },
         "fdebc7396bc3fb06": {
@@ -18334,7 +18334,7 @@
           "weight": 0.03440034584017435,
           "evalCp": 116,
           "annotation": {
-            "explanation": "Na5? is popular at club level (3% of games) but rare in master play and it concedes 1.0 pawns. Meet it with b4."
+            "explanation": "Na5 chases the bishop but walks into b4, which kicks the knight again and, after Nxc4 bxc5, leaves White up about a pawn. It's a rare try at club level (3%), so remember b4."
           }
         },
         "075f634a64f82223": {
@@ -18351,7 +18351,7 @@
           "weight": 0.051125946320847035,
           "evalCp": 42,
           "annotation": {
-            "explanation": "a6? is popular at club level (5% of games) but rare in master play. Meet it with c3."
+            "explanation": "a6 doesn't address anything urgent — just play c3, preparing d4 and keeping a comfortable, growing edge. Around 5% of club players try this."
           }
         },
         "07612363a3e32493": {
@@ -18378,7 +18378,7 @@
           "weight": 0.05641323969822504,
           "evalCp": 381,
           "annotation": {
-            "explanation": "Bd6? is popular at club level (6% of games) but rare in master play and it concedes 3.4 pawns. Meet it with Bxd5."
+            "explanation": "Bd6 leaves the knight on d5 unprotected — Bxd5 just wins it, swinging the game by roughly 3.4 pawns in White's favor. It's seen in about 6% of club games, so know Bxd5 cold."
           }
         },
         "078795e73ead3102": {
@@ -18636,7 +18636,7 @@
           "weight": 0.031265531107396195,
           "evalCp": 340,
           "annotation": {
-            "explanation": "e4? is popular at club level (3% of games) but rare in master play and it concedes 3.9 pawns. Meet it with Ng5."
+            "explanation": "e4 pushes the pawn forward but drops it into a fork — Ng5 attacks it while eyeing f7, and after Qf6 Bxf7+ Ke7, White is winning by nearly 4 pawns. It's rare (3%), so know Ng5 cold."
           }
         },
         "0fa4b410c6df9db1": {
@@ -18653,7 +18653,7 @@
           "weight": 0.12323665328955369,
           "evalCp": 109,
           "annotation": {
-            "explanation": "f5? is popular at club level (12% of games) but rare in master play and it concedes 1.3 pawns. Meet it with Bxc6+."
+            "explanation": "f5 attacks the bishop but ignores the knight on c6 — Bxc6+ wrecks Black's structure, and after bxc6 Nxe5, White is up about 1.3 pawns and grabs the loose e5-pawn. Seen in around 12% of club games."
           }
         },
         "11ff4b4f9e37af04": {
@@ -18715,7 +18715,7 @@
           "moveKind": "mainline",
           "evalCp": 40,
           "annotation": {
-            "explanation": "Punishes h6: c3 wins the advantage (+0.5 → +0.4). Play continues d6 b4 a6 a4."
+            "explanation": "h6 doesn't ask any questions, so just play c3, preparing d4 expansion and keeping a steady +0.4 edge. Play continues d6 b4 a6 a4."
           }
         },
         "16998996e36800bf": {
@@ -18769,7 +18769,7 @@
           "moveKind": "mainline",
           "evalCp": 152,
           "annotation": {
-            "explanation": "Punishes Na5: Bb5+ wins the advantage (+1.5 → +1.5). Play continues c6 dxc6 bxc6 Ba4."
+            "explanation": "Na5 chases the bishop but walks into a check — Bb5+ keeps tempo and White stays comfortably up around +1.5. Play continues c6 dxc6 bxc6 Ba4."
           }
         },
         "1ccd4c9fae97cdab": {
@@ -18785,7 +18785,7 @@
           "moveKind": "mainline",
           "evalCp": 34,
           "annotation": {
-            "explanation": "Punishes d5: Bxd5 wins the advantage (+0.3 → +0.3). Play continues Nf6 Bb3 Bd6 d4."
+            "explanation": "d5 blocks the bishop's diagonal but hangs the pawn — Bxd5 just takes it and White keeps a small, steady edge. Play continues Nf6 Bb3 Bd6 d4."
           }
         },
         "1dc519640ef9a811": {
@@ -18831,7 +18831,7 @@
           "moveKind": "mainline",
           "evalCp": 139,
           "annotation": {
-            "explanation": "Punishes d5: exd5 wins the advantage (+1.4 → +1.4). Play continues Ne7 Nxe5 Bd6 d4."
+            "explanation": "d5 opens the center too early — exd5 just wins the pawn, and after Ne7 Nxe5, White grabs another one, holding a comfortable +1.4. Play continues Ne7 Nxe5 Bd6 d4."
           }
         },
         "1fd8774d62f80601": {
@@ -18893,7 +18893,7 @@
           "moveKind": "mainline",
           "evalCp": 65,
           "annotation": {
-            "explanation": "Punishes Bg4: Re1 wins the advantage (+0.6 → +0.7). Play continues Qd7 Bb5 a6 Ba4."
+            "explanation": "Bg4 pins the knight but doesn't threaten anything concrete, so Re1 just improves the rook and keeps a small edge around +0.7. Play continues Qd7 Bb5 a6 Ba4."
           }
         },
         "20ecc759cd44bb2b": {
@@ -18923,7 +18923,7 @@
           "moveKind": "mainline",
           "evalCp": 74,
           "annotation": {
-            "explanation": "Punishes Be6: Ng5 wins the advantage (+0.8 → +0.7). Play continues Qf6 Nxe6 Qxe6 Nc3."
+            "explanation": "Be6 offers a piece White can harass — Ng5 hits the bishop right away, and after Qf6 Nxe6 Qxe6, White trades favorably while keeping around +0.7. Play continues Qf6 Nxe6 Qxe6 Nc3."
           }
         },
         "224f98732dfa4500": {
@@ -19110,7 +19110,7 @@
           "moveKind": "mainline",
           "evalCp": 36,
           "annotation": {
-            "explanation": "Punishes Be6: Bxe6 wins the advantage (+0.4 → +0.4). Play continues fxe6 b4 Bb6 Nbd2."
+            "explanation": "Be6 invites a trade that wrecks Black's pawns — Bxe6 takes it, and after fxe6, Black's structure is damaged while White keeps a small edge. Play continues fxe6 b4 Bb6 Nbd2."
           }
         },
         "2c97b915e6e809a9": {
@@ -19388,7 +19388,7 @@
           "moveKind": "mainline",
           "evalCp": 108,
           "annotation": {
-            "explanation": "Punishes f5: Bxc6+ wins the advantage (+1.1 → +1.1). Play continues bxc6 Nxe5 Ba6 d3."
+            "explanation": "f5 attacks the bishop but leaves c6 loose — Bxc6+ trades in for the e5-pawn next, since after bxc6 Nxe5 White grabs it, holding a solid +1.1 edge. Play continues bxc6 Nxe5 Ba6 d3."
           }
         },
         "36bac2c3fb502464": {
@@ -19447,7 +19447,7 @@
           "weight": 0.08275862654559472,
           "evalCp": 174,
           "annotation": {
-            "explanation": "a6? is popular at club level (8% of games) but concedes 1.5 pawns. Meet it with d4."
+            "explanation": "a6 wastes a move while the center is still open — d4 strikes at once, and after Bb6 Nxe5, White wins the e5-pawn for about a 1.5-pawn edge. Played in roughly 8% of club games, so know d4 cold."
           }
         },
         "3a4d6fafbf50bec8": {
@@ -19464,7 +19464,7 @@
           "weight": 0.051769186855631914,
           "evalCp": 136,
           "annotation": {
-            "explanation": "d5? is popular at club level (5% of games) but rare in master play and it concedes 1.1 pawns. Meet it with exd5."
+            "explanation": "d5 opens the center before Black is ready — exd5 just wins the pawn, and after Ne7 Nxe5, White grabs a second one for about a 1.1-pawn edge. Tried in about 5% of club games, so remember exd5."
           }
         },
         "3a4d72afbf50c3e1": {
@@ -19506,7 +19506,7 @@
           "moveKind": "mainline",
           "evalCp": 40,
           "annotation": {
-            "explanation": "Punishes Be6: Bxe6 wins the advantage (+0.4 → +0.4). Play continues fxe6 Qb3 Qc8 d4."
+            "explanation": "Be6 hands White a free trade — Bxe6 takes it and after fxe6, Black's pawns are doubled while White keeps a small edge. Play continues fxe6 Qb3 Qc8 d4."
           }
         },
         "3d9613e335f679c3": {
@@ -19722,7 +19722,7 @@
           "moveKind": "mainline",
           "evalCp": 384,
           "annotation": {
-            "explanation": "Punishes Bd6: Bxd5 wins the advantage (+3.8 → +3.8). Play continues Bg4 Nbd2 Qd7 Re1."
+            "explanation": "Bd6 leaves the knight on d5 hanging again — Bxd5 simply wins it, keeping White's crushing lead near +3.8. Play continues Bg4 Nbd2 Qd7 Re1."
           }
         },
         "47e811fb1e447d49": {
@@ -19815,7 +19815,7 @@
           "weight": 0.13252462604888726,
           "evalCp": 26,
           "annotation": {
-            "explanation": "Bc5? is popular at club level (13% of games) but rare in master play. Meet it with O-O."
+            "explanation": "Bc5 develops naturally, so there's nothing sharp to punish — just castle with O-O and keep a small, steady edge. It's common at club level (13% of games)."
           }
         },
         "4d355210ea024f9b": {
@@ -19914,7 +19914,7 @@
           "moveKind": "mainline",
           "evalCp": 156,
           "annotation": {
-            "explanation": "Punishes d5: exd5 wins the advantage (+1.6 → +1.6). Play continues Ne7 Nxe5 O-O d4."
+            "explanation": "d5 opens things up too soon — exd5 just wins the pawn and after Ne7 Nxe5, White grabs another, keeping a big +1.6 edge. Play continues Ne7 Nxe5 O-O d4."
           }
         },
         "4f2fe731848d6f8b": {
@@ -20098,7 +20098,7 @@
           "moveKind": "mainline",
           "evalCp": 44,
           "annotation": {
-            "explanation": "Punishes a6: c3 wins the advantage (+0.4 → +0.4). Play continues d6 d4 Nxe4 dxe5."
+            "explanation": "a6 doesn't create any threat, so play c3, preparing d4 and holding a steady +0.4 edge. Play continues d6 d4 Nxe4 dxe5."
           }
         },
         "56d08ee3440974e3": {
@@ -20115,7 +20115,7 @@
           "weight": 0.08761529143773746,
           "evalCp": 43,
           "annotation": {
-            "explanation": "Be6? is popular at club level (9% of games) but rare in master play. Meet it with Bxe6."
+            "explanation": "Be6 offers a trade that damages Black's structure — Bxe6 takes it, and after fxe6, Black is left with doubled pawns while White nudges ahead. Seen in about 9% of club games."
           }
         },
         "5738cbda7149c51b": {
@@ -20288,7 +20288,7 @@
           "weight": 0.03309412891217576,
           "evalCp": 303,
           "annotation": {
-            "explanation": "d6? is popular at club level (3% of games) but rare in master play and it concedes 1.9 pawns. Meet it with Nxf7."
+            "explanation": "d6 tries to win back the pawn but ignores f7 — Nxf7 forks in, and even after Bxf2+ Kxf2 Nxe4+, White ends up close to two pawns ahead. Rare (3%), so know Nxf7 cold."
           }
         },
         "5b692c34693b695b": {
@@ -20425,7 +20425,7 @@
           "moveKind": "mainline",
           "evalCp": 51,
           "annotation": {
-            "explanation": "Punishes d6: Nc3 wins the advantage (+0.5 → +0.5). Play continues Be7 d4 exd4 Nxd4."
+            "explanation": "d6 is solid but passive, so just develop with Nc3 and keep a small, comfortable edge. Play continues Be7 d4 exd4 Nxd4."
           }
         },
         "5e7fbc650bdadbf6": {
@@ -20690,7 +20690,7 @@
           "weight": 0.047576017711110107,
           "evalCp": 236,
           "annotation": {
-            "explanation": "Bd6? is popular at club level (5% of games) but rare in master play and it concedes 2.9 pawns. Meet it with Ng5."
+            "explanation": "Bd6 leaves f7 unguarded — Ng5 pounces, and after Qf6 Nxf7 Rf8, White wins material and swings the game by nearly 3 pawns. Played in about 5% of club games, so remember Ng5."
           }
         },
         "6647f633519dece6": {
@@ -20870,7 +20870,7 @@
           "weight": 0.042548114888146575,
           "evalCp": 156,
           "annotation": {
-            "explanation": "d5? is popular at club level (4% of games) but rare in master play and it concedes 1.4 pawns. Meet it with exd5."
+            "explanation": "d5 opens the center prematurely — exd5 wins the pawn outright, and after Ne7 Nxe5, White grabs a second pawn for about a 1.4-pawn edge. Tried in roughly 4% of club games."
           }
         },
         "6dcdd232bbdcc280": {
@@ -20961,7 +20961,7 @@
           "weight": 0.21301117569104588,
           "evalCp": 77,
           "annotation": {
-            "explanation": "Be6? is popular at club level (21% of games) but rare in master play. Meet it with Ng5."
+            "explanation": "Be6 puts the bishop right where White's knight wants to go — Ng5 hits it immediately, and after Qf6 Nxe6 Qxe6, White edges ahead. Very common (21% of club games), so know Ng5 cold."
           }
         },
         "71ee7e53cddfe31a": {
@@ -21075,7 +21075,7 @@
           "moveKind": "mainline",
           "evalCp": 28,
           "annotation": {
-            "explanation": "Punishes d5: exd5 wins the advantage (+0.3 → +0.3). Play continues e4 Ne5 Bd6 d4."
+            "explanation": "d5 challenges the bishop but hangs a pawn — exd5 just takes it, and after e4 Ne5, White's knight lands comfortably while keeping a small edge. Play continues e4 Ne5 Bd6 d4."
           }
         },
         "75df1482204c6ea9": {
@@ -21125,7 +21125,7 @@
           "moveKind": "mainline",
           "evalCp": 50,
           "annotation": {
-            "explanation": "Punishes b5: Bb3 wins the advantage (+0.5 → +0.5). Play continues d6 Re1 Bb6 a4."
+            "explanation": "b5 grabs space but doesn't threaten anything, so just tuck the bishop back with Bb3 and keep a steady +0.5 edge. Play continues d6 Re1 Bb6 a4."
           }
         },
         "78df748307c41fe7": {
@@ -21288,7 +21288,7 @@
           "moveKind": "mainline",
           "evalCp": 106,
           "annotation": {
-            "explanation": "Punishes Na5: b4 wins the advantage (+1.2 → +1.1). Play continues Nxc4 bxc5 Na5 Nxe5."
+            "explanation": "Na5 attacks the bishop, so kick it right back with b4 — after Nxc4 bxc5, White has traded favorably and keeps a solid +1.1 lead. Play continues Nxc4 bxc5 Na5 Nxe5."
           }
         },
         "818bea6e1f6876e9": {
@@ -21331,7 +21331,7 @@
           "weight": 0.18824470211915234,
           "evalCp": 146,
           "annotation": {
-            "explanation": "h6? is popular at club level (19% of games) but rare in master play and it concedes 1.3 pawns. Meet it with d4."
+            "explanation": "h6 wastes time while the center is still up for grabs — d4 strikes at once, and after Bb6 Nxe5, White wins the e5-pawn for about a 1.3-pawn edge. Common (19% of club games); know d4 cold."
           }
         },
         "83f7de9d2f28c2c8": {
@@ -21531,7 +21531,7 @@
           "moveKind": "mainline",
           "evalCp": 350,
           "annotation": {
-            "explanation": "Punishes e4: Ng5 wins the advantage (+3.4 → +3.5). Play continues Qf6 Bxf7+ Ke7 Bh5."
+            "explanation": "e4 hangs the pawn right into a fork — Ng5 grabs it while eyeing f7, and after Qf6 Bxf7+ Ke7, White's advantage grows to around +3.5. Play continues Qf6 Bxf7+ Ke7 Bh5."
           }
         },
         "8cfb61a03421e441": {
@@ -21561,7 +21561,7 @@
           "moveKind": "mainline",
           "evalCp": 149,
           "annotation": {
-            "explanation": "Punishes h6: d4 wins the advantage (+1.5 → +1.5). Play continues Bb6 Nxe5 O-O Nxc6."
+            "explanation": "h6 doesn't stop the center break, so push d4 right away — after Bb6 Nxe5, White wins the e5-pawn and keeps a comfortable +1.5. Play continues Bb6 Nxe5 O-O Nxc6."
           }
         },
         "8e0c6283a7da48d6": {
@@ -21578,7 +21578,7 @@
           "weight": 0.04195855614973262,
           "evalCp": 39,
           "annotation": {
-            "explanation": "h6? is popular at club level (4% of games) but rare in master play. Meet it with Re1."
+            "explanation": "h6 isn't a necessary move here — just improve with Re1, preparing c3 and d4, and keep the small edge White already has. Rare, seen in only about 4% of club games."
           }
         },
         "8e2bb43ed9198276": {
@@ -21721,7 +21721,7 @@
           "weight": 0.04589535333297017,
           "evalCp": 151,
           "annotation": {
-            "explanation": "Na5? is popular at club level (5% of games) but rare in master play and it concedes 1.0 pawns. Meet it with Bb5+."
+            "explanation": "Na5 chases the bishop but walks into a check — Bb5+ keeps the initiative, and after c6 dxc6 bxc6, White holds an edge of about a pawn. Played in around 5% of club games, so remember Bb5+."
           }
         },
         "954814465bc0bbf5": {
@@ -21818,7 +21818,7 @@
           "weight": 0.11533687431441603,
           "evalCp": 54,
           "annotation": {
-            "explanation": "b5? is popular at club level (12% of games) but rare in master play. Meet it with Bb3."
+            "explanation": "b5 grabs space but doesn't back it up with development — just retreat with Bb3 and keep a small, growing edge. It's tried in about 12% of club games."
           }
         },
         "9890a43f11e1970f": {
@@ -21905,7 +21905,7 @@
           "weight": 0.06244966895231774,
           "evalCp": 74,
           "annotation": {
-            "explanation": "d6? is popular at club level (6% of games) but rare in master play. Meet it with Ng5."
+            "explanation": "d6 is solid but a little slow — Ng5 jumps in immediately, eyeing the weak f7 square. It's seen in about 6% of club games, so know Ng5 as the follow-up."
           }
         },
         "9cf56ff6f33b233c": {
@@ -21964,7 +21964,7 @@
           "weight": 0.09123266059988072,
           "evalCp": 39,
           "annotation": {
-            "explanation": "Be6? is popular at club level (9% of games) but rare in master play. Meet it with Bxe6."
+            "explanation": "Be6 invites a favorable trade — Bxe6 takes it, and after fxe6, Black's pawns are doubled while the position stays roughly balanced in White's favor. Played in about 9% of club games."
           }
         },
         "a0b63ece6a1abd6e": {
@@ -21981,7 +21981,7 @@
           "weight": 0.3189359396143166,
           "evalCp": 62,
           "annotation": {
-            "explanation": "Bg4? is popular at club level (32% of games) but rare in master play. Meet it with Re1."
+            "explanation": "Bg4 pins the knight but doesn't threaten anything concrete — Re1 simply improves the rook and keeps a small, growing edge. Very common at club level (32% of games)."
           }
         },
         "a0c85a785a6486a5": {
@@ -21997,7 +21997,7 @@
           "moveKind": "mainline",
           "evalCp": 148,
           "annotation": {
-            "explanation": "Punishes h6: d4 wins the advantage (+1.5 → +1.5). Play continues Bd6 Bd5 Nxd5 exd5."
+            "explanation": "h6 doesn't slow the center break, so push d4 right away and keep a solid +1.5 edge. Play continues Bd6 Bd5 Nxd5 exd5."
           }
         },
         "a112f3e128e977ff": {
@@ -22064,7 +22064,7 @@
           "weight": 0.0914788589177097,
           "evalCp": 104,
           "annotation": {
-            "explanation": "d5? is popular at club level (9% of games) but rare in master play and it concedes 0.8 pawns. Meet it with exd5."
+            "explanation": "d5 opens the center a bit too soon — exd5 wins the pawn, and after Nxd5 Nxe5, White grabs a second one for about a 0.8-pawn edge. Tried in roughly 9% of club games, so remember exd5."
           }
         },
         "a381f8ca2314325d": {
@@ -22094,7 +22094,7 @@
           "moveKind": "mainline",
           "evalCp": 174,
           "annotation": {
-            "explanation": "Punishes a6: d4 wins the advantage (+1.7 → +1.7). Play continues Bb6 Nxe5 d5 Nxc6."
+            "explanation": "a6 doesn't slow the center break, so push d4 right away and keep the big +1.7 lead. Play continues Bb6 Nxe5 d5 Nxc6."
           }
         },
         "a504a8a6c1a49326": {
@@ -22259,7 +22259,7 @@
           "moveKind": "mainline",
           "evalCp": 109,
           "annotation": {
-            "explanation": "Punishes d5: exd5 wins the advantage (+1.0 → +1.1). Play continues Nxd5 Nxe5 Nxe5 Rxe5."
+            "explanation": "d5 opens the position before Black is ready — exd5 just wins the pawn, and after Nxd5 Nxe5, White grabs another, holding roughly a +1.1 edge. Play continues Nxd5 Nxe5 Nxe5 Rxe5."
           }
         },
         "ab89fd92c3fd14a1": {
@@ -22354,7 +22354,7 @@
           "moveKind": "mainline",
           "evalCp": 39,
           "annotation": {
-            "explanation": "Punishes h6: Re1 wins the advantage (+0.4 → +0.4). Play continues O-O c3 d6 a4."
+            "explanation": "h6 doesn't ask any questions, so just improve the rook with Re1, preparing c3 and d4 while keeping a small +0.4 edge. Play continues O-O c3 d6 a4."
           }
         },
         "b5990d31b086ba1a": {
@@ -22389,7 +22389,7 @@
           "weight": 0.08761485699495276,
           "evalCp": 46,
           "annotation": {
-            "explanation": "h6? is popular at club level (9% of games) but rare in master play. Meet it with c3."
+            "explanation": "h6 spends a move on nothing urgent — meet it with c3, preparing d4 and keeping a small, growing edge. It's played in about 9% of club games."
           }
         },
         "b61ecc9ffa857287": {
@@ -22405,7 +22405,7 @@
           "moveKind": "mainline",
           "evalCp": 236,
           "annotation": {
-            "explanation": "Punishes Bd6: Ng5 wins the advantage (+2.4 → +2.4). Play continues Qf6 Nxf7 Rf8 Nxd6+."
+            "explanation": "Bd6 leaves f7 unguarded again — Ng5 pounces, and after Qf6 Nxf7 Rf8, White wins material and stays well ahead near +2.4. Play continues Qf6 Nxf7 Rf8 Nxd6+."
           }
         },
         "b7a079eba3269eaa": {
@@ -22593,7 +22593,7 @@
           "moveKind": "mainline",
           "evalCp": 309,
           "annotation": {
-            "explanation": "Punishes d6: Nxf7 wins the advantage (+3.0 → +3.1). Play continues Bxf2+ Kxf2 Nxe4+ Kg1."
+            "explanation": "d6 tries to win the piece back but ignores f7 — Nxf7 forks in immediately, and even after Bxf2+ Kxf2 Nxe4+, White stays clearly ahead near +3.1. Play continues Bxf2+ Kxf2 Nxe4+ Kg1."
           }
         },
         "bedf6cc06d190411": {
@@ -22609,7 +22609,7 @@
           "moveKind": "mainline",
           "evalCp": 84,
           "annotation": {
-            "explanation": "Punishes d6: Ng5 wins the advantage (+0.7 → +0.8). Play continues d5 exd5 b5 dxc6."
+            "explanation": "d6 is a touch slow, so jump straight in with Ng5, eyeing the weak f7 square and keeping a growing +0.8 edge. Play continues d5 exd5 b5 dxc6."
           }
         },
         "bf248362bf6106db": {
@@ -22640,7 +22640,7 @@
           "weight": 0.06006478879732128,
           "evalCp": 109,
           "annotation": {
-            "explanation": "d5? is popular at club level (6% of games) but rare in master play and it concedes 0.7 pawns. Meet it with exd5."
+            "explanation": "d5 opens the center prematurely — exd5 wins the pawn, and after Nxd5 Nxe5, White grabs a second for about a 0.7-pawn edge. Played in around 6% of club games, so remember exd5."
           }
         },
         "bf2df6402c2f271c": {
@@ -23098,7 +23098,7 @@
           "weight": 0.07437557131210316,
           "evalCp": 35,
           "annotation": {
-            "explanation": "d5? is popular at club level (7% of games) but concedes 0.9 pawns. Meet it with Bxd5."
+            "explanation": "d5 blocks in the bishop's line but just hangs the pawn — Bxd5 takes it immediately, swinging the game by about 0.9 pawns. Tried in about 7% of club games, so know Bxd5 cold."
           }
         },
         "d8fb371064caf6f2": {
@@ -23340,7 +23340,7 @@
           "weight": 0.07816870322393654,
           "evalCp": 47,
           "annotation": {
-            "explanation": "d6? is popular at club level (8% of games) but concedes 0.9 pawns. Meet it with Nc3."
+            "explanation": "d6 is solid but gives up on contesting the center actively — Nc3 develops naturally and gains close to a pawn's worth of edge. Played in about 8% of club games."
           }
         },
         "e2aab665276049b9": {
@@ -23357,7 +23357,7 @@
           "weight": 0.04510328297062343,
           "evalCp": 29,
           "annotation": {
-            "explanation": "d5? is popular at club level (5% of games) but concedes 0.8 pawns. Meet it with exd5."
+            "explanation": "d5 challenges the bishop but hangs a pawn — exd5 just captures it, giving White close to a 0.8-pawn edge. Tried in about 5% of club games, so remember exd5."
           }
         },
         "e2ab8865d1bba487": {
@@ -23634,7 +23634,7 @@
           "moveKind": "mainline",
           "evalCp": 26,
           "annotation": {
-            "explanation": "Punishes Bc5: O-O wins the advantage (+0.3 → +0.3). Play continues O-O d3 f6 c3."
+            "explanation": "Bc5 develops naturally, so there's nothing sharp to punish — just castle with O-O and keep a small, steady edge. Play continues O-O d3 f6 c3."
           }
         },
         "ec94a84f79b2e8bf": {
@@ -23851,7 +23851,7 @@
           "moveKind": "mainline",
           "evalCp": 89,
           "annotation": {
-            "explanation": "Punishes d5: exd5 wins the advantage (+1.1 → +0.9). Play continues Nxd5 Nxe5 Nxe5 Qe1."
+            "explanation": "d5 opens the center too early — exd5 just wins the pawn, and after Nxd5 Nxe5, White grabs another and keeps close to a +0.9 edge. Play continues Nxd5 Nxe5 Nxe5 Qe1."
           }
         },
         "f7588695b76281d6": {
@@ -23959,7 +23959,7 @@
           "weight": 0.11924831129842388,
           "evalCp": 153,
           "annotation": {
-            "explanation": "h6? is popular at club level (12% of games) but rare in master play and it concedes 1.3 pawns. Meet it with d4."
+            "explanation": "h6 wastes time while the center is still open — d4 strikes right away, and after Bd6 Bd5 Nxd5, White simplifies into a clean +1.3 edge. Common (12% of club games), so know d4 cold."
           }
         },
         "fcdc25dbf3f4e5d0": {
@@ -24179,7 +24179,7 @@
           "weight": 0.03142361996024262,
           "evalCp": 86,
           "annotation": {
-            "explanation": "Nxe4? is popular at club level (3% of games) but rare in master play. Meet it with Nxe4."
+            "explanation": "Nxe4 grabs a pawn but hangs the knight — Nxe4 recaptures at once, and after d5 Nxc6 bxc6, White keeps the extra material for a solid edge. Rare, seen in about 3% of club games."
           }
         },
         "05d5c3120115b3a7": {
@@ -24654,7 +24654,7 @@
           "weight": 0.13252462604888726,
           "evalCp": 31,
           "annotation": {
-            "explanation": "Bc5? is popular at club level (13% of games) but rare in master play. Meet it with O-O."
+            "explanation": "Bc5 develops naturally with nothing sharp to punish, so just castle with O-O and keep a small, growing edge. It's common at club level (13% of games)."
           }
         },
         "15db12177bb76957": {
@@ -24831,7 +24831,7 @@
           "weight": 0.12323665328955369,
           "evalCp": 103,
           "annotation": {
-            "explanation": "f5? is popular at club level (12% of games) but rare in master play and it concedes 1.1 pawns. Meet it with Bxc6+."
+            "explanation": "f5 attacks the bishop but leaves c6 loose — Bxc6+ trades in favorably, and after bxc6 Nxe5, White wins the e5-pawn for about a 1.1-pawn edge. Played in around 12% of club games."
           }
         },
         "1b1112d74841bc0b": {
@@ -24906,7 +24906,7 @@
           "weight": 0.03538425046278296,
           "evalCp": 104,
           "annotation": {
-            "explanation": "Na5? is popular at club level (4% of games) but rare in master play and it concedes 0.9 pawns. Meet it with Nxe5."
+            "explanation": "Na5 chases the bishop but ignores the pawn on e5 — Nxe5 just grabs it, and after Nxc4 dxc4, White stays close to a pawn up. Rare (4% of club games), so know Nxe5 cold."
           }
         },
         "1dcda23a98bd51ee": {
@@ -24922,7 +24922,7 @@
           "moveKind": "mainline",
           "evalCp": 83,
           "annotation": {
-            "explanation": "Punishes Nxe4: Nxe4 wins the advantage (+0.9 → +0.8). Play continues d5 Nxc6 bxc6 Bd3."
+            "explanation": "Nxe4 just hangs the knight — recapture with Nxe4 and stay comfortably ahead by close to a pawn. Play continues d5 Nxc6 bxc6 Bd3."
           }
         },
         "1e125c2fb8ce0c5f": {
@@ -25969,7 +25969,7 @@
           "moveKind": "mainline",
           "evalCp": 31,
           "annotation": {
-            "explanation": "Punishes Bc5: O-O wins the advantage (+0.3 → +0.3). Play continues O-O d3 Bg4 h3."
+            "explanation": "Bc5 develops naturally with nothing sharp to punish, so castle with O-O and keep a small, steady edge. Play continues O-O d3 Bg4 h3."
           }
         },
         "482933026dfdb800": {
@@ -26624,7 +26624,7 @@
           "weight": 0.07937521098969083,
           "evalCp": 60,
           "annotation": {
-            "explanation": "h6? is popular at club level (8% of games) but rare in master play. Meet it with d4."
+            "explanation": "h6 doesn't contest the center, so push d4 right away and grab a comfortable edge close to a full pawn. It's played in about 8% of club games."
           }
         },
         "641d8f4e88a56752": {
@@ -26806,7 +26806,7 @@
           "weight": 0.08814316943456557,
           "evalCp": 62,
           "annotation": {
-            "explanation": "gxf6? is popular at club level (9% of games) but rare in master play and it concedes 0.9 pawns. Meet it with O-O."
+            "explanation": "gxf6 recaptures but wrecks the kingside pawns — just castle with O-O and let the damaged structure tell for about a 0.9-pawn edge. Tried in about 9% of club games."
           }
         },
         "6922b2c04b38e56e": {
@@ -27173,7 +27173,7 @@
           "moveKind": "mainline",
           "evalCp": 63,
           "annotation": {
-            "explanation": "Punishes Bg4: Nd5 wins the advantage (+0.6 → +0.6). Play continues Bxf3 Qxf3 Nd4 Qd1."
+            "explanation": "Bg4 pins the knight but ignores d5 — Nd5 jumps in, and after Bxf3 Qxf3 Nd4, White keeps a steady +0.6 edge. Play continues Bxf3 Qxf3 Nd4 Qd1."
           }
         },
         "7f249ab8fbdb25b0": {
@@ -27623,7 +27623,7 @@
           "moveKind": "mainline",
           "evalCp": 117,
           "annotation": {
-            "explanation": "Punishes f5: Bxc6+ wins the advantage (+1.0 → +1.2). Play continues bxc6 Nxe5 Ba6 d3."
+            "explanation": "f5 attacks the bishop but leaves c6 undefended — Bxc6+ trades in, and after bxc6 Nxe5, White wins the e5-pawn and pushes the edge to about +1.2. Play continues bxc6 Nxe5 Ba6 d3."
           }
         },
         "96567ac17f66c8f7": {
@@ -27783,7 +27783,7 @@
           "moveKind": "mainline",
           "evalCp": 103,
           "annotation": {
-            "explanation": "Punishes O-O: Nd5 wins the advantage (+1.1 → +1.0). Play continues Be6 Nxf6+ gxf6 Bh6."
+            "explanation": "Castling was fine generally, but here Nd5 jumps straight in, and after Be6 Nxf6+ gxf6, White wrecks Black's kingside pawns while holding around +1.0. Play continues Be6 Nxf6+ gxf6 Bh6."
           }
         },
         "9a71f2adc91082cb": {
@@ -27859,7 +27859,7 @@
           "moveKind": "mainline",
           "evalCp": 85,
           "annotation": {
-            "explanation": "Punishes Na5: Nxe5 wins the advantage (+1.0 → +0.8). Play continues Nxc4 dxc4 d6 Nd3."
+            "explanation": "Na5 chases the bishop but leaves e5 undefended — Nxe5 grabs the pawn, and after Nxc4 dxc4, White stays close to a pawn up. Play continues Nxc4 dxc4 d6 Nd3."
           }
         },
         "9c553cc44500f408": {
@@ -28013,7 +28013,7 @@
           "moveKind": "mainline",
           "evalCp": 115,
           "annotation": {
-            "explanation": "Punishes d6: Ng5 wins the advantage (+1.1 → +1.1). Play continues d5 exd5 Na5 Bb5+."
+            "explanation": "d6 is a touch slow, so jump in with Ng5, eyeing the weak f7 square and holding around a +1.1 edge. Play continues d5 exd5 Na5 Bb5+."
           }
         },
         "a1e677130feab67c": {
@@ -28737,7 +28737,7 @@
           "weight": 0.06476573117591188,
           "evalCp": 108,
           "annotation": {
-            "explanation": "d6? is popular at club level (6% of games) but rare in master play and it concedes 1.1 pawns. Meet it with Ng5."
+            "explanation": "d6 is solid but a little slow, letting White jump in with Ng5, eyeing the weak f7 square and gaining about a 1.1-pawn edge. Seen in about 6% of club games, so know Ng5."
           }
         },
         "c87b17af072c6680": {
@@ -28753,7 +28753,7 @@
           "moveKind": "mainline",
           "evalCp": 60,
           "annotation": {
-            "explanation": "Punishes h6: d4 wins the advantage (+0.6 → +0.6). Play continues exd4 Nxd4 Bb4 Nxc6."
+            "explanation": "h6 doesn't contest the center, so push d4 right away and keep a comfortable +0.6 edge. Play continues exd4 Nxd4 Bb4 Nxc6."
           }
         },
         "c8f54aa6a9ce829b": {
@@ -28939,7 +28939,7 @@
           "weight": 0.22026035624731272,
           "evalCp": 60,
           "annotation": {
-            "explanation": "Bg4? is popular at club level (22% of games) but rare in master play. Meet it with Nd5."
+            "explanation": "Bg4 pins the knight but ignores d5 — Nd5 jumps in immediately, and after Bxf3 Qxf3 Nd4, White gains a comfortable edge. Very common (22% of club games), so know Nd5 cold."
           }
         },
         "d12c9a7cd30cacf5": {
@@ -29011,7 +29011,7 @@
           "moveKind": "mainline",
           "evalCp": 72,
           "annotation": {
-            "explanation": "Punishes gxf6: O-O wins the advantage (+0.6 → +0.7). Play continues f5 exf5 Bxf5 Re1."
+            "explanation": "gxf6 recaptures but leaves the kingside pawns wrecked — just castle with O-O and let that damage tell for about a +0.7 edge. Play continues f5 exf5 Bxf5 Re1."
           }
         },
         "d4814c18ca1ab232": {
@@ -30011,7 +30011,7 @@
           "weight": 0.08496061091967469,
           "evalCp": 110,
           "annotation": {
-            "explanation": "O-O? is popular at club level (8% of games) but rare in master play and it concedes 1.1 pawns. Meet it with Nd5."
+            "explanation": "O-O looks natural but walks right into Nd5 — after Be6 Nxf6+ gxf6, White wrecks Black's kingside pawns and gains about a 1.1-pawn edge. Played in about 8% of club games, so know Nd5 cold."
           }
         },
         "fb249753582898c8": {
@@ -30373,7 +30373,7 @@
           "moveKind": "mainline",
           "evalCp": 231,
           "annotation": {
-            "explanation": "Punishes Qe7: Qxd5+ wins the advantage (+2.1 → +2.3). Play continues Qe6 Qxe4 Bd7 Qxb7."
+            "explanation": "Qe7 doesn't stop the check — Qxd5+ comes in with tempo, and after Qe6 Qxe4 Bd7, White keeps grabbing material, pushing the edge to about +2.3. Play continues Qe6 Qxe4 Bd7 Qxb7."
           }
         },
         "050c4514acabca92": {
@@ -31546,7 +31546,7 @@
           "moveKind": "mainline",
           "evalCp": 55,
           "annotation": {
-            "explanation": "Punishes Bb4+: c3 wins the advantage (+0.6 → +0.6). Play continues Bc5 Be3 Bxe3 fxe3."
+            "explanation": "Bb4+ is just a check with no follow-up — block it with c3 and keep the position steady around +0.6. Play continues Bc5 Be3 Bxe3 fxe3."
           }
         },
         "2fa064f35628a54c": {
@@ -31610,7 +31610,7 @@
           "moveKind": "mainline",
           "evalCp": -51,
           "annotation": {
-            "explanation": "Punishes b6: Qe2 wins the advantage (-0.5 → -0.5). Play continues Bf6 Re1 Ba6 c4."
+            "explanation": "b6 doesn't change much here, so just develop with Qe2 and keep the position roughly balanced. Play continues Bf6 Re1 Ba6 c4."
           }
         },
         "308384633b2e9ddc": {
@@ -33205,7 +33205,7 @@
           "weight": 0.044666470761093154,
           "evalCp": -41,
           "annotation": {
-            "explanation": "Bf6? is popular at club level (4% of games) but rare in master play. Meet it with Re1."
+            "explanation": "Bf6 doesn't really fix Black's structural issues, only narrowing Black's edge a little — meet it with Re1 and keep chipping away. Rare, seen in about 4% of club games."
           }
         },
         "78ac269f0387fc74": {
@@ -33497,7 +33497,7 @@
           "weight": 0.03278688524590164,
           "evalCp": 204,
           "annotation": {
-            "explanation": "Qf6? is popular at club level (3% of games) but rare in master play and it concedes 1.8 pawns. Meet it with Qxd5+."
+            "explanation": "Qf6? leaves the d5-pawn undefended. Qxd5+ scoops it with check and swings the game solidly your way, worth close to two pawns."
           }
         },
         "80f5864d92863ef4": {
@@ -34454,7 +34454,7 @@
           "weight": 0.032926378098409176,
           "evalCp": 57,
           "annotation": {
-            "explanation": "Bb4+? is popular at club level (3% of games) but rare in master play. Meet it with c3."
+            "explanation": "Bb4+? gives a check but achieves little. c3 kicks the bishop back to c5, and after Be3 Bxe3 fxe3 you keep a tidy structural edge."
           }
         },
         "a50850eea6cd7ee6": {
@@ -35038,7 +35038,7 @@
           "moveKind": "mainline",
           "evalCp": 55,
           "annotation": {
-            "explanation": "Punishes Kg7: N1e2 wins the advantage (+0.6 → +0.6). Play continues Bb4+ Bd2 Ne5 Qd4."
+            "explanation": "N1e2 finishes development and covers d2 in case of Bb4+. After Ne5 Qd4 Bxd2+ you keep a modest, comfortable edge, around half a pawn."
           }
         },
         "bf3606f3d847da7b": {
@@ -35180,7 +35180,7 @@
           "weight": 0.03070662227155013,
           "evalCp": 206,
           "annotation": {
-            "explanation": "Qe7? is popular at club level (3% of games) but rare in master play and it concedes 1.7 pawns. Meet it with Qxd5+."
+            "explanation": "Qe7? also ignores the loose d5-pawn. Qxd5+ wins it with check, and you go on to pick up e4 and b7 too, close to a two-pawn swing."
           }
         },
         "c49dc087f8a0b5eb": {
@@ -35662,7 +35662,7 @@
           "weight": 0.03272727272727273,
           "evalCp": -96,
           "annotation": {
-            "explanation": "Qe8+? is popular at club level (3% of games) but rare in master play. Meet it with Be3."
+            "explanation": "Qe8+? spends a tempo on a check that achieves nothing concrete. Be3 blocks comfortably and you continue developing with N3e2 next."
           }
         },
         "d84a86b218d0a694": {
@@ -35904,7 +35904,7 @@
           "moveKind": "mainline",
           "evalCp": 224,
           "annotation": {
-            "explanation": "Punishes Qf6: Qxd5+ wins the advantage (+2.0 → +2.2). Play continues Qf7 Qe4 h5 Nf5."
+            "explanation": "Qxd5+ grabs the undefended d5-pawn with check, forcing Qf7. After Qe4 h5 Nf5 you keep a dominant, close to winning position."
           }
         },
         "e26d0543bd37109c": {
@@ -35988,7 +35988,7 @@
           "moveKind": "mainline",
           "evalCp": -39,
           "annotation": {
-            "explanation": "Punishes Bf6: Re1 wins the advantage (-0.4 → -0.4). Play continues Be6 Bd2 a5 a3."
+            "explanation": "Re1 develops the rook to its most useful file. Black stays a bit better here, but after Be6 Bd2 a5 a3 the position remains close and fully playable."
           }
         },
         "e49b7e6769f3844d": {
@@ -36447,7 +36447,7 @@
           "weight": 0.03820158683514546,
           "evalCp": -53,
           "annotation": {
-            "explanation": "b6? is popular at club level (4% of games) but rare in master play. Meet it with Qe2."
+            "explanation": "b6? slightly loosens the dark squares for no real gain. Qe2 keeps developing, and after Bf6 Re1 Ba6 you meet the fianchetto with steady central play."
           }
         },
         "fc7a37a7141a888f": {
@@ -36463,7 +36463,7 @@
           "moveKind": "mainline",
           "evalCp": -94,
           "annotation": {
-            "explanation": "Punishes Qe8+: Be3 wins the advantage (-1.0 → -0.9). Play continues h4 N3e2 Nb4 Qb3."
+            "explanation": "Be3 blocks the check while developing, your most solid try here. Black stays clearly ahead, around a pawn, but after h4 N3e2 Nb4 Qb3 the game is still fully playable."
           }
         },
         "fc91ddc096f2b784": {
@@ -36480,7 +36480,7 @@
           "weight": 0.03188565145684442,
           "evalCp": 62,
           "annotation": {
-            "explanation": "Kg7? is popular at club level (3% of games) but rare in master play and it concedes 1.2 pawns. Meet it with N1e2."
+            "explanation": "Kg7? sidesteps the check but leaves the king oddly placed, giving up a good chunk of ground. N1e2 continues developing and you stand clearly better, up over a pawn."
           }
         },
         "fcf3c9009c777fa3": {
@@ -36598,7 +36598,7 @@
           "moveKind": "mainline",
           "evalCp": -89,
           "annotation": {
-            "explanation": "Punishes Kh1: h6 wins the advantage (-0.8 → -0.9). Play continues Nf3 Nd4 Be2 Re8."
+            "explanation": "h6 kicks the misplaced knight right away. After Nf3 Nd4 Be2 Re8 you follow up with a knight hop to d4 hitting it again and keep a comfortable edge."
           }
         },
         "026755221c64b208": {
@@ -36678,7 +36678,7 @@
           "moveKind": "mainline",
           "evalCp": -3,
           "annotation": {
-            "explanation": "Punishes h3: d6 wins the advantage (-0.0 → -0.0). Play continues a3 Nd4 d3 c6."
+            "explanation": "d6 is the simple, solid reply, opening the diagonal for your bishop and preparing Nd4 ideas. After a3 Nd4 d3 c6 you have an easy, smooth game."
           }
         },
         "05635df9c18dab58": {
@@ -36950,7 +36950,7 @@
           "moveKind": "mainline",
           "evalCp": -19,
           "annotation": {
-            "explanation": "Punishes Be3: d5 wins the advantage (-0.2 → -0.2). Play continues exd5 Nxd5 O-O O-O."
+            "explanation": "d5 strikes the center right when White's bishop has just committed to e3. After exd5 Nxd5 O-O O-O you're comfortably equal with easy piece activity."
           }
         },
         "0c10478563b1ba12": {
@@ -37664,7 +37664,7 @@
           "moveKind": "mainline",
           "evalCp": -18,
           "annotation": {
-            "explanation": "Punishes b4: Nxf3+ wins the advantage (-0.2 → -0.2). Play continues Qxf3 Bd4 Bd2 b5."
+            "explanation": "Nxf3+ trades off your strong d4-knight with check before it gets kicked further. After Qxf3 Bd4 Bd2 b5 you keep a pleasant, simple position."
           }
         },
         "3867ad671d8aa914": {
@@ -37839,7 +37839,7 @@
           "weight": 0.030215416917730418,
           "evalCp": -3,
           "annotation": {
-            "explanation": "Nd5? is popular at club level (3% of games) but rare in master play. Meet it with Nxe4."
+            "explanation": "Nd5? invites Nxe4 grabbing the e4-pawn, and if d3 kicks the knight, Nxf2 Rxf2 Bxf2+ Kxf2 rips open White's kingside for a strong initiative."
           }
         },
         "43cde9f2a5a7fe89": {
@@ -37981,7 +37981,7 @@
           "moveKind": "mainline",
           "evalCp": 0,
           "annotation": {
-            "explanation": "Punishes O-O: Qd8 wins the advantage (+0.0 → +0.0). Play continues Nd5 a5 c3 Ba7."
+            "explanation": "Qd8 quietly repositions the queen after the bishop trade, keeping your options flexible. After Nd5 a5 c3 Ba7 the position stays balanced."
           }
         },
         "46956ac90a414f91": {
@@ -38075,7 +38075,7 @@
           "weight": 0.037043686415320166,
           "evalCp": -83,
           "annotation": {
-            "explanation": "Kh1? is popular at club level (4% of games) but rare in master play. Meet it with h6."
+            "explanation": "Kh1? spends a move without addressing the misplaced Ng5. h6 kicks it immediately, and after Nf3 Nd4 Be2 Re8 you gain a useful tempo and a growing edge."
           }
         },
         "4b6e4c4e772997ae": {
@@ -38155,7 +38155,7 @@
           "moveKind": "mainline",
           "evalCp": -70,
           "annotation": {
-            "explanation": "Punishes Nd5: Nxc4 wins the advantage (-0.7 → -0.7). Play continues Nxf6+ Qxf6 dxc4 Bg4."
+            "explanation": "Nxc4 wins the stray bishop on c4. After Nxf6+ Qxf6 dxc4 the knights trade off and you remain comfortably better without giving back any of your edge."
           }
         },
         "50a0211423169a80": {
@@ -38664,7 +38664,7 @@
           "weight": 0.04154863078375826,
           "evalCp": -40,
           "annotation": {
-            "explanation": "Ng5? is popular at club level (4% of games) but rare in master play. Meet it with O-O."
+            "explanation": "Ng5? eyes f7 but achieves little since O-O simply removes the target. After h3 c6 Ba2 the knight retreats to f3 having lost time, handing you over half a pawn."
           }
         },
         "67409b9cbaeca508": {
@@ -39009,7 +39009,7 @@
           "weight": 0.030745934557903747,
           "evalCp": -71,
           "annotation": {
-            "explanation": "Nd5? is popular at club level (3% of games) but rare in master play and it concedes 0.8 pawns. Meet it with Nxc4."
+            "explanation": "Nd5? walks into Nxc4, snatching the bishop. After Nxf6+ Qxf6 dxc4 Bg4 the material evens out but you keep the safer structure, worth close to a pawn."
           }
         },
         "71a7b6ea0b02914a": {
@@ -39089,7 +39089,7 @@
           "moveKind": "mainline",
           "evalCp": -4,
           "annotation": {
-            "explanation": "Punishes h3: c6 wins the advantage (+0.0 → -0.0). Play continues Qf3 Be6 Ne2 Bb6."
+            "explanation": "c6 supports a timely d5 break in the center. After Qf3 Be6 Ne2 Bb6 you keep a small, comfortable edge."
           }
         },
         "74cc0b7e14886178": {
@@ -39182,7 +39182,7 @@
           "weight": 0.050593954271184724,
           "evalCp": -47,
           "annotation": {
-            "explanation": "Ng5? is popular at club level (5% of games) but rare in master play and it concedes 0.8 pawns. Meet it with O-O."
+            "explanation": "Ng5? aims at the f7 weak point, but O-O simply sidesteps it. After d3 Nd4 the knight gets kicked around while you seize the advantage, close to 0.8 pawns."
           }
         },
         "772398c335a6036c": {
@@ -39248,7 +39248,7 @@
           "moveKind": "mainline",
           "evalCp": -32,
           "annotation": {
-            "explanation": "Punishes Ng5: O-O wins the advantage (-0.3 → -0.3). Play continues Na4 h6 Nf3 Bg4."
+            "explanation": "O-O simply tucks the king away and ignores the wayward knight. After d3 Nd4 O-O h6 you kick the misplaced knight back to f3 while keeping the full advantage."
           }
         },
         "78ae9f7a7c09a171": {
@@ -39329,7 +39329,7 @@
           "weight": 0.04381443298969072,
           "evalCp": -33,
           "annotation": {
-            "explanation": "Ng5? is popular at club level (4% of games) but rare in master play. Meet it with d5."
+            "explanation": "Ng5? goes after f7, but d5 hits the center and the bishop at once. After Ba2 O-O O-O h6 you consolidate a clear, comfortable edge."
           }
         },
         "7a68f01dab8285fe": {
@@ -40017,7 +40017,7 @@
           "weight": 0.040694195092758824,
           "evalCp": -186,
           "annotation": {
-            "explanation": "Bxf7+? is popular at club level (4% of games) but rare in master play and it concedes 1.5 pawns. Meet it with Rxf7."
+            "explanation": "Bxf7+? sacrifices for an attack that doesn't work with your king already castled. After Rxf7 Nxf7 Kxf7 you come out ahead materially and structurally, close to two pawns."
           }
         },
         "8b71c5523e08c974": {
@@ -40033,7 +40033,7 @@
           "moveKind": "mainline",
           "evalCp": -2,
           "annotation": {
-            "explanation": "Punishes Nd5: Nxe4 wins the advantage (-0.0 → -0.0). Play continues d3 Nxf2 Rxf2 Bxf2+."
+            "explanation": "Nxe4 grabs the free e4-pawn. If White tries d3, Nxf2 Rxf2 Bxf2+ Kxf2 rips the king open, keeping the position sharp and comfortable for you."
           }
         },
         "8c5fc698c69c5b05": {
@@ -40217,7 +40217,7 @@
           "weight": 0.03699248120300752,
           "evalCp": -183,
           "annotation": {
-            "explanation": "Bxf7+? is popular at club level (4% of games) but rare in master play and it concedes 1.6 pawns. Meet it with Rxf7."
+            "explanation": "Bxf7+? sacrifices for an attack that doesn't work now that your king is safely castled. Rxf7 Nxf7 Kxf7 leaves you clearly on top, up close to 1.6 pawns."
           }
         },
         "93f530e31e14bbcb": {
@@ -40336,7 +40336,7 @@
           "weight": 0.054355919583023084,
           "evalCp": 0,
           "annotation": {
-            "explanation": "h3? is popular at club level (5% of games) but rare in master play. Meet it with c6."
+            "explanation": "h3? is a slow move that does nothing for White's development. c6 continues your own plans, and after Qf3 Be6 Ne2 Bb6 you keep a small, steady edge."
           }
         },
         "96f4301e1592a2f6": {
@@ -40439,7 +40439,7 @@
           "weight": 0.07187811304242582,
           "evalCp": -3,
           "annotation": {
-            "explanation": "h3? is popular at club level (7% of games) but rare in master play. Meet it with d6."
+            "explanation": "h3? spends a move on prophylaxis you don't need to worry about yet. d6 develops naturally, and after a3 Nd4 d3 c6 you equalize comfortably."
           }
         },
         "9d4d68a7c871b54e": {
@@ -40472,7 +40472,7 @@
           "weight": 0.031565151230900715,
           "evalCp": -26,
           "annotation": {
-            "explanation": "Ng5? is popular at club level (3% of games) but rare in master play. Meet it with O-O."
+            "explanation": "Ng5? aims at f7 but O-O simply removes the target. After Na4 h6 Nf3 Bg4 you develop smoothly and take over the advantage."
           }
         },
         "9f9ea937f7a2a6b1": {
@@ -40598,7 +40598,7 @@
           "moveKind": "mainline",
           "evalCp": -29,
           "annotation": {
-            "explanation": "Punishes Ng5: d5 wins the advantage (-0.3 → -0.3). Play continues Ba2 O-O O-O h6."
+            "explanation": "d5 strikes the center exactly when White's knight and bishop are both offside. After Ba2 O-O O-O h6 you keep a stable, pleasant edge."
           }
         },
         "a44f5fd5aa3534dd": {
@@ -40658,7 +40658,7 @@
           "moveKind": "mainline",
           "evalCp": -23,
           "annotation": {
-            "explanation": "Punishes b4: Bb6 wins the advantage (-0.2 → -0.2). Play continues h3 c6 O-O O-O."
+            "explanation": "Bb6 tucks the bishop safely out of tempo range while keeping the diagonal live. After h3 c6 O-O O-O you continue normal development with a small, steady edge."
           }
         },
         "a79308256e0a9517": {
@@ -40821,7 +40821,7 @@
           "weight": 0.05142366882942785,
           "evalCp": -19,
           "annotation": {
-            "explanation": "Be3? is popular at club level (5% of games) but rare in master play. Meet it with d5."
+            "explanation": "Be3? develops but hands you a free central tempo. d5 strikes right away, and after exd5 Nxd5 O-O O-O you're comfortably equal with easy piece play."
           }
         },
         "ab5cdd3791043e4d": {
@@ -41169,7 +41169,7 @@
           "weight": 0.07285903738730895,
           "evalCp": -55,
           "annotation": {
-            "explanation": "h3? is popular at club level (7% of games) but rare in master play. Meet it with Ne7."
+            "explanation": "h3? does little for White's position. Ne7 reroutes your knight toward better squares, and after Na4 Bb4+ c3 Ba5 you grab a healthy edge, over half a pawn."
           }
         },
         "bb8e85c4f9049f32": {
@@ -41440,7 +41440,7 @@
           "moveKind": "mainline",
           "evalCp": -79,
           "annotation": {
-            "explanation": "Punishes Nd5: Nxc4 wins the advantage (-0.8 → -0.8). Play continues Nxf6+ Qxf6 dxc4 Bg4."
+            "explanation": "Nxc4 grabs the bishop that wandered too far. After Nxf6+ Qxf6 dxc4 Bg4 you keep the initiative and hold onto the advantage already built up."
           }
         },
         "c71cae4360616c73": {
@@ -41526,7 +41526,7 @@
           "moveKind": "mainline",
           "evalCp": -184,
           "annotation": {
-            "explanation": "Punishes Bxf7+: Rxf7 wins the advantage (-1.9 → -1.8). Play continues Nxf7 Kxf7 h3 Kg8."
+            "explanation": "Rxf7 simply takes the sacrificed bishop. After Nxf7 Kxf7 h3 Kg8 you come out well ahead in material, close to two pawns to the good."
           }
         },
         "ca18fb7bb4111e8e": {
@@ -41849,7 +41849,7 @@
           "weight": 0.030745934557903747,
           "evalCp": -80,
           "annotation": {
-            "explanation": "Nd5? is popular at club level (3% of games) but rare in master play and it concedes 0.8 pawns. Meet it with Nxc4."
+            "explanation": "Nd5? offers itself to Nxc4, giving away the bishop. After Nxf6+ Qxf6 dxc4 Bg4 material evens out but you keep the safer structure, close to a pawn's worth of edge."
           }
         },
         "d7548293074b0fd6": {
@@ -41865,7 +41865,7 @@
           "moveKind": "mainline",
           "evalCp": -32,
           "annotation": {
-            "explanation": "Punishes Ng5: O-O wins the advantage (-0.4 → -0.3). Play continues h3 c6 Ba2 h6."
+            "explanation": "O-O tucks the king away and calls White's bluff on the knight sortie. After h3 c6 Ba2 h6 you finish development and keep a solid edge."
           }
         },
         "d76d085797879e07": {
@@ -42371,7 +42371,7 @@
           "weight": 0.05257731958762887,
           "evalCp": -24,
           "annotation": {
-            "explanation": "b4? is popular at club level (5% of games) but rare in master play. Meet it with Nxf3+."
+            "explanation": "b4? grabs space but drops the c3-knight's support too early. Nxf3+ trades it off with tempo, and after Qxf3 Bd4 Bd2 b5 you're comfortably placed."
           }
         },
         "ee9c17d4ee14c5f5": {
@@ -42388,7 +42388,7 @@
           "weight": 0.043909348441926344,
           "evalCp": -23,
           "annotation": {
-            "explanation": "b4? is popular at club level (4% of games) but rare in master play. Meet it with Bb6."
+            "explanation": "b4? pushes forward without enough backup. Bb6 tucks the bishop safely, and after h3 c6 O-O O-O you're comfortably placed with easy development."
           }
         },
         "f18b1f768ed144a3": {
@@ -42451,7 +42451,7 @@
           "moveKind": "mainline",
           "evalCp": -47,
           "annotation": {
-            "explanation": "Punishes Ng5: O-O wins the advantage (-0.5 → -0.5). Play continues d3 Nd4 O-O h6."
+            "explanation": "O-O gets the king to safety and shrugs off the knight sortie. After d3 Nd4 O-O h6 you kick the knight back and keep a solid, half-pawn edge in hand."
           }
         },
         "f36f5c7e9c856652": {
@@ -42510,7 +42510,7 @@
           "moveKind": "mainline",
           "evalCp": -60,
           "annotation": {
-            "explanation": "Punishes h3: Ne7 wins the advantage (-0.6 → -0.6). Play continues Na4 Bb4+ c3 Ba5."
+            "explanation": "Ne7 reroutes the knight toward better squares after the bishop trade. After Na4 Bb4+ c3 Ba5 you keep a healthy edge, over half a pawn."
           }
         },
         "f5d9ec2bc654e0cd": {
@@ -42567,7 +42567,7 @@
           "weight": 0.09488151531794618,
           "evalCp": 0,
           "annotation": {
-            "explanation": "O-O? is popular at club level (9% of games) but rare in master play. Meet it with Qd8."
+            "explanation": "O-O? isn't bad on its own, just a touch less precise than developing further right away. Qd8 repositions the queen, and after Nd5 a5 c3 Ba7 the position stays balanced."
           }
         },
         "f8bf6bd6ce0b42b9": {
@@ -42619,7 +42619,7 @@
           "moveKind": "mainline",
           "evalCp": -169,
           "annotation": {
-            "explanation": "Punishes Bxf7+: Rxf7 wins the advantage (-1.8 → -1.7). Play continues Nxf7 Kxf7 d3 Kg8."
+            "explanation": "Rxf7 simply recaptures the sacrificed bishop. After Nxf7 Kxf7 d3 Kg8 you're left clearly ahead in material, close to 1.7 pawns to the good."
           }
         },
         "fb061e4f2a925fc4": {
@@ -42710,7 +42710,7 @@
           "weight": 0.21301117569104588,
           "evalCp": 75,
           "annotation": {
-            "explanation": "Be6? is popular at club level (21% of games) but rare in master play. Meet it with Ng5."
+            "explanation": "Be6? develops but leaves itself a target. Ng5 hits the bishop, and after Qf6 Nxe6 Qxe6 Re1 you keep a small, pleasant edge."
           }
         },
         "022376801f9f0c16": {
@@ -42786,7 +42786,7 @@
           "moveKind": "mainline",
           "evalCp": 146,
           "annotation": {
-            "explanation": "Punishes h6: d4 wins the advantage (+1.5 → +1.5). Play continues Bd6 Bd5 Qe7 Re1."
+            "explanation": "d4 breaks open the center right when Black's last move did nothing to prepare for it. After Bd6 Bd5 Qe7 Re1 you keep a big, close to 1.5 pawn advantage."
           }
         },
         "0881d66cf51fc209": {
@@ -42822,7 +42822,7 @@
           "moveKind": "mainline",
           "evalCp": 113,
           "annotation": {
-            "explanation": "Punishes d5: exd5 wins the advantage (+1.0 → +1.1). Play continues Nxd5 Qb3 O-O Bxd5."
+            "explanation": "exd5 simply grabs the pawn Black offered in the center. After Nxd5 Qb3 O-O Bxd5 you keep a solid edge, over a pawn to the good."
           }
         },
         "09e3cad514308f2f": {
@@ -43022,7 +43022,7 @@
           "weight": 0.18824470211915234,
           "evalCp": 142,
           "annotation": {
-            "explanation": "h6? is popular at club level (19% of games) but rare in master play and it concedes 1.1 pawns. Meet it with d4."
+            "explanation": "h6? wastes a tempo that does nothing for Black's development. d4 strikes the center at once, and after Bd6 Bd5 Qe7 Nbd2 you're up over a pawn."
           }
         },
         "1134e57d039732d6": {
@@ -43039,7 +43039,7 @@
           "weight": 0.04195855614973262,
           "evalCp": 38,
           "annotation": {
-            "explanation": "h6? is popular at club level (4% of games) but rare in master play. Meet it with c3."
+            "explanation": "h6? is a slow, non-developing move. c3 prepares d4 and keeps building, and after d6 a4 O-O Re1 you hold a small, steady edge."
           }
         },
         "12759c6574c19190": {
@@ -43055,7 +43055,7 @@
           "moveKind": "mainline",
           "evalCp": 38,
           "annotation": {
-            "explanation": "Punishes h6: c3 wins the advantage (+0.4 → +0.4). Play continues d6 Bb3 Re8 Nbd2."
+            "explanation": "c3 prepares the d4 break while patching up the center. After d6 Bb3 Re8 Nbd2 you keep a comfortable, steady edge."
           }
         },
         "13b02dae8eb204ec": {
@@ -43095,7 +43095,7 @@
           "moveKind": "mainline",
           "evalCp": 37,
           "annotation": {
-            "explanation": "Punishes h6: c3 wins the advantage (+0.4 → +0.4). Play continues d6 a4 O-O Re1."
+            "explanation": "c3 quietly prepares d4 next. After d6 a4 O-O Re1 you keep a small but stable edge."
           }
         },
         "171e9af1eaf86bd5": {
@@ -43112,7 +43112,7 @@
           "weight": 0.11533687431441603,
           "evalCp": 46,
           "annotation": {
-            "explanation": "b5? is popular at club level (12% of games) but rare in master play. Meet it with Bb3."
+            "explanation": "b5? grabs space but loosens the queenside too early. Bb3 tucks the bishop safely away, and after d6 h3 Be6 d4 you keep a comfortable edge."
           }
         },
         "17a55ffebcdd46c2": {
@@ -43129,7 +43129,7 @@
           "weight": 0.04589535333297017,
           "evalCp": 129,
           "annotation": {
-            "explanation": "Na5? is popular at club level (5% of games) but rare in master play and it concedes 0.8 pawns. Meet it with Nxe5."
+            "explanation": "Na5? chases the bishop but hands over the center. Nxe5 grabs the free pawn, and after Bd6 Nf3 O-O O-O you're up close to a pawn with an easy position."
           }
         },
         "1a7e1bfeb1b62fe3": {
@@ -43267,7 +43267,7 @@
           "moveKind": "mainline",
           "evalCp": 61,
           "annotation": {
-            "explanation": "Punishes Bg4: Re1 wins the advantage (+0.6 → +0.6). Play continues Qd7 b4 Be7 Nbd2."
+            "explanation": "Re1 centralizes the rook and eyes the e-file ahead of a future e5 break. After Qd7 b4 Be7 Nbd2 you keep a solid, close to 0.6 pawn edge."
           }
         },
         "1f2ac9d3d9379d09": {
@@ -43323,7 +43323,7 @@
           "moveKind": "mainline",
           "evalCp": 73,
           "annotation": {
-            "explanation": "Punishes Be6: Ng5 wins the advantage (+0.8 → +0.7). Play continues Qf6 Nxe6 Qxe6 Re1."
+            "explanation": "Ng5 hits the bishop on e6 right away. After Qf6 Nxe6 Qxe6 Re1 you keep a comfortable edge, around 0.7 to 0.8 pawns."
           }
         },
         "1f90f04adcd34882": {
@@ -43438,7 +43438,7 @@
           "weight": 0.11533687431441603,
           "evalCp": 51,
           "annotation": {
-            "explanation": "b5? is popular at club level (12% of games) but rare in master play. Meet it with Bb3."
+            "explanation": "b5? grabs queenside space but weakens it just as fast. Bb3 sidesteps safely, and after d6 h3 h6 a4 you keep a solid edge."
           }
         },
         "2766564b7175fcc1": {
@@ -43464,7 +43464,7 @@
           "moveKind": "mainline",
           "evalCp": 26,
           "annotation": {
-            "explanation": "Punishes Be6: Bxe6 wins the advantage (+0.3 → +0.3). Play continues fxe6 b4 Bb6 b5."
+            "explanation": "Bxe6 trades off the bishop that just walked into range. After fxe6 b4 Bb6 b5 you keep pushing on the queenside with a small, steady edge."
           }
         },
         "2a245cf6210deec0": {
@@ -43587,7 +43587,7 @@
           "weight": 0.09123266059988072,
           "evalCp": 38,
           "annotation": {
-            "explanation": "Be6? is popular at club level (9% of games) but rare in master play. Meet it with Bxe6."
+            "explanation": "Be6? offers the bishop for a trade you're happy to take. Bxe6 simplifies at once, and after fxe6 Qb3 Qc8 Re1 you keep a small, comfortable edge."
           }
         },
         "2fe7cadfca0d776e": {
@@ -43604,7 +43604,7 @@
           "weight": 0.3189359396143166,
           "evalCp": 61,
           "annotation": {
-            "explanation": "Bg4? is popular at club level (32% of games) but rare in master play. Meet it with Re1."
+            "explanation": "Bg4? pins the knight but ignores the center. Re1 prepares e5 ideas, and after Qd7 b4 Be7 Nbd2 you build a healthy edge."
           }
         },
         "3104808b22316f52": {
@@ -43621,7 +43621,7 @@
           "weight": 0.04314249102522718,
           "evalCp": 106,
           "annotation": {
-            "explanation": "Bg4? is popular at club level (4% of games) but rare in master play. Meet it with exd6."
+            "explanation": "Bg4? develops but ignores that d6 is about to fall. exd6 wins the pawn, and after Bxd6 h3 Bh5 g4 you keep close to half a pawn extra with the bishop pair too."
           }
         },
         "31c215fb9dd8e0e6": {
@@ -43680,7 +43680,7 @@
           "weight": 0.0914788589177097,
           "evalCp": 107,
           "annotation": {
-            "explanation": "d5? is popular at club level (9% of games) but rare in master play and it concedes 0.8 pawns. Meet it with exd5."
+            "explanation": "d5? strikes the center too soon without enough support. exd5 Nxd5 wins a pawn, and after Nxe5 Nxe5 Rxe5 you're up close to 0.8 pawns."
           }
         },
         "32b384db8306ec5d": {
@@ -43791,7 +43791,7 @@
           "moveKind": "mainline",
           "evalCp": 114,
           "annotation": {
-            "explanation": "Punishes a6: d4 wins the advantage (+1.1 → +1.1). Play continues exd4 cxd4 Ba7 O-O."
+            "explanation": "d4 breaks in the center while Black's last move did nothing about it. After exd4 cxd4 Ba7 O-O you keep a strong, over one-pawn advantage."
           }
         },
         "38bd0f65e17aeddb": {
@@ -43845,7 +43845,7 @@
           "moveKind": "mainline",
           "evalCp": 42,
           "annotation": {
-            "explanation": "Punishes Be6: Bxe6 wins the advantage (+0.4 → +0.4). Play continues fxe6 Qb3 Qc8 Re1."
+            "explanation": "Bxe6 takes the free trade offered. After fxe6 Qb3 Qc8 Re1 you keep a small, comfortable edge with Black's structure slightly loosened."
           }
         },
         "39d9d2ea2c301d0d": {
@@ -43957,7 +43957,7 @@
           "moveKind": "mainline",
           "evalCp": 93,
           "annotation": {
-            "explanation": "Punishes d5: exd5 wins the advantage (+0.9 → +0.9). Play continues Nxd5 Re1 Be6 Nxe5."
+            "explanation": "exd5 grabs the pawn Black just pushed. After Nxd5 Re1 Be6 Nxe5 you keep a solid, close to a pawn edge."
           }
         },
         "40602eb4042d0ab3": {
@@ -44077,7 +44077,7 @@
           "weight": 0.06006478879732128,
           "evalCp": 90,
           "annotation": {
-            "explanation": "d5? is popular at club level (6% of games) but rare in master play. Meet it with exd5."
+            "explanation": "d5? pushes in the center without adequate backup. exd5 Nxd5 wins the pawn, and after Re1 Be6 Nxe5 you're up around half a pawn."
           }
         },
         "42900e90bc010571": {
@@ -44138,7 +44138,7 @@
           "weight": 0.08761485699495276,
           "evalCp": 38,
           "annotation": {
-            "explanation": "h6? is popular at club level (9% of games) but rare in master play. Meet it with c3."
+            "explanation": "h6? spends a move that doesn't help Black's development. c3 prepares d4, and after d6 Bb3 Re8 Nbd2 you keep a small, steady edge."
           }
         },
         "457a1374172daffa": {
@@ -44166,7 +44166,7 @@
           "moveKind": "mainline",
           "evalCp": 381,
           "annotation": {
-            "explanation": "Punishes Bd6: Bxd5 wins the advantage (+3.9 → +3.8). Play continues O-O Nbd2 Bg4 h3."
+            "explanation": "Bxd5 wins the knight outright since Black's own bishop just cut off its defense along the d-file. After O-O Nbd2 Bg4 h3 you're left with an overwhelming, near-decisive material edge."
           }
         },
         "469d43730918f1fe": {
@@ -44231,7 +44231,7 @@
           "weight": 0.08761529143773746,
           "evalCp": 34,
           "annotation": {
-            "explanation": "Be6? is popular at club level (9% of games) but rare in master play. Meet it with Bxe6."
+            "explanation": "Be6? invites a trade you're happy to make. Bxe6 simplifies at once, and after fxe6 b4 Bb6 b5 you keep a small, comfortable edge."
           }
         },
         "4a00cd006d67512d": {
@@ -44247,7 +44247,7 @@
           "moveKind": "mainline",
           "evalCp": 34,
           "annotation": {
-            "explanation": "Punishes Be6: Bxe6 wins the advantage (+0.3 → +0.3). Play continues fxe6 b4 Bb6 b5."
+            "explanation": "Bxe6 trades off the bishop offered for free. After fxe6 b4 Bb6 b5 you keep a small, steady edge."
           }
         },
         "4ae9456855946171": {
@@ -44367,7 +44367,7 @@
           "moveKind": "mainline",
           "evalCp": 157,
           "annotation": {
-            "explanation": "Punishes d5: exd5 wins the advantage (+1.6 → +1.6). Play continues Ne7 Nxe5 O-O d4."
+            "explanation": "exd5 grabs the center pawn Black just pushed. After Ne7 Nxe5 O-O d4 you keep a big edge, well over a pawn and a half."
           }
         },
         "4d78ae98291c0289": {
@@ -44696,7 +44696,7 @@
           "weight": 0.05081652861312316,
           "evalCp": 102,
           "annotation": {
-            "explanation": "h6? is popular at club level (5% of games) but rare in master play and it concedes 0.7 pawns. Meet it with b4."
+            "explanation": "h6? does nothing useful here. b4 gains queenside space at once, and after Bd6 d4 exd4 O-O you're up close to 0.7 pawns."
           }
         },
         "5dd16aa547f63639": {
@@ -44892,7 +44892,7 @@
           "weight": 0.12234193164232537,
           "evalCp": 71,
           "annotation": {
-            "explanation": "h6? is popular at club level (12% of games) but rare in master play. Meet it with d4."
+            "explanation": "h6? wastes a move Black can't afford this early. d4 hits the center immediately, and after exd4 O-O Nf6 e5 you seize a strong, close to half-pawn lead in space and time."
           }
         },
         "63ace55c229f5f76": {
@@ -44941,7 +44941,7 @@
           "weight": 0.11924831129842388,
           "evalCp": 150,
           "annotation": {
-            "explanation": "h6? is popular at club level (12% of games) but rare in master play and it concedes 1.2 pawns. Meet it with d4."
+            "explanation": "h6? gives away a free tempo. d4 breaks the center at once, and after Bd6 Bd5 Qe7 Re1 you're left with a commanding edge, well over a pawn."
           }
         },
         "651fd42c7f857aae": {
@@ -44967,7 +44967,7 @@
           "moveKind": "mainline",
           "evalCp": 122,
           "annotation": {
-            "explanation": "Punishes Na5: Nxe5 wins the advantage (+1.3 → +1.2). Play continues Bd6 Nf3 O-O O-O."
+            "explanation": "Nxe5 simply grabs the pawn Black's knight left undefended. After Bd6 Nf3 O-O O-O you keep a healthy edge, around 1.2 pawns."
           }
         },
         "65769ccf99ecae35": {
@@ -45025,7 +45025,7 @@
           "moveKind": "mainline",
           "evalCp": 132,
           "annotation": {
-            "explanation": "Punishes d5: exd5 wins the advantage (+1.3 → +1.3). Play continues Nxd5 Qb3 O-O Bxd5."
+            "explanation": "exd5 takes the pawn on offer in the center. After Nxd5 Qb3 O-O Bxd5 you keep a strong, over one-pawn advantage."
           }
         },
         "6776ca00aba98b19": {
@@ -45305,7 +45305,7 @@
           "moveKind": "mainline",
           "evalCp": 50,
           "annotation": {
-            "explanation": "Punishes b5: Bb3 wins the advantage (+0.5 → +0.5). Play continues d6 h3 h6 a4."
+            "explanation": "Bb3 tucks the bishop safely away from the b5 advance. After d6 h3 h6 a4 you keep a comfortable, small edge."
           }
         },
         "76fe75af09a60de7": {
@@ -45385,7 +45385,7 @@
           "moveKind": "mainline",
           "evalCp": 122,
           "annotation": {
-            "explanation": "Punishes h6: b4 wins the advantage (+1.0 → +1.2). Play continues Bd6 d4 exd4 O-O."
+            "explanation": "b4 gains queenside space right when Black's last move ignored it. After Bd6 d4 exd4 O-O you keep a strong edge, over a pawn."
           }
         },
         "7b0afcb2dabb7807": {
@@ -45416,7 +45416,7 @@
           "weight": 0.28853904600031977,
           "evalCp": 61,
           "annotation": {
-            "explanation": "Nxd4? is popular at club level (29% of games) but rare in master play. Meet it with Qxd4."
+            "explanation": "Nxd4? trades off too early. Qxd4 recaptures centralizing the queen, and after Nf6 Nc3 O-O e5 you keep a small, comfortable edge with easy development."
           }
         },
         "7c92b065944a46ff": {
@@ -45454,7 +45454,7 @@
           "moveKind": "mainline",
           "evalCp": 103,
           "annotation": {
-            "explanation": "Punishes Na5: b4 wins the advantage (+1.1 → +1.0). Play continues Nxc4 bxc5 Na5 Nxe5."
+            "explanation": "b4 kicks the misplaced knight at once. After Nxc4 bxc5 Na5 Nxe5 you win a pawn back and keep a strong, over one-pawn edge."
           }
         },
         "7fc7138cf9399a8d": {
@@ -45591,7 +45591,7 @@
           "weight": 0.03440034584017435,
           "evalCp": 100,
           "annotation": {
-            "explanation": "Na5? is popular at club level (3% of games) but rare in master play and it concedes 0.7 pawns. Meet it with b4."
+            "explanation": "Na5? chases the bishop but drops the center's tension. b4 kicks it right back, and after Nxc4 bxc5 Na5 Nxe5 you come out close to 0.7 pawns ahead."
           }
         },
         "87cdbc12b80d872e": {
@@ -45662,7 +45662,7 @@
           "weight": 0.11924831129842388,
           "evalCp": 154,
           "annotation": {
-            "explanation": "h6? is popular at club level (12% of games) but rare in master play and it concedes 1.3 pawns. Meet it with d4."
+            "explanation": "h6? achieves nothing while you're ready to strike. d4 breaks the center immediately, and after Bd6 Bd5 Qe7 Nbd2 you're up close to 1.3 pawns."
           }
         },
         "8a592436551d1798": {
@@ -45693,7 +45693,7 @@
           "weight": 0.051125946320847035,
           "evalCp": 44,
           "annotation": {
-            "explanation": "a6? is popular at club level (5% of games) but rare in master play. Meet it with c3."
+            "explanation": "a6? is a slow move that doesn't address the center. c3 prepares d4 next, and after Be7 d4 d6 d5 you keep a small, steady edge."
           }
         },
         "8a9a9b1f61d19069": {
@@ -45738,7 +45738,7 @@
           "moveKind": "mainline",
           "evalCp": 154,
           "annotation": {
-            "explanation": "Punishes h6: d4 wins the advantage (+1.4 → +1.5). Play continues Bd6 Bd5 Qe7 Nbd2."
+            "explanation": "d4 opens the center while Black's last move did little to prepare for it. After Bd6 Bd5 Qe7 Nbd2 you keep a strong, over 1.5 pawn edge."
           }
         },
         "8c573e6ebe061a9a": {
@@ -45755,7 +45755,7 @@
           "weight": 0.04664925231432605,
           "evalCp": 110,
           "annotation": {
-            "explanation": "Nd4? is popular at club level (5% of games) but rare in master play and it concedes 0.8 pawns. Meet it with Nxd4."
+            "explanation": "Nd4? jumps into the center too early. Nxd4 exd4 trades knights and leaves Black's structure slightly worse, and after O-O Nf6 Re1 you're up close to 0.8 pawns."
           }
         },
         "8d02201b12f425e0": {
@@ -45771,7 +45771,7 @@
           "moveKind": "mainline",
           "evalCp": 61,
           "annotation": {
-            "explanation": "Punishes Nxd4: Qxd4 wins the advantage (+0.6 → +0.6). Play continues Nf6 Nc3 O-O e5."
+            "explanation": "Qxd4 recaptures centrally, eyeing the long diagonal against Black's undeveloped pieces. After Nf6 Nc3 O-O e5 you keep a small, steady edge."
           }
         },
         "8d5fa8488abf769d": {
@@ -45824,7 +45824,7 @@
           "weight": 0.03440034584017435,
           "evalCp": 106,
           "annotation": {
-            "explanation": "Na5? is popular at club level (3% of games) but rare in master play and it concedes 0.8 pawns. Meet it with b4."
+            "explanation": "Na5? chases the bishop but loosens Black's own grip on the center. b4 kicks it back at once, and after Nxc4 bxc5 Na5 Nxe5 you come out close to 0.8 pawns ahead."
           }
         },
         "950decf23027d4b5": {
@@ -45922,7 +45922,7 @@
           "weight": 0.05641323969822504,
           "evalCp": 388,
           "annotation": {
-            "explanation": "Bd6? is popular at club level (6% of games) but rare in master play and it concedes 3.4 pawns. Meet it with Bxd5."
+            "explanation": "Bd6? blocks your own queen's defense of the d5-knight. Bxd5 simply wins the piece, and after O-O Nbd2 Bg4 h3 you're left massively ahead, over three pawns' worth."
           }
         },
         "96b921f89e9feb02": {
@@ -46100,7 +46100,7 @@
           "moveKind": "mainline",
           "evalCp": 46,
           "annotation": {
-            "explanation": "Punishes a6: c3 wins the advantage (+0.4 → +0.5). Play continues Be7 d4 d6 d5."
+            "explanation": "c3 quietly prepares d4 while patching the center. After Be7 d4 d6 d5 you keep a small, steady edge."
           }
         },
         "9ee75ba45c4674a5": {
@@ -46116,7 +46116,7 @@
           "moveKind": "mainline",
           "evalCp": 159,
           "annotation": {
-            "explanation": "Punishes h6: d4 wins the advantage (+1.5 → +1.6). Play continues Bd6 Bd5 Qe7 Nbd2."
+            "explanation": "d4 breaks the center right on cue. After Bd6 Bd5 Qe7 Nbd2 you keep a strong, over 1.5 pawn advantage."
           }
         },
         "a0260c63cf011190": {
@@ -46133,7 +46133,7 @@
           "weight": 0.051769186855631914,
           "evalCp": 103,
           "annotation": {
-            "explanation": "d5? is popular at club level (5% of games) but rare in master play and it concedes 0.8 pawns. Meet it with exd5."
+            "explanation": "d5? pushes too early without enough support. exd5 Nxd5 wins the pawn, and after Qb3 O-O Bxd5 you're up close to 0.8 pawns."
           }
         },
         "a0260f63cf0116a9": {
@@ -46163,7 +46163,7 @@
           "moveKind": "mainline",
           "evalCp": 137,
           "annotation": {
-            "explanation": "Punishes a6: d4 wins the advantage (+1.4 → +1.4). Play continues Bd6 Bd5 Nxd5 exd5."
+            "explanation": "d4 opens the center just as Black's last move ignored it. After Bd6 Bd5 Nxd5 exd5 you keep a strong, near 1.4 pawn edge."
           }
         },
         "a32eef75930a65c6": {
@@ -46265,7 +46265,7 @@
           "moveKind": "mainline",
           "evalCp": 110,
           "annotation": {
-            "explanation": "Punishes d5: exd5 wins the advantage (+1.1 → +1.1). Play continues Nxd5 Nxe5 Nxe5 Rxe5."
+            "explanation": "exd5 grabs the pawn Black just advanced. After Nxd5 Nxe5 Nxe5 Rxe5 you keep a solid, over one-pawn edge."
           }
         },
         "aaa9b1cb82474edf": {
@@ -46632,7 +46632,7 @@
           "moveKind": "mainline",
           "evalCp": 86,
           "annotation": {
-            "explanation": "Punishes d6: Ng5 wins the advantage (+0.9 → +0.9). Play continues d5 exd5 b5 dxc6."
+            "explanation": "Ng5 pressures f7 and the center right after Black's last move. After d5 exd5 b5 dxc6 you keep a comfortable, close to 0.9 pawn edge."
           }
         },
         "b75e34de02d84ae2": {
@@ -46666,7 +46666,7 @@
           "moveKind": "mainline",
           "evalCp": 138,
           "annotation": {
-            "explanation": "Punishes h6: d4 wins the advantage (+1.5 → +1.4). Play continues Bd6 Bd5 Qe7 Re1."
+            "explanation": "d4 breaks the center exactly on schedule. After Bd6 Bd5 Qe7 Re1 you keep a strong, over 1.4 pawn edge."
           }
         },
         "b88c9475d1d45489": {
@@ -46799,7 +46799,7 @@
           "weight": 0.051769186855631914,
           "evalCp": 131,
           "annotation": {
-            "explanation": "d5? is popular at club level (5% of games) but rare in master play and it concedes 1.1 pawns. Meet it with exd5."
+            "explanation": "d5? pushes too soon without adequate support. exd5 Nxd5 wins the pawn, and after Qb3 O-O Bxd5 you're up over a pawn."
           }
         },
         "bd75f5a91b0dade1": {
@@ -46946,7 +46946,7 @@
           "weight": 0.36717731137734966,
           "evalCp": 38,
           "annotation": {
-            "explanation": "Bg4? is popular at club level (37% of games) but rare in master play. Meet it with h3."
+            "explanation": "Bg4? pins the knight but ignores the center. h3 kicks the bishop back at once, and after Be6 Bb3 Bxb3 Qxb3 you trade down to a comfortable, safe edge."
           }
         },
         "c28c48a8cdebf9a8": {
@@ -46963,7 +46963,7 @@
           "weight": 0.14324714392529864,
           "evalCp": 21,
           "annotation": {
-            "explanation": "Be6? is popular at club level (14% of games) but rare in master play. Meet it with Bxe6."
+            "explanation": "Be6? offers an unnecessary trade - Bxe6 wins the bishop pair for nothing, worth close to half a pawn. After fxe6, b4 and a4 start rolling on the queenside."
           }
         },
         "c384f1ddf9dc6565": {
@@ -47073,7 +47073,7 @@
           "weight": 0.030486759857731985,
           "evalCp": 113,
           "annotation": {
-            "explanation": "a6? is popular at club level (3% of games) but rare in master play and it concedes 0.8 pawns. Meet it with d4."
+            "explanation": "a6? wastes a move instead of developing and concedes about 0.8 pawns - hit the center with d4. Play continues exd4 cxd4 Ba7, with O-O and d6 to follow."
           }
         },
         "c8ac918286990401": {
@@ -47090,7 +47090,7 @@
           "weight": 0.18824470211915234,
           "evalCp": 149,
           "annotation": {
-            "explanation": "h6? is popular at club level (19% of games) but rare in master play and it concedes 1.1 pawns. Meet it with d4."
+            "explanation": "h6? ignores the center and concedes about 1.1 pawns - answer with d4. Play continues Bd6 Bd5 Qe7 Re1."
           }
         },
         "c8eeb890e4d5f058": {
@@ -47107,7 +47107,7 @@
           "weight": 0.08275862654559472,
           "evalCp": 140,
           "annotation": {
-            "explanation": "a6? is popular at club level (8% of games) but concedes 1.1 pawns. Meet it with d4."
+            "explanation": "a6? again spends a tempo on the flank instead of the center, giving up about 1.1 pawns - meet it with d4. Play continues Bd6 Bd5, and the trade on d5 opens the center in your favor."
           }
         },
         "c96d2426b19f03d2": {
@@ -47196,7 +47196,7 @@
           "moveKind": "mainline",
           "evalCp": 100,
           "annotation": {
-            "explanation": "Punishes Bg4: exd6 wins the advantage (+1.1 → +1.0). Play continues Bxd6 h3 Bh5 g4."
+            "explanation": "Punishes Bg4: exd6 grabs a second pawn, keeping the material edge you picked up with the earlier dxe5. Play continues Bxd6 h3 Bh5 g4."
           }
         },
         "cdf71abf177a46f8": {
@@ -47212,7 +47212,7 @@
           "moveKind": "mainline",
           "evalCp": 16,
           "annotation": {
-            "explanation": "Punishes Be6: Bxe6 wins the advantage (+0.2 → +0.2). Play continues fxe6 b4 Bb6 a4."
+            "explanation": "Punishes Be6: Bxe6 wins the bishop pair for free. Play continues fxe6 b4 Bb6 a4, expanding on the queenside."
           }
         },
         "cf00dc53a384d759": {
@@ -47444,7 +47444,7 @@
           "weight": 0.06244966895231774,
           "evalCp": 87,
           "annotation": {
-            "explanation": "d6? is popular at club level (6% of games) but rare in master play. Meet it with Ng5."
+            "explanation": "d6? blocks in the light-squared bishop and lets Ng5 jump into the position - meet it with Ng5. Play continues d5 exd5 b5, and dxc6 then wins the c6-knight."
           }
         },
         "dbc6c3a8dbfef4c8": {
@@ -47490,7 +47490,7 @@
           "moveKind": "mainline",
           "evalCp": 52,
           "annotation": {
-            "explanation": "Punishes b5: Bb3 wins the advantage (+0.5 → +0.5). Play continues d6 h3 Be6 d4."
+            "explanation": "Punishes b5: Bb3 tucks the bishop safely off the a2-g8 diagonal. Play continues d6 h3 Be6 d4."
           }
         },
         "dc77ab7be88eac1f": {
@@ -47619,7 +47619,7 @@
           "moveKind": "mainline",
           "evalCp": 38,
           "annotation": {
-            "explanation": "Punishes Bg4: h3 wins the advantage (+0.4 → +0.4). Play continues Be6 Bb3 Bxb3 Qxb3."
+            "explanation": "Punishes Bg4: h3 asks the bishop a question. Play continues Be6 Bb3, and trading with Bxb3 Qxb3 keeps a comfortable edge."
           }
         },
         "e169ca8fb02b588e": {
@@ -47802,7 +47802,7 @@
           "weight": 0.08761529143773746,
           "evalCp": 28,
           "annotation": {
-            "explanation": "Be6? is popular at club level (9% of games) but rare in master play. Meet it with Bxe6."
+            "explanation": "Be6? offers a trade that only helps White - meet it with Bxe6. Play continues fxe6 b4 Bb6, with b5 rolling the queenside pawns forward."
           }
         },
         "e65466b65592318d": {
@@ -48094,7 +48094,7 @@
           "moveKind": "mainline",
           "evalCp": 111,
           "annotation": {
-            "explanation": "Punishes Nd4: Nxd4 wins the advantage (+1.1 → +1.1). Play continues exd4 O-O Nf6 Re1."
+            "explanation": "Punishes Nd4: Nxd4 simply trades off the centralized knight rather than getting drawn into complications. Play continues exd4 O-O Nf6 Re1, a normal position with an extra tempo in hand."
           }
         },
         "ee8b2b0711b7d188": {
@@ -48278,7 +48278,7 @@
           "moveKind": "mainline",
           "evalCp": 108,
           "annotation": {
-            "explanation": "Punishes Na5: b4 wins the advantage (+1.0 → +1.1). Play continues Nxc4 bxc5 Na5 Nxe5."
+            "explanation": "Punishes Na5: b4 kicks the knight. Play continues Nxc4 bxc5, trading a pair of bishops, and Nxe5 then grabs the e5-pawn."
           }
         },
         "f76e0bdd987c6ace": {
@@ -48333,7 +48333,7 @@
           "moveKind": "mainline",
           "evalCp": 72,
           "annotation": {
-            "explanation": "Punishes h6: d4 wins the advantage (+0.7 → +0.7). Play continues exd4 O-O Nf6 e5."
+            "explanation": "Punishes h6: d4 strikes the center right away. Play continues exd4 O-O Nf6, and e5 gains space while hitting the f6-knight."
           }
         },
         "fb8d370424a46f55": {
@@ -48376,7 +48376,7 @@
           "weight": 0.042548114888146575,
           "evalCp": 162,
           "annotation": {
-            "explanation": "d5? is popular at club level (4% of games) but rare in master play and it concedes 1.4 pawns. Meet it with exd5."
+            "explanation": "d5? overextends in the center and concedes about 1.4 pawns - just take with exd5. Play continues Ne7 Nxe5, leaving you simply a pawn up."
           }
         },
         "fd62a0b868f0cc46": {
@@ -48553,7 +48553,7 @@
           "moveKind": "mainline",
           "evalCp": -36,
           "annotation": {
-            "explanation": "Punishes Nd5: Na5 wins the advantage (-0.4 → -0.4). Play continues Bb5+ c6 Nxf6+ Qxf6."
+            "explanation": "Punishes Nd5: Na5 sidesteps the knight jump and keeps your small edge. Play continues Bb5+ c6 Nxf6+, and recapturing Qxf6 leaves a solid position."
           }
         },
         "02be981bf85e23dd": {
@@ -49450,7 +49450,7 @@
           "weight": 0.09464418783396464,
           "evalCp": -32,
           "annotation": {
-            "explanation": "Be3? is popular at club level (9% of games) but rare in master play. Meet it with d5."
+            "explanation": "Be3? blocks the natural bishop development and lets you strike with d5, worth about 0.7 pawns. Play continues exd5 Nxd5 Nfd2, with Be7 and Nc3 to follow."
           }
         },
         "2206bffb380d1cbc": {
@@ -50911,7 +50911,7 @@
           "moveKind": "mainline",
           "evalCp": 7,
           "annotation": {
-            "explanation": "Punishes Be3: Be7 wins the advantage (+0.1 → +0.1). Play continues Bb3 O-O c4 Bg4."
+            "explanation": "Punishes Be3: Be7 finishes development calmly. Play continues Bb3 O-O c4, and Bg4 pins the knight while you stay comfortable."
           }
         },
         "5a8dfd1117a7217c": {
@@ -51156,7 +51156,7 @@
           "weight": 0.03680517598606856,
           "evalCp": -27,
           "annotation": {
-            "explanation": "Qb3? is popular at club level (4% of games) but rare in master play. Meet it with Qd7."
+            "explanation": "Qb3? goes after b7 too early - defend calmly with Qd7, swinging things your way by about 0.7 pawns. Play continues Qc2 Na5 Na3, with Be7 and castling to follow."
           }
         },
         "6917c76493a4bd79": {
@@ -51203,7 +51203,7 @@
           "moveKind": "mainline",
           "evalCp": -33,
           "annotation": {
-            "explanation": "Punishes Be3: d5 wins the advantage (-0.3 → -0.3). Play continues exd5 Nxd5 Nfd2 Be7."
+            "explanation": "Punishes Be3: d5 strikes the center at once. Play continues exd5 Nxd5 Nfd2, with Be7 and Nc3 keeping you comfortably placed."
           }
         },
         "6bec885233d64f61": {
@@ -51546,7 +51546,7 @@
           "moveKind": "mainline",
           "evalCp": 13,
           "annotation": {
-            "explanation": "Punishes d4: Bxd4 wins the advantage (+0.1 → +0.1). Play continues Nxd4 exd4 Nb5 O-O."
+            "explanation": "Punishes d4: Bxd4 grabs the pawn White just pushed. Play continues Nxd4 exd4 Nb5, and castling keeps your king safely tucked away."
           }
         },
         "7de677b694b6356f": {
@@ -51674,7 +51674,7 @@
           "weight": 0.03181987095681039,
           "evalCp": 9,
           "annotation": {
-            "explanation": "d4? is popular at club level (3% of games) but rare in master play. Meet it with Bxd4."
+            "explanation": "d4? releases the central tension too soon - meet it with Bxd4. Play continues Nxd4 Nxd4 Be3, with Nc6 keeping you well developed and comfortable."
           }
         },
         "815d231a86d7165d": {
@@ -51690,7 +51690,7 @@
           "moveKind": "mainline",
           "evalCp": -25,
           "annotation": {
-            "explanation": "Punishes Qb3: Qd7 wins the advantage (-0.3 → -0.3). Play continues Qc2 Na5 Na3 Be7."
+            "explanation": "Punishes Qb3: Qd7 shields b7 without loosening your position. Play continues Qc2 Na5 Na3 Be7."
           }
         },
         "827a6b87e2fd4a8a": {
@@ -51842,7 +51842,7 @@
           "weight": 0.03680517598606856,
           "evalCp": -21,
           "annotation": {
-            "explanation": "Qb3? is popular at club level (4% of games) but rare in master play. Meet it with Qd7."
+            "explanation": "Qb3? goes after b7 prematurely - Qd7 defends comfortably and swings things your way by about 0.6 pawns. Play continues Qa4 a6 O-O, with Rb8 continuing development."
           }
         },
         "895332add8664201": {
@@ -51929,7 +51929,7 @@
           "weight": 0.11858562875773793,
           "evalCp": 5,
           "annotation": {
-            "explanation": "Be3? is popular at club level (12% of games) but rare in master play. Meet it with Be7."
+            "explanation": "Be3? is a slower plan that lets you equalize comfortably - Be7 followed by castling gets you close to level, about 0.4 pawns better than before. Play continues O-O Nbd2 d5."
           }
         },
         "91627abd25726325": {
@@ -52196,7 +52196,7 @@
           "moveKind": "mainline",
           "evalCp": 12,
           "annotation": {
-            "explanation": "Punishes a3: Bc5 wins the advantage (+0.1 → +0.1). Play continues Nc3 a6 Ba2 d6."
+            "explanation": "Punishes a3: Bc5 develops actively while White's a3 does little for the position. Play continues Nc3 a6 Ba2 d6."
           }
         },
         "9fce90bc99bf7fec": {
@@ -52305,7 +52305,7 @@
           "weight": 0.07109510710704348,
           "evalCp": 11,
           "annotation": {
-            "explanation": "a3? is popular at club level (7% of games) but rare in master play. Meet it with Bc5."
+            "explanation": "a3? spends a move on the edge instead of developing - answer with Bc5, picking up roughly a quarter of a pawn. Play continues Nc3 a6 Ba2, with d6 rounding out your setup."
           }
         },
         "a4e326797425c49b": {
@@ -52382,7 +52382,7 @@
           "moveKind": "mainline",
           "evalCp": -21,
           "annotation": {
-            "explanation": "Punishes Qb3: Qd7 wins the advantage (-0.2 → -0.2). Play continues Qa4 a6 O-O Rb8."
+            "explanation": "Punishes Qb3: Qd7 covers b7 cleanly and keeps your position intact. Play continues Qa4 a6 O-O Rb8."
           }
         },
         "a5ca9a5cbb48dc2e": {
@@ -52610,7 +52610,7 @@
           "weight": 0.11858562875773793,
           "evalCp": -4,
           "annotation": {
-            "explanation": "Be3? is popular at club level (12% of games) but rare in master play. Meet it with Be7."
+            "explanation": "Be3? is a modest choice that lets you fully equalize - Be7 and castling bring you close to level, about half a pawn better than a move ago. Play continues O-O Nbd2 Na5."
           }
         },
         "adb0a9bd89c09ec0": {
@@ -52662,7 +52662,7 @@
           "moveKind": "mainline",
           "evalCp": -6,
           "annotation": {
-            "explanation": "Punishes Be3: Be7 wins the advantage (-0.0 → -0.1). Play continues O-O O-O Nbd2 Na5."
+            "explanation": "Punishes Be3: Be7 completes development smoothly. Play continues O-O O-O Nbd2, and Na5 eyes White's light-squared bishop."
           }
         },
         "afdcdc5d08a960d0": {
@@ -52836,7 +52836,7 @@
           "moveKind": "mainline",
           "evalCp": 4,
           "annotation": {
-            "explanation": "Punishes Be3: Be7 wins the advantage (+0.1 → +0.0). Play continues O-O O-O Nbd2 d5."
+            "explanation": "Punishes Be3: Be7 finishes development and keeps things balanced. Play continues O-O O-O Nbd2 d5."
           }
         },
         "b673026c3e366c98": {
@@ -53014,7 +53014,7 @@
           "moveKind": "mainline",
           "evalCp": 6,
           "annotation": {
-            "explanation": "Punishes d4: Bxd4 wins the advantage (+0.1 → +0.1). Play continues Nxd4 Nxd4 Be3 Nc6."
+            "explanation": "Punishes d4: Bxd4 wins the pawn back. Play continues Nxd4 Nxd4 Be3, with Nc6 keeping the position level."
           }
         },
         "be22916aa660f894": {
@@ -53049,7 +53049,7 @@
           "weight": 0.08926257675623908,
           "evalCp": 13,
           "annotation": {
-            "explanation": "Be3? is popular at club level (9% of games) but rare in master play. Meet it with Na5."
+            "explanation": "Be3? invites Na5, harassing the bishop for a small gain - meet it with Na5. Play continues Bb3 Nxb3 axb3, with Be7 and c4 giving you a comfortable game."
           }
         },
         "c028a6e14b94ff4b": {
@@ -53190,7 +53190,7 @@
           "weight": 0.07444730464705321,
           "evalCp": -39,
           "annotation": {
-            "explanation": "Nd5? is popular at club level (7% of games) but rare in master play and it concedes 0.8 pawns. Meet it with Na5."
+            "explanation": "Nd5? jumps in prematurely and lets you swing the game your way with Na5, worth about 0.75 pawns. Play continues Bb5+ c6 Nxf6+, and recapturing with Qxf6 keeps a healthy position."
           }
         },
         "c44a284467350699": {
@@ -53453,7 +53453,7 @@
           "weight": 0.03181987095681039,
           "evalCp": 14,
           "annotation": {
-            "explanation": "d4? is popular at club level (3% of games) but rare in master play. Meet it with Bxd4."
+            "explanation": "d4? releases the tension too early - meet it with Bxd4. Play continues Nxd4 exd4 Nb5, and castling tucks your king safely away."
           }
         },
         "cf4072056f9b647a": {
@@ -53717,7 +53717,7 @@
           "moveKind": "mainline",
           "evalCp": 12,
           "annotation": {
-            "explanation": "Punishes Be3: Na5 wins the advantage (+0.1 → +0.1). Play continues Bb3 Nxb3 axb3 Be7."
+            "explanation": "Punishes Be3: Na5 hits the bishop right away. Play continues Bb3 Nxb3 axb3, with Be7 and c4 leaving a balanced position."
           }
         },
         "d4557a5afe7d9f73": {
@@ -54080,7 +54080,7 @@
           "weight": 0.08926257675623908,
           "evalCp": 9,
           "annotation": {
-            "explanation": "Be3? is popular at club level (9% of games) but rare in master play. Meet it with Be7."
+            "explanation": "Be3? is a quieter plan that lets you catch up in development - Be7 followed by O-O nearly equalizes. Play continues Bb3 c4 Bg4 h3."
           }
         },
         "e3cdc9b1204ccd30": {
@@ -55002,7 +55002,7 @@
           "weight": 0.07594775945642741,
           "evalCp": 70,
           "annotation": {
-            "explanation": "Be7? is popular at club level (8% of games) but rare in master play. Meet it with d4."
+            "explanation": "Be7? is a touch slow here - hit the center immediately with d4. Play continues Nf6 Re1 O-O, with h3 ruling out any Bg4 annoyance."
           }
         },
         "0f833169840929e6": {
@@ -55031,7 +55031,7 @@
           "weight": 0.06416469551604224,
           "evalCp": 224,
           "annotation": {
-            "explanation": "Nxd4? is popular at club level (6% of games) but rare in master play and it concedes 2.0 pawns. Meet it with Nxd4."
+            "explanation": "Nxd4? grabs a pawn but hangs the knight - recapturing with Nxd4 swings things hugely your way, about 2.0 pawns. Play continues a6 Bd3 Nc5 Re1."
           }
         },
         "1183ffb760801f76": {
@@ -55085,7 +55085,7 @@
           "moveKind": "mainline",
           "evalCp": 101,
           "annotation": {
-            "explanation": "Punishes O-O: Bxc6 wins the advantage (+1.0 → +1.0). Play continues bxc6 Nxe5 Re8 d3."
+            "explanation": "Punishes O-O: Bxc6 removes the knight that was guarding e5. Play continues bxc6, doubling black's pawns, then Nxe5 wins the pawn outright with Re8 and d3 to follow."
           }
         },
         "154d528e31cc1ff7": {
@@ -55101,7 +55101,7 @@
           "moveKind": "mainline",
           "evalCp": 73,
           "annotation": {
-            "explanation": "Punishes d6: d4 wins the advantage (+0.7 → +0.7). Play continues Ba7 dxe5 Nxe4 Nbd2."
+            "explanation": "Punishes d6: d4 opens the center while you're ahead in development. Play continues Ba7 dxe5 Nxe4, and Nbd2 chases the knight back."
           }
         },
         "156224d35fca0158": {
@@ -55273,7 +55273,7 @@
           "moveKind": "mainline",
           "evalCp": 70,
           "annotation": {
-            "explanation": "Punishes Nxe4: Qe2 wins the advantage (+0.7 → +0.7). Play continues Bxf2+ Rxf2 Nxf2 Qxf2."
+            "explanation": "Punishes Nxe4: Qe2 pins the knight to the king along the e-file. Even after the flurry Bxf2+ Rxf2 Nxf2, recapturing with Qxf2 leaves you comfortably ahead."
           }
         },
         "2107a4e6da326700": {
@@ -55376,7 +55376,7 @@
           "moveKind": "mainline",
           "evalCp": 67,
           "annotation": {
-            "explanation": "Punishes b5: Bb3 wins the advantage (+0.6 → +0.7). Play continues Be7 Re1 Nf6 d4."
+            "explanation": "Punishes b5: Bb3 retreats the bishop out of the pawn's reach while keeping the extra tempo. Play continues Be7 Re1 Nf6 d4."
           }
         },
         "2775c009c0f74280": {
@@ -55424,7 +55424,7 @@
           "moveKind": "mainline",
           "evalCp": 70,
           "annotation": {
-            "explanation": "Punishes Bxf3: Qxf3 wins the advantage (+0.7 → +0.7). Play continues Nf6 c3 Be7 d3."
+            "explanation": "Punishes Bxf3: Qxf3 recaptures the piece and keeps your bishop pair intact. Play continues Nf6 c3 Be7 d3."
           }
         },
         "297509dd9523cf5d": {
@@ -55545,7 +55545,7 @@
           "weight": 0.033439644341354983,
           "evalCp": 88,
           "annotation": {
-            "explanation": "a6? is popular at club level (3% of games) but rare in master play. Meet it with Bxc6."
+            "explanation": "a6? doesn't solve black's problems - meet it with Bxc6. Play continues dxc6 Qe2, and Qxe5+ wins back the pawn on e5."
           }
         },
         "2e6783aaf43f7ba1": {
@@ -55608,7 +55608,7 @@
           "weight": 0.06532877882152006,
           "evalCp": 130,
           "annotation": {
-            "explanation": "d6? is popular at club level (7% of games) but rare in master play and it concedes 0.9 pawns. Meet it with d4."
+            "explanation": "d6? is too passive here and concedes about 0.9 pawns - strike with d4. Play continues Nf6 Qe2 Bd7, and the trade dxe5 dxe5 favors your structure."
           }
         },
         "323307e3d89567e9": {
@@ -55651,7 +55651,7 @@
           "weight": 0.06430604982206406,
           "evalCp": 121,
           "annotation": {
-            "explanation": "d5? is popular at club level (6% of games) but rare in master play and it concedes 0.9 pawns. Meet it with Nxe5."
+            "explanation": "d5? overextends and concedes about 0.9 pawns - just grab the pawn with Nxe5. Play continues Bd7 Nxf7, forking king and rook, and Kxf7 Qh5+ keeps up the pressure."
           }
         },
         "3611354054c5efba": {
@@ -55732,7 +55732,7 @@
           "weight": 0.8942924567457635,
           "evalCp": 117,
           "annotation": {
-            "explanation": "exd4? is popular at club level (89% of games) but rare in master play and it concedes 0.7 pawns. Meet it with cxd4."
+            "explanation": "exd4? is the popular choice (89% of games) but recapturing with cxd4 actually favors you by about 0.7 pawns, keeping the bishop aimed at f7. Play continues Bb6 e5 Ne4."
           }
         },
         "3885b33d8fedf11b": {
@@ -56035,7 +56035,7 @@
           "weight": 0.23454323454323453,
           "evalCp": 85,
           "annotation": {
-            "explanation": "b4? is popular at club level (23% of games) but rare in master play. Meet it with Nxe5."
+            "explanation": "b4? overextends the queenside pawns - Nxe5 simply grabs a free pawn. Play continues Nxe5 d4 Bxd4, with Qxd4 keeping you comfortably ahead."
           }
         },
         "4814112d73accf9a": {
@@ -56144,7 +56144,7 @@
           "weight": 0.34037494090835324,
           "evalCp": 63,
           "annotation": {
-            "explanation": "b5? is popular at club level (34% of games) but rare in master play. Meet it with Bb3."
+            "explanation": "b5? is very popular at club level (34% of games) but just gains a tempo for you - retreat with Bb3. Play continues Be7 Re1 Nf6 d4."
           }
         },
         "4b62b9958f814596": {
@@ -56611,7 +56611,7 @@
           "weight": 0.037154242850445385,
           "evalCp": 518,
           "annotation": {
-            "explanation": "Bd7? is popular at club level (4% of games) but rare in master play and it concedes 4.5 pawns. Meet it with Qh5+."
+            "explanation": "Bd7? walks straight into a crushing check - Qh5+ swings the game decisively your way, about 4.5 pawns. Play continues g6 Nxg6, and Bg4 Qe5+ keeps the black king caught in the open."
           }
         },
         "607fb3046628d00b": {
@@ -56628,7 +56628,7 @@
           "weight": 0.21686422321900636,
           "evalCp": 73,
           "annotation": {
-            "explanation": "d6? is popular at club level (22% of games) but rare in master play. Meet it with d4."
+            "explanation": "d6? blocks the bishop and lets you claim the center with d4. Play continues Ba7 dxe5 Nxe4, with Nbd2 chasing the knight back."
           }
         },
         "61c5a3513d717ccf": {
@@ -56919,7 +56919,7 @@
           "moveKind": "mainline",
           "evalCp": 128,
           "annotation": {
-            "explanation": "Punishes d5: Nxe5 wins the advantage (+1.3 → +1.3). Play continues Bd7 Nxd7 Qxd7 c4."
+            "explanation": "Punishes d5: Nxe5 wins the pawn in the center. Play continues Bd7 Nxd7 Qxd7, and c4 keeps expanding while you're up material."
           }
         },
         "6fbb334d77ab514f": {
@@ -57048,7 +57048,7 @@
           "weight": 0.047909588440032964,
           "evalCp": 99,
           "annotation": {
-            "explanation": "Bg4? is popular at club level (5% of games) but rare in master play. Meet it with dxe5."
+            "explanation": "Bg4? pins the knight but ignores the tension in the center - dxe5 simply wins a pawn. Play continues Nd7 exd6, and recapturing leaves you comfortably up material."
           }
         },
         "764760d847b1289f": {
@@ -57122,7 +57122,7 @@
           "moveKind": "mainline",
           "evalCp": 122,
           "annotation": {
-            "explanation": "Punishes a6: Bxc6 wins the advantage (+1.2 → +1.2). Play continues dxc6 Nxe5 Bc5 Nc3."
+            "explanation": "Punishes a6: Bxc6 removes the defender of e5. Play continues dxc6, damaging black's structure, then Nxe5 wins the pawn for free, with Bc5 and Nc3 continuing development."
           }
         },
         "77f4fed63dc0dcc5": {
@@ -57200,7 +57200,7 @@
           "moveKind": "mainline",
           "evalCp": 69,
           "annotation": {
-            "explanation": "Punishes Bb7: a4 wins the advantage (+0.6 → +0.7). Play continues Na5 Ba2 c5 axb5."
+            "explanation": "Punishes Bb7: a4 challenges the queenside pawn chain. Play continues Na5 Ba2 c5, and the trade axb5 axb5 opens the a-file for you."
           }
         },
         "7b0f4f6281ffbb85": {
@@ -57216,7 +57216,7 @@
           "moveKind": "mainline",
           "evalCp": 98,
           "annotation": {
-            "explanation": "Punishes Bg4: dxe5 wins the advantage (+1.0 → +1.0). Play continues Nd7 exd6 Bxd6 h3."
+            "explanation": "Punishes Bg4: dxe5 wins the pawn the bishop left undefended. Play continues Nd7 exd6, and even after Bxd6 you're a clean pawn up, with h3 Bh5 to follow."
           }
         },
         "7b2c9723ee0acc94": {
@@ -57443,7 +57443,7 @@
           "weight": 0.15745456051008155,
           "evalCp": 179,
           "annotation": {
-            "explanation": "d6? is popular at club level (16% of games) but rare in master play and it concedes 1.3 pawns. Meet it with d4."
+            "explanation": "d6? is too slow and concedes about 1.3 pawns - hit back with d4. Play continues Bd7 exf5 exd4, and recapturing with Nxd4 leaves you clearly better."
           }
         },
         "858799a440d39193": {
@@ -57584,7 +57584,7 @@
           "moveKind": "mainline",
           "evalCp": 267,
           "annotation": {
-            "explanation": "Punishes Qe7: d4 wins the advantage (+2.7 → +2.7). Play continues dxe4 Nxc6 Qh4 Ne5+."
+            "explanation": "Punishes Qe7: d4 keeps building since the coming knight fork more than compensates for what black wins back. Play continues dxe4 Nxc6 Qh4 Ne5+, leaving you well ahead in material."
           }
         },
         "878482bce6627f9b": {
@@ -57612,7 +57612,7 @@
           "moveKind": "mainline",
           "evalCp": 58,
           "annotation": {
-            "explanation": "Punishes d6: O-O wins the advantage (+0.6 → +0.6). Play continues Be7 c3 Nf6 d4."
+            "explanation": "Punishes d6: O-O gets your king safe before continuing to build. Play continues Be7 c3 Nf6, and d4 claims the center."
           }
         },
         "8960d8ea9bddfada": {
@@ -57658,7 +57658,7 @@
           "weight": 0.10727775109545748,
           "evalCp": 73,
           "annotation": {
-            "explanation": "a6? is popular at club level (11% of games) but rare in master play. Meet it with Bxc6+."
+            "explanation": "a6? doesn't address the pin - meet it with Bxc6+, doubling black's pawns after bxc6. Play continues Re1 Nd7 Qd3 Be7."
           }
         },
         "8b44fce7fb6ad490": {
@@ -57674,7 +57674,7 @@
           "moveKind": "mainline",
           "evalCp": 72,
           "annotation": {
-            "explanation": "Punishes Be7: d4 wins the advantage (+0.7 → +0.7). Play continues Nf6 Re1 O-O h3."
+            "explanation": "Punishes Be7: d4 grabs the center while black lags in development. Play continues Nf6 Re1 O-O h3."
           }
         },
         "8c109ddbf514650f": {
@@ -57770,7 +57770,7 @@
           "moveKind": "mainline",
           "evalCp": 132,
           "annotation": {
-            "explanation": "Punishes a6: Bxc6 wins the advantage (+1.4 → +1.3). Play continues Bxc6 dxe5 Nxe4 Nxe4."
+            "explanation": "Punishes a6: Bxc6 trades off the knight. After Black recaptures Bxc6, dxe5 wins the e5-pawn, and the edge holds even once Nxe4 Nxe4 Bxe4 trades pieces."
           }
         },
         "8fddbf094cccfbec": {
@@ -57895,7 +57895,7 @@
           "moveKind": "mainline",
           "evalCp": 262,
           "annotation": {
-            "explanation": "Punishes d6: d4 wins the advantage (+2.5 → +2.6). Play continues Bb6 d5 O-O dxc6."
+            "explanation": "Punishes d6: d4 blasts open the center while you're already well ahead. Play continues Bb6 d5, and black castles instead of saving the c6-knight, so dxc6 wins it outright."
           }
         },
         "95935af83c593c80": {
@@ -57997,7 +57997,7 @@
           "moveKind": "mainline",
           "evalCp": 223,
           "annotation": {
-            "explanation": "Punishes Nxd4: Nxd4 wins the advantage (+2.2 → +2.2). Play continues a6 Bd3 Nc5 Re1."
+            "explanation": "Punishes Nxd4: recapturing with Nxd4 banks the piece black just gave away. Play continues a6 Bd3, and Nc5 chases the bishop while you stay up material."
           }
         },
         "98f9a61d81760a6f": {
@@ -58052,7 +58052,7 @@
           "weight": 0.157150250867235,
           "evalCp": 94,
           "annotation": {
-            "explanation": "exd4? is popular at club level (16% of games) but rare in master play and it concedes 0.7 pawns. Meet it with Re1."
+            "explanation": "exd4? grabs a pawn but leaves the knight on e4 short of support - Re1 wins the material back with interest, about 0.7 pawns. Play continues f5 Nxd4 Nxd4 Qxd4."
           }
         },
         "9cfc018b9f14ec1c": {
@@ -58258,7 +58258,7 @@
           "moveKind": "mainline",
           "evalCp": 78,
           "annotation": {
-            "explanation": "Punishes b4: Nxe5 wins the advantage (+0.8 → +0.8). Play continues Nxe5 d4 Bxd4 Qxd4."
+            "explanation": "Punishes b4: Nxe5 wins the pawn immediately. Play continues Nxe5 d4 Bxd4, with Qxd4 keeping you comfortably ahead."
           }
         },
         "a84ab83dceffc253": {
@@ -58355,7 +58355,7 @@
           "weight": 0.2531988702421174,
           "evalCp": 60,
           "annotation": {
-            "explanation": "d6? is popular at club level (25% of games) but rare in master play. Meet it with O-O."
+            "explanation": "d6? is very popular at club level (25% of games) but a touch passive - just castle with O-O. Play continues Be7 c3 Nf6 d4."
           }
         },
         "ac794f020553714f": {
@@ -58693,7 +58693,7 @@
           "weight": 0.06251142387132151,
           "evalCp": 71,
           "annotation": {
-            "explanation": "Bxf3? is popular at club level (6% of games) but rare in master play. Meet it with Qxf3."
+            "explanation": "Bxf3? gives up the bishop pair for no real gain - recapture with Qxf3. Play continues Nf6 c3 Be7 d3."
           }
         },
         "b9fa983d899bcd4c": {
@@ -58965,7 +58965,7 @@
           "moveKind": "mainline",
           "evalCp": 73,
           "annotation": {
-            "explanation": "Punishes bxc6: Bg5 wins the advantage (+0.6 → +0.7). Play continues Be7 Bxe7 Qxe7 dxe5."
+            "explanation": "Punishes bxc6: Bg5 pins the knight to the queen. Play continues Be7 Bxe7 Qxe7, and dxe5 wins the e5-pawn."
           }
         },
         "c58e6a3dde4c7088": {
@@ -59093,7 +59093,7 @@
           "moveKind": "mainline",
           "evalCp": 512,
           "annotation": {
-            "explanation": "Punishes Bd7: Qh5+ wins the advantage (+5.2 → +5.1). Play continues g6 Nxg6 Bg4 Qe5+."
+            "explanation": "Punishes Bd7: Qh5+ keeps hunting the exposed king. Play continues g6 Nxg6, and even Bg4 Qe5+ Kd7 can't find the king safety."
           }
         },
         "ca151cd7e9eb8046": {
@@ -59110,7 +59110,7 @@
           "weight": 0.05614158462259728,
           "evalCp": 269,
           "annotation": {
-            "explanation": "Qe7? is popular at club level (6% of games) but rare in master play and it concedes 2.0 pawns. Meet it with d4."
+            "explanation": "Qe7? drops into a knight fork - after d4, dxe4 Nxc6 forks the queen, swinging things massively your way, about 2.0 pawns. Play continues Qh4 Ne5+ to keep up the pressure."
           }
         },
         "ca594acebe6360fe": {
@@ -59126,7 +59126,7 @@
           "moveKind": "mainline",
           "evalCp": 85,
           "annotation": {
-            "explanation": "Punishes a6: Bxc6 wins the advantage (+0.9 → +0.8). Play continues dxc6 Qe2 Bxf5 Qxe5+."
+            "explanation": "Punishes a6: Bxc6 damages black's pawn structure. Play continues dxc6 Qe2 Bxf5, and Qxe5+ wins back the pawn."
           }
         },
         "caafa7e73baef0a9": {
@@ -59251,7 +59251,7 @@
           "weight": 0.0683329469047067,
           "evalCp": 61,
           "annotation": {
-            "explanation": "Bb7? is popular at club level (7% of games) but rare in master play. Meet it with a4."
+            "explanation": "Bb7? develops the bishop but leaves the queenside pawns loose - a4 challenges them right away. Play continues Na5 Ba2 c5, and axb5 axb5 opens the a-file."
           }
         },
         "cecb5010482bbedb": {
@@ -59346,7 +59346,7 @@
           "weight": 0.07006865677466473,
           "evalCp": 100,
           "annotation": {
-            "explanation": "O-O? is popular at club level (7% of games) but rare in master play. Meet it with Bxc6."
+            "explanation": "O-O? castles straight into the pin - Bxc6 wins a pawn on the spot, about 0.6 pawns' worth. Play continues bxc6 Nxe5, with Re8 and d3 keeping the extra material safe."
           }
         },
         "d0f7d21702f79cc5": {
@@ -59362,7 +59362,7 @@
           "moveKind": "mainline",
           "evalCp": 119,
           "annotation": {
-            "explanation": "Punishes exd4: cxd4 wins the advantage (+1.2 → +1.2). Play continues Bb6 e5 Ne4 d5."
+            "explanation": "Punishes exd4: cxd4 recaptures and rebuilds a strong center. Play continues Bb6 e5, and the knight gets kicked with Ne4 d5."
           }
         },
         "d13c7c15bfaa2d0d": {
@@ -59379,7 +59379,7 @@
           "weight": 0.07996179625807992,
           "evalCp": 67,
           "annotation": {
-            "explanation": "Nxe4? is popular at club level (8% of games) but rare in master play. Meet it with Qe2."
+            "explanation": "Nxe4? grabs a pawn but the knight is under-defended - Qe2 pins it to the king along the e-file. Even after Bxf2+ Rxf2 Nxf2, recapturing Qxf2 keeps you ahead."
           }
         },
         "d14c85a038a7bfa6": {
@@ -59554,7 +59554,7 @@
           "weight": 0.17276591505329925,
           "evalCp": 142,
           "annotation": {
-            "explanation": "a6? is popular at club level (17% of games) but rare in master play and it concedes 0.9 pawns. Meet it with Bxc6."
+            "explanation": "a6? doesn't deal with the pin and concedes about 0.9 pawns - Bxc6 trades for the knight. Play continues Bxc6 dxe5, leaving you a clean pawn up even once Nxe4 Nxe4 Bxe4 trades down."
           }
         },
         "d992bc05bf73bb96": {
@@ -59570,7 +59570,7 @@
           "moveKind": "mainline",
           "evalCp": 69,
           "annotation": {
-            "explanation": "Punishes a6: Bxc6+ wins the advantage (+0.7 → +0.7). Play continues bxc6 Re1 Nd7 Qd3."
+            "explanation": "Punishes a6: Bxc6+ trades for the knight with check, doubling black's pawns after bxc6. Play continues Re1 Nd7 Qd3 Be7."
           }
         },
         "dafc1bbc5c5dd3b6": {
@@ -59670,7 +59670,7 @@
           "weight": 0.13336338316427765,
           "evalCp": 140,
           "annotation": {
-            "explanation": "a6? is popular at club level (13% of games) but concedes 0.9 pawns. Meet it with Bxc6."
+            "explanation": "a6? ignores the pin on the knight and concedes about 0.9 pawns - Bxc6 wins material. Play continues dxc6 Nxe5, leaving you a pawn up with Qe2 ready to meet Nxe4."
           }
         },
         "debf4d979db09e83": {
@@ -59764,7 +59764,7 @@
           "moveKind": "mainline",
           "evalCp": 186,
           "annotation": {
-            "explanation": "Punishes d6: d4 wins the advantage (+1.8 → +1.9). Play continues Bd7 exf5 exd4 Nxd4."
+            "explanation": "Punishes d6: d4 opens the center while you're already well ahead. Play continues Bd7 exf5, and the recapture chain exd4 Nxd4 Nxd4 simplifies into a winning position."
           }
         },
         "e21f89adf2296a1a": {
@@ -59837,7 +59837,7 @@
           "weight": 0.032476997358112415,
           "evalCp": 114,
           "annotation": {
-            "explanation": "Be6? is popular at club level (3% of games) but rare in master play. Meet it with Ng5."
+            "explanation": "Be6? invites Ng5, hitting the bishop. Play continues Qd7 Nxe6 fxe6, wrecking black's pawns, with d4 opening the center further in your favor."
           }
         },
         "e48eff295819affc": {
@@ -59853,7 +59853,7 @@
           "moveKind": "mainline",
           "evalCp": 103,
           "annotation": {
-            "explanation": "Punishes exd4: Re1 wins the advantage (+0.9 → +1.0). Play continues f5 Nxd4 Nxd4 Qxd4."
+            "explanation": "Punishes exd4: Re1 pins the knight on e4 to the black king along the e-file, freezing it while you win back the pawn. Play continues f5 Nxd4 Nxd4, and Qxd4 leaves you clearly ahead."
           }
         },
         "e55e664d0589e3c3": {
@@ -59881,7 +59881,7 @@
           "moveKind": "mainline",
           "evalCp": 135,
           "annotation": {
-            "explanation": "Punishes d6: d4 wins the advantage (+1.3 → +1.4). Play continues Nf6 Qe2 Bd7 dxe5."
+            "explanation": "Punishes d6: d4 opens the center with a material and development lead already banked. Play continues Nf6 Qe2 Bd7, and dxe5 dxe5 simplifies favorably."
           }
         },
         "e715c291bd6d7054": {
@@ -59898,7 +59898,7 @@
           "weight": 0.25733720935544635,
           "evalCp": 251,
           "annotation": {
-            "explanation": "d6? is popular at club level (26% of games) but rare in master play and it concedes 2.0 pawns. Meet it with d4."
+            "explanation": "d6? is common at club level (26% of games) but concedes a massive 2.0 pawns here - hit back with d4. Play continues Bb6 d5, kicking the knight, and dxc6 wins material with Nxe4 to follow."
           }
         },
         "e78e3e6900e255d4": {
@@ -59914,7 +59914,7 @@
           "moveKind": "mainline",
           "evalCp": 127,
           "annotation": {
-            "explanation": "Punishes a6: Bxc6 wins the advantage (+1.4 → +1.3). Play continues dxc6 Nxe5 Nxe4 Qe2."
+            "explanation": "Punishes a6: Bxc6 clears away the knight defending e5. Play continues dxc6, then Nxe5 wins the pawn outright, with Nxe4 Qe2 Qh4 keeping you on top."
           }
         },
         "e792468a7b34f86e": {
@@ -60063,7 +60063,7 @@
           "weight": 0.10105988853451886,
           "evalCp": 238,
           "annotation": {
-            "explanation": "d5? is popular at club level (10% of games) but rare in master play and it concedes 1.6 pawns. Meet it with Nxe5."
+            "explanation": "d5? overextends and concedes about 1.6 pawns - simply take with Nxe5. Play continues Bd7 d4 Bb4, and Bxc6 bxc6 leaves you comfortably up material."
           }
         },
         "ea92729a49e3cb76": {
@@ -60134,7 +60134,7 @@
           "weight": 0.06430604982206406,
           "evalCp": 125,
           "annotation": {
-            "explanation": "d5? is popular at club level (6% of games) but rare in master play and it concedes 0.9 pawns. Meet it with Nxe5."
+            "explanation": "d5? overextends and concedes about 0.9 pawns - grab the pawn with Nxe5. Play continues Bd7 Nxd7 Qxd7, and c4 keeps expanding while you're up material."
           }
         },
         "ed9417b2d3b98f94": {
@@ -60150,7 +60150,7 @@
           "moveKind": "mainline",
           "evalCp": 108,
           "annotation": {
-            "explanation": "Punishes Be6: Ng5 wins the advantage (+1.1 → +1.1). Play continues Qd7 Nxe6 fxe6 d4."
+            "explanation": "Punishes Be6: Ng5 attacks the bishop. Play continues Qd7 Nxe6 fxe6, wrecking black's pawns, with d4 opening the center further."
           }
         },
         "eea012dd20e79b32": {
@@ -60247,7 +60247,7 @@
           "weight": 0.09459792594540405,
           "evalCp": 59,
           "annotation": {
-            "explanation": "bxc6? is popular at club level (9% of games) but rare in master play. Meet it with Bg5."
+            "explanation": "bxc6? recaptures away from the center and concedes about 0.6 pawns - pin the knight with Bg5 instead. Play continues Be7 Bxe7 Qxe7, and dxe5 wins the e5-pawn."
           }
         },
         "f3cf3d9c8b88d388": {
@@ -60263,7 +60263,7 @@
           "moveKind": "mainline",
           "evalCp": 245,
           "annotation": {
-            "explanation": "Punishes d5: Nxe5 wins the advantage (+2.4 → +2.5). Play continues Bd7 d4 Bb4 Bxc6."
+            "explanation": "Punishes d5: Nxe5 grabs the pawn while already ahead. Play continues Bd7 d4 Bb4, and Bxc6 bxc6 trades down into a clearly winning position."
           }
         },
         "f46a5fdf14e7c905": {
@@ -60557,7 +60557,7 @@
           "weight": 0.10067016411158713,
           "evalCp": 117,
           "annotation": {
-            "explanation": "a6? is popular at club level (10% of games) but rare in master play and it concedes 0.8 pawns. Meet it with Bxc6."
+            "explanation": "a6? doesn't deal with the pin, conceding about 0.8 pawns - Bxc6 removes the knight guarding e5. Play continues dxc6, then Nxe5 simply wins the pawn, with Bc5 and Nc3 continuing development."
           }
         },
         "fe8ef7d6ec0e8a3f": {
@@ -60573,7 +60573,7 @@
           "moveKind": "mainline",
           "evalCp": 120,
           "annotation": {
-            "explanation": "Punishes d5: Nxe5 wins the advantage (+1.2 → +1.2). Play continues Bd7 Nxf7 Kxf7 Qh5+."
+            "explanation": "Punishes d5: Nxe5 wins the central pawn. Play continues Bd7 Nxf7, forking the queen and rook, and Kxf7 Qh5+ keeps the black king exposed."
           }
         },
         "ffb9403b183e25c2": {

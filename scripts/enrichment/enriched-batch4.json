@@ -1,0 +1,578 @@
+[
+  {
+    "openingId": "c25-vienna-game",
+    "nodeId": "550f09457934d044",
+    "kind": "mistake",
+    "text": "Bxd4 grabs a pawn but ignores that Black's own knight on e5 is undefended too — Qxd4 wins it back with tempo and hands White about a 0.8-pawn edge. It's popular at club level (52%), so know Qxd4 cold."
+  },
+  {
+    "openingId": "c25-vienna-game",
+    "nodeId": "55238d457946599a",
+    "kind": "mistake",
+    "text": "Bb4 pins the knight but leaves Black's knight on e5 hanging — dxe5 simply scoops it up, netting material for about a 1.0-pawn edge. It's seen in roughly 12% of club games, so remember dxe5."
+  },
+  {
+    "openingId": "c25-vienna-game",
+    "nodeId": "57202eec515d779a",
+    "kind": "mistake",
+    "text": "h6 doesn't meet any real threat and just loosens the kingside a touch. Answer with Na4, hopping toward c5 for a small but steady edge. Only about 3% of club players try this."
+  },
+  {
+    "openingId": "c25-vienna-game",
+    "nodeId": "59defde7a5f3e0f7",
+    "kind": "punish",
+    "text": "Ng4 just hangs the knight — Qxg4 wins it outright, stretching White's already big lead from about +3.5 to +3.6. Play continues O-O Qd1 f5 exf5."
+  },
+  {
+    "openingId": "c25-vienna-game",
+    "nodeId": "6e88c966fca4521b",
+    "kind": "punish",
+    "text": "h6 costs a tempo for nothing, so just castle with O-O and keep developing normally, holding a steady +0.6 edge. Play continues Bc5 Nd5 O-O Nxf6+."
+  },
+  {
+    "openingId": "c25-vienna-game",
+    "nodeId": "701ae8bf697dd10d",
+    "kind": "punish",
+    "text": "Bb4 ignores the pressure building on f7 — Qh5 keeps it up, pushing Black to weaken the kingside while White holds a comfortable +0.7. Play continues g6 Qf3 Nf6 Nd5."
+  },
+  {
+    "openingId": "c25-vienna-game",
+    "nodeId": "87cae99932eb91be",
+    "kind": "mistake",
+    "text": "Ng4 hops out without a real target and just loses time. Simply castle with O-O and come out with a modest, solid edge. Only about 4% of club players choose this."
+  },
+  {
+    "openingId": "c25-vienna-game",
+    "nodeId": "960a64dfe194241f",
+    "kind": "punish",
+    "text": "Ng4 wastes time without threatening anything real, so just castle with O-O and continue normal development, keeping a steady +0.7. Play continues a5 Nd5 d6 c3."
+  },
+  {
+    "openingId": "c25-vienna-game",
+    "nodeId": "9a64f71559b6fa88",
+    "kind": "punish",
+    "text": "Ng4 doesn't achieve much here either — just castle with O-O and keep the position solid around +0.7. Play continues Re8 d4 exd4 Nxd4."
+  },
+  {
+    "openingId": "c25-vienna-game",
+    "nodeId": "acb5a504ac40475b",
+    "kind": "mistake",
+    "text": "Ng4 jumps out early with no follow-up — meet it with the simple O-O, developing safely for a modest edge. It appears in about 6% of club games."
+  },
+  {
+    "openingId": "c25-vienna-game",
+    "nodeId": "b410b46934f3f267",
+    "kind": "mistake",
+    "text": "Bb4 pins the knight but ignores f7 — Qh5 piles onto the weak point at once, swinging the game about 0.8 pawns in White's favor. Only about 5% of club games see this, so remember Qh5."
+  },
+  {
+    "openingId": "c25-vienna-game",
+    "nodeId": "b51a483e32eed707",
+    "kind": "mistake",
+    "text": "d6 is a bit passive here, giving up the fight for the center too early. Just continue developing with Bg2 and edge ahead a little. About 5% of club players go for this."
+  },
+  {
+    "openingId": "c25-vienna-game",
+    "nodeId": "da4c18fcf27db459",
+    "kind": "punish",
+    "text": "h6 costs a tempo, so hop the knight over with Na4, eyeing c5 and keeping a small, steady edge around +0.4. Play continues Be7 d4 d6 c4."
+  },
+  {
+    "openingId": "c25-vienna-game",
+    "nodeId": "e18cc130a3a9b60d",
+    "kind": "punish",
+    "text": "d6 is a touch passive, so just fianchetto with Bg2 and keep developing naturally for a small edge near +0.2. Play continues g6 Nge2 Bg7 d4."
+  },
+  {
+    "openingId": "c25-vienna-game",
+    "nodeId": "e5fcb297468722dd",
+    "kind": "punish",
+    "text": "Nd4 offers a trade that doesn't really help Black, so just castle with O-O and keep a small, comfortable edge. Play continues O-O Nxd4 exd4 Ne2."
+  },
+  {
+    "openingId": "c25-vienna-game",
+    "nodeId": "e993f8e60e517605",
+    "kind": "mistake",
+    "text": "Nd4 offers a trade but creates no real problems for White — just castle with O-O and keep developing, picking up a modest edge. It's played in about 9% of club games."
+  },
+  {
+    "openingId": "c25-vienna-game",
+    "nodeId": "ecfafdaa97c2a5be",
+    "kind": "mistake",
+    "text": "Bb4 pins the knight too soon without support — Nd5 hits the bishop while eyeing c7, gaining White a small edge. It's rare, seen in only about 4% of club games."
+  },
+  {
+    "openingId": "c25-vienna-game",
+    "nodeId": "f1dd85811105c76a",
+    "kind": "mistake",
+    "text": "Nf6 lets the e5-pawn hang — Nxe5 just takes it, since Black's knight is already committed elsewhere. It's popular at club level (16% of games), so remember Nxe5."
+  },
+  {
+    "openingId": "c25-vienna-game",
+    "nodeId": "f43b4f13d3c8e7c7",
+    "kind": "punish",
+    "text": "c6 doesn't stop the pressure on the bishop, so just retreat with Nb3 and keep a healthy lead near +1.3. Play continues Bb4 Qd4 Bxc3+ Qxc3."
+  },
+  {
+    "openingId": "c25-vienna-game",
+    "nodeId": "fd714d89c20ce3a3",
+    "kind": "mistake",
+    "text": "h6 spends a move on nothing urgent — just castle with O-O and continue developing, picking up a healthy edge. It shows up in about 7% of club games."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "05a626eebe355605",
+    "kind": "mistake",
+    "text": "Na5 chases the bishop but walks into b4, which kicks the knight again and, after Nxc4 bxc5, leaves White up about a pawn. It's a rare try at club level (3%), so remember b4."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "075f634a64f82223",
+    "kind": "mistake",
+    "text": "a6 doesn't address anything urgent — just play c3, preparing d4 and keeping a comfortable, growing edge. Around 5% of club players try this."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "078424e73eaa3b28",
+    "kind": "mistake",
+    "text": "Bd6 leaves the knight on d5 unprotected — Bxd5 just wins it, swinging the game by roughly 3.4 pawns in White's favor. It's seen in about 6% of club games, so know Bxd5 cold."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "0f8cd22a93a7b6bb",
+    "kind": "mistake",
+    "text": "e4 pushes the pawn forward but drops it into a fork — Ng5 attacks it while eyeing f7, and after Qf6 Bxf7+ Ke7, White is winning by nearly 4 pawns. It's rare (3%), so know Ng5 cold."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "0fa4b410c6df9db1",
+    "kind": "mistake",
+    "text": "f5 attacks the bishop but ignores the knight on c6 — Bxc6+ wrecks Black's structure, and after bxc6 Nxe5, White is up about 1.3 pawns and grabs the loose e5-pawn. Seen in around 12% of club games."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "14569b3972dfa390",
+    "kind": "punish",
+    "text": "h6 doesn't ask any questions, so just play c3, preparing d4 expansion and keeping a steady +0.4 edge. Play continues d6 b4 a6 a4."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "176fb6cf33a348d4",
+    "kind": "punish",
+    "text": "Na5 chases the bishop but walks into a check — Bb5+ keeps tempo and White stays comfortably up around +1.5. Play continues c6 dxc6 bxc6 Ba4."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "1ccd4c9fae97cdab",
+    "kind": "punish",
+    "text": "d5 blocks the bishop's diagonal but hangs the pawn — Bxd5 just takes it and White keeps a small, steady edge. Play continues Nf6 Bb3 Bd6 d4."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "1ee4db95eae9ee86",
+    "kind": "punish",
+    "text": "d5 opens the center too early — exd5 just wins the pawn, and after Ne7 Nxe5, White grabs another one, holding a comfortable +1.4. Play continues Ne7 Nxe5 Bd6 d4."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "20dc806f8dcc4bdd",
+    "kind": "punish",
+    "text": "Bg4 pins the knight but doesn't threaten anything concrete, so Re1 just improves the rook and keeps a small edge around +0.7. Play continues Qd7 Bb5 a6 Ba4."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "21696d3d20433b67",
+    "kind": "punish",
+    "text": "Be6 offers a piece White can harass — Ng5 hits the bishop right away, and after Qf6 Nxe6 Qxe6, White trades favorably while keeping around +0.7. Play continues Qf6 Nxe6 Qxe6 Nc3."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "29ce7cf9e1988085",
+    "kind": "punish",
+    "text": "Be6 invites a trade that wrecks Black's pawns — Bxe6 takes it, and after fxe6, Black's structure is damaged while White keeps a small edge. Play continues fxe6 b4 Bb6 Nbd2."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "34b63988c36b1d2f",
+    "kind": "punish",
+    "text": "f5 attacks the bishop but leaves c6 loose — Bxc6+ trades in for the e5-pawn next, since after bxc6 Nxe5 White grabs it, holding a solid +1.1 edge. Play continues bxc6 Nxe5 Ba6 d3."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "39bd2c7f84e33658",
+    "kind": "mistake",
+    "text": "a6 wastes a move while the center is still open — d4 strikes at once, and after Bb6 Nxe5, White wins the e5-pawn for about a 1.5-pawn edge. Played in roughly 8% of club games, so know d4 cold."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "3a4d6fafbf50bec8",
+    "kind": "mistake",
+    "text": "d5 opens the center before Black is ready — exd5 just wins the pawn, and after Ne7 Nxe5, White grabs a second one for about a 1.1-pawn edge. Tried in about 5% of club games, so remember exd5."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "3bada86cf780a6a6",
+    "kind": "punish",
+    "text": "Be6 hands White a free trade — Bxe6 takes it and after fxe6, Black's pawns are doubled while White keeps a small edge. Play continues fxe6 Qb3 Qc8 d4."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "47a380452eaf8dec",
+    "kind": "punish",
+    "text": "Bd6 leaves the knight on d5 hanging again — Bxd5 simply wins it, keeping White's crushing lead near +3.8. Play continues Bg4 Nbd2 Qd7 Re1."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "4d2ac310e9f90819",
+    "kind": "mistake",
+    "text": "Bc5 develops naturally, so there's nothing sharp to punish — just castle with O-O and keep a small, steady edge. It's common at club level (13% of games)."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "4f0aebad9fd268c5",
+    "kind": "punish",
+    "text": "d5 opens things up too soon — exd5 just wins the pawn and after Ne7 Nxe5, White grabs another, keeping a big +1.6 edge. Play continues Ne7 Nxe5 O-O d4."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "56110e694c68c652",
+    "kind": "punish",
+    "text": "a6 doesn't create any threat, so play c3, preparing d4 and holding a steady +0.4 edge. Play continues d6 d4 Nxe4 dxe5."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "56d08ee3440974e3",
+    "kind": "mistake",
+    "text": "Be6 offers a trade that damages Black's structure — Bxe6 takes it, and after fxe6, Black is left with doubled pawns while White nudges ahead. Seen in about 9% of club games."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "597fbb24cccb2795",
+    "kind": "mistake",
+    "text": "d6 tries to win back the pawn but ignores f7 — Nxf7 forks in, and even after Bxf2+ Kxf2 Nxe4+, White ends up close to two pawns ahead. Rare (3%), so know Nxf7 cold."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "5d68a2c5a9ff02a3",
+    "kind": "punish",
+    "text": "d6 is solid but passive, so just develop with Nc3 and keep a small, comfortable edge. Play continues Be7 d4 exd4 Nxd4."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "6644f533519bb55c",
+    "kind": "mistake",
+    "text": "Bd6 leaves f7 unguarded — Ng5 pounces, and after Qf6 Nxf7 Rf8, White wins material and swings the game by nearly 3 pawns. Played in about 5% of club games, so remember Ng5."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "6d782fa93fe24001",
+    "kind": "mistake",
+    "text": "d5 opens the center prematurely — exd5 wins the pawn outright, and after Ne7 Nxe5, White grabs a second pawn for about a 1.4-pawn edge. Tried in roughly 4% of club games."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "71dbc2ccb2e47cbc",
+    "kind": "mistake",
+    "text": "Be6 puts the bishop right where White's knight wants to go — Ng5 hits it immediately, and after Qf6 Nxe6 Qxe6, White edges ahead. Very common (21% of club games), so know Ng5 cold."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "742a7e245ba8336d",
+    "kind": "punish",
+    "text": "d5 challenges the bishop but hangs a pawn — exd5 just takes it, and after e4 Ne5, White's knight lands comfortably while keeping a small edge. Play continues e4 Ne5 Bd6 d4."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "786a655982061727",
+    "kind": "punish",
+    "text": "b5 grabs space but doesn't threaten anything, so just tuck the bishop back with Bb3 and keep a steady +0.5 edge. Play continues d6 Re1 Bb6 a4."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "806618917f9a6239",
+    "kind": "punish",
+    "text": "Na5 attacks the bishop, so kick it right back with b4 — after Nxc4 bxc5, White has traded favorably and keeps a solid +1.1 lead. Play continues Nxc4 bxc5 Na5 Nxe5."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "81c99935c4a0ced9",
+    "kind": "mistake",
+    "text": "h6 wastes time while the center is still up for grabs — d4 strikes at once, and after Bb6 Nxe5, White wins the e5-pawn for about a 1.3-pawn edge. Common (19% of club games); know d4 cold."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "89e8d004fc35497e",
+    "kind": "punish",
+    "text": "e4 hangs the pawn right into a fork — Ng5 grabs it while eyeing f7, and after Qf6 Bxf7+ Ke7, White's advantage grows to around +3.5. Play continues Qf6 Bxf7+ Ke7 Bh5."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "8dd72001b24069aa",
+    "kind": "punish",
+    "text": "h6 doesn't stop the center break, so push d4 right away — after Bb6 Nxe5, White wins the e5-pawn and keeps a comfortable +1.5. Play continues Bb6 Nxe5 O-O Nxc6."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "8e0c6283a7da48d6",
+    "kind": "mistake",
+    "text": "h6 isn't a necessary move here — just improve with Re1, preparing c3 and d4, and keep the small edge White already has. Rare, seen in only about 4% of club games."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "947cdd0561205cc2",
+    "kind": "mistake",
+    "text": "Na5 chases the bishop but walks into a check — Bb5+ keeps the initiative, and after c6 dxc6 bxc6, White holds an edge of about a pawn. Played in around 5% of club games, so remember Bb5+."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "97bde3fedef6b88d",
+    "kind": "mistake",
+    "text": "b5 grabs space but doesn't back it up with development — just retreat with Bb3 and keep a small, growing edge. It's tried in about 12% of club games."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "9caf59e23eac26f6",
+    "kind": "mistake",
+    "text": "d6 is solid but a little slow — Ng5 jumps in immediately, eyeing the weak f7 square. It's seen in about 6% of club games, so know Ng5 as the follow-up."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "a0afbcce6a1574da",
+    "kind": "mistake",
+    "text": "Be6 invites a favorable trade — Bxe6 takes it, and after fxe6, Black's pawns are doubled while the position stays roughly balanced in White's favor. Played in about 9% of club games."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "a0b63ece6a1abd6e",
+    "kind": "mistake",
+    "text": "Bg4 pins the knight but doesn't threaten anything concrete — Re1 simply improves the rook and keeps a small, growing edge. Very common at club level (32% of games)."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "a0c85a785a6486a5",
+    "kind": "punish",
+    "text": "h6 doesn't slow the center break, so push d4 right away and keep a solid +1.5 edge. Play continues Bd6 Bd5 Nxd5 exd5."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "a381f5ca23142d44",
+    "kind": "mistake",
+    "text": "d5 opens the center a bit too soon — exd5 wins the pawn, and after Nxd5 Nxe5, White grabs a second one for about a 0.8-pawn edge. Tried in roughly 9% of club games, so remember exd5."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "a4ca17bda3f47435",
+    "kind": "punish",
+    "text": "a6 doesn't slow the center break, so push d4 right away and keep the big +1.7 lead. Play continues Bb6 Nxe5 d5 Nxc6."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "ab129b456964bc7a",
+    "kind": "punish",
+    "text": "d5 opens the position before Black is ready — exd5 just wins the pawn, and after Nxd5 Nxe5, White grabs another, holding roughly a +1.1 edge. Play continues Nxd5 Nxe5 Nxe5 Rxe5."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "b41e31f3a58b6975",
+    "kind": "punish",
+    "text": "h6 doesn't ask any questions, so just improve the rook with Re1, preparing c3 and d4 while keeping a small +0.4 edge. Play continues O-O c3 d6 a4."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "b5f2d864b8e38925",
+    "kind": "mistake",
+    "text": "h6 spends a move on nothing urgent — meet it with c3, preparing d4 and keeping a small, growing edge. It's played in about 9% of club games."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "b61ecc9ffa857287",
+    "kind": "punish",
+    "text": "Bd6 leaves f7 unguarded again — Ng5 pounces, and after Qf6 Nxf7 Rf8, White wins material and stays well ahead near +2.4. Play continues Qf6 Nxf7 Rf8 Nxd6+."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "bedddac4d8e46ee6",
+    "kind": "punish",
+    "text": "d6 tries to win the piece back but ignores f7 — Nxf7 forks in immediately, and even after Bxf2+ Kxf2 Nxe4+, White stays clearly ahead near +3.1. Play continues Bxf2+ Kxf2 Nxe4+ Kg1."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "bedf6cc06d190411",
+    "kind": "punish",
+    "text": "d6 is a touch slow, so jump straight in with Ng5, eyeing the weak f7 square and keeping a growing +0.8 edge. Play continues d5 exd5 b5 dxc6."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "bf248462bf61088e",
+    "kind": "mistake",
+    "text": "d5 opens the center prematurely — exd5 wins the pawn, and after Nxd5 Nxe5, White grabs a second for about a 0.7-pawn edge. Played in around 6% of club games, so remember exd5."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "d8d28613c17c4515",
+    "kind": "mistake",
+    "text": "d5 blocks in the bishop's line but just hangs the pawn — Bxd5 takes it immediately, swinging the game by about 0.9 pawns. Tried in about 7% of club games, so know Bxd5 cold."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "e2aab365276044a0",
+    "kind": "mistake",
+    "text": "d6 is solid but gives up on contesting the center actively — Nc3 develops naturally and gains close to a pawn's worth of edge. Played in about 8% of club games."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "e2aab665276049b9",
+    "kind": "mistake",
+    "text": "d5 challenges the bishop but hangs a pawn — exd5 just captures it, giving White close to a 0.8-pawn edge. Tried in about 5% of club games, so remember exd5."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "ec293eb18650b2e9",
+    "kind": "punish",
+    "text": "Bc5 develops naturally, so there's nothing sharp to punish — just castle with O-O and keep a small, steady edge. Play continues O-O d3 f6 c3."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "f72c005c4a2427b8",
+    "kind": "punish",
+    "text": "d5 opens the center too early — exd5 just wins the pawn, and after Nxd5 Nxe5, White grabs another and keeps close to a +0.9 edge. Play continues Nxd5 Nxe5 Nxe5 Qe1."
+  },
+  {
+    "openingId": "c42-petrov-s-defense-italian-variation",
+    "nodeId": "fb1c6152517a1b68",
+    "kind": "mistake",
+    "text": "h6 wastes time while the center is still open — d4 strikes right away, and after Bd6 Bd5 Nxd5, White simplifies into a clean +1.3 edge. Common (12% of club games), so know d4 cold."
+  },
+  {
+    "openingId": "c47-four-knights-game-italian-variation",
+    "nodeId": "04a088acc92b0ecb",
+    "kind": "mistake",
+    "text": "Nxe4 grabs a pawn but hangs the knight — Nxe4 recaptures at once, and after d5 Nxc6 bxc6, White keeps the extra material for a solid edge. Rare, seen in about 3% of club games."
+  },
+  {
+    "openingId": "c47-four-knights-game-italian-variation",
+    "nodeId": "13c939ff11563e95",
+    "kind": "mistake",
+    "text": "Bc5 develops naturally with nothing sharp to punish, so just castle with O-O and keep a small, growing edge. It's common at club level (13% of games)."
+  },
+  {
+    "openingId": "c47-four-knights-game-italian-variation",
+    "nodeId": "1ad0f2ff14db854d",
+    "kind": "mistake",
+    "text": "f5 attacks the bishop but leaves c6 loose — Bxc6+ trades in favorably, and after bxc6 Nxe5, White wins the e5-pawn for about a 1.1-pawn edge. Played in around 12% of club games."
+  },
+  {
+    "openingId": "c47-four-knights-game-italian-variation",
+    "nodeId": "1ceb62cc252cb539",
+    "kind": "mistake",
+    "text": "Na5 chases the bishop but ignores the pawn on e5 — Nxe5 just grabs it, and after Nxc4 dxc4, White stays close to a pawn up. Rare (4% of club games), so know Nxe5 cold."
+  },
+  {
+    "openingId": "c47-four-knights-game-italian-variation",
+    "nodeId": "1dcda23a98bd51ee",
+    "kind": "punish",
+    "text": "Nxe4 just hangs the knight — recapture with Nxe4 and stay comfortably ahead by close to a pawn. Play continues d5 Nxc6 bxc6 Bd3."
+  },
+  {
+    "openingId": "c47-four-knights-game-italian-variation",
+    "nodeId": "47aedab61d49678d",
+    "kind": "punish",
+    "text": "Bc5 develops naturally with nothing sharp to punish, so castle with O-O and keep a small, steady edge. Play continues O-O d3 Bg4 h3."
+  },
+  {
+    "openingId": "c47-four-knights-game-italian-variation",
+    "nodeId": "637ee1e520993efe",
+    "kind": "mistake",
+    "text": "h6 doesn't contest the center, so push d4 right away and grab a comfortable edge close to a full pawn. It's played in about 8% of club games."
+  },
+  {
+    "openingId": "c47-four-knights-game-italian-variation",
+    "nodeId": "68f5ff475a8633e4",
+    "kind": "mistake",
+    "text": "gxf6 recaptures but wrecks the kingside pawns — just castle with O-O and let the damaged structure tell for about a 0.9-pawn edge. Tried in about 9% of club games."
+  },
+  {
+    "openingId": "c47-four-knights-game-italian-variation",
+    "nodeId": "7e581276ed506ffa",
+    "kind": "punish",
+    "text": "Bg4 pins the knight but ignores d5 — Nd5 jumps in, and after Bxf3 Qxf3 Nd4, White keeps a steady +0.6 edge. Play continues Bxf3 Qxf3 Nd4 Qd1."
+  },
+  {
+    "openingId": "c47-four-knights-game-italian-variation",
+    "nodeId": "95608eefaf63ebab",
+    "kind": "punish",
+    "text": "f5 attacks the bishop but leaves c6 undefended — Bxc6+ trades in, and after bxc6 Nxe5, White wins the e5-pawn and pushes the edge to about +1.2. Play continues bxc6 Nxe5 Ba6 d3."
+  },
+  {
+    "openingId": "c47-four-knights-game-italian-variation",
+    "nodeId": "99f036748cc92108",
+    "kind": "punish",
+    "text": "Castling was fine generally, but here Nd5 jumps straight in, and after Be6 Nxf6+ gxf6, White wrecks Black's kingside pawns while holding around +1.0. Play continues Be6 Nxf6+ gxf6 Bh6."
+  },
+  {
+    "openingId": "c47-four-knights-game-italian-variation",
+    "nodeId": "9afa7f9b31168faa",
+    "kind": "punish",
+    "text": "Na5 chases the bishop but leaves e5 undefended — Nxe5 grabs the pawn, and after Nxc4 dxc4, White stays close to a pawn up. Play continues Nxc4 dxc4 d6 Nd3."
+  },
+  {
+    "openingId": "c47-four-knights-game-italian-variation",
+    "nodeId": "a0a1452871ee0cc9",
+    "kind": "punish",
+    "text": "d6 is a touch slow, so jump in with Ng5, eyeing the weak f7 square and holding around a +1.1 edge. Play continues d5 exd5 Na5 Bb5+."
+  },
+  {
+    "openingId": "c47-four-knights-game-italian-variation",
+    "nodeId": "c7a1624a3d48139e",
+    "kind": "mistake",
+    "text": "d6 is solid but a little slow, letting White jump in with Ng5, eyeing the weak f7 square and gaining about a 1.1-pawn edge. Seen in about 6% of club games, so know Ng5."
+  },
+  {
+    "openingId": "c47-four-knights-game-italian-variation",
+    "nodeId": "c87b17af072c6680",
+    "kind": "punish",
+    "text": "h6 doesn't contest the center, so push d4 right away and keep a comfortable +0.6 edge. Play continues exd4 Nxd4 Bb4 Nxc6."
+  },
+  {
+    "openingId": "c47-four-knights-game-italian-variation",
+    "nodeId": "d125ac7cd306acdd",
+    "kind": "mistake",
+    "text": "Bg4 pins the knight but ignores d5 — Nd5 jumps in immediately, and after Bxf3 Qxf3 Nd4, White gains a comfortable edge. Very common (22% of club games), so know Nd5 cold."
+  },
+  {
+    "openingId": "c47-four-knights-game-italian-variation",
+    "nodeId": "d3a949f33dcb74ce",
+    "kind": "punish",
+    "text": "gxf6 recaptures but leaves the kingside pawns wrecked — just castle with O-O and let that damage tell for about a +0.7 edge. Play continues f5 exf5 Bxf5 Re1."
+  },
+  {
+    "openingId": "c47-four-knights-game-italian-variation",
+    "nodeId": "fa8c004a2f75691f",
+    "kind": "mistake",
+    "text": "O-O looks natural but walks right into Nd5 — after Be6 Nxf6+ gxf6, White wrecks Black's kingside pawns and gains about a 1.1-pawn edge. Played in about 8% of club games, so know Nd5 cold."
+  },
+  {
+    "openingId": "c47-four-knights-game-italian-variation-noa-gambit",
+    "nodeId": "02d0c14742ac9da8",
+    "kind": "punish",
+    "text": "Qe7 doesn't stop the check — Qxd5+ comes in with tempo, and after Qe6 Qxe4 Bd7, White keeps grabbing material, pushing the edge to about +2.3. Play continues Qe6 Qxe4 Bd7 Qxb7."
+  },
+  {
+    "openingId": "c47-four-knights-game-italian-variation-noa-gambit",
+    "nodeId": "2d0474c2a22a0e2f",
+    "kind": "punish",
+    "text": "Bb4+ is just a check with no follow-up — block it with c3 and keep the position steady around +0.6. Play continues Bc5 Be3 Bxe3 fxe3."
+  },
+  {
+    "openingId": "c47-four-knights-game-italian-variation-noa-gambit",
+    "nodeId": "304f0f61995b346f",
+    "kind": "punish",
+    "text": "b6 doesn't change much here, so just develop with Qe2 and keep the position roughly balanced. Play continues Bf6 Re1 Ba6 c4."
+  },
+  {
+    "openingId": "c47-four-knights-game-italian-variation-noa-gambit",
+    "nodeId": "78a5169f0381c296",
+    "kind": "mistake",
+    "text": "Bf6 doesn't really fix Black's structural issues, only narrowing Black's edge a little — meet it with Re1 and keep chipping away. Rare, seen in about 4% of club games."
+  }
+]

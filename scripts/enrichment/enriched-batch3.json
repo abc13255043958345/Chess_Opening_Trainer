@@ -1,0 +1,578 @@
+[
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "163a1fa39a8f6d3f",
+  "kind": "punish",
+  "text": "After White's Bb5+, Bd7 is the answer: it keeps developing smoothly. Play continues Bxd7+ Qxd7 c3 Nc6."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "1b7d8d7bbb0a39ac",
+  "kind": "mistake",
+  "text": "Bc4 pops up in roughly 4% of club games, but it concedes roughly 0.7 pawns of ground. Meet it with d5."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "1ba5f1fa54f8b65f",
+  "kind": "mistake",
+  "text": "Qe2+ is a fairly common try here, seen in about 3% of games at this level, but it concedes roughly 0.7 pawns of ground. The simple answer is Ne7."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "1e90d1d473268ac3",
+  "kind": "punish",
+  "text": "Once White plays Bb5, hit back with Nxe5: it grabs the pawn on e5. Play continues Nxe5 Bxb5 Na3 Bc6."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "25cfb67bc15aecfc",
+  "kind": "mistake",
+  "text": "About 6% of club players reach for f4 in this spot, but it's slightly inaccurate. Just play d5."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "2682e30ca366fa8d",
+  "kind": "punish",
+  "text": "Be7 punishes h3 directly: it's the calm, accurate follow-up. Play continues Nf3 c5 g3 b5."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "2db8d08c89890aa6",
+  "kind": "punish",
+  "text": "The clean reply to Qe2+ is Ne7: it keeps everything under control. Play continues a3 Ba5 Bd2 O-O."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "2f1bf17112ba801d",
+  "kind": "punish",
+  "text": "After White's cxd5, Bb4+ is the answer: it comes in with check on b4. Play continues Nc3 Nxd5 Bd2 O-O."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "338c00b8d15eb095",
+  "kind": "punish",
+  "text": "Once White plays Nd2, hit back with Be7: it keeps your setup simple and sound. Play continues Ngf3 c5 g3 Nc6."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "33ec8eefbb323df3",
+  "kind": "mistake",
+  "text": "c3 shows up often enough at club level (3% of games), but it lets you keep the more comfortable position. Respond with Bd6."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "343339f3c5ef4414",
+  "kind": "punish",
+  "text": "cxd4 punishes Be3 directly: it grabs the pawn on d4. Play continues Bxd4 Nc6 a3 Ba5."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "3c038521b8542528",
+  "kind": "mistake",
+  "text": "Be3 is played in around 4% of club games, but it concedes roughly 1 pawn of ground. Answer it with cxd4."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "416bac087ef31830",
+  "kind": "punish",
+  "text": "The clean reply to Ndf3 is Nf6: it keeps everything under control. Play continues Ne2 Nc6 Nc3 Qd8."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "448991f3b1887c5b",
+  "kind": "mistake",
+  "text": "Bb5+ pops up in roughly 3% of club games, but it concedes roughly 0.8 pawns of ground. Meet it with Bd7."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "44aa51ae2c85e453",
+  "kind": "punish",
+  "text": "After White's Nc3, Bd6 is the answer: it keeps developing smoothly. Play continues Bd3 O-O O-O Bg4."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "4a33ed3d04cc7782",
+  "kind": "punish",
+  "text": "Once White plays Nf3, hit back with Ne7: it keeps your setup simple and sound. Play continues Bd2 cxd4 Nb5 Bxd2+."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "4c76678e41023c92",
+  "kind": "punish",
+  "text": "d5 punishes f4 directly: it's the calm, accurate follow-up. Play continues Nc3 dxe4 Nxe4 Bd7."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "4fa2dad09a38d34d",
+  "kind": "mistake",
+  "text": "exd5 is a fairly common try here, seen in about 28% of games at this level, but it's slightly inaccurate. The simple answer is exd5."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "4fa5d6d09a3b0258",
+  "kind": "mistake",
+  "text": "About 9% of club players reach for e5 in this spot, but it doesn't really trouble you. Just play c5."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "53ae240fec4af95b",
+  "kind": "punish",
+  "text": "The clean reply to exd5 is exd5: it grabs the pawn on d5. Play continues Nf3 Bd6 Nc3 Nf6."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "552bd52e85208f12",
+  "kind": "mistake",
+  "text": "b3 shows up often enough at club level (27% of games), but it concedes roughly 1.2 pawns of ground. Respond with cxd4."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "567fa532ab48273f",
+  "kind": "punish",
+  "text": "After White's Be3, cxd4 is the answer: it grabs the pawn on d4. Play continues Bxd4 Nxd4 Qxd4 Ne7."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "5d1f8dd22abdd9a0",
+  "kind": "mistake",
+  "text": "Bc4 is played in around 5% of club games, but it concedes roughly 1.4 pawns of ground. Answer it with Qxg2."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "613955d9cd65c7b5",
+  "kind": "punish",
+  "text": "Once White plays c3, hit back with Bd6: it keeps your setup simple and sound. Play continues Bd3 Nf6 Ne2 O-O."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "64920b88a88980ed",
+  "kind": "punish",
+  "text": "Nf6 punishes Bd2 directly: it's the calm, accurate follow-up. Play continues Nxe4 Bxd2+ Nxd2 O-O."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "680e2d322b7c97f9",
+  "kind": "punish",
+  "text": "The clean reply to Bg5 is Bb4+: it comes in with check on b4. Play continues Nc3 O-O Nf3 h6."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "704e414a8f23980f",
+  "kind": "punish",
+  "text": "After White's Nb3, e5 is the answer: it keeps developing smoothly. Play continues c4 Bb4+ Bd2 Bxd2+."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "737663dbf995a62a",
+  "kind": "mistake",
+  "text": "Nb3 pops up in roughly 12% of club games, but it concedes roughly 0.8 pawns of ground. Meet it with e5."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "7cac92440eb57522",
+  "kind": "punish",
+  "text": "Once White plays Bc4, hit back with d5: it keeps your setup simple and sound. Play continues exd5 exd5 Be2 Bd6."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "80703b04121f4552",
+  "kind": "punish",
+  "text": "Qxg2 punishes Bc4 directly: it grabs the pawn on g2. Play continues Qf3 Qxf3 Ngxf3 Nf6."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "80bd6623eb51c2c3",
+  "kind": "mistake",
+  "text": "Bg5 is a fairly common try here, seen in about 6% of games at this level, but it lets you keep the more comfortable position. The simple answer is Bb4+."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "872d412cc505f171",
+  "kind": "mistake",
+  "text": "About 14% of club players reach for Bb5 in this spot, but it concedes roughly 0.7 pawns of ground. Just play Qa5."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "889445fe611381b7",
+  "kind": "punish",
+  "text": "The clean reply to Bb5+ is Bd7: it keeps everything under control. Play continues Nf3 Bxc3 Bxd7+ Qxd7."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "8e204200de9d8e61",
+  "kind": "mistake",
+  "text": "Bd2 shows up often enough at club level (40% of games), but it's a touch loose. Respond with Nf6."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "91ea361a19baab46",
+  "kind": "punish",
+  "text": "After White's c3, Nxd4 is the answer: it grabs the knight on d4. Play continues cxd4 dxe4 Nxe4 Bd7."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "928cf334a4fb76e3",
+  "kind": "punish",
+  "text": "Once White plays Bb5, hit back with cxd4: it grabs the pawn on d4. Play continues Nxd4 Bd7 Nxc6 Bxc6."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "983590f8ac60bd68",
+  "kind": "punish",
+  "text": "Qxg2 punishes Bc4 directly: it grabs the pawn on g2. Play continues Qf3 Qxf3 Ngxf3 Nf6."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "99cf6123f942924f",
+  "kind": "mistake",
+  "text": "cxd5 is played in around 15% of club games, but there's a sharper reply waiting for you. Answer it with Bb4+."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "9f082404a42646c5",
+  "kind": "punish",
+  "text": "The clean reply to Bb5 is Qa5: it keeps everything under control. Play continues Bxc6+ bxc6 dxc5 Qxc5."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "a28ffa4ea27817d9",
+  "kind": "punish",
+  "text": "After White's Bd2, Nxd4 is the answer: it grabs the pawn on d4. Play continues Nce2 Nc6 h3 Nf6."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "a3c4292cd5f47a43",
+  "kind": "mistake",
+  "text": "f4 pops up in roughly 6% of club games, but it concedes roughly 1.1 pawns of ground. Meet it with Nh6."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "a55e311f803c3d7e",
+  "kind": "punish",
+  "text": "Once White plays b3, hit back with cxd4: it grabs the pawn on d4. Play continues Bxd4 Nxd4 Qxd4 Bc5."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "a746d40a35c58ccc",
+  "kind": "punish",
+  "text": "Nf6 punishes N4b3 directly: it's the calm, accurate follow-up. Play continues Bd3 Be7 O-O O-O."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "a868e8151272c9df",
+  "kind": "punish",
+  "text": "The clean reply to Nb3 is e5: it keeps everything under control. Play continues c3 Nc6 cxd4 Bg4."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "ac237909517c8599",
+  "kind": "punish",
+  "text": "After White's Qg4, cxd4 is the answer: it grabs the pawn on d4. Play continues Qxd4 Nbc6 Qg4 O-O."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "aefbff05980d2e3b",
+  "kind": "mistake",
+  "text": "Qg4 is a fairly common try here, seen in about 3% of games at this level, but it concedes roughly 1.1 pawns of ground. The simple answer is cxd4."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "b47b2bfa5cb6b34c",
+  "kind": "mistake",
+  "text": "About 4% of club players reach for Bc4 in this spot, but it concedes roughly 0.7 pawns of ground. Just play Nc6."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "b61ecb750228a315",
+  "kind": "mistake",
+  "text": "c3 shows up often enough at club level (11% of games), but it's not the most testing choice. Respond with Nxd4."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "b6ca934c66bef4c3",
+  "kind": "punish",
+  "text": "Once White plays c3, hit back with Bd6: it keeps your setup simple and sound. Play continues Bg5 O-O Be2 h6."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "beb624cf41e0d235",
+  "kind": "mistake",
+  "text": "Nc3 is played in around 20% of club games, but it doesn't really trouble you. Answer it with Bd6."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "c56ca4bd7ff7e519",
+  "kind": "mistake",
+  "text": "Ndf3 pops up in roughly 4% of club games, but it gives away a bit more than it should. Meet it with Nf6."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "cd421a55a64e8743",
+  "kind": "mistake",
+  "text": "Bb5+ is a fairly common try here, seen in about 3% of games at this level, but it concedes roughly 0.7 pawns of ground. The simple answer is Bd7."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "cfb3cd00fb25739b",
+  "kind": "mistake",
+  "text": "About 11% of club players reach for Nf3 in this spot, but it's slightly inaccurate. Just play Ne7."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "d2173c28e742b7f8",
+  "kind": "punish",
+  "text": "Nf6 punishes Bd2 directly: it's the calm, accurate follow-up. Play continues Bd3 O-O Nge2 Nbd7."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "d34b6cccee495a02",
+  "kind": "mistake",
+  "text": "Bc4 shows up often enough at club level (5% of games), but it concedes roughly 1.4 pawns of ground. Respond with Qxg2."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "d790e6027316f3fa",
+  "kind": "mistake",
+  "text": "Nb3 is played in around 12% of club games, but it concedes roughly 1.1 pawns of ground. Answer it with e5."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "e27763902b3a76ec",
+  "kind": "mistake",
+  "text": "Bd2 pops up in roughly 3% of club games, but it concedes roughly 1.4 pawns of ground. Meet it with Nxd4."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "e6f5d91c12aa5123",
+  "kind": "punish",
+  "text": "The clean reply to Bc4 is Nc6: it keeps everything under control. Play continues Ne2 Na5 Ba2 b6."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "e8177c14813981d1",
+  "kind": "mistake",
+  "text": "Be3 is a fairly common try here, seen in about 9% of games at this level, but it concedes roughly 0.8 pawns of ground. The simple answer is cxd4."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "f017b75d307334f5",
+  "kind": "mistake",
+  "text": "About 4% of club players reach for N4b3 in this spot, but it lets you keep the more comfortable position. Just play Nf6."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "f0191701915b4d11",
+  "kind": "mistake",
+  "text": "Nd2 shows up often enough at club level (5% of games), but it lets you seize the initiative. Respond with Be7."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "f79b4e3e27436d75",
+  "kind": "mistake",
+  "text": "Bb5 is played in around 36% of club games, but it concedes roughly 0.7 pawns of ground. Answer it with cxd4."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "f9c3d359328b0be6",
+  "kind": "mistake",
+  "text": "Bd2 pops up in roughly 9% of club games, but it's slightly inaccurate. Meet it with Nf6."
+ },
+ {
+  "openingId": "c00-french-defense",
+  "nodeId": "fa12cf9a4abbc8e2",
+  "kind": "punish",
+  "text": "After White's e5, c5 is the answer: it keeps developing smoothly. Play continues Nf3 Ne7 c3 Nbc6."
+ },
+ {
+  "openingId": "c20-king-s-pawn-game-wayward-queen-attack",
+  "nodeId": "04d41d576ab3cfea",
+  "kind": "punish",
+  "text": "Once White plays Na3, hit back with h6: it keeps your setup simple and sound. Play continues Bxf6 Bxf6 h5 g5."
+ },
+ {
+  "openingId": "c20-king-s-pawn-game-wayward-queen-attack",
+  "nodeId": "1509139d63f2c82d",
+  "kind": "punish",
+  "text": "d5 punishes c3 directly: it's the calm, accurate follow-up. Play continues Bb3 O-O Ne2 Nbd7."
+ },
+ {
+  "openingId": "c20-king-s-pawn-game-wayward-queen-attack",
+  "nodeId": "204d3a942c36c067",
+  "kind": "mistake",
+  "text": "Na3 is a fairly common try here, seen in about 3% of games at this level, but it doesn't really trouble you. The simple answer is h6."
+ },
+ {
+  "openingId": "c20-king-s-pawn-game-wayward-queen-attack",
+  "nodeId": "23bb93336c199925",
+  "kind": "mistake",
+  "text": "About 4% of club players reach for O-O-O in this spot, but it gives away a bit more than it should. Just play Rb8."
+ },
+ {
+  "openingId": "c20-king-s-pawn-game-wayward-queen-attack",
+  "nodeId": "24efeb6136b04053",
+  "kind": "punish",
+  "text": "The clean reply to a4 is d5: it keeps everything under control. Play continues exd5 cxd5 Bb5+ Nc6."
+ },
+ {
+  "openingId": "c20-king-s-pawn-game-wayward-queen-attack",
+  "nodeId": "26e86d3f76f8dab4",
+  "kind": "mistake",
+  "text": "Bb5 shows up often enough at club level (3% of games), but it hands you an easy path to an edge. Respond with O-O."
+ },
+ {
+  "openingId": "c20-king-s-pawn-game-wayward-queen-attack",
+  "nodeId": "2ec4a1eb5407f95c",
+  "kind": "punish",
+  "text": "After White's O-O-O, Rb8 is the answer: it keeps developing smoothly. Play continues h4 b5 Bb3 Nxb3+."
+ },
+ {
+  "openingId": "c20-king-s-pawn-game-wayward-queen-attack",
+  "nodeId": "32dca369f5027e79",
+  "kind": "mistake",
+  "text": "a3 is played in around 4% of club games, but it lets you seize the initiative. Answer it with d5."
+ },
+ {
+  "openingId": "c20-king-s-pawn-game-wayward-queen-attack",
+  "nodeId": "36aef6d71f0ebc4d",
+  "kind": "mistake",
+  "text": "h4 pops up in roughly 6% of club games, but it's not a real test of your setup. Meet it with h6."
+ },
+ {
+  "openingId": "c20-king-s-pawn-game-wayward-queen-attack",
+  "nodeId": "47f153e16b01bd5a",
+  "kind": "mistake",
+  "text": "a4 is a fairly common try here, seen in about 4% of games at this level, but it gives away a bit more than it should. The simple answer is d5."
+ },
+ {
+  "openingId": "c20-king-s-pawn-game-wayward-queen-attack",
+  "nodeId": "7f3602c9955bf94c",
+  "kind": "punish",
+  "text": "Once White plays h4, hit back with h6: it keeps your setup simple and sound. Play continues Bxf6 Bxf6 h5 Bg5."
+ },
+ {
+  "openingId": "c20-king-s-pawn-game-wayward-queen-attack",
+  "nodeId": "87e6b4382132c421",
+  "kind": "mistake",
+  "text": "About 4% of club players reach for c3 in this spot, but it's a touch loose. Just play d5."
+ },
+ {
+  "openingId": "c20-king-s-pawn-game-wayward-queen-attack",
+  "nodeId": "8a1138a90264ea7e",
+  "kind": "punish",
+  "text": "d5 punishes a3 directly: it's the calm, accurate follow-up. Play continues Ba2 Na6 exd5 Nxd5."
+ },
+ {
+  "openingId": "c20-king-s-pawn-game-wayward-queen-attack",
+  "nodeId": "b4744c5a72459aab",
+  "kind": "punish",
+  "text": "The clean reply to g3 is Na5: it keeps everything under control. Play continues Bb5 c6 Ba4 b5."
+ },
+ {
+  "openingId": "c20-king-s-pawn-game-wayward-queen-attack",
+  "nodeId": "cd188ebf720e4764",
+  "kind": "mistake",
+  "text": "c3 shows up often enough at club level (4% of games), but it's slightly inaccurate. Respond with d5."
+ },
+ {
+  "openingId": "c20-king-s-pawn-game-wayward-queen-attack",
+  "nodeId": "ce2d712939bfe2f6",
+  "kind": "punish",
+  "text": "After White's c3, d5 is the answer: it keeps developing smoothly. Play continues Bb3 a5 Bc2 a4."
+ },
+ {
+  "openingId": "c20-king-s-pawn-game-wayward-queen-attack",
+  "nodeId": "dc29abba01469948",
+  "kind": "mistake",
+  "text": "g3 is played in around 5% of club games, but it lets you keep the more comfortable position. Answer it with Na5."
+ },
+ {
+  "openingId": "c20-king-s-pawn-game-wayward-queen-attack",
+  "nodeId": "e8a9af615a944606",
+  "kind": "punish",
+  "text": "Once White plays Bb5, hit back with O-O: it tucks the king away kingside. Play continues Bxc6 bxc6 Nd2 Bg5."
+ },
+ {
+  "openingId": "c25-vienna-game",
+  "nodeId": "088183418763d8cb",
+  "kind": "punish",
+  "text": "Qxd4 punishes Bxd4 directly: it grabs the bishop on d4. Play continues d6 b3 Qf6 Qe3."
+ },
+ {
+  "openingId": "c25-vienna-game",
+  "nodeId": "0afdab1dbf8cb31c",
+  "kind": "punish",
+  "text": "The clean reply to Bb4 is dxe5: it grabs the knight on e5. Play continues Bxc3+ bxc3 Ne7 Ba3."
+ },
+ {
+  "openingId": "c25-vienna-game",
+  "nodeId": "0b63cbf81e48bbcf",
+  "kind": "mistake",
+  "text": "Ng4 pops up in roughly 6% of club games, but it concedes roughly 0.7 pawns of ground. Meet it with O-O."
+ },
+ {
+  "openingId": "c25-vienna-game",
+  "nodeId": "12b9ba9632b4af51",
+  "kind": "punish",
+  "text": "After Black's Bxf2+, Kxf2 is the answer: it grabs the bishop on f2. Play continues Nc6 d4 exd4 Nxd4."
+ },
+ {
+  "openingId": "c25-vienna-game",
+  "nodeId": "1ec656ae5d225b89",
+  "kind": "punish",
+  "text": "Once Black plays c6, hit back with d4: it keeps your setup simple and sound. Play continues d6 f4 exd4 Qxd4."
+ },
+ {
+  "openingId": "c25-vienna-game",
+  "nodeId": "26a68cbf81d8be44",
+  "kind": "mistake",
+  "text": "c6 is a fairly common try here, seen in about 14% of games at this level, but it's a touch loose. The simple answer is Nf3."
+ },
+ {
+  "openingId": "c25-vienna-game",
+  "nodeId": "280290601f5921ed",
+  "kind": "mistake",
+  "text": "About 5% of club players reach for Bxf2+ in this spot, but it trades a bishop for just a pawn. Just play Kxf2."
+ },
+ {
+  "openingId": "c25-vienna-game",
+  "nodeId": "2b7881eaf0e572d3",
+  "kind": "punish",
+  "text": "Nf3 punishes c6 directly: it's the calm, accurate follow-up. Play continues Nxc3 bxc3 Bd6 d4."
+ },
+ {
+  "openingId": "c25-vienna-game",
+  "nodeId": "2dd7cf45669a7263",
+  "kind": "punish",
+  "text": "The clean reply to Ng4 is O-O: it tucks the king away kingside. Play continues O-O h3 Nf6 Na4."
+ },
+ {
+  "openingId": "c25-vienna-game",
+  "nodeId": "45e7d680e5b619f3",
+  "kind": "punish",
+  "text": "After Black's Bb4, Nd5 is the answer: it keeps developing smoothly. Play continues Bc5 d4 Bxd4 Nf3."
+ },
+ {
+  "openingId": "c25-vienna-game",
+  "nodeId": "49e1ce0b56efbc7b",
+  "kind": "punish",
+  "text": "Once Black plays Nf6, hit back with Nxe5: it grabs the pawn on e5. Play continues O-O d4 Bb4 Bg5."
+ },
+ {
+  "openingId": "c25-vienna-game",
+  "nodeId": "4a2c91fd06d5db90",
+  "kind": "mistake",
+  "text": "c6 shows up often enough at club level (5% of games), but it concedes roughly 0.9 pawns of ground. Respond with Nb3."
+ },
+ {
+  "openingId": "c25-vienna-game",
+  "nodeId": "4bdeec837efd9609",
+  "kind": "mistake",
+  "text": "Ng4 is played in around 4% of club games, but it hangs the knight outright. Answer it with Qxg4."
+ },
+ {
+  "openingId": "c25-vienna-game",
+  "nodeId": "4df454d22865de75",
+  "kind": "mistake",
+  "text": "c6 pops up in roughly 3% of club games, but it's a touch loose. Meet it with d4."
+ }
+]

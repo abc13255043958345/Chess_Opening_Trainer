@@ -1,0 +1,578 @@
+[
+  {
+    "openingId": "c47-four-knights-game-italian-variation-noa-gambit",
+    "nodeId": "8051000ef7f5ff33",
+    "kind": "mistake",
+    "text": "Qf6? leaves the d5-pawn undefended. Qxd5+ scoops it with check and swings the game solidly your way, worth close to two pawns."
+  },
+  {
+    "openingId": "c47-four-knights-game-italian-variation-noa-gambit",
+    "nodeId": "a5054beea6cb4090",
+    "kind": "mistake",
+    "text": "Bb4+? gives a check but achieves little. c3 kicks the bishop back to c5, and after Be3 Bxe3 fxe3 you keep a tidy structural edge."
+  },
+  {
+    "openingId": "c47-four-knights-game-italian-variation-noa-gambit",
+    "nodeId": "bf0cbb761f4f25b7",
+    "kind": "punish",
+    "text": "N1e2 finishes development and covers d2 in case of Bb4+. After Ne5 Qd4 Bxd2+ you keep a modest, comfortable edge, around half a pawn."
+  },
+  {
+    "openingId": "c47-four-knights-game-italian-variation-noa-gambit",
+    "nodeId": "c46c02dd0e246274",
+    "kind": "mistake",
+    "text": "Qe7? also ignores the loose d5-pawn. Qxd5+ wins it with check, and you go on to pick up e4 and b7 too, close to a two-pawn swing."
+  },
+  {
+    "openingId": "c47-four-knights-game-italian-variation-noa-gambit",
+    "nodeId": "d7b44dd9237bcffd",
+    "kind": "mistake",
+    "text": "Qe8+? spends a tempo on a check that achieves nothing concrete. Be3 blocks comfortably and you continue developing with N3e2 next."
+  },
+  {
+    "openingId": "c47-four-knights-game-italian-variation-noa-gambit",
+    "nodeId": "e211cc314e85fc4d",
+    "kind": "punish",
+    "text": "Qxd5+ grabs the undefended d5-pawn with check, forcing Qf7. After Qe4 h5 Nf5 you keep a dominant, close to winning position."
+  },
+  {
+    "openingId": "c47-four-knights-game-italian-variation-noa-gambit",
+    "nodeId": "e3d770f1a5a921b5",
+    "kind": "punish",
+    "text": "Re1 develops the rook to its most useful file. Black stays a bit better here, but after Be6 Bd2 a5 a3 the position remains close and fully playable."
+  },
+  {
+    "openingId": "c47-four-knights-game-italian-variation-noa-gambit",
+    "nodeId": "faafa8a7d9fffdfd",
+    "kind": "mistake",
+    "text": "b6? slightly loosens the dark squares for no real gain. Qe2 keeps developing, and after Bf6 Re1 Ba6 you meet the fianchetto with steady central play."
+  },
+  {
+    "openingId": "c47-four-knights-game-italian-variation-noa-gambit",
+    "nodeId": "fc7a37a7141a888f",
+    "kind": "punish",
+    "text": "Be3 blocks the check while developing, your most solid try here. Black stays clearly ahead, around a pawn, but after h4 N3e2 Nb4 Qb3 the game is still fully playable."
+  },
+  {
+    "openingId": "c47-four-knights-game-italian-variation-noa-gambit",
+    "nodeId": "fc91ddc096f2b784",
+    "kind": "mistake",
+    "text": "Kg7? sidesteps the check but leaves the king oddly placed, giving up a good chunk of ground. N1e2 continues developing and you stand clearly better, up over a pawn."
+  },
+  {
+    "openingId": "c50-four-knights-game-italian-variation",
+    "nodeId": "01a97ba874af6bf3",
+    "kind": "punish",
+    "text": "h6 kicks the misplaced knight right away. After Nf3 Nd4 Be2 Re8 you follow up with a knight hop to d4 hitting it again and keep a comfortable edge."
+  },
+  {
+    "openingId": "c50-four-knights-game-italian-variation",
+    "nodeId": "056282b77e775a79",
+    "kind": "punish",
+    "text": "d6 is the simple, solid reply, opening the diagonal for your bishop and preparing Nd4 ideas. After a3 Nd4 d3 c6 you have an easy, smooth game."
+  },
+  {
+    "openingId": "c50-four-knights-game-italian-variation",
+    "nodeId": "0c0595d3a31d1292",
+    "kind": "punish",
+    "text": "d5 strikes the center right when White's bishop has just committed to e3. After exd5 Nxd5 O-O O-O you're comfortably equal with easy piece activity."
+  },
+  {
+    "openingId": "c50-four-knights-game-italian-variation",
+    "nodeId": "37ef8c9decbfccea",
+    "kind": "punish",
+    "text": "Nxf3+ trades off your strong d4-knight with check before it gets kicked further. After Qxf3 Bd4 Bd2 b5 you keep a pleasant, simple position."
+  },
+  {
+    "openingId": "c50-four-knights-game-italian-variation",
+    "nodeId": "43bcf4f2a5999e07",
+    "kind": "mistake",
+    "text": "Nd5? invites Nxe4 grabbing the e4-pawn, and if d3 kicks the knight, Nxf2 Rxf2 Bxf2+ Kxf2 rips open White's kingside for a strong initiative."
+  },
+  {
+    "openingId": "c50-four-knights-game-italian-variation",
+    "nodeId": "469273046cb87d80",
+    "kind": "punish",
+    "text": "Qd8 quietly repositions the queen after the bishop trade, keeping your options flexible. After Nd5 a5 c3 Ba7 the position stays balanced."
+  },
+  {
+    "openingId": "c50-four-knights-game-italian-variation",
+    "nodeId": "4ad36ae389265f68",
+    "kind": "mistake",
+    "text": "Kh1? spends a move without addressing the misplaced Ng5. h6 kicks it immediately, and after Nf3 Nd4 Be2 Re8 you gain a useful tempo and a growing edge."
+  },
+  {
+    "openingId": "c50-four-knights-game-italian-variation",
+    "nodeId": "4ff492f1847f6e8a",
+    "kind": "punish",
+    "text": "Nxc4 wins the stray bishop on c4. After Nxf6+ Qxf6 dxc4 the knights trade off and you remain comfortably better without giving back any of your edge."
+  },
+  {
+    "openingId": "c50-four-knights-game-italian-variation",
+    "nodeId": "65e051f64205f7e4",
+    "kind": "mistake",
+    "text": "Ng5? eyes f7 but achieves little since O-O simply removes the target. After h3 c6 Ba2 the knight retreats to f3 having lost time, handing you over half a pawn."
+  },
+  {
+    "openingId": "c50-four-knights-game-italian-variation",
+    "nodeId": "7163f1271bbbae65",
+    "kind": "mistake",
+    "text": "Nd5? walks into Nxc4, snatching the bishop. After Nxf6+ Qxf6 dxc4 Bg4 the material evens out but you keep the safer structure, worth close to a pawn."
+  },
+  {
+    "openingId": "c50-four-knights-game-italian-variation",
+    "nodeId": "74891f0889398fa2",
+    "kind": "punish",
+    "text": "c6 supports a timely d5 break in the center. After Qf3 Be6 Ne2 Bb6 you keep a small, comfortable edge."
+  },
+  {
+    "openingId": "c50-four-knights-game-italian-variation",
+    "nodeId": "76c7d19090d5c2ea",
+    "kind": "mistake",
+    "text": "Ng5? aims at the f7 weak point, but O-O simply sidesteps it. After d3 Nd4 the knight gets kicked around while you seize the advantage, close to 0.8 pawns."
+  },
+  {
+    "openingId": "c50-four-knights-game-italian-variation",
+    "nodeId": "7869ecf9f7c6099e",
+    "kind": "punish",
+    "text": "O-O simply tucks the king away and ignores the wayward knight. After d3 Nd4 O-O h6 you kick the misplaced knight back to f3 while keeping the full advantage."
+  },
+  {
+    "openingId": "c50-four-knights-game-italian-variation",
+    "nodeId": "7a65f11dab8051da",
+    "kind": "mistake",
+    "text": "Ng5? goes after f7, but d5 hits the center and the bishop at once. After Ba2 O-O O-O h6 you consolidate a clear, comfortable edge."
+  },
+  {
+    "openingId": "c50-four-knights-game-italian-variation",
+    "nodeId": "8b484c042d5689df",
+    "kind": "mistake",
+    "text": "Bxf7+? sacrifices for an attack that doesn't work with your king already castled. After Rxf7 Nxf7 Kxf7 you come out ahead materially and structurally, close to two pawns."
+  },
+  {
+    "openingId": "c50-four-knights-game-italian-variation",
+    "nodeId": "8b71c5523e08c974",
+    "kind": "punish",
+    "text": "Nxe4 grabs the free e4-pawn. If White tries d3, Nxf2 Rxf2 Bxf2+ Kxf2 rips the king open, keeping the position sharp and comfortable for you."
+  },
+  {
+    "openingId": "c50-four-knights-game-italian-variation",
+    "nodeId": "92b0172d8f1f0455",
+    "kind": "mistake",
+    "text": "Bxf7+? sacrifices for an attack that doesn't work now that your king is safely castled. Rxf7 Nxf7 Kxf7 leaves you clearly on top, up close to 1.6 pawns."
+  },
+  {
+    "openingId": "c50-four-knights-game-italian-variation",
+    "nodeId": "96bd588dc877c85b",
+    "kind": "mistake",
+    "text": "h3? is a slow move that does nothing for White's development. c6 continues your own plans, and after Qf3 Be6 Ne2 Bb6 you keep a small, steady edge."
+  },
+  {
+    "openingId": "c50-four-knights-game-italian-variation",
+    "nodeId": "9c8ba4e3e02e0af2",
+    "kind": "mistake",
+    "text": "h3? spends a move on prophylaxis you don't need to worry about yet. d6 develops naturally, and after a3 Nd4 d3 c6 you equalize comfortably."
+  },
+  {
+    "openingId": "c50-four-knights-game-italian-variation",
+    "nodeId": "9f9c7e634dbdadfc",
+    "kind": "mistake",
+    "text": "Ng5? aims at f7 but O-O simply removes the target. After Na4 h6 Nf3 Bg4 you develop smoothly and take over the advantage."
+  },
+  {
+    "openingId": "c50-four-knights-game-italian-variation",
+    "nodeId": "a3ab3ef4e4a0add3",
+    "kind": "punish",
+    "text": "d5 strikes the center exactly when White's knight and bishop are both offside. After Ba2 O-O O-O h6 you keep a stable, pleasant edge."
+  },
+  {
+    "openingId": "c50-four-knights-game-italian-variation",
+    "nodeId": "a6ac70a70604313f",
+    "kind": "punish",
+    "text": "Bb6 tucks the bishop safely out of tempo range while keeping the diagonal live. After h3 c6 O-O O-O you continue normal development with a small, steady edge."
+  },
+  {
+    "openingId": "c50-four-knights-game-italian-variation",
+    "nodeId": "ab55cf3790fe07d5",
+    "kind": "mistake",
+    "text": "Be3? develops but hands you a free central tempo. d5 strikes right away, and after exd5 Nxd5 O-O O-O you're comfortably equal with easy piece play."
+  },
+  {
+    "openingId": "c50-four-knights-game-italian-variation",
+    "nodeId": "bb0508170a08cd65",
+    "kind": "mistake",
+    "text": "h3? does little for White's position. Ne7 reroutes your knight toward better squares, and after Na4 Bb4+ c3 Ba5 you grab a healthy edge, over half a pawn."
+  },
+  {
+    "openingId": "c50-four-knights-game-italian-variation",
+    "nodeId": "c6b5dedec0cbf83a",
+    "kind": "punish",
+    "text": "Nxc4 grabs the bishop that wandered too far. After Nxf6+ Qxf6 dxc4 Bg4 you keep the initiative and hold onto the advantage already built up."
+  },
+  {
+    "openingId": "c50-four-knights-game-italian-variation",
+    "nodeId": "c8ca6434794b0320",
+    "kind": "punish",
+    "text": "Rxf7 simply takes the sacrificed bishop. After Nxf7 Kxf7 h3 Kg8 you come out well ahead in material, close to two pawns to the good."
+  },
+  {
+    "openingId": "c50-four-knights-game-italian-variation",
+    "nodeId": "d607a4f8bd0cdb35",
+    "kind": "mistake",
+    "text": "Nd5? offers itself to Nxc4, giving away the bishop. After Nxf6+ Qxf6 dxc4 Bg4 material evens out but you keep the safer structure, close to a pawn's worth of edge."
+  },
+  {
+    "openingId": "c50-four-knights-game-italian-variation",
+    "nodeId": "d7548293074b0fd6",
+    "kind": "punish",
+    "text": "O-O tucks the king away and calls White's bluff on the knight sortie. After h3 c6 Ba2 h6 you finish development and keep a solid edge."
+  },
+  {
+    "openingId": "c50-four-knights-game-italian-variation",
+    "nodeId": "ede23f3e6c532ae3",
+    "kind": "mistake",
+    "text": "b4? grabs space but drops the c3-knight's support too early. Nxf3+ trades it off with tempo, and after Qxf3 Bd4 Bd2 b5 you're comfortably placed."
+  },
+  {
+    "openingId": "c50-four-knights-game-italian-variation",
+    "nodeId": "ee9c17d4ee14c5f5",
+    "kind": "mistake",
+    "text": "b4? pushes forward without enough backup. Bb6 tucks the bishop safely, and after h3 c6 O-O O-O you're comfortably placed with easy development."
+  },
+  {
+    "openingId": "c50-four-knights-game-italian-variation",
+    "nodeId": "f34eef09df6c3bc4",
+    "kind": "punish",
+    "text": "O-O gets the king to safety and shrugs off the knight sortie. After d3 Nd4 O-O h6 you kick the knight back and keep a solid, half-pawn edge in hand."
+  },
+  {
+    "openingId": "c50-four-knights-game-italian-variation",
+    "nodeId": "f590064699837a4a",
+    "kind": "punish",
+    "text": "Ne7 reroutes the knight toward better squares after the bishop trade. After Na4 Bb4+ c3 Ba5 you keep a healthy edge, over half a pawn."
+  },
+  {
+    "openingId": "c50-four-knights-game-italian-variation",
+    "nodeId": "f7f5c4fea87c9e40",
+    "kind": "mistake",
+    "text": "O-O? isn't bad on its own, just a touch less precise than developing further right away. Qd8 repositions the queen, and after Nd5 a5 c3 Ba7 the position stays balanced."
+  },
+  {
+    "openingId": "c50-four-knights-game-italian-variation",
+    "nodeId": "f9c23d956fed519e",
+    "kind": "punish",
+    "text": "Rxf7 simply recaptures the sacrificed bishop. After Nxf7 Kxf7 d3 Kg8 you're left clearly ahead in material, close to 1.7 pawns to the good."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "010d4ede12d736bc",
+    "kind": "mistake",
+    "text": "Be6? develops but leaves itself a target. Ng5 hits the bishop, and after Qf6 Nxe6 Qxe6 Re1 you keep a small, pleasant edge."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "078db4056746fd7d",
+    "kind": "punish",
+    "text": "d4 breaks open the center right when Black's last move did nothing to prepare for it. After Bd6 Bd5 Qe7 Re1 you keep a big, close to 1.5 pawn advantage."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "098f6271c040b05e",
+    "kind": "punish",
+    "text": "exd5 simply grabs the pawn Black offered in the center. After Nxd5 Qb3 O-O Bxd5 you keep a solid edge, over a pawn to the good."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "10fb2547249388d9",
+    "kind": "mistake",
+    "text": "h6? wastes a tempo that does nothing for Black's development. d4 strikes the center at once, and after Bd6 Bd5 Qe7 Nbd2 you're up over a pawn."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "1134e57d039732d6",
+    "kind": "mistake",
+    "text": "h6? is a slow, non-developing move. c3 prepares d4 and keeps building, and after d6 a4 O-O Re1 you hold a small, steady edge."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "12759c6574c19190",
+    "kind": "punish",
+    "text": "c3 prepares the d4 break while patching up the center. After d6 Bb3 Re8 Nbd2 you keep a comfortable, steady edge."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "15d5a2d418b889f9",
+    "kind": "punish",
+    "text": "c3 quietly prepares d4 next. After d6 a4 O-O Re1 you keep a small but stable edge."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "171e9af1eaf86bd5",
+    "kind": "mistake",
+    "text": "b5? grabs space but loosens the queenside too early. Bb3 tucks the bishop safely away, and after d6 h3 Be6 d4 you keep a comfortable edge."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "17a55ffebcdd46c2",
+    "kind": "mistake",
+    "text": "Na5? chases the bishop but hands over the center. Nxe5 grabs the free pawn, and after Bd6 Nf3 O-O O-O you're up close to a pawn with an easy position."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "1efb819b8fae39dd",
+    "kind": "punish",
+    "text": "Re1 centralizes the rook and eyes the e-file ahead of a future e5 break. After Qd7 b4 Be7 Nbd2 you keep a solid, close to 0.6 pawn edge."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "1f886e6922252967",
+    "kind": "punish",
+    "text": "Ng5 hits the bishop on e6 right away. After Qf6 Nxe6 Qxe6 Re1 you keep a comfortable edge, around 0.7 to 0.8 pawns."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "26ef70103ee9728d",
+    "kind": "mistake",
+    "text": "b5? grabs queenside space but weakens it just as fast. Bb3 sidesteps safely, and after d6 h3 h6 a4 you keep a solid edge."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "27ed7e25e37a6e85",
+    "kind": "punish",
+    "text": "Bxe6 trades off the bishop that just walked into range. After fxe6 b4 Bb6 b5 you keep pushing on the queenside with a small, steady edge."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "2fe148dfca082eda",
+    "kind": "mistake",
+    "text": "Be6? offers the bishop for a trade you're happy to take. Bxe6 simplifies at once, and after fxe6 Qb3 Qc8 Re1 you keep a small, comfortable edge."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "2fe7cadfca0d776e",
+    "kind": "mistake",
+    "text": "Bg4? pins the knight but ignores the center. Re1 prepares e5 ideas, and after Qd7 b4 Be7 Nbd2 you build a healthy edge."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "3104808b22316f52",
+    "kind": "mistake",
+    "text": "Bg4? develops but ignores that d6 is about to fall. exd6 wins the pawn, and after Bxd6 h3 Bh5 g4 you keep close to half a pawn extra with the bishop pair too."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "32b381db8306e744",
+    "kind": "mistake",
+    "text": "d5? strikes the center too soon without enough support. exd5 Nxd5 wins a pawn, and after Nxe5 Nxe5 Rxe5 you're up close to 0.8 pawns."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "385a1d2d3bcb3867",
+    "kind": "punish",
+    "text": "d4 breaks in the center while Black's last move did nothing about it. After exd4 cxd4 Ba7 O-O you keep a strong, over one-pawn advantage."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "39cca998f96294a6",
+    "kind": "punish",
+    "text": "Bxe6 takes the free trade offered. After fxe6 Qb3 Qc8 Re1 you keep a small, comfortable edge with Black's structure slightly loosened."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "3f4cd8553316a5b8",
+    "kind": "punish",
+    "text": "exd5 grabs the pawn Black just pushed. After Nxd5 Re1 Be6 Nxe5 you keep a solid, close to a pawn edge."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "424d075c1b1df28e",
+    "kind": "mistake",
+    "text": "d5? pushes in the center without adequate backup. exd5 Nxd5 wins the pawn, and after Re1 Be6 Nxe5 you're up around half a pawn."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "4524647618d64325",
+    "kind": "mistake",
+    "text": "h6? spends a move that doesn't help Black's development. c3 prepares d4, and after d6 Bb3 Re8 Nbd2 you keep a small, steady edge."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "45c2817130917bec",
+    "kind": "punish",
+    "text": "Bxd5 wins the knight outright since Black's own bishop just cut off its defense along the d-file. After O-O Nbd2 Bg4 h3 you're left with an overwhelming, near-decisive material edge."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "49c12bf37e1a62bb",
+    "kind": "mistake",
+    "text": "Be6? invites a trade you're happy to make. Bxe6 simplifies at once, and after fxe6 b4 Bb6 b5 you keep a small, comfortable edge."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "4a00cd006d67512d",
+    "kind": "punish",
+    "text": "Bxe6 trades off the bishop offered for free. After fxe6 b4 Bb6 b5 you keep a small, steady edge."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "4d29ecd9a1b456c5",
+    "kind": "punish",
+    "text": "exd5 grabs the center pawn Black just pushed. After Ne7 Nxe5 O-O d4 you keep a big edge, well over a pawn and a half."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "5dbf67fb4d0852a3",
+    "kind": "mistake",
+    "text": "h6? does nothing useful here. b4 gains queenside space at once, and after Bd6 d4 exd4 O-O you're up close to 0.7 pawns."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "639f554509ee4970",
+    "kind": "mistake",
+    "text": "h6? wastes a move Black can't afford this early. d4 hits the center immediately, and after exd4 O-O Nf6 e5 you seize a strong, close to half-pawn lead in space and time."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "649317bf5c393370",
+    "kind": "mistake",
+    "text": "h6? gives away a free tempo. d4 breaks the center at once, and after Bd6 Bd5 Qe7 Re1 you're left with a commanding edge, well over a pawn."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "656ecf9df172ea83",
+    "kind": "punish",
+    "text": "Nxe5 simply grabs the pawn Black's knight left undefended. After Bd6 Nf3 O-O O-O you keep a healthy edge, around 1.2 pawns."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "6705b38ed3dc6c86",
+    "kind": "punish",
+    "text": "exd5 takes the pawn on offer in the center. After Nxd5 Qb3 O-O Bxd5 you keep a strong, over one-pawn advantage."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "7689668583e80527",
+    "kind": "punish",
+    "text": "Bb3 tucks the bishop safely away from the b5 advance. After d6 h3 h6 a4 you keep a comfortable, small edge."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "7a520d9fa012f43f",
+    "kind": "punish",
+    "text": "b4 gains queenside space right when Black's last move ignored it. After Bd6 d4 exd4 O-O you keep a strong edge, over a pawn."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "7b0e81b2dabe8fdd",
+    "kind": "mistake",
+    "text": "Nxd4? trades off too early. Qxd4 recaptures centralizing the queen, and after Nf6 Nc3 O-O e5 you keep a small, comfortable edge with easy development."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "7e8519bd817c5039",
+    "kind": "punish",
+    "text": "b4 kicks the misplaced knight at once. After Nxc4 bxc5 Na5 Nxe5 you win a pawn back and keep a strong, over one-pawn edge."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "869757c9021d292d",
+    "kind": "mistake",
+    "text": "Na5? chases the bishop but drops the center's tension. b4 kicks it right back, and after Nxc4 bxc5 Na5 Nxe5 you come out close to 0.7 pawns ahead."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "8a4ded63b16cd568",
+    "kind": "mistake",
+    "text": "h6? achieves nothing while you're ready to strike. d4 breaks the center immediately, and after Bd6 Bd5 Qe7 Nbd2 you're up close to 1.3 pawns."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "8a87e643c0b50c23",
+    "kind": "mistake",
+    "text": "a6? is a slow move that doesn't address the center. c3 prepares d4 next, and after Be7 d4 d6 d5 you keep a small, steady edge."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "8bf6212db42257aa",
+    "kind": "punish",
+    "text": "d4 opens the center while Black's last move did little to prepare for it. After Bd6 Bd5 Qe7 Nbd2 you keep a strong, over 1.5 pawn edge."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "8c573e6ebe061a9a",
+    "kind": "mistake",
+    "text": "Nd4? jumps into the center too early. Nxd4 exd4 trades knights and leaves Black's structure slightly worse, and after O-O Nf6 Re1 you're up close to 0.8 pawns."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "8d02201b12f425e0",
+    "kind": "punish",
+    "text": "Qxd4 recaptures centrally, eyeing the long diagonal against Black's undeveloped pieces. After Nf6 Nc3 O-O e5 you keep a small, steady edge."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "94d7b3001e281005",
+    "kind": "mistake",
+    "text": "Na5? chases the bishop but loosens Black's own grip on the center. b4 kicks it back at once, and after Nxc4 bxc5 Na5 Nxe5 you come out close to 0.8 pawns ahead."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "96b5b0f89e9cf528",
+    "kind": "mistake",
+    "text": "Bd6? blocks your own queen's defense of the d5-knight. Bxd5 simply wins the piece, and after O-O Nbd2 Bg4 h3 you're left massively ahead, over three pawns' worth."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "9e31e662355b4452",
+    "kind": "punish",
+    "text": "c3 quietly prepares d4 while patching the center. After Be7 d4 d6 d5 you keep a small, steady edge."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "9ee75ba45c4674a5",
+    "kind": "punish",
+    "text": "d4 breaks the center right on cue. After Bd6 Bd5 Qe7 Nbd2 you keep a strong, over 1.5 pawn advantage."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "a0260c63cf011190",
+    "kind": "mistake",
+    "text": "d5? pushes too early without enough support. exd5 Nxd5 wins the pawn, and after Qb3 O-O Bxd5 you're up close to 0.8 pawns."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "a2e918e9a5d66235",
+    "kind": "punish",
+    "text": "d4 opens the center just as Black's last move ignored it. After Bd6 Bd5 Nxd5 exd5 you keep a strong, near 1.4 pawn edge."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "a9319c716b46aa7a",
+    "kind": "punish",
+    "text": "exd5 grabs the pawn Black just advanced. After Nxd5 Nxe5 Nxe5 Rxe5 you keep a solid, over one-pawn edge."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "b6c14a8553979211",
+    "kind": "punish",
+    "text": "Ng5 pressures f7 and the center right after Black's last move. After d5 exd5 b5 dxc6 you keep a comfortable, close to 0.9 pawn edge."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "b7766c1c92df0762",
+    "kind": "punish",
+    "text": "d4 breaks the center exactly on schedule. After Bd6 Bd5 Qe7 Re1 you keep a strong, over 1.4 pawn edge."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "bd75f2a91b0da8c8",
+    "kind": "mistake",
+    "text": "d5? pushes too soon without adequate support. exd5 Nxd5 wins the pawn, and after Qb3 O-O Bxd5 you're up over a pawn."
+  },
+  {
+    "openingId": "c50-italian-game",
+    "nodeId": "c28546a8cde5d794",
+    "kind": "mistake",
+    "text": "Bg4? pins the knight but ignores the center. h3 kicks the bishop back at once, and after Be6 Bb3 Bxb3 Qxb3 you trade down to a comfortable, safe edge."
+  }
+]

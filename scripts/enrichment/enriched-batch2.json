@@ -1,0 +1,578 @@
+[
+  {
+    "openingId": "b22-sicilian-defense-alapin-variation",
+    "nodeId": "a74481edf47defdd",
+    "kind": "punish",
+    "text": "O-O simply finishes development while Black's d6 didn't achieve much. Play continues g6 Na3 Bg7 dxc5, and you keep a comfortable, steady edge."
+  },
+  {
+    "openingId": "b22-sicilian-defense-alapin-variation",
+    "nodeId": "a93252b5bf0021b9",
+    "kind": "mistake",
+    "text": "c4 shows up in about 4% of club games but grabs space too early, leaving the pawn a long-term target. Meet it with Bc2, keeping your bishop's diagonal and a comfortable edge."
+  },
+  {
+    "openingId": "b22-sicilian-defense-alapin-variation",
+    "nodeId": "a9a030bcbb47edef",
+    "kind": "punish",
+    "text": "d5 grabs central space right after Black's Nc6. Play continues exd5 exd5 Ne5 f4, and White keeps a solid, comfortable advantage."
+  },
+  {
+    "openingId": "b22-sicilian-defense-alapin-variation",
+    "nodeId": "b190ba66fd3da814",
+    "kind": "punish",
+    "text": "d5 is the natural central push after Black's Nc6, gaining space for free. Play continues Nb8 h3 Bg7 O-O, and White stays comfortably ahead."
+  },
+  {
+    "openingId": "b22-sicilian-defense-alapin-variation",
+    "nodeId": "bb1696f616211cc9",
+    "kind": "punish",
+    "text": "Bd3 develops naturally and eyes the kingside after Black's slow b6. Play continues Nd7 O-O a6 Re1, and you keep a healthy, growing edge."
+  },
+  {
+    "openingId": "b22-sicilian-defense-alapin-variation",
+    "nodeId": "c2dc4f79d72c995d",
+    "kind": "mistake",
+    "text": "Bg4 turns up in roughly 6% of club games, but pinning before castling lets White grab the center for free. Meet it with Be2, keeping a comfortable advantage."
+  },
+  {
+    "openingId": "b22-sicilian-defense-alapin-variation",
+    "nodeId": "c42d6c5119dfa510",
+    "kind": "punish",
+    "text": "cxb6 just wins the pawn Black offered. Play continues Qxb6 Nf3 Nf6 e5, and White keeps a small, solid edge."
+  },
+  {
+    "openingId": "b22-sicilian-defense-alapin-variation",
+    "nodeId": "c57f0ad95570fddc",
+    "kind": "punish",
+    "text": "Bb5+ is a simple, forcing check that trades off the light-squared bishop and wins the e6-pawn after dxe6. Play continues Bd7 Bxd7+ Qxd7 dxe6, keeping White's edge intact."
+  },
+  {
+    "openingId": "b22-sicilian-defense-alapin-variation",
+    "nodeId": "c97f106c0ff41c94",
+    "kind": "mistake",
+    "text": "Qb6 appears in about 3% of club games, but it develops the queen too early and does nothing about White's center. Meet it with Nf3, keeping a comfortable edge."
+  },
+  {
+    "openingId": "b22-sicilian-defense-alapin-variation",
+    "nodeId": "cbce725d52df2f01",
+    "kind": "mistake",
+    "text": "Nc6 is popular at club level (33% of games) but blocks Black's own c-pawn without challenging White's center. Meet it with d4, taking the space you're offered."
+  },
+  {
+    "openingId": "b22-sicilian-defense-alapin-variation",
+    "nodeId": "cf8d4f9901b78f4e",
+    "kind": "mistake",
+    "text": "dxc3 grabs a pawn but ignores that the knight on d5 is simply hanging. It's seen in about 9% of club games yet hands White nearly three pawns of advantage. Meet it with Qxd5."
+  },
+  {
+    "openingId": "b22-sicilian-defense-alapin-variation",
+    "nodeId": "e0c4b72fe8febcb3",
+    "kind": "mistake",
+    "text": "b6 shows up in roughly 3% of club games but is a bit slow, ignoring development for a queenside fianchetto that isn't urgent yet. Meet it with Bd3, keeping a steady advantage."
+  },
+  {
+    "openingId": "b22-sicilian-defense-alapin-variation",
+    "nodeId": "e967f89d9a8accde",
+    "kind": "punish",
+    "text": "Qxd5 simply grabs the loose knight, and Black has nothing better than to scramble with e6. Play continues e6 Qe4 cxb2 Bxb2, and you keep your near three-pawn advantage."
+  },
+  {
+    "openingId": "b22-sicilian-defense-alapin-variation",
+    "nodeId": "ef79d86a6748c9bd",
+    "kind": "mistake",
+    "text": "Nc6 here (about 3% of club games) blocks Black's c-pawn again and lets White claim more central space. Meet it with d5, gaining a solid edge."
+  },
+  {
+    "openingId": "b22-sicilian-defense-alapin-variation",
+    "nodeId": "efdd5830441a8505",
+    "kind": "mistake",
+    "text": "d6 shows up in about 3% of club games but is a bit passive, giving White a free tempo to castle. Meet it with O-O and keep developing smoothly."
+  },
+  {
+    "openingId": "b22-sicilian-defense-alapin-variation",
+    "nodeId": "fa83fe66d0275669",
+    "kind": "mistake",
+    "text": "e6 is common at club level (19% of games) but is slow after the trade on d4 already happened, letting White develop with tempo. Meet it with Nf3."
+  },
+  {
+    "openingId": "b22-sicilian-defense-alapin-variation",
+    "nodeId": "fd6f3b16c6d2f190",
+    "kind": "punish",
+    "text": "e5 kicks the knight and grabs space now that Black has weakened the kingside with h6. Play continues Nd5 dxc5 Bxc5 Nbd2, and White's edge holds steady."
+  },
+  {
+    "openingId": "b22-sicilian-defense-alapin-variation",
+    "nodeId": "fd8e8cebb82d408b",
+    "kind": "punish",
+    "text": "Bc2 tucks the bishop away from ...b5 while staying aimed at Black's kingside. Play continues b5 O-O Be7 e5, and White's edge holds steady."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "003b86942e5a1148",
+    "kind": "mistake",
+    "text": "c3 (about 3% of club games) commits the pawn structure early without finishing development, letting Black equalize comfortably. Meet it with Nf6, heading toward ...Bg7 and ...d5."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "00cf119eace7c410",
+    "kind": "mistake",
+    "text": "f3 blocks the knight's best square for little gain, appearing in about 12% of club games. Meet it with Be6, developing calmly toward ...O-O and ...Qb6."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "00da2771365d908a",
+    "kind": "mistake",
+    "text": "e5 pushes forward but hangs the pawn outright — it shows up in about 3% of club games and hands you a pawn and a half. Meet it with Nxe5, simply taking it."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "059e337888fa2710",
+    "kind": "mistake",
+    "text": "Bd3 blocks the d-pawn and lets Black strike in the center at once. It's seen in about 19% of club games but concedes over a pawn. Meet it with d5, hitting the center while White's pieces are tangled."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "05af38788908a2c2",
+    "kind": "mistake",
+    "text": "Bc4 (about 4% of club games) develops naturally enough but leaves the bishop a target for a quick ...b6 and ...Bb7. Meet it with b6, and you claim a comfortable edge."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "09d366ecc2687cee",
+    "kind": "mistake",
+    "text": "Bd3 again blocks the d-pawn, this time after trades on c6, giving Black a free hand to castle and strike back. It's common (24% of club games) but concedes about 0.7 pawns. Meet it with O-O."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "0a8999db229b2371",
+    "kind": "mistake",
+    "text": "Nxc6 trades off early without much benefit, letting Black recapture and develop freely. It's popular at club level (20% of games). Meet it with bxc6, opening the b-file for your rook."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "0e8fba8f8bd19fa5",
+    "kind": "mistake",
+    "text": "a3 is a slow, unnecessary move here (about 7% of club games) that ignores the center. Meet it with Ng4, jumping in while White's pieces aren't coordinated."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "15666600667cfd78",
+    "kind": "punish",
+    "text": "Ng4 jumps in to hit e3 and d4 right after White's Qd2 walks into it. Play continues Nxc6 bxc6 Bg5 h6, and Black's position stays comfortable."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "1810f6d4e79dc356",
+    "kind": "mistake",
+    "text": "Be2 develops modestly (about 6% of club games) but lets Black strike in the center immediately. Meet it with d5, hitting White's setup while pieces are still tucked away."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "18e359d155e19c0b",
+    "kind": "punish",
+    "text": "Be6 develops naturally and eyes a later ...b5 push after White's queen move. Play continues Bd2 Nd7 b3 O-O, and Black keeps a small, stable edge."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "1c62cdbec027dbc7",
+    "kind": "mistake",
+    "text": "Nxc6 trades pieces without real gain, appearing in about 4% of club games. Meet it with bxc6, and Black keeps a slightly better structure and open lines."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "1d179bebda0887f1",
+    "kind": "mistake",
+    "text": "Bc4 (about 5% of club games) develops the bishop to a square Black can hit with a timely ...a6 and ...b5. Meet it with a6, preparing to push it back."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "1d31b07bbb72b481",
+    "kind": "mistake",
+    "text": "Bc4 is an early try (about 4% of club games) that's fine in itself, but doesn't trouble Black's setup. Meet it with Bg7, continuing your normal development plan."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "1d9e41c0c46f4be8",
+    "kind": "punish",
+    "text": "d5 strikes the center right when White's bishop sits awkwardly on d3. Play continues O-O O-O h3 d4, and Black keeps the more comfortable position."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "1ddc1253b5aa2630",
+    "kind": "punish",
+    "text": "O-O just tucks the king away safely after the trades on c6. Play continues d5 Bc1 a5 h3, and Black's structure and development stay healthy."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "1f3e67ab1bfb4cd3",
+    "kind": "punish",
+    "text": "Bg7 completes the fianchetto, the natural follow-up after White's early Bc4. Play continues Be3 Nf6 Nc3 O-O, and Black is comfortably placed."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "213a8148f1c5d3e9",
+    "kind": "punish",
+    "text": "O-O tucks the king in safely while White's f3 slows their own development. Play continues Be3 Qa5 Qd2 d5, and Black stands well."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "260efc45019fa494",
+    "kind": "punish",
+    "text": "Bxg4 grabs the pawn White just pushed forward. Play continues Nxg4 Qxg4 Nxd4 O-O-O, and once the smoke clears Black keeps a clear, comfortable advantage."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "2835a4c121e614e6",
+    "kind": "punish",
+    "text": "Bxe5 grabs back the pawn White pushed forward, keeping Black's big material edge from the earlier Nxc6 trade. Play continues Qd2 Nf6 O-O-O d5."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "2c995f1f72f1a923",
+    "kind": "punish",
+    "text": "h5 pokes at the knight on g3 and grabs kingside space. Play continues h4 d6 Nd5 e6, and Black's position stays comfortable."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "2cba68e88572d869",
+    "kind": "punish",
+    "text": "Ng4 jumps in to eye e3 and f2 right after White castles. Play continues Nxc6 bxc6 Bf4 Rb8, and Black keeps a small edge."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "310c79c3f1c35926",
+    "kind": "mistake",
+    "text": "Bc4 develops but overlooks that Black's dark-squared bishop can simply take the pawn on e5. It's seen in about 4% of club games and concedes over a pawn. Meet it with Bxe5."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "357f2e1b79cb048e",
+    "kind": "punish",
+    "text": "Rb8 swings the rook to the semi-open b-file, a natural follow-up while queens are still on after White's Qd2. Play continues Rb1 O-O Be2 d5."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "3a92be76e3ac5ad3",
+    "kind": "mistake",
+    "text": "Be3 develops naturally but allows ...Ng4, hitting the bishop and gaining a tempo before it retreats. It's seen in about 9% of club games. Meet it with Ng4."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "3d8f57ea557e30b6",
+    "kind": "punish",
+    "text": "Be6 develops solidly and prepares to castle, a fine follow-up to White's quiet Qd1. Play continues Be3 Rc8 Rc1 O-O, and things stay balanced."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "54fc059705b18a8a",
+    "kind": "mistake",
+    "text": "O-O looks natural but castles right into a coming f4-f5 push, appearing in about 17% of club games. Meet it with Ng4, jumping in before White can build the attack."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "5858efbaea2c8f2e",
+    "kind": "mistake",
+    "text": "Bf4 develops but leaves e5 unguarded for a queen fork with Qa5, and it's seen in about 4% of club games while conceding over a pawn. Meet it with Qa5."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "59f2fd1f0a6b77e7",
+    "kind": "punish",
+    "text": "Nf6 develops naturally after White's slow c3. Play continues Nd2 Bg7 Bd3 d5, and Black keeps a comfortable position."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "5b45dea427aa0d33",
+    "kind": "punish",
+    "text": "Ng4 jumps in on White's queen move, eyeing e3 and f2. Play continues Nxc6 dxc6 Bf4 b5, and Black stays comfortable."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "5bb38e728f9c2b48",
+    "kind": "mistake",
+    "text": "Qd3 brings the queen out early, before finishing development, where it can later become a target. It's seen in about 10% of club games. Meet it with Be6, developing naturally."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "5bb390728f9c2eae",
+    "kind": "mistake",
+    "text": "Qd1 retreats the queen passively after the trade on d4, popular at club level (17% of games). Meet it with Be6, developing with an eye on the center."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "5d602bfe0a7914bf",
+    "kind": "mistake",
+    "text": "Qd2 develops the queen but allows Black's rook to swing to b8 with tempo. It's seen in about 10% of club games. Meet it with Rb8."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "60867006e713088d",
+    "kind": "punish",
+    "text": "Nxe4 simply grabs the pawn White left hanging. Play continues Nd2 Nf6 g3 Ne5, and Black keeps a comfortable, sizable advantage."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "62eb9eac203c882b",
+    "kind": "mistake",
+    "text": "Ng3 retreats the knight passively, appearing in about 13% of club games. Meet it with h5, gaining kingside space and hitting the knight."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "6633c367041224fc",
+    "kind": "mistake",
+    "text": "Qd2 develops but allows ...Ng4, hitting the bishop with tempo. It's popular at club level (11% of games). Meet it with Ng4."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "66ad9a146de502f0",
+    "kind": "punish",
+    "text": "d5 strikes the center while White's kingside is still tucked behind f3. Play continues O-O e5 Nxc6 bxc6, and Black stays comfortable."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "67fc04bbd869c970",
+    "kind": "punish",
+    "text": "a6 prepares to meet a4 and gains a tempo on the bishop later. Play continues a4 Na5 Nxa5 Qxa5, and the position stays balanced."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "7117f61954026bfb",
+    "kind": "punish",
+    "text": "bxc6 recaptures naturally, keeping Black's structure sound after the trade on c6. Play continues Rb1 d5 e5 Ne8, and Black is comfortable."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "7fe48d5eb1198b0c",
+    "kind": "punish",
+    "text": "Be6 develops calmly, matching White's slow f3 with normal development. Play continues Bd2 O-O Be2 Qb6, and the position stays roughly balanced."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "813510f67c6fcce9",
+    "kind": "punish",
+    "text": "Ng4 hits the e3-bishop right after White develops it. Play continues Nxc6 Nxe3 Nxd8 Nxd1, trading down to an even position."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "836c2953f59337b4",
+    "kind": "mistake",
+    "text": "f4 grabs kingside space but lets Black jump in with ...Ng4, attacking the bishop on e3. It's seen in about 17% of club games but concedes a pawn and a half. Meet it with Ng4."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "899bddb824e1b5e4",
+    "kind": "mistake",
+    "text": "g4 lunges for space but hangs a pawn to the bishop still sitting on c8, on the c8-h3 diagonal. It's seen in about 7% of club games and concedes over a pawn. Meet it with Bxg4."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "8c54e4aecb80bc32",
+    "kind": "punish",
+    "text": "Bg7 completes development naturally after White's early Bg5. Play continues Nc2 Qb6 Rb1 Ng4, and Black stands comfortably."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "95b0791a4108334f",
+    "kind": "mistake",
+    "text": "f3 blocks the knight's best retreat square for no real gain, appearing in about 4% of club games. Meet it with Bg7, continuing normal development."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "9829a3cb0c7da14e",
+    "kind": "punish",
+    "text": "d5 strikes the center again while White's bishop sits on d3. Play continues exd5 Nxd5 Bd2 Nxc3, and Black keeps a big, comfortable advantage."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "9a85e11a65d0b183",
+    "kind": "punish",
+    "text": "Ng4 jumps in on White's Qd2, hitting the bishop on e3. Play continues Nxc6 dxc6 Qxd8+ Kxd8, and the game heads into a balanced endgame."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "9edeafae3928454a",
+    "kind": "mistake",
+    "text": "Bd3 blocks the d-pawn, popular at club level (31% of games) but not the bishop's best square here. Meet it with d5, striking the center immediately."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "a4f301b0843c361d",
+    "kind": "punish",
+    "text": "b6 prepares a fianchetto for the light-squared bishop, following naturally after White's Bc4. Play continues f4 d6 Be2 Bb7, staying comfortable."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "a60b17a6cd274846",
+    "kind": "mistake",
+    "text": "Bg5 pins the knight early but doesn't trouble Black's plan, appearing in about 5% of club games. Meet it with Bg7, continuing to develop."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "a611a9a6cd2cac0a",
+    "kind": "mistake",
+    "text": "Be3 develops but walks into a tactic: after ...Ng4, the sequence Nxc6 Nxe3 Nxd8 Nxd1 Rxd1 trades the queens off and leaves Black clearly better. It's common (30% of club games) but concedes over a pawn and a half. Meet it with Ng4."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "a68cd0ae3d3ad3e1",
+    "kind": "mistake",
+    "text": "f3 slows White's development for little gain, seen in about 12% of club games. Meet it with O-O, castling into safety."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "ab81dc9456097661",
+    "kind": "mistake",
+    "text": "f3 again blocks the knight's best retreat, appearing in about 8% of club games. Meet it with O-O, continuing to develop normally."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "b11ee2c6dc11eda2",
+    "kind": "punish",
+    "text": "Ng4 hits the bishop on e3 right after White develops it. Play continues Bc1 Qb6 Qd2 f5, and Black keeps a small edge."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "b2c0488e1da98fc9",
+    "kind": "mistake",
+    "text": "Qd2 develops but again allows ...Ng4, hitting the bishop with tempo. It's popular at club level (15% of games). Meet it with Ng4."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "b86ee05b0181d7a4",
+    "kind": "punish",
+    "text": "Be6 develops calmly, matching White's Qd3. Play continues b3 O-O Be2 b5, and the position stays balanced."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "bbd65c74466f7a91",
+    "kind": "punish",
+    "text": "bxc6 recaptures naturally after the early trade on c6. Play continues Bc4 Qc7 Qe2 d6, and Black develops smoothly."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "be2e17fec542e062",
+    "kind": "mistake",
+    "text": "f3 blocks the knight and slows development, appearing in about 7% of club games while conceding close to a pawn. Meet it with d5, striking the center at once."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "be3bc843f4f9c3e0",
+    "kind": "mistake",
+    "text": "Be3 develops naturally but hangs the e4-pawn to a simple capture. It's seen in about 8% of club games and concedes a pawn and a half. Meet it with Nxe4, just taking it."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "bf4d25c752addb63",
+    "kind": "mistake",
+    "text": "Qd1 retreats the queen to a passive square, popular at club level (16% of games). Meet it with Be6, developing normally toward castling."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "bf4d27c752addec9",
+    "kind": "mistake",
+    "text": "Qd3 develops the queen but not to its most useful square, appearing in about 12% of club games. Meet it with Be6, developing naturally."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "c0561a3b1b405700",
+    "kind": "punish",
+    "text": "Qa5 pins the bishop to the king's diagonal, a strong reply to White's careless Bf4. Play continues Bc4 Bxe5 Qf3 Bxf4, and Black keeps a big edge."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "c89cbd03aa22d6e9",
+    "kind": "punish",
+    "text": "Be6 develops naturally, a fine reply to White's quiet Qd1. Play continues Bd2 O-O O-O a6, and Black stands well."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "d09c3e78ea8e9a21",
+    "kind": "mistake",
+    "text": "Bb5 pins the knight but doesn't achieve much concretely, appearing in about 4% of club games. Meet it with O-O, castling into safety."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "d766a6383c4a7b0b",
+    "kind": "punish",
+    "text": "d5 strikes the center while White's kingside pawns are pushed forward. Play continues Nxc6 bxc6 e5 Ne8, and Black stays comfortable."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "d9704b520e223a23",
+    "kind": "mistake",
+    "text": "h4 grabs kingside space but ignores the center, appearing in about 3% of club games and conceding close to a pawn. Meet it with d5, striking back at once."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "de1679ac679d534c",
+    "kind": "mistake",
+    "text": "Qd2 develops but again drops tempo to ...Ng4 hitting the bishop. It's popular at club level (15% of games) and concedes close to a pawn. Meet it with Ng4."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "dfaf00fadf9afb5c",
+    "kind": "punish",
+    "text": "d5 challenges the center right after White's f3. Play continues O-O Nxd4 Bxd4 dxe4, and Black's position stays sound."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "e3592c0057d9f759",
+    "kind": "punish",
+    "text": "Bg7 completes the fianchetto naturally after White's slow f3. Play continues Nc2 O-O Be2 Qb6, and Black is well placed."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "e9ee6cceead3996b",
+    "kind": "punish",
+    "text": "Ng4 pounces on the bishop right after White's f4 push. Play continues Nxc6 bxc6 Qe1 Nxe3, extending Black's already big advantage."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "eb3d199de0a15565",
+    "kind": "punish",
+    "text": "Nxe5 simply grabs the pawn White just pushed forward. Play continues h3 Nc6 Qd2 e5, and Black keeps a large material edge."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "f119fb6366a00429",
+    "kind": "punish",
+    "text": "O-O tucks the king away safely, a solid reply to White's early Bb5 check attempt. Play continues a6 Be2 d5 Nxd5, keeping things balanced."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "fa6ceaeb2513fc69",
+    "kind": "punish",
+    "text": "O-O castles into safety after White's slow f3. Play continues Be3 d5 Nxd5 Nxd5, and the position stays balanced."
+  },
+  {
+    "openingId": "b32-sicilian-defense-accelerated-dragon",
+    "nodeId": "faca157acd9f64ac",
+    "kind": "punish",
+    "text": "Ng4 jumps in again, hitting the bishop right after White's slow a3. Play continues Nxc6 bxc6 Bf4 Ne5, and Black keeps a small edge."
+  },
+  {
+    "openingId": "c00-french-defense",
+    "nodeId": "05ff9fd5b317a685",
+    "kind": "mistake",
+    "text": "c3 is a slow, committal pawn move, appearing in about 5% of club games, that lets Black develop with tempo. Meet it with Bd6, keeping a comfortable edge."
+  },
+  {
+    "openingId": "c00-french-defense",
+    "nodeId": "07165753a613e0ac",
+    "kind": "mistake",
+    "text": "Bb5 pins the knight but ignores that the e5-pawn is simply hanging. It's popular at club level (14% of games) yet hands you over a pawn and a half. Meet it with Nxe5."
+  },
+  {
+    "openingId": "c00-french-defense",
+    "nodeId": "15d9e754e0b15a29",
+    "kind": "mistake",
+    "text": "h3 spends a tempo on prophylaxis that isn't needed yet, appearing in about 10% of club games. Meet it with Be7, continuing normal development."
+  },
+  {
+    "openingId": "c00-french-defense",
+    "nodeId": "161fd79375cc1cb4",
+    "kind": "punish",
+    "text": "Nh6 develops the knight to a slightly offbeat square after White's f4, but Black's position stays sound. Play continues Nf3 Qb6 Na3 cxd4, and Black is comfortable."
+  }
+]
