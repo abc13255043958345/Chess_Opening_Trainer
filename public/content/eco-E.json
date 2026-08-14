@@ -1,0 +1,5683 @@
+{
+  "eco": "E",
+  "generatedAt": "2026-08-14T15:47:05.216Z",
+  "trees": {
+    "e61-king-s-indian-defense": {
+      "id": "e61-king-s-indian-defense",
+      "eco": "E61",
+      "name": "King's Indian Defense",
+      "perspective": "black",
+      "rootId": "root",
+      "nodes": {
+        "006d4cb5c7dea0dd": {
+          "id": "006d4cb5c7dea0dd",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/4p3/2PPP3/2N1BN1P/PP3PP1/R2QKB1R b KQ - 1 7",
+          "san": "Be3",
+          "uci": "c1e3",
+          "parentId": "a812ec938774f3cf",
+          "children": [
+            "94ceb59551891b99"
+          ],
+          "mover": "opponent",
+          "moveKind": "opponent_mistake",
+          "weight": 0.10021583190503396,
+          "evalCp": 15,
+          "annotation": {
+            "explanation": "Be3? is popular at club level (10% of games) but rare in master play. Meet it with exd4."
+          }
+        },
+        "015cb965d707f70d": {
+          "id": "015cb965d707f70d",
+          "fen": "r1br2k1/pp2ppbp/2n2np1/2p3B1/2P1P3/2N2P2/PP2N1PP/R3KB1R w KQ - 0 10",
+          "san": "Rxd8",
+          "uci": "f8d8",
+          "parentId": "2acaf2f44fcdda05",
+          "children": [
+            "ecc165b98111144a"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "016f045d47a76ac7": {
+          "id": "016f045d47a76ac7",
+          "fen": "rnbq1rk1/pp2ppbp/5np1/2p3B1/2P1P3/2N2P2/PP2N1PP/R2QKB1R b KQ - 1 8",
+          "san": "Nge2",
+          "uci": "g1e2",
+          "parentId": "90692ea499a98cb4",
+          "children": [
+            "403309b2e3f0ec0e"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "023a6349bb15945e": {
+          "id": "023a6349bb15945e",
+          "fen": "r1bq1rk1/pppnppbp/3p1np1/6B1/2PP4/2N1PN2/PP2BPPP/R2QK2R b KQ - 2 7",
+          "san": "Be2",
+          "uci": "f1e2",
+          "parentId": "f6ce70354e5e5af4",
+          "children": [
+            "4889eae8f2bc0e69"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.7385103011093502,
+          "evalCp": 32
+        },
+        "03b4d6f609305c6f": {
+          "id": "03b4d6f609305c6f",
+          "fen": "rnbq1rk1/pp2ppbp/3p2p1/2p5/2PPPPn1/2N1BN2/PP4PP/R2QKB1R w KQ - 2 8",
+          "san": "Ng4",
+          "uci": "f6g4",
+          "parentId": "b2b34a7411c40f30",
+          "children": [
+            "36ad9acab4e22f79"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": -92,
+          "annotation": {
+            "explanation": "Punishes Be3: Ng4 wins the advantage (-0.9 → -0.9). Play continues Bg1 cxd4 Nxd4 e5."
+          }
+        },
+        "03bf4767977b4fa8": {
+          "id": "03bf4767977b4fa8",
+          "fen": "r1bq1rk1/ppp2pbp/3p1np1/4N3/2P1PB2/2N4P/PP3PP1/R2QKB1R b KQ - 0 9",
+          "san": "Nxe5",
+          "uci": "f3e5",
+          "parentId": "809bc0be2e4c0463",
+          "children": [
+            "b029e93c4d264444"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "03cd356b6cccb343": {
+          "id": "03cd356b6cccb343",
+          "fen": "rnbq1rk1/pp2ppbp/3p1np1/2p5/2PPP3/2N2P2/PP2N1PP/R1BQKB1R w KQ - 0 7",
+          "san": "c5",
+          "uci": "c7c5",
+          "parentId": "7577bfab14c24137",
+          "children": [
+            "4b8c99c57fd3ab86",
+            "6abbaeab5a2f4111"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 39,
+          "annotation": {
+            "explanation": "Main line: c5, played in 50% of master games here. Eval +0.4."
+          }
+        },
+        "042bd6e2ac85dbfa": {
+          "id": "042bd6e2ac85dbfa",
+          "fen": "rnb2rk1/pp2ppbp/3p2p1/q5B1/2PNn3/2N4P/PP1Q1PP1/R3KB1R w KQ - 0 10",
+          "san": "Nxe4",
+          "uci": "f6e4",
+          "parentId": "7130a12427c6eaf1",
+          "children": [
+            "3b35c05c04d1d90d"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "050e2c8dbfb06340": {
+          "id": "050e2c8dbfb06340",
+          "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2N1B2P/PP3PP1/R2QKBNR b KQ - 2 6",
+          "san": "Be3",
+          "uci": "c1e3",
+          "parentId": "2a8e8079f6884544",
+          "children": [
+            "f3bc3b181e0c33d6"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.4634695290858726,
+          "evalCp": 62
+        },
+        "05153e8dbfb6a084": {
+          "id": "05153e8dbfb6a084",
+          "fen": "rnbq1rk1/ppp1ppbp/3p1np1/6B1/2PPP3/2N4P/PP3PP1/R2QKBNR b KQ - 2 6",
+          "san": "Bg5",
+          "uci": "c1g5",
+          "parentId": "2a8e8079f6884544",
+          "children": [
+            "af90880936c949b6"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.3670360110803324,
+          "evalCp": 43
+        },
+        "06e06271ff37999a": {
+          "id": "06e06271ff37999a",
+          "fen": "rnbqkb1r/pppppp1p/5np1/8/2PP4/2N5/PP2PPPP/R1BQKBNR b KQkq - 1 3",
+          "san": "Nc3",
+          "uci": "b1c3",
+          "parentId": "97c5e1bd18d63007",
+          "children": [
+            "579c1e6c37dbbe76"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 1,
+          "evalCp": 40
+        },
+        "07af14acf6c27e8c": {
+          "id": "07af14acf6c27e8c",
+          "fen": "r1bq1rk1/ppp1ppbp/2np2p1/8/2PPP1n1/2NBB3/PP2NPPP/R2QK2R w KQ - 6 8",
+          "san": "Ng4",
+          "uci": "f6g4",
+          "parentId": "3fb2713409e1ca85",
+          "children": [
+            "6790eafa9fff9e15"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": -84,
+          "annotation": {
+            "explanation": "Punishes Be3: Ng4 wins the advantage (-0.7 → -0.8). Play continues Qd2 Nxe3 Qxe3 e5."
+          }
+        },
+        "08130541874b44c7": {
+          "id": "08130541874b44c7",
+          "fen": "rnbq1rk1/pp2ppbp/3p1np1/2p1P3/2PP1P2/2N2N2/PP4PP/R1BQKB1R b KQ - 0 7",
+          "san": "e5",
+          "uci": "e4e5",
+          "parentId": "30062789879120d4",
+          "children": [
+            "882dc4306376b4a4"
+          ],
+          "mover": "opponent",
+          "moveKind": "opponent_mistake",
+          "weight": 0.11187367597421245,
+          "evalCp": -16,
+          "annotation": {
+            "explanation": "e5? is popular at club level (11% of games) but rare in master play. Meet it with Nfd7."
+          }
+        },
+        "083893174d92df7a": {
+          "id": "083893174d92df7a",
+          "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2N4P/PP2BPP1/R1BQK1NR b KQ - 0 6",
+          "san": "h3",
+          "uci": "h2h3",
+          "parentId": "dc3d882ec043509f",
+          "children": [
+            "45d25b2eb7441288"
+          ],
+          "mover": "opponent",
+          "moveKind": "opponent_mistake",
+          "weight": 0.03224007561436673,
+          "evalCp": 56,
+          "annotation": {
+            "explanation": "h3? is popular at club level (3% of games) but rare in master play. Meet it with a5."
+          }
+        },
+        "0856390655d167d8": {
+          "id": "0856390655d167d8",
+          "fen": "r1bq1rk1/pppn1pbp/2np2p1/3Pp3/2P1P3/P1NBB3/1P2NPPP/R2QK2R b KQ - 0 9",
+          "san": "d5",
+          "uci": "d4d5",
+          "parentId": "3c0192552b157d29",
+          "children": [
+            "20b9ae06f1d99565"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "09f3faea1643fe32": {
+          "id": "09f3faea1643fe32",
+          "fen": "r1bq1rk1/ppp2pbp/3p1np1/1N1P4/2PpP3/6P1/PP3PBP/R1BQK2R b KQ - 1 10",
+          "san": "Nb5",
+          "uci": "c3b5",
+          "parentId": "30448d0f3d942d57",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "0a045ba47934f476": {
+          "id": "0a045ba47934f476",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/4P3/2P1PB2/2N2N2/PP3PPP/R2QKB1R b KQ - 0 7",
+          "san": "dxe5",
+          "uci": "d4e5",
+          "parentId": "dc28e2b3c67f8950",
+          "children": [
+            "28663db7701b4aba"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "0ad52f3a86557f27": {
+          "id": "0ad52f3a86557f27",
+          "fen": "rn1q1rk1/pppnppbp/3p2p1/8/2PPP1b1/2N2N2/PP2BPPP/R1BQK2R w KQ - 6 8",
+          "san": "Nfd7",
+          "uci": "f6d7",
+          "parentId": "64b7c1012416657a",
+          "children": [
+            "2d3f97b71466d6e5"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "0b8c221658e5ca2b": {
+          "id": "0b8c221658e5ca2b",
+          "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPPP2/2N5/PP4PP/R1BQKBNR w KQ - 1 6",
+          "san": "O-O",
+          "uci": "e8g8",
+          "parentId": "823440999f2d372b",
+          "children": [
+            "b7e556066acc0fea",
+            "3920aaf50a4738d6",
+            "6879b51ec18c9b3e"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 53,
+          "annotation": {
+            "explanation": "Main line: O-O, played in 84% of master games here. Eval +0.5."
+          }
+        },
+        "0b949f0a889c98f2": {
+          "id": "0b949f0a889c98f2",
+          "fen": "r1bq1rk1/ppp2pbp/2n2np1/3p4/2PNP3/2NBB2P/PP3PP1/R2QK2R w KQ - 0 10",
+          "san": "d5",
+          "uci": "d6d5",
+          "parentId": "5625257318fe0935",
+          "children": [
+            "f185f6e55a031724"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "0c7d0c4a81ca3279": {
+          "id": "0c7d0c4a81ca3279",
+          "fen": "rnbq1rk1/pp1nppbp/6p1/2pPp3/2P2P2/2N2N2/PP4PP/R1BQKB1R w KQ - 0 9",
+          "san": "dxe5",
+          "uci": "d6e5",
+          "parentId": "41af4126cf455fcf",
+          "children": [
+            "982c6e3f41ee7eb5"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "0d07ac93b7537c3f": {
+          "id": "0d07ac93b7537c3f",
+          "fen": "r1bq1rk1/ppp2pbp/2np1np1/4p3/2PPP3/2NB4/PP2NPPP/R1BQ1RK1 w - - 0 8",
+          "san": "e5",
+          "uci": "e7e5",
+          "parentId": "68e95b01662861e7",
+          "children": [],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 39,
+          "annotation": {
+            "explanation": "Main line: e5, played in 48% of master games here. Eval +0.4."
+          },
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 39
+          }
+        },
+        "10b4a547c9caaa04": {
+          "id": "10b4a547c9caaa04",
+          "fen": "rnbqk2r/pp2ppb1/3p2pp/2pP4/2P1P1nB/2N5/PP3PPP/R2QKBNR b KQkq - 1 8",
+          "san": "Bh4",
+          "uci": "g5h4",
+          "parentId": "dae973ac46a5e830",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "112d3c612c1cd16c": {
+          "id": "112d3c612c1cd16c",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/4p3/2PPP3/2N1BN2/PP2BPPP/R2QK2R b KQ - 1 7",
+          "san": "Nf3",
+          "uci": "g1f3",
+          "parentId": "25532277dc3da675",
+          "children": [
+            "11522c605f0f4e53"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.08188331627430911,
+          "evalCp": 62
+        },
+        "11522c605f0f4e53": {
+          "id": "11522c605f0f4e53",
+          "fen": "rnbq1rk1/ppp2pbp/3p2p1/4p3/2PPP1n1/2N1BN2/PP2BPPP/R2QK2R w KQ - 2 8",
+          "san": "Ng4",
+          "uci": "f6g4",
+          "parentId": "112d3c612c1cd16c",
+          "children": [],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 45,
+          "annotation": {
+            "explanation": "Main line: Ng4, played in 40% of master games here. Eval +0.5."
+          },
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 45
+          }
+        },
+        "11cd0334abd876f4": {
+          "id": "11cd0334abd876f4",
+          "fen": "rnbq1rk1/pp3pbp/3p2p1/4P3/2PNP1n1/2N5/PP4PP/R2QKBBR b KQ - 0 10",
+          "san": "fxe5",
+          "uci": "f4e5",
+          "parentId": "abe17e00ae02108c",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "11e847433de54dcb": {
+          "id": "11e847433de54dcb",
+          "fen": "r1bq1rk1/pppnppbp/2np2p1/8/2PPP3/P1NB4/1P2NPPP/R1BQK2R w KQ - 1 8",
+          "san": "Nd7",
+          "uci": "f6d7",
+          "parentId": "f3304622c5587a96",
+          "children": [
+            "6ca22bfb55aa24e9"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 0,
+          "annotation": {
+            "explanation": "Punishes a3: Nd7 wins the advantage (+0.0 → +0.0). Play continues Be3 e5 d5 Nd4."
+          }
+        },
+        "121d1f97da382c19": {
+          "id": "121d1f97da382c19",
+          "fen": "rnbq1rk1/ppp1ppb1/3p1npp/8/2PPP3/2N1BN2/PP3PPP/R2QKB1R b KQ - 1 7",
+          "san": "Be3",
+          "uci": "g5e3",
+          "parentId": "a9ad859a19df438b",
+          "children": [
+            "d2781c6aba0f49b9"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "13f122b23a716056": {
+          "id": "13f122b23a716056",
+          "fen": "r1bq1rk1/pppnppbp/3p1np1/8/2PP1B2/2N1PN2/PP3PPP/R2QKB1R w KQ - 1 7",
+          "san": "Nbd7",
+          "uci": "b8d7",
+          "parentId": "3d437b7cc97a574b",
+          "children": [
+            "f84751f53872bcb5",
+            "3ebb27c2a6347adc",
+            "3ebe30c2a636bffe"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 42,
+          "annotation": {
+            "explanation": "Main line: Nbd7, played in 30% of master games here. Eval +0.4."
+          }
+        },
+        "1496a9d6ec29c237": {
+          "id": "1496a9d6ec29c237",
+          "fen": "rnbq1rk1/pppnppbp/3p2p1/4P3/2PP1P1P/2N5/PP4P1/R1BQKBNR b KQ - 0 7",
+          "san": "h4",
+          "uci": "h2h4",
+          "parentId": "bd2b285bd02c148b",
+          "children": [
+            "d1cb187e643d9643"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "15906922fa6b70af": {
+          "id": "15906922fa6b70af",
+          "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/2PPP3/2N5/PP3PPP/R1BQKBNR w KQkq - 0 5",
+          "san": "d6",
+          "uci": "d7d6",
+          "parentId": "d217110a836f6c6c",
+          "children": [
+            "d89b2e91433f3426",
+            "65a7cb998e47c647",
+            "823445999f2d3faa",
+            "9e021d6784df0b6a",
+            "823440999f2d372b",
+            "65a44a998e44b53d",
+            "41b47eb1fdb32fbd"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 53,
+          "annotation": {
+            "explanation": "Main line: d6, played in 91% of master games here. Eval +0.5."
+          }
+        },
+        "15fe603028c54da8": {
+          "id": "15fe603028c54da8",
+          "fen": "rn1q1rk1/ppp1ppbp/3p1np1/8/2PPP1b1/2NB1N2/PP3PPP/R1BQK2R w KQ - 2 7",
+          "san": "Bg4",
+          "uci": "c8g4",
+          "parentId": "8e2f27d34e4e1410",
+          "children": [
+            "b54fe7d09a71e5f6"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 38,
+          "annotation": {
+            "explanation": "Punishes Bd3: Bg4 wins the advantage (+0.4 → +0.4). Play continues Be2 Bxf3 Bxf3 Nfd7."
+          }
+        },
+        "169125aa1858f205": {
+          "id": "169125aa1858f205",
+          "fen": "r4rk1/pppqppbp/2np2p1/5b2/2PPn3/2N1PNP1/PP1BQPBP/R4RK1 b - - 6 10",
+          "san": "Bd2",
+          "uci": "c1d2",
+          "parentId": "233af719f19f0461",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "18ae72839a37c0c7": {
+          "id": "18ae72839a37c0c7",
+          "fen": "r1bq1rk1/ppp1ppbp/2np1np1/8/2PPP3/2NB4/PP2NPPP/R1BQK2R w KQ - 4 7",
+          "san": "Nc6",
+          "uci": "b8c6",
+          "parentId": "2d982df1c96d8890",
+          "children": [
+            "68e95b01662861e7",
+            "3e175819d2318ed2",
+            "f3304622c5587a96",
+            "3fb2713409e1ca85"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 36,
+          "annotation": {
+            "explanation": "Main line: Nc6, played in 40% of master games here. Eval +0.4."
+          }
+        },
+        "195fd38e7824ad8a": {
+          "id": "195fd38e7824ad8a",
+          "fen": "rnbq1rk1/ppp2pbp/5np1/4p3/2P1P3/2N2N2/PP2BPPP/R1BQK2R w KQ - 0 8",
+          "san": "dxe5",
+          "uci": "d6e5",
+          "parentId": "d2c150b96e0304a6",
+          "children": [],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 29,
+          "annotation": {
+            "explanation": "Main line: dxe5, played in 100% of master games here. Eval +0.3."
+          },
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 29
+          }
+        },
+        "19b7ac85d5a81ecf": {
+          "id": "19b7ac85d5a81ecf",
+          "fen": "rnbq1rk1/ppp2pb1/3p2pp/3Pp3/2P1P1n1/2N2N2/PP1B1PPP/R2QKB1R b KQ - 2 9",
+          "san": "Bd2",
+          "uci": "e3d2",
+          "parentId": "c2693eb2c4baa277",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "1a3da56815556813": {
+          "id": "1a3da56815556813",
+          "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
+          "san": "d4",
+          "uci": "d2d4",
+          "parentId": "root",
+          "children": [
+            "744af1e4e4c6abb2"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 1,
+          "evalCp": 31
+        },
+        "1bc7afd7a2babf49": {
+          "id": "1bc7afd7a2babf49",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/3Pp3/2P1P3/2NB1N2/PP3PPP/R1BQK2R b KQ - 0 7",
+          "san": "d5",
+          "uci": "d4d5",
+          "parentId": "f3569dbc8d984bf2",
+          "children": [
+            "e2f573ecea8eb591"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "1c36a21255206048": {
+          "id": "1c36a21255206048",
+          "fen": "rnbq1rk1/ppp2pb1/3p1npp/3Pp3/2P1P3/2N1BN2/PP3PPP/R2QKB1R b KQ - 0 8",
+          "san": "d5",
+          "uci": "d4d5",
+          "parentId": "d2781c6aba0f49b9",
+          "children": [
+            "c2693eb2c4baa277"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "1eb747ff9fb57f90": {
+          "id": "1eb747ff9fb57f90",
+          "fen": "rnbq1rk1/ppp1ppbp/3p1np1/6B1/2PPP3/2N2N2/PP3PPP/R2QKB1R b KQ - 3 6",
+          "san": "Bg5",
+          "uci": "c1g5",
+          "parentId": "f8fbd31e14a1a658",
+          "children": [
+            "a9ad859a19df438b"
+          ],
+          "mover": "opponent",
+          "moveKind": "opponent_mistake",
+          "weight": 0.08265322299676375,
+          "evalCp": 32,
+          "annotation": {
+            "explanation": "Bg5? is popular at club level (8% of games) but rare in master play. Meet it with h6."
+          }
+        },
+        "1f7588aa1c003898": {
+          "id": "1f7588aa1c003898",
+          "fen": "rnbq1rk1/pp2ppbp/3p1np1/2p5/2PPPP2/2N4P/PP4P1/R1BQKBNR w KQ - 0 7",
+          "san": "c5",
+          "uci": "c7c5",
+          "parentId": "dc82da640bbecd96",
+          "children": [
+            "db1639800230594b"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": -48,
+          "annotation": {
+            "explanation": "Punishes f4: c5 wins the advantage (-0.4 → -0.5). Play continues d5 e6 Be2 exd5."
+          }
+        },
+        "1fe607ce1f4c9c5c": {
+          "id": "1fe607ce1f4c9c5c",
+          "fen": "r1bq1rk1/ppp2pbp/3p1np1/3Pp3/2PnP3/2N2NP1/PP3PBP/R1BQK2R w KQ - 1 9",
+          "san": "Nd4",
+          "uci": "c6d4",
+          "parentId": "ff08d4c9a40a3aef",
+          "children": [
+            "2337490b0e9ddc0f"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "204bde9a94d43726": {
+          "id": "204bde9a94d43726",
+          "fen": "rnbq1rk1/ppp1ppbp/3p2p1/8/2PPP3/2NBn3/PP1Q1PPP/R3K1NR w KQ - 0 8",
+          "san": "Nxe3",
+          "uci": "g4e3",
+          "parentId": "3a1e2b0947ae6b2f",
+          "children": [
+            "3d6532ea1d5d1454"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "20b9ae06f1d99565": {
+          "id": "20b9ae06f1d99565",
+          "fen": "r1bq1rk1/pppn1pbp/3p2p1/3Pp3/2PnP3/P1NBB3/1P2NPPP/R2QK2R w KQ - 1 10",
+          "san": "Nd4",
+          "uci": "c6d4",
+          "parentId": "0856390655d167d8",
+          "children": [
+            "b5548e1f82a7cd90"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "214f5510de9a2302": {
+          "id": "214f5510de9a2302",
+          "fen": "r1bq1rk1/ppp2pbp/2n2np1/3P4/3NP3/2NBB2P/PP3PP1/R2QK2R b KQ - 0 10",
+          "san": "cxd5",
+          "uci": "c4d5",
+          "parentId": "dcf252ae4095ee66",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "216be58f932b0d5e": {
+          "id": "216be58f932b0d5e",
+          "fen": "rnbq1rk1/pp1n1pbp/4p1p1/2pPp3/2P2P2/2N2N2/PP2B1PP/R1BQ1RK1 b - - 1 10",
+          "san": "O-O",
+          "uci": "e1g1",
+          "parentId": "8c27957d23eefc14",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "21ed9204a6aa95d1": {
+          "id": "21ed9204a6aa95d1",
+          "fen": "rnb2rk1/pp2ppbp/3p1np1/q1p3B1/2PPP3/2N2N1P/PP3PP1/R2QKB1R w KQ - 2 8",
+          "san": "Qa5",
+          "uci": "d8a5",
+          "parentId": "f7d6e6df3ac79df5",
+          "children": [
+            "b773cd769b9a26ae"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": -47,
+          "annotation": {
+            "explanation": "Punishes Nf3: Qa5 wins the advantage (-0.5 → -0.5). Play continues Qd2 cxd4 Nxd4 Nxe4."
+          }
+        },
+        "2337490b0e9ddc0f": {
+          "id": "2337490b0e9ddc0f",
+          "fen": "r1bq1rk1/ppp2pbp/3p1np1/3Pp3/2PNP3/2N3P1/PP3PBP/R1BQK2R b KQ - 0 9",
+          "san": "Nxd4",
+          "uci": "f3d4",
+          "parentId": "1fe607ce1f4c9c5c",
+          "children": [
+            "30448d0f3d942d57"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "233af719f19f0461": {
+          "id": "233af719f19f0461",
+          "fen": "r4rk1/pppqppbp/2np2p1/5b2/2PPn3/2N1PNP1/PP2QPBP/R1B2RK1 w - - 5 10",
+          "san": "Ne4",
+          "uci": "f6e4",
+          "parentId": "6f63eaedb7b42eac",
+          "children": [
+            "169125aa1858f205"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "2347c0a6687f9e2e": {
+          "id": "2347c0a6687f9e2e",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/4p3/2PPP3/2N2N2/PP2BPPP/R1BQ1RK1 b - - 1 7",
+          "san": "O-O",
+          "uci": "e1g1",
+          "parentId": "61240156e4e7e444",
+          "children": [
+            "4dbed65d56e727bd"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.6837093086297528,
+          "evalCp": 46
+        },
+        "241e12e95d8800cc": {
+          "id": "241e12e95d8800cc",
+          "fen": "r1bq1rk1/ppp2pbp/2n2np1/3P4/2PN4/2NBB2P/PP3PP1/R2QK2R b KQ - 0 10",
+          "san": "exd5",
+          "uci": "e4d5",
+          "parentId": "ad7588b6fe4804aa",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "2438496758916f3c": {
+          "id": "2438496758916f3c",
+          "fen": "r1bqr1k1/pppn1pb1/3p1npp/4p3/2PP3B/2NBPN2/PPQ2PPP/R3K2R b KQ - 3 10",
+          "san": "Qc2",
+          "uci": "d1c2",
+          "parentId": "e15bc3e6085701ae",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "25532277dc3da675": {
+          "id": "25532277dc3da675",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/4p3/2PPP3/2N1B3/PP2BPPP/R2QK1NR w KQ - 0 7",
+          "san": "e5",
+          "uci": "e7e5",
+          "parentId": "ae77f461c8923c0d",
+          "children": [
+            "def3737901f344bc",
+            "112d3c612c1cd16c"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 74,
+          "annotation": {
+            "explanation": "Main line: e5, played in 37% of master games here. Eval +0.7."
+          }
+        },
+        "25e3566f195a025b": {
+          "id": "25e3566f195a025b",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/4P3/2P1P3/2N2N1P/PP3PP1/R1BQKB1R b KQ - 0 7",
+          "san": "dxe5",
+          "uci": "d4e5",
+          "parentId": "8330f56a2ad0922b",
+          "children": [
+            "f5f0d4e2c43de78d"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.08000735699834467,
+          "evalCp": 27
+        },
+        "25e65a6f195c3efe": {
+          "id": "25e65a6f195c3efe",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/3Pp3/2P1P3/2N2N1P/PP3PP1/R1BQKB1R b KQ - 0 7",
+          "san": "d5",
+          "uci": "d4d5",
+          "parentId": "8330f56a2ad0922b",
+          "children": [
+            "87bc1f1fb3196d44"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.9146588192017657,
+          "evalCp": 46
+        },
+        "25e93ab9b30328b6": {
+          "id": "25e93ab9b30328b6",
+          "fen": "rnbq1rk1/pppn1pbp/3p2p1/4p3/2PPP3/2NBBP2/PP2N1PP/R2QK2R b KQ - 1 8",
+          "san": "Be3",
+          "uci": "c1e3",
+          "parentId": "8c9c1b01f4c1d0de",
+          "children": [
+            "3b73f35f4024e758"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "25eeca8f46e2b2aa": {
+          "id": "25eeca8f46e2b2aa",
+          "fen": "rnbq1rk1/pp2ppbp/3p1np1/2p5/2PPP3/2NBBP2/PP4PP/R2QK1NR b KQ - 1 7",
+          "san": "Bd3",
+          "uci": "f1d3",
+          "parentId": "3b125f7b1557bcda",
+          "children": [
+            "9188a73772d27c89"
+          ],
+          "mover": "opponent",
+          "moveKind": "opponent_mistake",
+          "weight": 0.039088148897830216,
+          "evalCp": -181,
+          "annotation": {
+            "explanation": "Bd3? is popular at club level (4% of games) but rare in master play and it concedes 2.2 pawns. Meet it with Ng4."
+          }
+        },
+        "278dd1b9b7f2ef34": {
+          "id": "278dd1b9b7f2ef34",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/8/2PNP3/2N1B2P/PP3PP1/R2QKB1R b KQ - 0 8",
+          "san": "Nxd4",
+          "uci": "f3d4",
+          "parentId": "94ceb59551891b99",
+          "children": [
+            "d08d69e88afaf04b"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "28318ba98cb1e603": {
+          "id": "28318ba98cb1e603",
+          "fen": "r1bq1rk1/ppp1ppbp/2np1np1/3P4/2P5/2N2NP1/PP2PPBP/R1BQK2R b KQ - 0 7",
+          "san": "d5",
+          "uci": "d4d5",
+          "parentId": "a8d3eadd95d92fe0",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.08736643620364551,
+          "evalCp": 51,
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 51
+          }
+        },
+        "28663db7701b4aba": {
+          "id": "28663db7701b4aba",
+          "fen": "rnbq1rk1/ppp2pbp/5np1/4p3/2P1PB2/2N2N2/PP3PPP/R2QKB1R w KQ - 0 8",
+          "san": "dxe5",
+          "uci": "d6e5",
+          "parentId": "0a045ba47934f476",
+          "children": [
+            "fdb6b561651f60d9"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "29f32a9a7e6d7cf2": {
+          "id": "29f32a9a7e6d7cf2",
+          "fen": "rnbqk2r/pp2ppbp/3p2p1/2p3B1/2PPP1n1/2N5/PP3PPP/R2QKBNR w KQkq - 0 7",
+          "san": "c5",
+          "uci": "c7c5",
+          "parentId": "e91dec1b94809e08",
+          "children": [
+            "bf28841b2a76b249"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "2a8e8079f6884544": {
+          "id": "2a8e8079f6884544",
+          "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2N4P/PP3PP1/R1BQKBNR w KQ - 1 6",
+          "san": "O-O",
+          "uci": "e8g8",
+          "parentId": "9e021d6784df0b6a",
+          "children": [
+            "050e2c8dbfb06340",
+            "05153e8dbfb6a084",
+            "861bd46c67aca7d3",
+            "dc82da640bbecd96"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 51,
+          "annotation": {
+            "explanation": "Main line: O-O, played in 89% of master games here. Eval +0.5."
+          }
+        },
+        "2aabeacf1a152b83": {
+          "id": "2aabeacf1a152b83",
+          "fen": "rnbq1rk1/1pp2pbp/3p1np1/p2Pp3/2P1P3/2N2N2/PP2BPPP/R1BQK2R w KQ - 0 8",
+          "san": "a5",
+          "uci": "a7a5",
+          "parentId": "d2be4cb96e00c803",
+          "children": [],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 43,
+          "annotation": {
+            "explanation": "Main line: a5, played in 76% of master games here. Eval +0.4."
+          },
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 43
+          }
+        },
+        "2aafb3fd59c1e8df": {
+          "id": "2aafb3fd59c1e8df",
+          "fen": "rn1q1rk1/pppnppbp/3p2p1/8/2PPP3/2N1Bb2/PP2BPPP/R2QK2R w KQ - 0 9",
+          "san": "Bxf3",
+          "uci": "g4f3",
+          "parentId": "2d3f97b71466d6e5",
+          "children": [
+            "d1e1d26012ff15c1"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "2acaf2f44fcdda05": {
+          "id": "2acaf2f44fcdda05",
+          "fen": "r1bQ1rk1/pp2ppbp/2n2np1/2p3B1/2P1P3/2N2P2/PP2N1PP/R3KB1R b KQ - 0 9",
+          "san": "Qxd8",
+          "uci": "d1d8",
+          "parentId": "403309b2e3f0ec0e",
+          "children": [
+            "015cb965d707f70d"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "2d3f97b71466d6e5": {
+          "id": "2d3f97b71466d6e5",
+          "fen": "rn1q1rk1/pppnppbp/3p2p1/8/2PPP1b1/2N1BN2/PP2BPPP/R2QK2R b KQ - 7 8",
+          "san": "Be3",
+          "uci": "c1e3",
+          "parentId": "0ad52f3a86557f27",
+          "children": [
+            "2aafb3fd59c1e8df"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "2d7f12d388ed028f": {
+          "id": "2d7f12d388ed028f",
+          "fen": "rnbq1rk1/ppp1ppb1/3p1npp/6B1/2PPP3/2N2N2/PP3PPP/R2QKB1R w KQ - 0 7",
+          "san": "h6",
+          "uci": "h7h6",
+          "parentId": "9a3f05fcf168adbc",
+          "children": [
+            "9c6af68670e0aa2d"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 37,
+          "annotation": {
+            "explanation": "Punishes Bg5: h6 wins the advantage (+0.4 → +0.4). Play continues Be3 Ng4 Bd2 e5."
+          }
+        },
+        "2d94c6f1c96aa3b4": {
+          "id": "2d94c6f1c96aa3b4",
+          "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2NB1N2/PP3PPP/R1BQK2R b KQ - 3 6",
+          "san": "Nf3",
+          "uci": "g1f3",
+          "parentId": "d603c47c229c4bed",
+          "children": [
+            "f3569dbc8d984bf2"
+          ],
+          "mover": "opponent",
+          "moveKind": "opponent_mistake",
+          "weight": 0.1479181744937115,
+          "evalCp": 48,
+          "annotation": {
+            "explanation": "Nf3? is popular at club level (15% of games) but rare in master play. Meet it with e5."
+          }
+        },
+        "2d982df1c96d8890": {
+          "id": "2d982df1c96d8890",
+          "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2NB4/PP2NPPP/R1BQK2R b KQ - 3 6",
+          "san": "Nge2",
+          "uci": "g1e2",
+          "parentId": "d603c47c229c4bed",
+          "children": [
+            "18ae72839a37c0c7"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.9858030168589175,
+          "evalCp": 37
+        },
+        "2da3f8c411d372be": {
+          "id": "2da3f8c411d372be",
+          "fen": "rnbq1rk1/ppp2pbp/5np1/4p3/2P1P3/2N2N2/PP2BPPP/R1BQK2R w KQ - 0 8",
+          "san": "dxe5",
+          "uci": "d6e5",
+          "parentId": "99740b9d8dd80912",
+          "children": [],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 16,
+          "annotation": {
+            "explanation": "Main line: dxe5, played in 100% of master games here. Eval +0.2."
+          },
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 16
+          }
+        },
+        "2ea1a903cd719ceb": {
+          "id": "2ea1a903cd719ceb",
+          "fen": "r1bq1rk1/ppp2pbp/5np1/4p3/1nP1P3/2NQBN1P/PP3PP1/R3KB1R w KQ - 4 10",
+          "san": "Nb4",
+          "uci": "c6b4",
+          "parentId": "9984e875cd6edb70",
+          "children": [
+            "6334d176a805d9c3"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "2ef9f57d73e7e195": {
+          "id": "2ef9f57d73e7e195",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/4p3/2PPP3/2N1BN1P/PP3PP1/R2QKB1R b KQ - 1 7",
+          "san": "Nf3",
+          "uci": "g1f3",
+          "parentId": "f3bc3b181e0c33d6",
+          "children": [
+            "83ddcfeec3ff3801"
+          ],
+          "mover": "opponent",
+          "moveKind": "opponent_mistake",
+          "weight": 0.06460457117220408,
+          "evalCp": 8,
+          "annotation": {
+            "explanation": "Nf3? is popular at club level (6% of games) but rare in master play. Meet it with exd4."
+          }
+        },
+        "30062789879120d4": {
+          "id": "30062789879120d4",
+          "fen": "rnbq1rk1/pp2ppbp/3p1np1/2p5/2PPPP2/2N2N2/PP4PP/R1BQKB1R w KQ - 0 7",
+          "san": "c5",
+          "uci": "c7c5",
+          "parentId": "b7e556066acc0fea",
+          "children": [
+            "52ec7f389418cc5f",
+            "5303ff38942c84c0",
+            "a3407d4a6bc89f3e",
+            "08130541874b44c7",
+            "b2b34a7411c40f30"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 32,
+          "annotation": {
+            "explanation": "Main line: c5, played in 69% of master games here. Eval +0.3."
+          }
+        },
+        "30448d0f3d942d57": {
+          "id": "30448d0f3d942d57",
+          "fen": "r1bq1rk1/ppp2pbp/3p1np1/3P4/2PpP3/2N3P1/PP3PBP/R1BQK2R w KQ - 0 10",
+          "san": "exd4",
+          "uci": "e5d4",
+          "parentId": "2337490b0e9ddc0f",
+          "children": [
+            "09f3faea1643fe32"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "308f0d7f3af5c877": {
+          "id": "308f0d7f3af5c877",
+          "fen": "r1bq1rk1/ppp2pbp/2np1np1/8/2PNP3/2N1B2P/PP3PP1/R2QKB1R w KQ - 1 9",
+          "san": "Nc6",
+          "uci": "b8c6",
+          "parentId": "a9b6dcab0afe5de0",
+          "children": [
+            "5625257318fe0935"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "3228b5f074c469a5": {
+          "id": "3228b5f074c469a5",
+          "fen": "rnbq1rk1/pp2ppbp/3p1np1/2p1P1B1/2PP4/2N4P/PP3PP1/R2QKBNR b KQ - 0 7",
+          "san": "e5",
+          "uci": "e4e5",
+          "parentId": "af90880936c949b6",
+          "children": [
+            "a97a7711e6d146b3"
+          ],
+          "mover": "opponent",
+          "moveKind": "opponent_mistake",
+          "weight": 0.03972798854688619,
+          "evalCp": -179,
+          "annotation": {
+            "explanation": "e5? is popular at club level (4% of games) but rare in master play and it concedes 2.2 pawns. Meet it with cxd4."
+          }
+        },
+        "3517af6c0b84cfc2": {
+          "id": "3517af6c0b84cfc2",
+          "fen": "rnbq1rk1/ppp1ppb1/3p2pp/8/2PPP1n1/2N2N2/PP1B1PPP/R2QKB1R b KQ - 3 8",
+          "san": "Bd2",
+          "uci": "e3d2",
+          "parentId": "5cefc128c582dbe4",
+          "children": [
+            "6fbb9b25716dcfb8"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "362b2b42951579a2": {
+          "id": "362b2b42951579a2",
+          "fen": "r1bq1rk1/pppn1pbp/3p1np1/4p1B1/2PP4/2NBPN2/PP3PPP/R2QK2R b KQ - 1 8",
+          "san": "Bg5",
+          "uci": "f4g5",
+          "parentId": "364eec4da58e53cc",
+          "children": [
+            "98001be6db7c5071"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "364eec4da58e53cc": {
+          "id": "364eec4da58e53cc",
+          "fen": "r1bq1rk1/pppn1pbp/3p1np1/4p3/2PP1B2/2NBPN2/PP3PPP/R2QK2R w KQ - 0 8",
+          "san": "e5",
+          "uci": "e7e5",
+          "parentId": "3ebe30c2a636bffe",
+          "children": [
+            "362b2b42951579a2"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 8,
+          "annotation": {
+            "explanation": "Punishes Bd3: e5 wins the advantage (+0.1 → +0.1). Play continues Bg5 h6 Bh4 Re8."
+          }
+        },
+        "36a3e1171e6ba44f": {
+          "id": "36a3e1171e6ba44f",
+          "fen": "r1bq1rk1/pppnppbp/3p1np1/6B1/2PP4/2N1PN1P/PP3PP1/R2QKB1R b KQ - 0 7",
+          "san": "h3",
+          "uci": "h2h3",
+          "parentId": "f6ce70354e5e5af4",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.05388272583201268,
+          "evalCp": 46,
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 46
+          }
+        },
+        "36ad9acab4e22f79": {
+          "id": "36ad9acab4e22f79",
+          "fen": "rnbq1rk1/pp2ppbp/3p2p1/2p5/2PPPPn1/2N2N2/PP4PP/R2QKBBR b KQ - 3 8",
+          "san": "Bg1",
+          "uci": "e3g1",
+          "parentId": "03b4d6f609305c6f",
+          "children": [
+            "488bedc174f939b7"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "377bd3a5ea6f8c03": {
+          "id": "377bd3a5ea6f8c03",
+          "fen": "rnbq1rk1/ppp2pbp/3p2p1/4p3/2PPP1n1/2N1BN2/PP2BPPP/R2QK2R w KQ - 2 8",
+          "san": "Ng4",
+          "uci": "f6g4",
+          "parentId": "3793d7b08985a87c",
+          "children": [],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 49,
+          "annotation": {
+            "explanation": "Main line: Ng4, played in 40% of master games here. Eval +0.5."
+          },
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 49
+          }
+        },
+        "3793d7b08985a87c": {
+          "id": "3793d7b08985a87c",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/4p3/2PPP3/2N1BN2/PP2BPPP/R2QK2R b KQ - 1 7",
+          "san": "Be3",
+          "uci": "c1e3",
+          "parentId": "dca7619788e365e0",
+          "children": [
+            "377bd3a5ea6f8c03"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.14506281969686255,
+          "evalCp": 56
+        },
+        "37a2be069896b04e": {
+          "id": "37a2be069896b04e",
+          "fen": "rnbq1rk1/ppp2pbp/5np1/4p3/2P1P3/2N2N2/PP2BPPP/R1BQK2R w KQ - 0 8",
+          "san": "dxe5",
+          "uci": "d6e5",
+          "parentId": "6c60163f75d81642",
+          "children": [],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 25,
+          "annotation": {
+            "explanation": "Main line: dxe5, played in 100% of master games here. Eval +0.3."
+          },
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 25
+          }
+        },
+        "3920aaf50a4738d6": {
+          "id": "3920aaf50a4738d6",
+          "fen": "rnbq1rk1/ppp1ppbp/3p1np1/4P3/2PP1P2/2N5/PP4PP/R1BQKBNR b KQ - 0 6",
+          "san": "e5",
+          "uci": "e4e5",
+          "parentId": "0b8c221658e5ca2b",
+          "children": [
+            "bd2b285bd02c148b"
+          ],
+          "mover": "opponent",
+          "moveKind": "opponent_mistake",
+          "weight": 0.1677876877897396,
+          "evalCp": -24,
+          "annotation": {
+            "explanation": "e5? is popular at club level (17% of games) but rare in master play and it concedes 0.8 pawns. Meet it with Nfd7."
+          }
+        },
+        "3949d7e9dea68a0a": {
+          "id": "3949d7e9dea68a0a",
+          "fen": "rnb2rk1/pp2ppbp/3p1np1/q5B1/2PpP3/2N2N1P/PP1Q1PP1/R3KB1R w KQ - 0 9",
+          "san": "cxd4",
+          "uci": "c5d4",
+          "parentId": "b773cd769b9a26ae",
+          "children": [
+            "7130a12427c6eaf1"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "39fa5f07fcbb2e1f": {
+          "id": "39fa5f07fcbb2e1f",
+          "fen": "rnbq1rk1/ppp2pbp/3p2p1/4p3/2PPP1n1/2N1BN2/PP2BPPP/R2QK2R w KQ - 2 8",
+          "san": "Ng4",
+          "uci": "f6g4",
+          "parentId": "a479d2d69780e040",
+          "children": [],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 34,
+          "annotation": {
+            "explanation": "Main line: Ng4, played in 40% of master games here. Eval +0.3."
+          },
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 34
+          }
+        },
+        "3a1e2b0947ae6b2f": {
+          "id": "3a1e2b0947ae6b2f",
+          "fen": "rnbq1rk1/ppp1ppbp/3p2p1/8/2PPP1n1/2NBB3/PP1Q1PPP/R3K1NR b KQ - 5 7",
+          "san": "Qd2",
+          "uci": "d1d2",
+          "parentId": "cbbc6ec7f18e3676",
+          "children": [
+            "204bde9a94d43726"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "3a555bb1f17de257": {
+          "id": "3a555bb1f17de257",
+          "fen": "rnbq1rk1/ppppppbp/5np1/6B1/2PP4/2N2N2/PP2PPPP/R2QKB1R b KQ - 5 5",
+          "san": "Bg5",
+          "uci": "c1g5",
+          "parentId": "c34d04eafeedb5d5",
+          "children": [
+            "d14fc7aaa4552d9a"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.1649984061204973,
+          "evalCp": 32
+        },
+        "3a58e0b1f180fa2d": {
+          "id": "3a58e0b1f180fa2d",
+          "fen": "rnbq1rk1/ppppppbp/5np1/8/2PP1B2/2N2N2/PP2PPPP/R2QKB1R b KQ - 5 5",
+          "san": "Bf4",
+          "uci": "c1f4",
+          "parentId": "c34d04eafeedb5d5",
+          "children": [
+            "443e54d6152c8b64"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.04807140580172139,
+          "evalCp": 19
+        },
+        "3b125f7b1557bcda": {
+          "id": "3b125f7b1557bcda",
+          "fen": "rnbq1rk1/pp2ppbp/3p1np1/2p5/2PPP3/2N1BP2/PP4PP/R2QKBNR w KQ - 0 7",
+          "san": "c5",
+          "uci": "c7c5",
+          "parentId": "f46d7ecc6cc8e180",
+          "children": [
+            "c8d457982f7adbd9",
+            "64e257a114b72cd6",
+            "64d867a114aef381",
+            "9027afa12d36b82b",
+            "25eeca8f46e2b2aa"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 43,
+          "annotation": {
+            "explanation": "Main line: c5, played in 29% of master games here. Eval +0.4."
+          }
+        },
+        "3b35c05c04d1d90d": {
+          "id": "3b35c05c04d1d90d",
+          "fen": "rnb2rk1/pp2ppbp/3p2p1/q5B1/2PNN3/7P/PP1Q1PP1/R3KB1R b KQ - 0 10",
+          "san": "Nxe4",
+          "uci": "c3e4",
+          "parentId": "042bd6e2ac85dbfa",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "3b73f35f4024e758": {
+          "id": "3b73f35f4024e758",
+          "fen": "rnbq1rk1/pppn1pbp/3p2p1/8/2PpP3/2NBBP2/PP2N1PP/R2QK2R w KQ - 0 9",
+          "san": "exd4",
+          "uci": "e5d4",
+          "parentId": "25e93ab9b30328b6",
+          "children": [
+            "6ae02f87bb537fcf"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "3c0192552b157d29": {
+          "id": "3c0192552b157d29",
+          "fen": "r1bq1rk1/pppn1pbp/2np2p1/4p3/2PPP3/P1NBB3/1P2NPPP/R2QK2R w KQ - 0 9",
+          "san": "e5",
+          "uci": "e7e5",
+          "parentId": "6ca22bfb55aa24e9",
+          "children": [
+            "0856390655d167d8"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "3d437b7cc97a574b": {
+          "id": "3d437b7cc97a574b",
+          "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PP1B2/2N1PN2/PP3PPP/R2QKB1R b KQ - 0 6",
+          "san": "e3",
+          "uci": "e2e3",
+          "parentId": "443e54d6152c8b64",
+          "children": [
+            "13f122b23a716056"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.568039950062422,
+          "evalCp": 19
+        },
+        "3d43807cc97a5fca": {
+          "id": "3d43807cc97a5fca",
+          "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPPB2/2N2N2/PP3PPP/R2QKB1R b KQ - 0 6",
+          "san": "e4",
+          "uci": "e2e4",
+          "parentId": "443e54d6152c8b64",
+          "children": [
+            "dc28e2b3c67f8950"
+          ],
+          "mover": "opponent",
+          "moveKind": "opponent_mistake",
+          "weight": 0.18133606846804431,
+          "evalCp": 20,
+          "annotation": {
+            "explanation": "e4? is popular at club level (18% of games) but rare in master play. Meet it with e5."
+          }
+        },
+        "3d6532ea1d5d1454": {
+          "id": "3d6532ea1d5d1454",
+          "fen": "rnbq1rk1/ppp1ppbp/3p2p1/8/2PPP3/2NBQ3/PP3PPP/R3K1NR b KQ - 0 8",
+          "san": "Qxe3",
+          "uci": "d2e3",
+          "parentId": "204bde9a94d43726",
+          "children": [
+            "dfdef1a100b5de6b"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "3dd3b54f297a0c4a": {
+          "id": "3dd3b54f297a0c4a",
+          "fen": "rnbq1rk1/pp3pbp/3p1np1/2pP4/2P2P2/2N4P/PP2B1P1/R1BQK1NR b KQ - 0 9",
+          "san": "exd5",
+          "uci": "e4d5",
+          "parentId": "a2684458cfe43634",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "3ded66b8cabc4604": {
+          "id": "3ded66b8cabc4604",
+          "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2N2P2/PP4PP/R1BQKBNR w KQ - 1 6",
+          "san": "O-O",
+          "uci": "e8g8",
+          "parentId": "823445999f2d3faa",
+          "children": [
+            "f46d7ecc6cc8e180",
+            "f47490cc6ccf1ec4",
+            "7577bfab14c24137",
+            "e5d7b2a2c7894cd8"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 46,
+          "annotation": {
+            "explanation": "Main line: O-O, played in 91% of master games here. Eval +0.5."
+          }
+        },
+        "3e175819d2318ed2": {
+          "id": "3e175819d2318ed2",
+          "fen": "r1bq1rk1/ppp1ppbp/2np1np1/8/2PPP3/2NB1P2/PP2N1PP/R1BQK2R b KQ - 0 7",
+          "san": "f3",
+          "uci": "f2f3",
+          "parentId": "18ae72839a37c0c7",
+          "children": [
+            "519a39c2dcd8e528"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.044633368756641874,
+          "evalCp": 40
+        },
+        "3e7a2eba07029aeb": {
+          "id": "3e7a2eba07029aeb",
+          "fen": "rnbq1rk1/ppp2pb1/3p2pp/3Pp3/2P1P1n1/2N2N2/PP1B1PPP/R2QKB1R b KQ - 0 9",
+          "san": "d5",
+          "uci": "d4d5",
+          "parentId": "6fbb9b25716dcfb8",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "3e9507f2345aa694": {
+          "id": "3e9507f2345aa694",
+          "fen": "rnbqk2r/ppp1ppbp/3p2p1/8/2PPP1n1/2N1B3/PP3PPP/R2QKBNR w KQkq - 2 6",
+          "san": "Ng4",
+          "uci": "f6g4",
+          "parentId": "41b47eb1fdb32fbd",
+          "children": [
+            "e91dec1b94809e08"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 42,
+          "annotation": {
+            "explanation": "Punishes Be3: Ng4 wins the advantage (+0.5 → +0.4). Play continues Bg5 c5 d5 h6."
+          }
+        },
+        "3ebb27c2a6347adc": {
+          "id": "3ebb27c2a6347adc",
+          "fen": "r1bq1rk1/pppnppbp/3p1np1/8/2PP1B2/2N1PN2/PP2BPPP/R2QK2R b KQ - 2 7",
+          "san": "Be2",
+          "uci": "f1e2",
+          "parentId": "13f122b23a716056",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.42138364779874216,
+          "evalCp": 46,
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 46
+          }
+        },
+        "3ebe30c2a636bffe": {
+          "id": "3ebe30c2a636bffe",
+          "fen": "r1bq1rk1/pppnppbp/3p1np1/8/2PP1B2/2NBPN2/PP3PPP/R2QK2R b KQ - 2 7",
+          "san": "Bd3",
+          "uci": "f1d3",
+          "parentId": "13f122b23a716056",
+          "children": [
+            "364eec4da58e53cc"
+          ],
+          "mover": "opponent",
+          "moveKind": "opponent_mistake",
+          "weight": 0.35409177975398876,
+          "evalCp": 8,
+          "annotation": {
+            "explanation": "Bd3? is popular at club level (35% of games) but rare in master play. Meet it with e5."
+          }
+        },
+        "3eff27a5e24c3af8": {
+          "id": "3eff27a5e24c3af8",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/8/2PNP3/2N1B2P/PP3PP1/R2QKB1R b KQ - 0 8",
+          "san": "Nxd4",
+          "uci": "f3d4",
+          "parentId": "bd7357886c3921ad",
+          "children": [
+            "9acb01bcdd64f78f"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "3f9644b2e4648d01": {
+          "id": "3f9644b2e4648d01",
+          "fen": "rnbq1rk1/ppp2pbp/5np1/4p3/2P1P3/2N2N1P/PP3PP1/R1BQKB1R w KQ - 0 8",
+          "san": "dxe5",
+          "uci": "d6e5",
+          "parentId": "f8b6138c26010d47",
+          "children": [],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 25,
+          "annotation": {
+            "explanation": "Main line: dxe5, played in 100% of master games here. Eval +0.3."
+          },
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 25
+          }
+        },
+        "3fb2713409e1ca85": {
+          "id": "3fb2713409e1ca85",
+          "fen": "r1bq1rk1/ppp1ppbp/2np1np1/8/2PPP3/2NBB3/PP2NPPP/R2QK2R b KQ - 5 7",
+          "san": "Be3",
+          "uci": "c1e3",
+          "parentId": "18ae72839a37c0c7",
+          "children": [
+            "07af14acf6c27e8c"
+          ],
+          "mover": "opponent",
+          "moveKind": "opponent_mistake",
+          "weight": 0.065830498026152,
+          "evalCp": -69,
+          "annotation": {
+            "explanation": "Be3? is popular at club level (7% of games) but rare in master play and it concedes 1.1 pawns. Meet it with Ng4."
+          }
+        },
+        "3fdee9532dee4d1f": {
+          "id": "3fdee9532dee4d1f",
+          "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PP1B2/2N2N1P/PP2PPP1/R2QKB1R b KQ - 0 6",
+          "san": "h3",
+          "uci": "h2h3",
+          "parentId": "443e54d6152c8b64",
+          "children": [
+            "6d1a4df82fff8282"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.41198501872659177,
+          "evalCp": 26
+        },
+        "403309b2e3f0ec0e": {
+          "id": "403309b2e3f0ec0e",
+          "fen": "r1bq1rk1/pp2ppbp/2n2np1/2p3B1/2P1P3/2N2P2/PP2N1PP/R2QKB1R w KQ - 2 9",
+          "san": "Nc6",
+          "uci": "b8c6",
+          "parentId": "016f045d47a76ac7",
+          "children": [
+            "2acaf2f44fcdda05"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "41af4126cf455fcf": {
+          "id": "41af4126cf455fcf",
+          "fen": "rnbq1rk1/pp1nppbp/3p2p1/2pPP3/2P2P2/2N2N2/PP4PP/R1BQKB1R b KQ - 0 8",
+          "san": "d5",
+          "uci": "d4d5",
+          "parentId": "882dc4306376b4a4",
+          "children": [
+            "0c7d0c4a81ca3279"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "41b47eb1fdb32fbd": {
+          "id": "41b47eb1fdb32fbd",
+          "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/2PPP3/2N1B3/PP3PPP/R2QKBNR b KQkq - 1 5",
+          "san": "Be3",
+          "uci": "c1e3",
+          "parentId": "15906922fa6b70af",
+          "children": [
+            "3e9507f2345aa694"
+          ],
+          "mover": "opponent",
+          "moveKind": "opponent_mistake",
+          "weight": 0.04507265985556982,
+          "evalCp": 46,
+          "annotation": {
+            "explanation": "Be3? is popular at club level (5% of games) but rare in master play. Meet it with Ng4."
+          }
+        },
+        "423422eee20fe6ad": {
+          "id": "423422eee20fe6ad",
+          "fen": "rnbq1rk1/pp2ppbp/3p2p1/8/2PpP1P1/2NBB3/PP4PP/R2QK1NR w KQ - 0 9",
+          "san": "cxd4",
+          "uci": "c5d4",
+          "parentId": "5acf6aa53dfdcbff",
+          "children": [
+            "50f1848eb3b102ef"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "42d224410bf3e1b6": {
+          "id": "42d224410bf3e1b6",
+          "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2N2N2/PP2BPPP/R1BQK2R b KQ - 3 6",
+          "san": "Nf3",
+          "uci": "g1f3",
+          "parentId": "dc3d882ec043509f",
+          "children": [
+            "dd087728734b4614"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.4670932358318099,
+          "evalCp": 38
+        },
+        "42e8069c73525c69": {
+          "id": "42e8069c73525c69",
+          "fen": "rnbr2k1/ppp2pbp/5np1/4p3/2P1PB2/2N2N2/PP3PPP/R3KB1R w KQ - 0 9",
+          "san": "Rxd8",
+          "uci": "f8d8",
+          "parentId": "fdb6b561651f60d9",
+          "children": [
+            "f6dd20e4d526e133"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "443e54d6152c8b64": {
+          "id": "443e54d6152c8b64",
+          "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PP1B2/2N2N2/PP2PPPP/R2QKB1R w KQ - 0 6",
+          "san": "d6",
+          "uci": "d7d6",
+          "parentId": "3a58e0b1f180fa2d",
+          "children": [
+            "3d437b7cc97a574b",
+            "3fdee9532dee4d1f",
+            "3d43807cc97a5fca"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 25,
+          "annotation": {
+            "explanation": "Main line: d6, played in 76% of master games here. Eval +0.3."
+          }
+        },
+        "453b4f290e95866b": {
+          "id": "453b4f290e95866b",
+          "fen": "rnbq1rk1/ppp1ppbp/3p1np1/6B1/2PP4/2N2N2/PP1QPPPP/R3KB1R b KQ - 1 6",
+          "san": "Qd2",
+          "uci": "d1d2",
+          "parentId": "d14fc7aaa4552d9a",
+          "children": [
+            "96963dd7d6a69e1f"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.029654036243822075,
+          "evalCp": 40
+        },
+        "4590730265c8b831": {
+          "id": "4590730265c8b831",
+          "fen": "r1bq1rk1/ppp2pbp/2np1np1/8/2PNP3/2NBB2P/PP3PP1/R2QK2R b KQ - 2 9",
+          "san": "Bd3",
+          "uci": "f1d3",
+          "parentId": "d08d69e88afaf04b",
+          "children": [
+            "dcf252ae4095ee66"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "45d25b2eb7441288": {
+          "id": "45d25b2eb7441288",
+          "fen": "rnbq1rk1/1pp1ppbp/3p1np1/p7/2PPP3/2N4P/PP2BPP1/R1BQK1NR w KQ - 0 7",
+          "san": "a5",
+          "uci": "a7a5",
+          "parentId": "083893174d92df7a",
+          "children": [
+            "5667589932f67660"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 56,
+          "annotation": {
+            "explanation": "Punishes h3: a5 wins the advantage (+0.6 → +0.6). Play continues Bg5 Na6 Nf3 e5."
+          }
+        },
+        "462bf6d09262df93": {
+          "id": "462bf6d09262df93",
+          "fen": "rnb2rk1/pp2ppbp/3p1np1/q5B1/2PQP3/2N2N2/PP2BPPP/R4RK1 b - - 0 9",
+          "san": "Qxd4",
+          "uci": "d1d4",
+          "parentId": "f19532f5ef6ab2dc",
+          "children": [
+            "5f54347bac091f4a"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "466ac9730d6650af": {
+          "id": "466ac9730d6650af",
+          "fen": "rnbq1rk1/ppp2pbp/3p2p1/4p3/2PPP1n1/2N1BN2/PP2BPPP/R2QK2R w KQ - 2 8",
+          "san": "Ng4",
+          "uci": "f6g4",
+          "parentId": "c8bd5d7af09d19f0",
+          "children": [],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 49,
+          "annotation": {
+            "explanation": "Main line: Ng4, played in 40% of master games here. Eval +0.5."
+          },
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 49
+          }
+        },
+        "47de45fe0935b212": {
+          "id": "47de45fe0935b212",
+          "fen": "rnbq1rk1/pp2ppbp/5np1/2pp4/2PP4/2N1PN2/PP2BPPP/R1BQK2R w KQ - 0 7",
+          "san": "c5",
+          "uci": "c7c5",
+          "parentId": "e8ba248b125f90a8",
+          "children": [
+            "c5a0499dc1c92624"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "4889eae8f2bc0e69": {
+          "id": "4889eae8f2bc0e69",
+          "fen": "r1bq1rk1/pp1nppbp/2pp1np1/6B1/2PP4/2N1PN2/PP2BPPP/R2QK2R w KQ - 0 8",
+          "san": "c6",
+          "uci": "c7c6",
+          "parentId": "023a6349bb15945e",
+          "children": [],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 49,
+          "annotation": {
+            "explanation": "Main line: c6, played in 40% of master games here. Eval +0.5."
+          },
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 49
+          }
+        },
+        "488bedc174f939b7": {
+          "id": "488bedc174f939b7",
+          "fen": "rnbq1rk1/pp2ppbp/3p2p1/8/2PpPPn1/2N2N2/PP4PP/R2QKBBR w KQ - 0 9",
+          "san": "cxd4",
+          "uci": "c5d4",
+          "parentId": "36ad9acab4e22f79",
+          "children": [
+            "75bf181c4bd5083e"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "48e957fb7ff49e78": {
+          "id": "48e957fb7ff49e78",
+          "fen": "r1bq1rk1/pppn1pbp/3p1np1/4P3/2P1PB2/2N2N1P/PP3PP1/R2QKB1R b KQ - 0 8",
+          "san": "dxe5",
+          "uci": "d4e5",
+          "parentId": "a99dcb13308b0fbe",
+          "children": [
+            "809bc0be2e4c0463"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "4af6813d18e75fd2": {
+          "id": "4af6813d18e75fd2",
+          "fen": "rn1q1rk1/ppp1ppbp/3p1np1/8/2PPP3/2N2b2/PP2BPPP/R1BQK2R w KQ - 0 8",
+          "san": "Bxf3",
+          "uci": "g4f3",
+          "parentId": "b54fe7d09a71e5f6",
+          "children": [
+            "64879bd6edfda982"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "4b35eff8304ac2bb": {
+          "id": "4b35eff8304ac2bb",
+          "fen": "rnbq1rk1/ppp1pp1p/3p1bp1/8/2PP4/2N1PN2/PP3PPP/R2QKB1R b KQ - 0 7",
+          "san": "e3",
+          "uci": "e2e3",
+          "parentId": "bf74232e939fc5b4",
+          "children": [
+            "f114a86fdee91880"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "4b8c99c57fd3ab86": {
+          "id": "4b8c99c57fd3ab86",
+          "fen": "rnbq1rk1/pp2ppbp/3p1np1/2pP4/2P1P3/2N2P2/PP2N1PP/R1BQKB1R b KQ - 0 7",
+          "san": "d5",
+          "uci": "d4d5",
+          "parentId": "03cd356b6cccb343",
+          "children": [
+            "d1fc68f5220612dd"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.7454545454545455,
+          "evalCp": 62
+        },
+        "4ba0596538796e5b": {
+          "id": "4ba0596538796e5b",
+          "fen": "rnbq1rk1/1pp2pbp/3p1np1/p2Pp1B1/2P1P3/2NB1N2/PP3PPP/R2QK2R b KQ - 1 8",
+          "san": "Bg5",
+          "uci": "c1g5",
+          "parentId": "e2f573ecea8eb591",
+          "children": [
+            "eee9518301a0b5a6"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "4d710aca09930090": {
+          "id": "4d710aca09930090",
+          "fen": "r4rk1/pppqppbp/2np1np1/5b2/2PP4/2N1PNP1/PP3PBP/R1BQ1RK1 w - - 3 9",
+          "san": "Qd7",
+          "uci": "d8d7",
+          "parentId": "61ec3a9727b8f00f",
+          "children": [
+            "6f63eaedb7b42eac"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "4dbed65d56e727bd": {
+          "id": "4dbed65d56e727bd",
+          "fen": "r1bq1rk1/ppp2pbp/2np1np1/4p3/2PPP3/2N2N2/PP2BPPP/R1BQ1RK1 w - - 2 8",
+          "san": "Nc6",
+          "uci": "b8c6",
+          "parentId": "2347c0a6687f9e2e",
+          "children": [],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 55,
+          "annotation": {
+            "explanation": "Main line: Nc6, played in 69% of master games here. Eval +0.6."
+          },
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 55
+          }
+        },
+        "4e57cf133c913665": {
+          "id": "4e57cf133c913665",
+          "fen": "rnbq1rk1/pp3pbp/3p1pp1/8/2Pp4/2N4P/PP1B1PP1/R2QKBNR b KQ - 1 9",
+          "san": "Bd2",
+          "uci": "g5d2",
+          "parentId": "71b3a0bfc878d039",
+          "children": [
+            "dce9480f303fe415"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "4f7a911a831a453a": {
+          "id": "4f7a911a831a453a",
+          "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2N2N2/PP2BPPP/R1BQK2R b KQ - 3 6",
+          "san": "Be2",
+          "uci": "f1e2",
+          "parentId": "f8fbd31e14a1a658",
+          "children": [
+            "dca7619788e365e0"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.8483760464562458,
+          "evalCp": 42
+        },
+        "4f7d9715dc1add1e": {
+          "id": "4f7d9715dc1add1e",
+          "fen": "r1bq1rk1/ppp2pbp/2n2np1/3p4/2PNP3/2NBB2P/PP3PP1/R2QK2R w KQ - 0 10",
+          "san": "d5",
+          "uci": "d6d5",
+          "parentId": "9baad46ddf5bf019",
+          "children": [
+            "de64cd348a058da8"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "4f7e121a831d5644": {
+          "id": "4f7e121a831d5644",
+          "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2NB1N2/PP3PPP/R1BQK2R b KQ - 3 6",
+          "san": "Bd3",
+          "uci": "f1d3",
+          "parentId": "f8fbd31e14a1a658",
+          "children": [
+            "65085f26f2fd21f4"
+          ],
+          "mover": "opponent",
+          "moveKind": "opponent_mistake",
+          "weight": 0.2388217296083191,
+          "evalCp": 43,
+          "annotation": {
+            "explanation": "Bd3? is popular at club level (24% of games) but rare in master play. Meet it with Bg4."
+          }
+        },
+        "50f1848eb3b102ef": {
+          "id": "50f1848eb3b102ef",
+          "fen": "rnbq1rk1/pp2ppbp/3p2p1/8/2PBP1P1/2NB4/PP4PP/R2QK1NR b KQ - 0 9",
+          "san": "Bxd4",
+          "uci": "e3d4",
+          "parentId": "423422eee20fe6ad",
+          "children": [
+            "5b42e87d16f5143b"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "519a39c2dcd8e528": {
+          "id": "519a39c2dcd8e528",
+          "fen": "r1bq1rk1/ppp2pbp/2np1np1/4p3/2PPP3/2NB1P2/PP2N1PP/R1BQK2R w KQ - 0 8",
+          "san": "e5",
+          "uci": "e7e5",
+          "parentId": "3e175819d2318ed2",
+          "children": [],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 38,
+          "annotation": {
+            "explanation": "Engine recommendation: e5."
+          },
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 38
+          }
+        },
+        "52ec7f389418cc5f": {
+          "id": "52ec7f389418cc5f",
+          "fen": "rnbq1rk1/pp2ppbp/3p1np1/2pP4/2P1PP2/2N2N2/PP4PP/R1BQKB1R b KQ - 0 7",
+          "san": "d5",
+          "uci": "d4d5",
+          "parentId": "30062789879120d4",
+          "children": [
+            "9a9d015569d6f1da"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.7774530271398747,
+          "evalCp": 21
+        },
+        "5303ff38942c84c0": {
+          "id": "5303ff38942c84c0",
+          "fen": "rnbq1rk1/pp2ppbp/3p1np1/2P5/2P1PP2/2N2N2/PP4PP/R1BQKB1R b KQ - 0 7",
+          "san": "dxc5",
+          "uci": "d4c5",
+          "parentId": "30062789879120d4",
+          "children": [
+            "97bafdc700d0cc16"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.19039665970772443,
+          "evalCp": 39
+        },
+        "54df6c97da3ee90d": {
+          "id": "54df6c97da3ee90d",
+          "fen": "rnbq1rk1/ppp1ppbp/5np1/3p4/2PP1B2/2N1P3/PP3PPP/2RQKBNR b K - 2 6",
+          "san": "Rc1",
+          "uci": "a1c1",
+          "parentId": "9b558a6fa422ce1d",
+          "children": [
+            "a5d239841881ed79"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "5625257318fe0935": {
+          "id": "5625257318fe0935",
+          "fen": "r1bq1rk1/ppp2pbp/2np1np1/8/2PNP3/2NBB2P/PP3PP1/R2QK2R b KQ - 2 9",
+          "san": "Bd3",
+          "uci": "f1d3",
+          "parentId": "308f0d7f3af5c877",
+          "children": [
+            "0b949f0a889c98f2"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "5667589932f67660": {
+          "id": "5667589932f67660",
+          "fen": "rnbq1rk1/1pp1ppbp/3p1np1/p5B1/2PPP3/2N4P/PP2BPP1/R2QK1NR b KQ - 1 7",
+          "san": "Bg5",
+          "uci": "c1g5",
+          "parentId": "45d25b2eb7441288",
+          "children": [
+            "c79685ab79924575"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "5720c5c2b775c063": {
+          "id": "5720c5c2b775c063",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/4P3/2P1P3/2N2N1P/PP3PP1/R1BQKB1R b KQ - 0 7",
+          "san": "dxe5",
+          "uci": "d4e5",
+          "parentId": "d53450f96c7d4c43",
+          "children": [
+            "73598e8ee4f4c665"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.08000735699834467,
+          "evalCp": 16
+        },
+        "572449c2b778d686": {
+          "id": "572449c2b778d686",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/3Pp3/2P1P3/2N2N1P/PP3PP1/R1BQKB1R b KQ - 0 7",
+          "san": "d5",
+          "uci": "d4d5",
+          "parentId": "d53450f96c7d4c43",
+          "children": [
+            "bc5f2dc2bc9971fc"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.9146588192017657,
+          "evalCp": 55
+        },
+        "579c1e6c37dbbe76": {
+          "id": "579c1e6c37dbbe76",
+          "fen": "rnbqk2r/ppppppbp/5np1/8/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4",
+          "san": "Bg7",
+          "uci": "f8g7",
+          "parentId": "06e06271ff37999a",
+          "children": [
+            "d217110a836f6c6c",
+            "615ad0f929eef835",
+            "e22e71d7d1b9b89c",
+            "d217100a836f6ab9"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 53,
+          "annotation": {
+            "explanation": "Main line: Bg7, played in 65% of master games here. Eval +0.5."
+          }
+        },
+        "5a681c16e14456f1": {
+          "id": "5a681c16e14456f1",
+          "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PP4/2N2NP1/PP2PPBP/R1BQK2R b KQ - 1 6",
+          "san": "Bg2",
+          "uci": "f1g2",
+          "parentId": "ee9dfc2d94d810f3",
+          "children": [
+            "a8d3eadd95d92fe0"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.9996763754045307,
+          "evalCp": 56
+        },
+        "5acf6aa53dfdcbff": {
+          "id": "5acf6aa53dfdcbff",
+          "fen": "rnbq1rk1/pp2ppbp/3p2p1/2p5/2PPP1P1/2NBB3/PP4PP/R2QK1NR b KQ - 0 8",
+          "san": "fxg4",
+          "uci": "f3g4",
+          "parentId": "9188a73772d27c89",
+          "children": [
+            "423422eee20fe6ad"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "5b42e87d16f5143b": {
+          "id": "5b42e87d16f5143b",
+          "fen": "rnbq1rk1/pp2pp1p/3p2p1/8/2PbP1P1/2NB4/PP4PP/R2QK1NR w KQ - 0 10",
+          "san": "Bxd4",
+          "uci": "g7d4",
+          "parentId": "50f1848eb3b102ef",
+          "children": [
+            "df550c9a04151823"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "5c417d92a1058674": {
+          "id": "5c417d92a1058674",
+          "fen": "rnbq1rk1/pp3pbp/3ppnp1/2pP2B1/2P1P3/2N4P/PP3PP1/R2QKBNR w KQ - 0 8",
+          "san": "e6",
+          "uci": "e7e6",
+          "parentId": "c24e07e7a8d1e695",
+          "children": [],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 41,
+          "annotation": {
+            "explanation": "Main line: e6, played in 59% of master games here. Eval +0.4."
+          },
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 41
+          }
+        },
+        "5c85b757eaf30a59": {
+          "id": "5c85b757eaf30a59",
+          "fen": "r1bq1rk1/pp2ppbp/3p1np1/4n3/2P1P3/2N1BP2/PP1Q2PP/R3KBNR w KQ - 3 10",
+          "san": "Ne5",
+          "uci": "c6e5",
+          "parentId": "dd212d27275c7c3e",
+          "children": [
+            "b797844fbb6c3ca8"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "5cefc128c582dbe4": {
+          "id": "5cefc128c582dbe4",
+          "fen": "rnbq1rk1/ppp1ppb1/3p2pp/8/2PPP1n1/2N1BN2/PP3PPP/R2QKB1R w KQ - 2 8",
+          "san": "Ng4",
+          "uci": "f6g4",
+          "parentId": "9c6af68670e0aa2d",
+          "children": [
+            "3517af6c0b84cfc2"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "5e191e61b95de1c0": {
+          "id": "5e191e61b95de1c0",
+          "fen": "r1bq1rk1/ppp2pbp/2np2p1/4p3/2PPP3/2NBQ3/PP2NPPP/R3K2R w KQ - 0 10",
+          "san": "e5",
+          "uci": "e7e5",
+          "parentId": "af808ad68432261a",
+          "children": [
+            "8dc60ebb9ace4b06"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "5f54347bac091f4a": {
+          "id": "5f54347bac091f4a",
+          "fen": "r1b2rk1/pp2ppbp/2np1np1/q5B1/2PQP3/2N2N2/PP2BPPP/R4RK1 w - - 1 10",
+          "san": "Nc6",
+          "uci": "b8c6",
+          "parentId": "462bf6d09262df93",
+          "children": [
+            "ed98de9a9506b984"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "605898e47dadfa80": {
+          "id": "605898e47dadfa80",
+          "fen": "rnbqk2r/ppp1ppbp/5np1/3p4/2PP4/2N1PN2/PP3PPP/R1BQKB1R b KQkq - 1 5",
+          "san": "Nf3",
+          "uci": "g1f3",
+          "parentId": "ba7bae0638396a31",
+          "children": [
+            "ab2dedbf63e81cfa"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "611ae3bc512570dd": {
+          "id": "611ae3bc512570dd",
+          "fen": "rnbq1rk1/pp3pbp/3p1np1/2pPP3/2P1P3/2N4P/PP4P1/R1BQKBNR b KQ - 0 8",
+          "san": "fxe5",
+          "uci": "f4e5",
+          "parentId": "dfd5f96e5a68da23",
+          "children": [
+            "c80334550d115960"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "61240156e4e7e444": {
+          "id": "61240156e4e7e444",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/4p3/2PPP3/2N2N2/PP2BPPP/R1BQK2R w KQ - 0 7",
+          "san": "e5",
+          "uci": "e7e5",
+          "parentId": "8e2ba6d34e4b0306",
+          "children": [
+            "2347c0a6687f9e2e",
+            "a479d2d69780e040",
+            "9970879d8dd4f2ef",
+            "99740b9d8dd80912"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 58,
+          "annotation": {
+            "explanation": "Main line: e5, played in 78% of master games here. Eval +0.6."
+          }
+        },
+        "615ad0f929eef835": {
+          "id": "615ad0f929eef835",
+          "fen": "rnbqk2r/ppppppbp/5np1/8/2PP4/2N2N2/PP2PPPP/R1BQKB1R b KQkq - 3 4",
+          "san": "Nf3",
+          "uci": "g1f3",
+          "parentId": "579c1e6c37dbbe76",
+          "children": [
+            "c34d04eafeedb5d5"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.05320778686993237,
+          "evalCp": 41
+        },
+        "61ec3a9727b8f00f": {
+          "id": "61ec3a9727b8f00f",
+          "fen": "r2q1rk1/ppp1ppbp/2np1np1/5b2/2PP4/2N1PNP1/PP3PBP/R1BQ1RK1 b - - 2 8",
+          "san": "O-O",
+          "uci": "e1g1",
+          "parentId": "df75734f1ca25cdf",
+          "children": [
+            "4d710aca09930090"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "6334d176a805d9c3": {
+          "id": "6334d176a805d9c3",
+          "fen": "r1bq1rk1/ppp2pbp/5np1/4p3/1nP1P3/2N1BN1P/PP2QPP1/R3KB1R b KQ - 5 10",
+          "san": "Qe2",
+          "uci": "d3e2",
+          "parentId": "2ea1a903cd719ceb",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "64879bd6edfda982": {
+          "id": "64879bd6edfda982",
+          "fen": "rn1q1rk1/ppp1ppbp/3p1np1/8/2PPP3/2N2B2/PP3PPP/R1BQK2R b KQ - 0 8",
+          "san": "Bxf3",
+          "uci": "e2f3",
+          "parentId": "4af6813d18e75fd2",
+          "children": [
+            "d84ade1b87b162bf"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "64b7c1012416657a": {
+          "id": "64b7c1012416657a",
+          "fen": "rn1q1rk1/ppp1ppbp/3p1np1/8/2PPP1b1/2N2N2/PP2BPPP/R1BQK2R b KQ - 5 7",
+          "san": "Be2",
+          "uci": "d3e2",
+          "parentId": "65085f26f2fd21f4",
+          "children": [
+            "0ad52f3a86557f27"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "64d867a114aef381": {
+          "id": "64d867a114aef381",
+          "fen": "rnbq1rk1/pp2ppbp/3p1np1/2pP4/2P1P3/2N1BP2/PP4PP/R2QKBNR b KQ - 0 7",
+          "san": "d5",
+          "uci": "d4d5",
+          "parentId": "3b125f7b1557bcda",
+          "children": [
+            "7f7aa4728e3e59f8"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.11452420701168614,
+          "evalCp": 24
+        },
+        "64e257a114b72cd6": {
+          "id": "64e257a114b72cd6",
+          "fen": "rnbq1rk1/pp2ppbp/3p1np1/2P5/2P1P3/2N1BP2/PP4PP/R2QKBNR b KQ - 0 7",
+          "san": "dxc5",
+          "uci": "d4c5",
+          "parentId": "3b125f7b1557bcda",
+          "children": [
+            "705c83f7dd9eefd8"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.25041736227045075,
+          "evalCp": 42
+        },
+        "65085f26f2fd21f4": {
+          "id": "65085f26f2fd21f4",
+          "fen": "rn1q1rk1/ppp1ppbp/3p1np1/8/2PPP1b1/2NB1N2/PP3PPP/R1BQK2R w KQ - 4 7",
+          "san": "Bg4",
+          "uci": "c8g4",
+          "parentId": "4f7e121a831d5644",
+          "children": [
+            "64b7c1012416657a"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 38,
+          "annotation": {
+            "explanation": "Punishes Bd3: Bg4 wins the advantage (+0.4 → +0.4). Play continues Be2 Nfd7 Be3 Bxf3."
+          }
+        },
+        "6526cd4b6b8daff8": {
+          "id": "6526cd4b6b8daff8",
+          "fen": "rnbq1rk1/pppnppbp/3p2p1/8/2PPP3/2NB1P2/PP2N1PP/R1BQK2R b KQ - 4 7",
+          "san": "Nge2",
+          "uci": "g1e2",
+          "parentId": "adba2c48833b7925",
+          "children": [
+            "8c9c1b01f4c1d0de"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "65a44a998e44b53d": {
+          "id": "65a44a998e44b53d",
+          "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/2PPP3/2NB4/PP3PPP/R1BQK1NR b KQkq - 1 5",
+          "san": "Bd3",
+          "uci": "f1d3",
+          "parentId": "15906922fa6b70af",
+          "children": [
+            "d603c47c229c4bed"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.033810986915293745,
+          "evalCp": 32
+        },
+        "65a7cb998e47c647": {
+          "id": "65a7cb998e47c647",
+          "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/2PPP3/2N5/PP2BPPP/R1BQK1NR b KQkq - 1 5",
+          "san": "Be2",
+          "uci": "f1e2",
+          "parentId": "15906922fa6b70af",
+          "children": [
+            "dc3d882ec043509f"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.2262939026328336,
+          "evalCp": 55
+        },
+        "663bfd3cfb797486": {
+          "id": "663bfd3cfb797486",
+          "fen": "rnbq1rk1/pp1nppbp/3p2p1/2pPP3/2P2P1P/2N5/PP4P1/R1BQKBNR b KQ - 0 8",
+          "san": "d5",
+          "uci": "d4d5",
+          "parentId": "d1cb187e643d9643",
+          "children": [
+            "8068c6a439674fea"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "6790eafa9fff9e15": {
+          "id": "6790eafa9fff9e15",
+          "fen": "r1bq1rk1/ppp1ppbp/2np2p1/8/2PPP1n1/2NBB3/PP1QNPPP/R3K2R b KQ - 7 8",
+          "san": "Qd2",
+          "uci": "d1d2",
+          "parentId": "07af14acf6c27e8c",
+          "children": [
+            "fec0cee48a67ba00"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "6879b51ec18c9b3e": {
+          "id": "6879b51ec18c9b3e",
+          "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPPP2/2N4P/PP4P1/R1BQKBNR b KQ - 0 6",
+          "san": "h3",
+          "uci": "h2h3",
+          "parentId": "0b8c221658e5ca2b",
+          "children": [
+            "c56e4eed054d1f30"
+          ],
+          "mover": "opponent",
+          "moveKind": "opponent_mistake",
+          "weight": 0.04269620312298195,
+          "evalCp": -43,
+          "annotation": {
+            "explanation": "h3? is popular at club level (4% of games) but rare in master play and it concedes 1.0 pawns. Meet it with c5."
+          }
+        },
+        "68e95b01662861e7": {
+          "id": "68e95b01662861e7",
+          "fen": "r1bq1rk1/ppp1ppbp/2np1np1/8/2PPP3/2NB4/PP2NPPP/R1BQ1RK1 b - - 5 7",
+          "san": "O-O",
+          "uci": "e1g1",
+          "parentId": "18ae72839a37c0c7",
+          "children": [
+            "0d07ac93b7537c3f"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.9171094580233794,
+          "evalCp": 36
+        },
+        "6abbaeab5a2f4111": {
+          "id": "6abbaeab5a2f4111",
+          "fen": "rnbq1rk1/pp2ppbp/3p1np1/2p5/2PPP3/2N1BP2/PP2N1PP/R2QKB1R b KQ - 1 7",
+          "san": "Be3",
+          "uci": "c1e3",
+          "parentId": "03cd356b6cccb343",
+          "children": [
+            "6e90aaf480180b80"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.2512396694214876,
+          "evalCp": 42
+        },
+        "6ae02f87bb537fcf": {
+          "id": "6ae02f87bb537fcf",
+          "fen": "rnbq1rk1/pppn1pbp/3p2p1/8/2PNP3/2NBBP2/PP4PP/R2QK2R b KQ - 0 9",
+          "san": "Nxd4",
+          "uci": "e2d4",
+          "parentId": "3b73f35f4024e758",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "6b32f569c1bf3c9d": {
+          "id": "6b32f569c1bf3c9d",
+          "fen": "r1bq1rk1/ppp2pbp/2np1np1/8/2PNP3/2NBB2P/PP3PP1/R2QK2R b KQ - 2 9",
+          "san": "Bd3",
+          "uci": "f1d3",
+          "parentId": "9acb01bcdd64f78f",
+          "children": [
+            "ad7588b6fe4804aa"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "6c5c923f75d5001f": {
+          "id": "6c5c923f75d5001f",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/3Pp3/2P1P3/2N2N2/PP2BPPP/R1BQK2R b KQ - 0 7",
+          "san": "d5",
+          "uci": "d4d5",
+          "parentId": "dd087728734b4614",
+          "children": [
+            "a301f59d7ecc8f37"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.11321688706597836,
+          "evalCp": 50
+        },
+        "6c60163f75d81642": {
+          "id": "6c60163f75d81642",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/4P3/2P1P3/2N2N2/PP2BPPP/R1BQK2R b KQ - 0 7",
+          "san": "dxe5",
+          "uci": "d4e5",
+          "parentId": "dd087728734b4614",
+          "children": [
+            "37a2be069896b04e"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.05617235933338048,
+          "evalCp": 32
+        },
+        "6ca22bfb55aa24e9": {
+          "id": "6ca22bfb55aa24e9",
+          "fen": "r1bq1rk1/pppnppbp/2np2p1/8/2PPP3/P1NBB3/1P2NPPP/R2QK2R b KQ - 2 8",
+          "san": "Be3",
+          "uci": "c1e3",
+          "parentId": "11e847433de54dcb",
+          "children": [
+            "3c0192552b157d29"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "6d1a4df82fff8282": {
+          "id": "6d1a4df82fff8282",
+          "fen": "r1bq1rk1/pppnppbp/3p1np1/8/2PP1B2/2N2N1P/PP2PPP1/R2QKB1R w KQ - 1 7",
+          "san": "Nbd7",
+          "uci": "b8d7",
+          "parentId": "3fdee9532dee4d1f",
+          "children": [
+            "b862b7ec19cf3bbd",
+            "b862b0ec19cf2fd8"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 22,
+          "annotation": {
+            "explanation": "Main line: Nbd7, played in 32% of master games here. Eval +0.2."
+          }
+        },
+        "6d2d69e6c13839a7": {
+          "id": "6d2d69e6c13839a7",
+          "fen": "rnbq1rk1/1pp2pbp/3p1np1/p2Pp3/2P1P3/2N2N2/PP2BPPP/R1BQK2R w KQ - 0 8",
+          "san": "a5",
+          "uci": "a7a5",
+          "parentId": "9970879d8dd4f2ef",
+          "children": [],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 56,
+          "annotation": {
+            "explanation": "Main line: a5, played in 76% of master games here. Eval +0.6."
+          },
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 56
+          }
+        },
+        "6e5586e633731d8d": {
+          "id": "6e5586e633731d8d",
+          "fen": "rnbqk2r/ppp1ppbp/5np1/3p4/2PP1B2/2N1P3/PP3PPP/R2QKBNR b KQkq - 0 5",
+          "san": "e3",
+          "uci": "e2e3",
+          "parentId": "cac5e266580dce32",
+          "children": [
+            "9b558a6fa422ce1d"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "6e90aaf480180b80": {
+          "id": "6e90aaf480180b80",
+          "fen": "r1bq1rk1/pp2ppbp/2np1np1/2p5/2PPP3/2N1BP2/PP2N1PP/R2QKB1R w KQ - 2 8",
+          "san": "Nc6",
+          "uci": "b8c6",
+          "parentId": "6abbaeab5a2f4111",
+          "children": [],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 37,
+          "annotation": {
+            "explanation": "Main line: Nc6, played in 74% of master games here. Eval +0.4."
+          },
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 37
+          }
+        },
+        "6f63eaedb7b42eac": {
+          "id": "6f63eaedb7b42eac",
+          "fen": "r4rk1/pppqppbp/2np1np1/5b2/2PP4/2N1PNP1/PP2QPBP/R1B2RK1 b - - 4 9",
+          "san": "Qe2",
+          "uci": "d1e2",
+          "parentId": "4d710aca09930090",
+          "children": [
+            "233af719f19f0461"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "6f6a04b69250972b": {
+          "id": "6f6a04b69250972b",
+          "fen": "rnbq1rk1/pp2ppbp/3p1Pp1/6B1/2Pp4/2N4P/PP3PP1/R2QKBNR b KQ - 0 8",
+          "san": "exf6",
+          "uci": "e5f6",
+          "parentId": "a97a7711e6d146b3",
+          "children": [
+            "71b3a0bfc878d039"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "6fbb9b25716dcfb8": {
+          "id": "6fbb9b25716dcfb8",
+          "fen": "rnbq1rk1/ppp2pb1/3p2pp/4p3/2PPP1n1/2N2N2/PP1B1PPP/R2QKB1R w KQ - 0 9",
+          "san": "e5",
+          "uci": "e7e5",
+          "parentId": "3517af6c0b84cfc2",
+          "children": [
+            "3e7a2eba07029aeb"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "705c83f7dd9eefd8": {
+          "id": "705c83f7dd9eefd8",
+          "fen": "rnbq1rk1/pp2ppbp/5np1/2p5/2P1P3/2N1BP2/PP4PP/R2QKBNR w KQ - 0 8",
+          "san": "dxc5",
+          "uci": "d6c5",
+          "parentId": "64e257a114b72cd6",
+          "children": [],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 41,
+          "annotation": {
+            "explanation": "Main line: dxc5, played in 100% of master games here. Eval +0.4."
+          },
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 41
+          }
+        },
+        "7130a12427c6eaf1": {
+          "id": "7130a12427c6eaf1",
+          "fen": "rnb2rk1/pp2ppbp/3p1np1/q5B1/2PNP3/2N4P/PP1Q1PP1/R3KB1R b KQ - 0 9",
+          "san": "Nxd4",
+          "uci": "f3d4",
+          "parentId": "3949d7e9dea68a0a",
+          "children": [
+            "042bd6e2ac85dbfa"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "71b3a0bfc878d039": {
+          "id": "71b3a0bfc878d039",
+          "fen": "rnbq1rk1/pp3pbp/3p1pp1/6B1/2Pp4/2N4P/PP3PP1/R2QKBNR w KQ - 0 9",
+          "san": "exf6",
+          "uci": "e7f6",
+          "parentId": "6f6a04b69250972b",
+          "children": [
+            "4e57cf133c913665"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "73598e8ee4f4c665": {
+          "id": "73598e8ee4f4c665",
+          "fen": "rnbq1rk1/ppp2pbp/5np1/4p3/2P1P3/2N2N1P/PP3PP1/R1BQKB1R w KQ - 0 8",
+          "san": "dxe5",
+          "uci": "d6e5",
+          "parentId": "5720c5c2b775c063",
+          "children": [],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 20,
+          "annotation": {
+            "explanation": "Main line: dxe5, played in 100% of master games here. Eval +0.2."
+          },
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 20
+          }
+        },
+        "73eeed3c1eac4e6c": {
+          "id": "73eeed3c1eac4e6c",
+          "fen": "r1bq1rk1/1pp1ppbp/n2p1np1/p5B1/2PPP3/2N2N1P/PP2BPP1/R2QK2R b KQ - 3 8",
+          "san": "Nf3",
+          "uci": "g1f3",
+          "parentId": "c79685ab79924575",
+          "children": [
+            "770661c3590cca3a"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "744af1e4e4c6abb2": {
+          "id": "744af1e4e4c6abb2",
+          "fen": "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2",
+          "san": "Nf6",
+          "uci": "g8f6",
+          "parentId": "1a3da56815556813",
+          "children": [
+            "7d9c3460d66ffbe8"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 27
+        },
+        "7577bfab14c24137": {
+          "id": "7577bfab14c24137",
+          "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2N2P2/PP2N1PP/R1BQKB1R b KQ - 2 6",
+          "san": "Nge2",
+          "uci": "g1e2",
+          "parentId": "3ded66b8cabc4604",
+          "children": [
+            "03cd356b6cccb343"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.14747628609014748,
+          "evalCp": 38
+        },
+        "75bf181c4bd5083e": {
+          "id": "75bf181c4bd5083e",
+          "fen": "rnbq1rk1/pp2ppbp/3p2p1/8/2PNPPn1/2N5/PP4PP/R2QKBBR b KQ - 0 9",
+          "san": "Nxd4",
+          "uci": "f3d4",
+          "parentId": "488bedc174f939b7",
+          "children": [
+            "abe17e00ae02108c"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "76535ea891d46c11": {
+          "id": "76535ea891d46c11",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/4p3/2PPP3/2N1BN1P/PP3PP1/R2QKB1R b KQ - 1 7",
+          "san": "Be3",
+          "uci": "c1e3",
+          "parentId": "d53450f96c7d4c43",
+          "children": [
+            "80c7aa0c4c9ad8c5"
+          ],
+          "mover": "opponent",
+          "moveKind": "opponent_mistake",
+          "weight": 0.10021583190503396,
+          "evalCp": 9,
+          "annotation": {
+            "explanation": "Be3? is popular at club level (10% of games) but rare in master play. Meet it with exd4."
+          }
+        },
+        "770661c3590cca3a": {
+          "id": "770661c3590cca3a",
+          "fen": "r1bq1rk1/1pp2pbp/n2p1np1/p3p1B1/2PPP3/2N2N1P/PP2BPP1/R2QK2R w KQ - 0 9",
+          "san": "e5",
+          "uci": "e7e5",
+          "parentId": "73eeed3c1eac4e6c",
+          "children": [
+            "7e5a8b383946f4e1"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "786a1f5d57b5b71a": {
+          "id": "786a1f5d57b5b71a",
+          "fen": "rnbq1rk1/pp2ppbp/3p1np1/2pP2B1/2P5/2N2N2/PP1QPPPP/R3KB1R b KQ - 0 7",
+          "san": "d5",
+          "uci": "d4d5",
+          "parentId": "96963dd7d6a69e1f",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.4280310880829016,
+          "evalCp": 36,
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 36
+          }
+        },
+        "787b1f5d57c42a4d": {
+          "id": "787b1f5d57c42a4d",
+          "fen": "rnbq1rk1/pp2ppbp/3p1np1/2P3B1/2P5/2N2N2/PP1QPPPP/R3KB1R b KQ - 0 7",
+          "san": "dxc5",
+          "uci": "d4c5",
+          "parentId": "96963dd7d6a69e1f",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.03316062176165803,
+          "evalCp": -37,
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": -37
+          }
+        },
+        "7d9c3460d66ffbe8": {
+          "id": "7d9c3460d66ffbe8",
+          "fen": "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2",
+          "san": "c4",
+          "uci": "c2c4",
+          "parentId": "744af1e4e4c6abb2",
+          "children": [
+            "97c5e1bd18d63007"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 1,
+          "evalCp": 22
+        },
+        "7e5a8b383946f4e1": {
+          "id": "7e5a8b383946f4e1",
+          "fen": "r1bq1rk1/1pp2pbp/n2p1np1/p2Pp1B1/2P1P3/2N2N1P/PP2BPP1/R2QK2R b KQ - 0 9",
+          "san": "d5",
+          "uci": "d4d5",
+          "parentId": "770661c3590cca3a",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "7f7aa4728e3e59f8": {
+          "id": "7f7aa4728e3e59f8",
+          "fen": "rnbq1rk1/pp3pbp/3ppnp1/2pP4/2P1P3/2N1BP2/PP4PP/R2QKBNR w KQ - 0 8",
+          "san": "e6",
+          "uci": "e7e6",
+          "parentId": "64d867a114aef381",
+          "children": [],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 25,
+          "annotation": {
+            "explanation": "Main line: e6, played in 88% of master games here. Eval +0.3."
+          },
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 25
+          }
+        },
+        "8024c1e7271ab602": {
+          "id": "8024c1e7271ab602",
+          "fen": "r1bq1rk1/ppp1pp1p/n2p1bp1/8/2PP3P/2N1PN2/PP3PP1/R2QKB1R b KQ - 0 8",
+          "san": "h4",
+          "uci": "h2h4",
+          "parentId": "f114a86fdee91880",
+          "children": [
+            "a585f131620fa678"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "8068c6a439674fea": {
+          "id": "8068c6a439674fea",
+          "fen": "rnbq1rk1/pp1nppbp/6p1/2pPp3/2P2P1P/2N5/PP4P1/R1BQKBNR w KQ - 0 9",
+          "san": "dxe5",
+          "uci": "d6e5",
+          "parentId": "663bfd3cfb797486",
+          "children": [
+            "d7dc490a147ecff1"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "809bc0be2e4c0463": {
+          "id": "809bc0be2e4c0463",
+          "fen": "r1bq1rk1/ppp2pbp/3p1np1/4n3/2P1PB2/2N2N1P/PP3PP1/R2QKB1R w KQ - 0 9",
+          "san": "Nxe5",
+          "uci": "d7e5",
+          "parentId": "48e957fb7ff49e78",
+          "children": [
+            "03bf4767977b4fa8"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "80c7aa0c4c9ad8c5": {
+          "id": "80c7aa0c4c9ad8c5",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/8/2PpP3/2N1BN1P/PP3PP1/R2QKB1R w KQ - 0 8",
+          "san": "exd4",
+          "uci": "e5d4",
+          "parentId": "76535ea891d46c11",
+          "children": [
+            "a9b6dcab0afe5de0"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 10,
+          "annotation": {
+            "explanation": "Punishes Be3: exd4 wins the advantage (+0.1 → +0.1). Play continues Nxd4 Nc6 Bd3 d5."
+          }
+        },
+        "81656429a132b0cd": {
+          "id": "81656429a132b0cd",
+          "fen": "r1bq1rk1/ppp2pbp/2np1np1/4p3/2PPP3/2N2N2/PP2BPPP/R1BQ1RK1 w - - 2 8",
+          "san": "Nc6",
+          "uci": "b8c6",
+          "parentId": "f633cb48507fab5e",
+          "children": [],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 60,
+          "annotation": {
+            "explanation": "Main line: Nc6, played in 69% of master games here. Eval +0.6."
+          },
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 60
+          }
+        },
+        "823440999f2d372b": {
+          "id": "823440999f2d372b",
+          "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/2PPPP2/2N5/PP4PP/R1BQKBNR b KQkq - 0 5",
+          "san": "f4",
+          "uci": "f2f4",
+          "parentId": "15906922fa6b70af",
+          "children": [
+            "0b8c221658e5ca2b"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.051981247020183294,
+          "evalCp": 50
+        },
+        "823445999f2d3faa": {
+          "id": "823445999f2d3faa",
+          "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/2PPP3/2N2P2/PP4PP/R1BQKBNR b KQkq - 0 5",
+          "san": "f3",
+          "uci": "f2f3",
+          "parentId": "15906922fa6b70af",
+          "children": [
+            "3ded66b8cabc4604"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.18945012449012025,
+          "evalCp": 54
+        },
+        "8330f56a2ad0922b": {
+          "id": "8330f56a2ad0922b",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/4p3/2PPP3/2N2N1P/PP3PP1/R1BQKB1R w KQ - 0 7",
+          "san": "e5",
+          "uci": "e7e5",
+          "parentId": "95f2fea5cef5c98b",
+          "children": [
+            "25e65a6f195c3efe",
+            "25e3566f195a025b",
+            "87302f56cce1e9c9"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 58,
+          "annotation": {
+            "explanation": "Main line: e5, played in 67% of master games here. Eval +0.6."
+          }
+        },
+        "83ddcfeec3ff3801": {
+          "id": "83ddcfeec3ff3801",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/8/2PpP3/2N1BN1P/PP3PP1/R2QKB1R w KQ - 0 8",
+          "san": "exd4",
+          "uci": "e5d4",
+          "parentId": "2ef9f57d73e7e195",
+          "children": [
+            "84744f43c5c9e00c"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 9,
+          "annotation": {
+            "explanation": "Punishes Nf3: exd4 wins the advantage (+0.1 → +0.1). Play continues Nxd4 Nc6 Bd3 d5."
+          }
+        },
+        "83e7c4ec83d213e7": {
+          "id": "83e7c4ec83d213e7",
+          "fen": "rnbq1rk1/pp3pbp/3p2p1/2pPP2n/2P1P3/2N2N1P/PP4P1/R1BQKB1R b KQ - 2 9",
+          "san": "Nf3",
+          "uci": "g1f3",
+          "parentId": "c80334550d115960",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "84664a8ec74df198": {
+          "id": "84664a8ec74df198",
+          "fen": "rnbq1rk1/ppppppbp/5np1/8/2PP4/2N2NP1/PP2PP1P/R1BQKB1R b KQ - 0 5",
+          "san": "g3",
+          "uci": "g2g3",
+          "parentId": "c34d04eafeedb5d5",
+          "children": [
+            "ee9dfc2d94d810f3"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.14109021357985335,
+          "evalCp": 3
+        },
+        "84744f43c5c9e00c": {
+          "id": "84744f43c5c9e00c",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/8/2PNP3/2N1B2P/PP3PP1/R2QKB1R b KQ - 0 8",
+          "san": "Nxd4",
+          "uci": "f3d4",
+          "parentId": "83ddcfeec3ff3801",
+          "children": [
+            "e22b411b188c4263"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "861bd46c67aca7d3": {
+          "id": "861bd46c67aca7d3",
+          "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2N2N1P/PP3PP1/R1BQKB1R b KQ - 2 6",
+          "san": "Nf3",
+          "uci": "g1f3",
+          "parentId": "2a8e8079f6884544",
+          "children": [
+            "d53450f96c7d4c43"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.15581717451523547,
+          "evalCp": 55
+        },
+        "87302f56cce1e9c9": {
+          "id": "87302f56cce1e9c9",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/4p3/2PPP3/2N1BN1P/PP3PP1/R2QKB1R b KQ - 1 7",
+          "san": "Be3",
+          "uci": "c1e3",
+          "parentId": "8330f56a2ad0922b",
+          "children": [
+            "bd7357886c3921ad"
+          ],
+          "mover": "opponent",
+          "moveKind": "opponent_mistake",
+          "weight": 0.10021583190503396,
+          "evalCp": 13,
+          "annotation": {
+            "explanation": "Be3? is popular at club level (10% of games) but rare in master play. Meet it with exd4."
+          }
+        },
+        "87bc1f1fb3196d44": {
+          "id": "87bc1f1fb3196d44",
+          "fen": "rnbq1rk1/1pp2pbp/3p1np1/p2Pp3/2P1P3/2N2N1P/PP3PP1/R1BQKB1R w KQ - 0 8",
+          "san": "a5",
+          "uci": "a7a5",
+          "parentId": "25e65a6f195c3efe",
+          "children": [],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 59,
+          "annotation": {
+            "explanation": "Main line: a5, played in 42% of master games here. Eval +0.6."
+          },
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 59
+          }
+        },
+        "882dc4306376b4a4": {
+          "id": "882dc4306376b4a4",
+          "fen": "rnbq1rk1/pp1nppbp/3p2p1/2p1P3/2PP1P2/2N2N2/PP4PP/R1BQKB1R w KQ - 1 8",
+          "san": "Nfd7",
+          "uci": "f6d7",
+          "parentId": "08130541874b44c7",
+          "children": [
+            "41af4126cf455fcf"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": -18,
+          "annotation": {
+            "explanation": "Punishes e5: Nfd7 wins the advantage (-0.2 → -0.2). Play continues d5 dxe5 Be2 e6."
+          }
+        },
+        "8c27957d23eefc14": {
+          "id": "8c27957d23eefc14",
+          "fen": "rnbq1rk1/pp1n1pbp/4p1p1/2pPp3/2P2P2/2N2N2/PP2B1PP/R1BQK2R w KQ - 0 10",
+          "san": "e6",
+          "uci": "e7e6",
+          "parentId": "982c6e3f41ee7eb5",
+          "children": [
+            "216be58f932b0d5e"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "8c9c1b01f4c1d0de": {
+          "id": "8c9c1b01f4c1d0de",
+          "fen": "rnbq1rk1/pppn1pbp/3p2p1/4p3/2PPP3/2NB1P2/PP2N1PP/R1BQK2R w KQ - 0 8",
+          "san": "e5",
+          "uci": "e7e5",
+          "parentId": "6526cd4b6b8daff8",
+          "children": [
+            "25e93ab9b30328b6"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "8dc60ebb9ace4b06": {
+          "id": "8dc60ebb9ace4b06",
+          "fen": "r1bq1rk1/ppp2pbp/2np2p1/4P3/2P1P3/2NBQ3/PP2NPPP/R3K2R b KQ - 0 10",
+          "san": "dxe5",
+          "uci": "d4e5",
+          "parentId": "5e191e61b95de1c0",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "8e2ba6d34e4b0306": {
+          "id": "8e2ba6d34e4b0306",
+          "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2N2N2/PP2BPPP/R1BQK2R b KQ - 1 6",
+          "san": "Be2",
+          "uci": "f1e2",
+          "parentId": "c6bd78797e925bec",
+          "children": [
+            "61240156e4e7e444"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.8483760464562458,
+          "evalCp": 50
+        },
+        "8e2f27d34e4e1410": {
+          "id": "8e2f27d34e4e1410",
+          "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2NB1N2/PP3PPP/R1BQK2R b KQ - 1 6",
+          "san": "Bd3",
+          "uci": "f1d3",
+          "parentId": "c6bd78797e925bec",
+          "children": [
+            "15fe603028c54da8"
+          ],
+          "mover": "opponent",
+          "moveKind": "opponent_mistake",
+          "weight": 0.2388217296083191,
+          "evalCp": 38,
+          "annotation": {
+            "explanation": "Bd3? is popular at club level (24% of games) but rare in master play. Meet it with Bg4."
+          }
+        },
+        "9027afa12d36b82b": {
+          "id": "9027afa12d36b82b",
+          "fen": "rnbq1rk1/pp2ppbp/3p1np1/2p5/2PPP3/2N1BP2/PP1Q2PP/R3KBNR b KQ - 1 7",
+          "san": "Qd2",
+          "uci": "d1d2",
+          "parentId": "3b125f7b1557bcda",
+          "children": [
+            "afee36aeabe03429"
+          ],
+          "mover": "opponent",
+          "moveKind": "opponent_mistake",
+          "weight": 0.05310903211473427,
+          "evalCp": 9,
+          "annotation": {
+            "explanation": "Qd2? is popular at club level (5% of games) but rare in master play. Meet it with cxd4."
+          }
+        },
+        "90692ea499a98cb4": {
+          "id": "90692ea499a98cb4",
+          "fen": "rnbq1rk1/pp2ppbp/5np1/2p3B1/2P1P3/2N2P2/PP4PP/R2QKBNR w KQ - 0 8",
+          "san": "dxc5",
+          "uci": "d6c5",
+          "parentId": "f20744502f5f0ba2",
+          "children": [
+            "016f045d47a76ac7"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": -30,
+          "annotation": {
+            "explanation": "Punishes dxc5: dxc5 wins the advantage (-0.4 → -0.3). Play continues Nge2 Nc6 Qxd8 Rxd8."
+          }
+        },
+        "9112c8a92eaf0b58": {
+          "id": "9112c8a92eaf0b58",
+          "fen": "rnbq1rk1/1pp2pbp/3p1np1/p2Pp3/2P1P3/2N2N1P/PP3PP1/R1BQKB1R w KQ - 0 8",
+          "san": "a5",
+          "uci": "a7a5",
+          "parentId": "f8b9978c2604236a",
+          "children": [],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 57,
+          "annotation": {
+            "explanation": "Main line: a5, played in 42% of master games here. Eval +0.6."
+          },
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 57
+          }
+        },
+        "9188a73772d27c89": {
+          "id": "9188a73772d27c89",
+          "fen": "rnbq1rk1/pp2ppbp/3p2p1/2p5/2PPP1n1/2NBBP2/PP4PP/R2QK1NR w KQ - 2 8",
+          "san": "Ng4",
+          "uci": "f6g4",
+          "parentId": "25eeca8f46e2b2aa",
+          "children": [
+            "5acf6aa53dfdcbff"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": -187,
+          "annotation": {
+            "explanation": "Punishes Bd3: Ng4 wins the advantage (-1.8 → -1.9). Play continues fxg4 cxd4 Bxd4 Bxd4."
+          }
+        },
+        "93d6d5f1677a8a5b": {
+          "id": "93d6d5f1677a8a5b",
+          "fen": "rnbq1rk1/pp2ppb1/3p1npp/2pP2B1/2P1P3/2N5/PP2BPPP/R2QK1NR w KQ - 0 8",
+          "san": "h6",
+          "uci": "h7h6",
+          "parentId": "b3a20abae31f3c80",
+          "children": [],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 57,
+          "annotation": {
+            "explanation": "Main line: h6, played in 45% of master games here. Eval +0.6."
+          },
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 57
+          }
+        },
+        "94ceb59551891b99": {
+          "id": "94ceb59551891b99",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/8/2PpP3/2N1BN1P/PP3PP1/R2QKB1R w KQ - 0 8",
+          "san": "exd4",
+          "uci": "e5d4",
+          "parentId": "006d4cb5c7dea0dd",
+          "children": [
+            "278dd1b9b7f2ef34"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 13,
+          "annotation": {
+            "explanation": "Punishes Be3: exd4 wins the advantage (+0.1 → +0.1). Play continues Nxd4 Nc6 Bd3 d5."
+          }
+        },
+        "95124a9a39ebce1e": {
+          "id": "95124a9a39ebce1e",
+          "fen": "rnbq1rk1/pp3pbp/3ppnp1/2pP4/2P1PP2/2N4P/PP4P1/R1BQKBNR w KQ - 0 8",
+          "san": "e6",
+          "uci": "e7e6",
+          "parentId": "db1639800230594b",
+          "children": [
+            "e5697b49f4226a54"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "95f2fea5cef5c98b": {
+          "id": "95f2fea5cef5c98b",
+          "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2N2N1P/PP3PP1/R1BQKB1R b KQ - 0 6",
+          "san": "h3",
+          "uci": "h2h3",
+          "parentId": "f8fbd31e14a1a658",
+          "children": [
+            "8330f56a2ad0922b"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.13090549378079833,
+          "evalCp": 50
+        },
+        "96963dd7d6a69e1f": {
+          "id": "96963dd7d6a69e1f",
+          "fen": "rnbq1rk1/pp2ppbp/3p1np1/2p3B1/2PP4/2N2N2/PP1QPPPP/R3KB1R w KQ - 0 7",
+          "san": "c5",
+          "uci": "c7c5",
+          "parentId": "453b4f290e95866b",
+          "children": [
+            "786a1f5d57b5b71a",
+            "f3a6f5662ae01ef7",
+            "b1f041545ab29ad6",
+            "787b1f5d57c42a4d",
+            "b1f044545ab29fef"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 41,
+          "annotation": {
+            "explanation": "Engine recommendation: c5."
+          }
+        },
+        "97bafdc700d0cc16": {
+          "id": "97bafdc700d0cc16",
+          "fen": "rnb2rk1/pp2ppbp/3p1np1/q1P5/2P1PP2/2N2N2/PP4PP/R1BQKB1R w KQ - 1 8",
+          "san": "Qa5",
+          "uci": "d8a5",
+          "parentId": "5303ff38942c84c0",
+          "children": [],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 38,
+          "annotation": {
+            "explanation": "Main line: Qa5, played in 86% of master games here. Eval +0.4."
+          },
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 38
+          }
+        },
+        "97c5e1bd18d63007": {
+          "id": "97c5e1bd18d63007",
+          "fen": "rnbqkb1r/pppppp1p/5np1/8/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3",
+          "san": "g6",
+          "uci": "g7g6",
+          "parentId": "7d9c3460d66ffbe8",
+          "children": [
+            "06e06271ff37999a"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 41
+        },
+        "98001be6db7c5071": {
+          "id": "98001be6db7c5071",
+          "fen": "r1bq1rk1/pppn1pb1/3p1npp/4p1B1/2PP4/2NBPN2/PP3PPP/R2QK2R w KQ - 0 9",
+          "san": "h6",
+          "uci": "h7h6",
+          "parentId": "362b2b42951579a2",
+          "children": [
+            "ee3fa01aa9951947"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "982c6e3f41ee7eb5": {
+          "id": "982c6e3f41ee7eb5",
+          "fen": "rnbq1rk1/pp1nppbp/6p1/2pPp3/2P2P2/2N2N2/PP2B1PP/R1BQK2R b KQ - 1 9",
+          "san": "Be2",
+          "uci": "f1e2",
+          "parentId": "0c7d0c4a81ca3279",
+          "children": [
+            "8c27957d23eefc14"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "9970879d8dd4f2ef": {
+          "id": "9970879d8dd4f2ef",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/3Pp3/2P1P3/2N2N2/PP2BPPP/R1BQK2R b KQ - 0 7",
+          "san": "d5",
+          "uci": "d4d5",
+          "parentId": "61240156e4e7e444",
+          "children": [
+            "6d2d69e6c13839a7"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.11321688706597836,
+          "evalCp": 48
+        },
+        "99740b9d8dd80912": {
+          "id": "99740b9d8dd80912",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/4P3/2P1P3/2N2N2/PP2BPPP/R1BQK2R b KQ - 0 7",
+          "san": "dxe5",
+          "uci": "d4e5",
+          "parentId": "61240156e4e7e444",
+          "children": [
+            "2da3f8c411d372be"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.05617235933338048,
+          "evalCp": 30
+        },
+        "9984e875cd6edb70": {
+          "id": "9984e875cd6edb70",
+          "fen": "r1bq1rk1/ppp2pbp/2n2np1/4p3/2P1P3/2NQBN1P/PP3PP1/R3KB1R b KQ - 3 9",
+          "san": "Qd3",
+          "uci": "d1d3",
+          "parentId": "d1caeec0b5bc0942",
+          "children": [
+            "2ea1a903cd719ceb"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "9a0953570943c412": {
+          "id": "9a0953570943c412",
+          "fen": "r1bq1rk1/pp2ppbp/2np1np1/8/2PBP3/2N2P2/PP1Q2PP/R3KBNR w KQ - 1 9",
+          "san": "Nc6",
+          "uci": "b8c6",
+          "parentId": "ecc21cd7a87ecefb",
+          "children": [
+            "dd212d27275c7c3e"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "9a3f05fcf168adbc": {
+          "id": "9a3f05fcf168adbc",
+          "fen": "rnbq1rk1/ppp1ppbp/3p1np1/6B1/2PPP3/2N2N2/PP3PPP/R2QKB1R b KQ - 1 6",
+          "san": "Bg5",
+          "uci": "c1g5",
+          "parentId": "c6bd78797e925bec",
+          "children": [
+            "2d7f12d388ed028f"
+          ],
+          "mover": "opponent",
+          "moveKind": "opponent_mistake",
+          "weight": 0.08265322299676375,
+          "evalCp": 41,
+          "annotation": {
+            "explanation": "Bg5? is popular at club level (8% of games) but rare in master play. Meet it with h6."
+          }
+        },
+        "9a9d015569d6f1da": {
+          "id": "9a9d015569d6f1da",
+          "fen": "rnbq1rk1/pp3pbp/3ppnp1/2pP4/2P1PP2/2N2N2/PP4PP/R1BQKB1R w KQ - 0 8",
+          "san": "e6",
+          "uci": "e7e6",
+          "parentId": "52ec7f389418cc5f",
+          "children": [],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 30,
+          "annotation": {
+            "explanation": "Main line: e6, played in 81% of master games here. Eval +0.3."
+          },
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 30
+          }
+        },
+        "9acb01bcdd64f78f": {
+          "id": "9acb01bcdd64f78f",
+          "fen": "r1bq1rk1/ppp2pbp/2np1np1/8/2PNP3/2N1B2P/PP3PP1/R2QKB1R w KQ - 1 9",
+          "san": "Nc6",
+          "uci": "b8c6",
+          "parentId": "3eff27a5e24c3af8",
+          "children": [
+            "6b32f569c1bf3c9d"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "9b558a6fa422ce1d": {
+          "id": "9b558a6fa422ce1d",
+          "fen": "rnbq1rk1/ppp1ppbp/5np1/3p4/2PP1B2/2N1P3/PP3PPP/R2QKBNR w KQ - 1 6",
+          "san": "O-O",
+          "uci": "e8g8",
+          "parentId": "6e5586e633731d8d",
+          "children": [
+            "54df6c97da3ee90d"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "9baad46ddf5bf019": {
+          "id": "9baad46ddf5bf019",
+          "fen": "r1bq1rk1/ppp2pbp/2np1np1/8/2PNP3/2NBB2P/PP3PP1/R2QK2R b KQ - 2 9",
+          "san": "Bd3",
+          "uci": "f1d3",
+          "parentId": "e22b411b188c4263",
+          "children": [
+            "4f7d9715dc1add1e"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "9c0acbfbd5f6584b": {
+          "id": "9c0acbfbd5f6584b",
+          "fen": "rnbq1rk1/ppp2pbp/5np1/4p3/2P1P3/2N1BN1P/PP3PP1/R2QKB1R b KQ - 1 8",
+          "san": "Nf3",
+          "uci": "g1f3",
+          "parentId": "f4ecf2c4fe4e59ec",
+          "children": [
+            "d1caeec0b5bc0942"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "9c6af68670e0aa2d": {
+          "id": "9c6af68670e0aa2d",
+          "fen": "rnbq1rk1/ppp1ppb1/3p1npp/8/2PPP3/2N1BN2/PP3PPP/R2QKB1R b KQ - 1 7",
+          "san": "Be3",
+          "uci": "g5e3",
+          "parentId": "2d7f12d388ed028f",
+          "children": [
+            "5cefc128c582dbe4"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "9e021d6784df0b6a": {
+          "id": "9e021d6784df0b6a",
+          "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/2PPP3/2N4P/PP3PP1/R1BQKBNR b KQkq - 0 5",
+          "san": "h3",
+          "uci": "h2h3",
+          "parentId": "15906922fa6b70af",
+          "children": [
+            "2a8e8079f6884544"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.08332891879006198,
+          "evalCp": 50
+        },
+        "a107c5c26f327592": {
+          "id": "a107c5c26f327592",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/4p3/2PPP3/2N2N2/PP2BPPP/R1BQ1RK1 b - - 1 7",
+          "san": "O-O",
+          "uci": "e1g1",
+          "parentId": "dca7619788e365e0",
+          "children": [
+            "a717d2480ef94391"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.6837093086297528,
+          "evalCp": 60
+        },
+        "a2521d2025fa0f06": {
+          "id": "a2521d2025fa0f06",
+          "fen": "rnbq1rk1/ppp1ppbp/3p1Bp1/8/2PP4/2N2N2/PP2PPPP/R2QKB1R b KQ - 0 6",
+          "san": "Bxf6",
+          "uci": "g5f6",
+          "parentId": "d14fc7aaa4552d9a",
+          "children": [
+            "bf74232e939fc5b4"
+          ],
+          "mover": "opponent",
+          "moveKind": "opponent_mistake",
+          "weight": 0.03407990476105865,
+          "evalCp": -25,
+          "annotation": {
+            "explanation": "Bxf6? is popular at club level (3% of games) but rare in master play. Meet it with Bxf6."
+          }
+        },
+        "a2684458cfe43634": {
+          "id": "a2684458cfe43634",
+          "fen": "rnbq1rk1/pp3pbp/3p1np1/2pp4/2P1PP2/2N4P/PP2B1P1/R1BQK1NR w KQ - 0 9",
+          "san": "exd5",
+          "uci": "e6d5",
+          "parentId": "e5697b49f4226a54",
+          "children": [
+            "3dd3b54f297a0c4a"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "a301f59d7ecc8f37": {
+          "id": "a301f59d7ecc8f37",
+          "fen": "rnbq1rk1/1pp2pbp/3p1np1/p2Pp3/2P1P3/2N2N2/PP2BPPP/R1BQK2R w KQ - 0 8",
+          "san": "a5",
+          "uci": "a7a5",
+          "parentId": "6c5c923f75d5001f",
+          "children": [],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 57,
+          "annotation": {
+            "explanation": "Main line: a5, played in 76% of master games here. Eval +0.6."
+          },
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 57
+          }
+        },
+        "a3407d4a6bc89f3e": {
+          "id": "a3407d4a6bc89f3e",
+          "fen": "rnbq1rk1/pp2ppbp/3p1np1/2p5/2PPPP2/2N2N2/PP2B1PP/R1BQK2R b KQ - 1 7",
+          "san": "Be2",
+          "uci": "f1e2",
+          "parentId": "30062789879120d4",
+          "children": [
+            "d65d2fc5fab6653a"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.031315240083507306,
+          "evalCp": -14
+        },
+        "a479d2d69780e040": {
+          "id": "a479d2d69780e040",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/4p3/2PPP3/2N1BN2/PP2BPPP/R2QK2R b KQ - 1 7",
+          "san": "Be3",
+          "uci": "c1e3",
+          "parentId": "61240156e4e7e444",
+          "children": [
+            "39fa5f07fcbb2e1f"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.14506281969686255,
+          "evalCp": 50
+        },
+        "a585f131620fa678": {
+          "id": "a585f131620fa678",
+          "fen": "r1bq1rk1/ppp2p1p/n2p1bp1/4p3/2PP3P/2N1PN2/PP3PP1/R2QKB1R w KQ - 0 9",
+          "san": "e5",
+          "uci": "e7e5",
+          "parentId": "8024c1e7271ab602",
+          "children": [
+            "bf82ae0e1a82068b"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "a5d239841881ed79": {
+          "id": "a5d239841881ed79",
+          "fen": "rnbq1rk1/pp2ppbp/5np1/2pp4/2PP1B2/2N1P3/PP3PPP/2RQKBNR w K - 0 7",
+          "san": "c5",
+          "uci": "c7c5",
+          "parentId": "54df6c97da3ee90d",
+          "children": [
+            "f78224fdb7bf5827"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "a717d2480ef94391": {
+          "id": "a717d2480ef94391",
+          "fen": "r1bq1rk1/ppp2pbp/2np1np1/4p3/2PPP3/2N2N2/PP2BPPP/R1BQ1RK1 w - - 2 8",
+          "san": "Nc6",
+          "uci": "b8c6",
+          "parentId": "a107c5c26f327592",
+          "children": [],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 61,
+          "annotation": {
+            "explanation": "Main line: Nc6, played in 69% of master games here. Eval +0.6."
+          },
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 61
+          }
+        },
+        "a72c1c7b67dbe876": {
+          "id": "a72c1c7b67dbe876",
+          "fen": "rnbq1rk1/pp2ppbp/3p1np1/2p3B1/2PPP3/2N2P2/PP4PP/R2QKBNR w KQ - 0 7",
+          "san": "c5",
+          "uci": "c7c5",
+          "parentId": "f47490cc6ccf1ec4",
+          "children": [
+            "f21844502f6d7ed5",
+            "f20744502f5f0ba2"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 37,
+          "annotation": {
+            "explanation": "Main line: c5, played in 53% of master games here. Eval +0.4."
+          }
+        },
+        "a812ec938774f3cf": {
+          "id": "a812ec938774f3cf",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/4p3/2PPP3/2N2N1P/PP3PP1/R1BQKB1R w KQ - 0 7",
+          "san": "e5",
+          "uci": "e7e5",
+          "parentId": "d43f4526af4717d7",
+          "children": [
+            "f8b9978c2604236a",
+            "f8b6138c26010d47",
+            "006d4cb5c7dea0dd"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 46,
+          "annotation": {
+            "explanation": "Main line: e5, played in 67% of master games here. Eval +0.5."
+          }
+        },
+        "a8d3eadd95d92fe0": {
+          "id": "a8d3eadd95d92fe0",
+          "fen": "r1bq1rk1/ppp1ppbp/2np1np1/8/2PP4/2N2NP1/PP2PPBP/R1BQK2R w KQ - 2 7",
+          "san": "Nc6",
+          "uci": "b8c6",
+          "parentId": "5a681c16e14456f1",
+          "children": [
+            "f67b04b28de39392",
+            "28318ba98cb1e603",
+            "ef6956b28a560b06",
+            "ef6959b28a56101f"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 69,
+          "annotation": {
+            "explanation": "Main line: Nc6, played in 41% of master games here. Eval +0.7."
+          }
+        },
+        "a8f334ad9d9b9296": {
+          "id": "a8f334ad9d9b9296",
+          "fen": "r1bq1rk1/ppp2pbp/5np1/4p3/2P1P3/2N1B2P/PP3PP1/R2QKB1R b KQ - 1 10",
+          "san": "Be3",
+          "uci": "f4e3",
+          "parentId": "b029e93c4d264444",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "a97a7711e6d146b3": {
+          "id": "a97a7711e6d146b3",
+          "fen": "rnbq1rk1/pp2ppbp/3p1np1/4P1B1/2Pp4/2N4P/PP3PP1/R2QKBNR w KQ - 0 8",
+          "san": "cxd4",
+          "uci": "c5d4",
+          "parentId": "3228b5f074c469a5",
+          "children": [
+            "6f6a04b69250972b"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": -191,
+          "annotation": {
+            "explanation": "Punishes e5: cxd4 wins the advantage (-1.8 → -1.9). Play continues exf6 exf6 Bd2 dxc3."
+          }
+        },
+        "a99dcb13308b0fbe": {
+          "id": "a99dcb13308b0fbe",
+          "fen": "r1bq1rk1/pppn1pbp/3p1np1/4p3/2PPPB2/2N2N1P/PP3PP1/R2QKB1R w KQ - 0 8",
+          "san": "e5",
+          "uci": "e7e5",
+          "parentId": "b862b0ec19cf2fd8",
+          "children": [
+            "48e957fb7ff49e78"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 20,
+          "annotation": {
+            "explanation": "Punishes e4: e5 wins the advantage (+0.2 → +0.2). Play continues dxe5 Nxe5 Nxe5 dxe5."
+          }
+        },
+        "a9ad859a19df438b": {
+          "id": "a9ad859a19df438b",
+          "fen": "rnbq1rk1/ppp1ppb1/3p1npp/6B1/2PPP3/2N2N2/PP3PPP/R2QKB1R w KQ - 0 7",
+          "san": "h6",
+          "uci": "h7h6",
+          "parentId": "1eb747ff9fb57f90",
+          "children": [
+            "121d1f97da382c19"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 28,
+          "annotation": {
+            "explanation": "Punishes Bg5: h6 wins the advantage (+0.3 → +0.3). Play continues Be3 e5 d5 Ng4."
+          }
+        },
+        "a9b6dcab0afe5de0": {
+          "id": "a9b6dcab0afe5de0",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/8/2PNP3/2N1B2P/PP3PP1/R2QKB1R b KQ - 0 8",
+          "san": "Nxd4",
+          "uci": "f3d4",
+          "parentId": "80c7aa0c4c9ad8c5",
+          "children": [
+            "308f0d7f3af5c877"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "ab2dedbf63e81cfa": {
+          "id": "ab2dedbf63e81cfa",
+          "fen": "rnbq1rk1/ppp1ppbp/5np1/3p4/2PP4/2N1PN2/PP3PPP/R1BQKB1R w KQ - 2 6",
+          "san": "O-O",
+          "uci": "e8g8",
+          "parentId": "605898e47dadfa80",
+          "children": [
+            "e8ba248b125f90a8"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "abe17e00ae02108c": {
+          "id": "abe17e00ae02108c",
+          "fen": "rnbq1rk1/pp3pbp/3p2p1/4p3/2PNPPn1/2N5/PP4PP/R2QKBBR w KQ - 0 10",
+          "san": "e5",
+          "uci": "e7e5",
+          "parentId": "75bf181c4bd5083e",
+          "children": [
+            "11cd0334abd876f4"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "ac8e0f132174629f": {
+          "id": "ac8e0f132174629f",
+          "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2NBB3/PP3PPP/R2QK1NR b KQ - 3 6",
+          "san": "Be3",
+          "uci": "c1e3",
+          "parentId": "d603c47c229c4bed",
+          "children": [
+            "cbbc6ec7f18e3676"
+          ],
+          "mover": "opponent",
+          "moveKind": "opponent_mistake",
+          "weight": 0.09881604282456403,
+          "evalCp": -81,
+          "annotation": {
+            "explanation": "Be3? is popular at club level (10% of games) but rare in master play and it concedes 1.2 pawns. Meet it with Ng4."
+          }
+        },
+        "ad7588b6fe4804aa": {
+          "id": "ad7588b6fe4804aa",
+          "fen": "r1bq1rk1/ppp2pbp/2n2np1/3p4/2PNP3/2NBB2P/PP3PP1/R2QK2R w KQ - 0 10",
+          "san": "d5",
+          "uci": "d6d5",
+          "parentId": "6b32f569c1bf3c9d",
+          "children": [
+            "241e12e95d8800cc"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "adba2c48833b7925": {
+          "id": "adba2c48833b7925",
+          "fen": "rnbq1rk1/pppnppbp/3p2p1/8/2PPP3/2NB1P2/PP4PP/R1BQK1NR w KQ - 3 7",
+          "san": "Nfd7",
+          "uci": "f6d7",
+          "parentId": "e5d7b2a2c7894cd8",
+          "children": [
+            "6526cd4b6b8daff8"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 34,
+          "annotation": {
+            "explanation": "Punishes Bd3: Nfd7 wins the advantage (+0.3 → +0.3). Play continues Nge2 e5 Be3 exd4."
+          }
+        },
+        "ae77f461c8923c0d": {
+          "id": "ae77f461c8923c0d",
+          "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2N1B3/PP2BPPP/R2QK1NR b KQ - 3 6",
+          "san": "Be3",
+          "uci": "c1e3",
+          "parentId": "dc3d882ec043509f",
+          "children": [
+            "25532277dc3da675"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.1484232175502742,
+          "evalCp": 41
+        },
+        "ae7e6261c89762a5": {
+          "id": "ae7e6261c89762a5",
+          "fen": "rnbq1rk1/ppp1ppbp/3p1np1/6B1/2PPP3/2N5/PP2BPPP/R2QK1NR b KQ - 3 6",
+          "san": "Bg5",
+          "uci": "c1g5",
+          "parentId": "dc3d882ec043509f",
+          "children": [
+            "e50e344a8b1ebee1"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.3533478062157221,
+          "evalCp": 51
+        },
+        "af808ad68432261a": {
+          "id": "af808ad68432261a",
+          "fen": "r1bq1rk1/ppp1ppbp/2np2p1/8/2PPP3/2NBQ3/PP2NPPP/R3K2R b KQ - 0 9",
+          "san": "Qxe3",
+          "uci": "d2e3",
+          "parentId": "fec0cee48a67ba00",
+          "children": [
+            "5e191e61b95de1c0"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "af90880936c949b6": {
+          "id": "af90880936c949b6",
+          "fen": "rnbq1rk1/pp2ppbp/3p1np1/2p3B1/2PPP3/2N4P/PP3PP1/R2QKBNR w KQ - 0 7",
+          "san": "c5",
+          "uci": "c7c5",
+          "parentId": "05153e8dbfb6a084",
+          "children": [
+            "c24e07e7a8d1e695",
+            "f7d6e6df3ac79df5",
+            "3228b5f074c469a5"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 43,
+          "annotation": {
+            "explanation": "Main line: c5, played in 35% of master games here. Eval +0.4."
+          }
+        },
+        "afee36aeabe03429": {
+          "id": "afee36aeabe03429",
+          "fen": "rnbq1rk1/pp2ppbp/3p1np1/8/2PpP3/2N1BP2/PP1Q2PP/R3KBNR w KQ - 0 8",
+          "san": "cxd4",
+          "uci": "c5d4",
+          "parentId": "9027afa12d36b82b",
+          "children": [
+            "ecc21cd7a87ecefb"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 9,
+          "annotation": {
+            "explanation": "Punishes Qd2: cxd4 wins the advantage (+0.1 → +0.1). Play continues Bxd4 Nc6 Be3 Ne5."
+          }
+        },
+        "b029e93c4d264444": {
+          "id": "b029e93c4d264444",
+          "fen": "r1bq1rk1/ppp2pbp/5np1/4p3/2P1PB2/2N4P/PP3PP1/R2QKB1R w KQ - 0 10",
+          "san": "dxe5",
+          "uci": "d6e5",
+          "parentId": "03bf4767977b4fa8",
+          "children": [
+            "a8f334ad9d9b9296"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "b1f041545ab29ad6": {
+          "id": "b1f041545ab29ad6",
+          "fen": "rnbq1rk1/pp2ppbp/3p1np1/2p3B1/2PP4/2N1PN2/PP1Q1PPP/R3KB1R b KQ - 0 7",
+          "san": "e3",
+          "uci": "e2e3",
+          "parentId": "96963dd7d6a69e1f",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.0727979274611399,
+          "evalCp": 15,
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 15
+          }
+        },
+        "b1f044545ab29fef": {
+          "id": "b1f044545ab29fef",
+          "fen": "rnbq1rk1/pp2ppbp/3p1np1/2p3B1/2PPP3/2N2N2/PP1Q1PPP/R3KB1R b KQ - 0 7",
+          "san": "e4",
+          "uci": "e2e4",
+          "parentId": "96963dd7d6a69e1f",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.02227979274611399,
+          "evalCp": 27,
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 27
+          }
+        },
+        "b2b34a7411c40f30": {
+          "id": "b2b34a7411c40f30",
+          "fen": "rnbq1rk1/pp2ppbp/3p1np1/2p5/2PPPP2/2N1BN2/PP4PP/R2QKB1R b KQ - 1 7",
+          "san": "Be3",
+          "uci": "c1e3",
+          "parentId": "30062789879120d4",
+          "children": [
+            "03b4d6f609305c6f"
+          ],
+          "mover": "opponent",
+          "moveKind": "opponent_mistake",
+          "weight": 0.03574713552613507,
+          "evalCp": -87,
+          "annotation": {
+            "explanation": "Be3? is popular at club level (4% of games) but rare in master play and it concedes 1.2 pawns. Meet it with Ng4."
+          }
+        },
+        "b38a8abae30b841f": {
+          "id": "b38a8abae30b841f",
+          "fen": "rnbq1rk1/pp2ppbp/3p1np1/2P3B1/2P1P3/2N5/PP2BPPP/R2QK1NR b KQ - 0 7",
+          "san": "dxc5",
+          "uci": "d4c5",
+          "parentId": "e50e344a8b1ebee1",
+          "children": [
+            "d8fc41bdab492197"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.10695187165775401,
+          "evalCp": 13
+        },
+        "b3a20abae31f3c80": {
+          "id": "b3a20abae31f3c80",
+          "fen": "rnbq1rk1/pp2ppbp/3p1np1/2pP2B1/2P1P3/2N5/PP2BPPP/R2QK1NR b KQ - 0 7",
+          "san": "d5",
+          "uci": "d4d5",
+          "parentId": "e50e344a8b1ebee1",
+          "children": [
+            "93d6d5f1677a8a5b"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.8891589693728731,
+          "evalCp": 45
+        },
+        "b54fe7d09a71e5f6": {
+          "id": "b54fe7d09a71e5f6",
+          "fen": "rn1q1rk1/ppp1ppbp/3p1np1/8/2PPP1b1/2N2N2/PP2BPPP/R1BQK2R b KQ - 3 7",
+          "san": "Be2",
+          "uci": "d3e2",
+          "parentId": "15fe603028c54da8",
+          "children": [
+            "4af6813d18e75fd2"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "b5548e1f82a7cd90": {
+          "id": "b5548e1f82a7cd90",
+          "fen": "r1bq1rk1/pppn1pbp/3p2p1/1N1Pp3/2PnP3/P2BB3/1P2NPPP/R2QK2R b KQ - 2 10",
+          "san": "Nb5",
+          "uci": "c3b5",
+          "parentId": "20b9ae06f1d99565",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "b5a924afffdc69e6": {
+          "id": "b5a924afffdc69e6",
+          "fen": "rnbq1rk1/1pp2pb1/3p1npp/p2Pp3/2P1P3/2NBBN2/PP3PPP/R2QK2R b KQ - 1 9",
+          "san": "Be3",
+          "uci": "g5e3",
+          "parentId": "eee9518301a0b5a6",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "b773cd769b9a26ae": {
+          "id": "b773cd769b9a26ae",
+          "fen": "rnb2rk1/pp2ppbp/3p1np1/q1p3B1/2PPP3/2N2N1P/PP1Q1PP1/R3KB1R b KQ - 3 8",
+          "san": "Qd2",
+          "uci": "d1d2",
+          "parentId": "21ed9204a6aa95d1",
+          "children": [
+            "3949d7e9dea68a0a"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "b797844fbb6c3ca8": {
+          "id": "b797844fbb6c3ca8",
+          "fen": "r1bq1rk1/pp2ppbp/3p1np1/4n3/2P1P3/1PN1BP2/P2Q2PP/R3KBNR b KQ - 0 10",
+          "san": "b3",
+          "uci": "b2b3",
+          "parentId": "5c85b757eaf30a59",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "b7e556066acc0fea": {
+          "id": "b7e556066acc0fea",
+          "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPPP2/2N2N2/PP4PP/R1BQKB1R b KQ - 2 6",
+          "san": "Nf3",
+          "uci": "g1f3",
+          "parentId": "0b8c221658e5ca2b",
+          "children": [
+            "30062789879120d4"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.9762778876023722,
+          "evalCp": 35
+        },
+        "b862b0ec19cf2fd8": {
+          "id": "b862b0ec19cf2fd8",
+          "fen": "r1bq1rk1/pppnppbp/3p1np1/8/2PPPB2/2N2N1P/PP3PP1/R2QKB1R b KQ - 0 7",
+          "san": "e4",
+          "uci": "e2e4",
+          "parentId": "6d1a4df82fff8282",
+          "children": [
+            "a99dcb13308b0fbe"
+          ],
+          "mover": "opponent",
+          "moveKind": "opponent_mistake",
+          "weight": 0.12091910847651607,
+          "evalCp": 18,
+          "annotation": {
+            "explanation": "e4? is popular at club level (12% of games) but rare in master play. Meet it with e5."
+          }
+        },
+        "b862b7ec19cf3bbd": {
+          "id": "b862b7ec19cf3bbd",
+          "fen": "r1bq1rk1/pppnppbp/3p1np1/8/2PP1B2/2N1PN1P/PP3PP1/R2QKB1R b KQ - 0 7",
+          "san": "e3",
+          "uci": "e2e3",
+          "parentId": "6d1a4df82fff8282",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.9886363636363636,
+          "evalCp": 23,
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 23
+          }
+        },
+        "ba7bae0638396a31": {
+          "id": "ba7bae0638396a31",
+          "fen": "rnbqk2r/ppp1ppbp/5np1/3p4/2PP4/2N1P3/PP3PPP/R1BQKBNR w KQkq - 0 5",
+          "san": "d5",
+          "uci": "d7d5",
+          "parentId": "d217100a836f6ab9",
+          "children": [
+            "605898e47dadfa80"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": -1,
+          "annotation": {
+            "explanation": "Punishes e3: d5 wins the advantage (+0.0 → -0.0). Play continues Nf3 O-O Be2 c5."
+          }
+        },
+        "bc5f2dc2bc9971fc": {
+          "id": "bc5f2dc2bc9971fc",
+          "fen": "rnbq1rk1/1pp2pbp/3p1np1/p2Pp3/2P1P3/2N2N1P/PP3PP1/R1BQKB1R w KQ - 0 8",
+          "san": "a5",
+          "uci": "a7a5",
+          "parentId": "572449c2b778d686",
+          "children": [],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 56,
+          "annotation": {
+            "explanation": "Main line: a5, played in 42% of master games here. Eval +0.6."
+          },
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 56
+          }
+        },
+        "bd2b285bd02c148b": {
+          "id": "bd2b285bd02c148b",
+          "fen": "rnbq1rk1/pppnppbp/3p2p1/4P3/2PP1P2/2N5/PP4PP/R1BQKBNR w KQ - 1 7",
+          "san": "Nfd7",
+          "uci": "f6d7",
+          "parentId": "3920aaf50a4738d6",
+          "children": [
+            "1496a9d6ec29c237"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": -17,
+          "annotation": {
+            "explanation": "Punishes e5: Nfd7 wins the advantage (-0.2 → -0.2). Play continues h4 c5 d5 dxe5."
+          }
+        },
+        "bd7357886c3921ad": {
+          "id": "bd7357886c3921ad",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/8/2PpP3/2N1BN1P/PP3PP1/R2QKB1R w KQ - 0 8",
+          "san": "exd4",
+          "uci": "e5d4",
+          "parentId": "87302f56cce1e9c9",
+          "children": [
+            "3eff27a5e24c3af8"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 17,
+          "annotation": {
+            "explanation": "Punishes Be3: exd4 wins the advantage (+0.1 → +0.2). Play continues Nxd4 Nc6 Bd3 d5."
+          }
+        },
+        "bf28841b2a76b249": {
+          "id": "bf28841b2a76b249",
+          "fen": "rnbqk2r/pp2ppbp/3p2p1/2pP2B1/2P1P1n1/2N5/PP3PPP/R2QKBNR b KQkq - 0 7",
+          "san": "d5",
+          "uci": "d4d5",
+          "parentId": "29f32a9a7e6d7cf2",
+          "children": [
+            "dae973ac46a5e830"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "bf74232e939fc5b4": {
+          "id": "bf74232e939fc5b4",
+          "fen": "rnbq1rk1/ppp1pp1p/3p1bp1/8/2PP4/2N2N2/PP2PPPP/R2QKB1R w KQ - 0 7",
+          "san": "Bxf6",
+          "uci": "g7f6",
+          "parentId": "a2521d2025fa0f06",
+          "children": [
+            "4b35eff8304ac2bb"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": -23,
+          "annotation": {
+            "explanation": "Punishes Bxf6: Bxf6 wins the advantage (-0.3 → -0.2). Play continues e3 Na6 h4 e5."
+          }
+        },
+        "bf82ae0e1a82068b": {
+          "id": "bf82ae0e1a82068b",
+          "fen": "r1bq1rk1/ppp2p1p/n2p1bp1/4p2P/2PP4/2N1PN2/PP3PP1/R2QKB1R b KQ - 0 9",
+          "san": "h5",
+          "uci": "h4h5",
+          "parentId": "a585f131620fa678",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "c24e07e7a8d1e695": {
+          "id": "c24e07e7a8d1e695",
+          "fen": "rnbq1rk1/pp2ppbp/3p1np1/2pP2B1/2P1P3/2N4P/PP3PP1/R2QKBNR b KQ - 0 7",
+          "san": "d5",
+          "uci": "d4d5",
+          "parentId": "af90880936c949b6",
+          "children": [
+            "5c417d92a1058674"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.9869621903520208,
+          "evalCp": 46
+        },
+        "c2693eb2c4baa277": {
+          "id": "c2693eb2c4baa277",
+          "fen": "rnbq1rk1/ppp2pb1/3p2pp/3Pp3/2P1P1n1/2N1BN2/PP3PPP/R2QKB1R w KQ - 1 9",
+          "san": "Ng4",
+          "uci": "f6g4",
+          "parentId": "1c36a21255206048",
+          "children": [
+            "19b7ac85d5a81ecf"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "c34d04eafeedb5d5": {
+          "id": "c34d04eafeedb5d5",
+          "fen": "rnbq1rk1/ppppppbp/5np1/8/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQ - 4 5",
+          "san": "O-O",
+          "uci": "e8g8",
+          "parentId": "615ad0f929eef835",
+          "children": [
+            "ccf509a09ad82405",
+            "3a555bb1f17de257",
+            "84664a8ec74df198",
+            "3a58e0b1f180fa2d"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 52,
+          "annotation": {
+            "explanation": "Main line: O-O, played in 61% of master games here. Eval +0.5."
+          }
+        },
+        "c4fecda609430dc6": {
+          "id": "c4fecda609430dc6",
+          "fen": "rnb2rk1/pp2ppbp/3p1np1/q1p3B1/2PPP3/2N2N2/PP2BPPP/R2QK2R w KQ - 2 8",
+          "san": "Qa5",
+          "uci": "d8a5",
+          "parentId": "d2ce13a0bd7887d0",
+          "children": [
+            "e67c535fe9a95fa0"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 20,
+          "annotation": {
+            "explanation": "Punishes Nf3: Qa5 wins the advantage (+0.2 → +0.2). Play continues O-O cxd4 Qxd4 Nc6."
+          }
+        },
+        "c56e4eed054d1f30": {
+          "id": "c56e4eed054d1f30",
+          "fen": "rnbq1rk1/pp2ppbp/3p1np1/2p5/2PPPP2/2N4P/PP4P1/R1BQKBNR w KQ - 0 7",
+          "san": "c5",
+          "uci": "c7c5",
+          "parentId": "6879b51ec18c9b3e",
+          "children": [
+            "f94b179d832ed233"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": -50,
+          "annotation": {
+            "explanation": "Punishes h3: c5 wins the advantage (-0.4 → -0.5). Play continues d5 e5 fxe5 Nh5."
+          }
+        },
+        "c5a0499dc1c92624": {
+          "id": "c5a0499dc1c92624",
+          "fen": "rnbq1rk1/pp2ppbp/5np1/2pp4/2PP4/2N1PN2/PP2BPPP/R1BQ1RK1 b - - 1 7",
+          "san": "O-O",
+          "uci": "e1g1",
+          "parentId": "47de45fe0935b212",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "c6bd78797e925bec": {
+          "id": "c6bd78797e925bec",
+          "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2N2N2/PP3PPP/R1BQKB1R w KQ - 0 6",
+          "san": "d6",
+          "uci": "d7d6",
+          "parentId": "ccf509a09ad82405",
+          "children": [
+            "8e2ba6d34e4b0306",
+            "d43f4526af4717d7",
+            "8e2f27d34e4e1410",
+            "9a3f05fcf168adbc"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 53,
+          "annotation": {
+            "explanation": "Main line: d6, played in 93% of master games here. Eval +0.5."
+          }
+        },
+        "c79685ab79924575": {
+          "id": "c79685ab79924575",
+          "fen": "r1bq1rk1/1pp1ppbp/n2p1np1/p5B1/2PPP3/2N4P/PP2BPP1/R2QK1NR w KQ - 2 8",
+          "san": "Na6",
+          "uci": "b8a6",
+          "parentId": "5667589932f67660",
+          "children": [
+            "73eeed3c1eac4e6c"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "c80334550d115960": {
+          "id": "c80334550d115960",
+          "fen": "rnbq1rk1/pp3pbp/3p2p1/2pPP2n/2P1P3/2N4P/PP4P1/R1BQKBNR w KQ - 1 9",
+          "san": "Nh5",
+          "uci": "f6h5",
+          "parentId": "611ae3bc512570dd",
+          "children": [
+            "83e7c4ec83d213e7"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "c8bd5d7af09d19f0": {
+          "id": "c8bd5d7af09d19f0",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/4p3/2PPP3/2N1BN2/PP2BPPP/R2QK2R b KQ - 1 7",
+          "san": "Be3",
+          "uci": "c1e3",
+          "parentId": "dd087728734b4614",
+          "children": [
+            "466ac9730d6650af"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.14506281969686255,
+          "evalCp": 49
+        },
+        "c8d457982f7adbd9": {
+          "id": "c8d457982f7adbd9",
+          "fen": "rnbq1rk1/pp2ppbp/3p1np1/2p5/2PPP3/2N1BP2/PP2N1PP/R2QKB1R b KQ - 1 7",
+          "san": "Nge2",
+          "uci": "g1e2",
+          "parentId": "3b125f7b1557bcda",
+          "children": [
+            "da107cbf8057ec48"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.6330550918196995,
+          "evalCp": 41
+        },
+        "cac5e266580dce32": {
+          "id": "cac5e266580dce32",
+          "fen": "rnbqk2r/ppp1ppbp/5np1/3p4/2PP1B2/2N5/PP2PPPP/R2QKBNR w KQkq - 0 5",
+          "san": "d5",
+          "uci": "d7d5",
+          "parentId": "e22e71d7d1b9b89c",
+          "children": [
+            "6e5586e633731d8d"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 24,
+          "annotation": {
+            "explanation": "Punishes Bf4: d5 wins the advantage (+0.3 → +0.2). Play continues e3 O-O Rc1 c5."
+          }
+        },
+        "cbbc6ec7f18e3676": {
+          "id": "cbbc6ec7f18e3676",
+          "fen": "rnbq1rk1/ppp1ppbp/3p2p1/8/2PPP1n1/2NBB3/PP3PPP/R2QK1NR w KQ - 4 7",
+          "san": "Ng4",
+          "uci": "f6g4",
+          "parentId": "ac8e0f132174629f",
+          "children": [
+            "3a1e2b0947ae6b2f"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": -81,
+          "annotation": {
+            "explanation": "Punishes Be3: Ng4 wins the advantage (-0.8 → -0.8). Play continues Qd2 Nxe3 Qxe3 Nc6."
+          }
+        },
+        "cc745b6b3bac0a34": {
+          "id": "cc745b6b3bac0a34",
+          "fen": "rnbq1rk1/pp3pbp/3ppnp1/2pP2B1/2P1P3/2N2P2/PP4PP/R2QKBNR w KQ - 0 8",
+          "san": "e6",
+          "uci": "e7e6",
+          "parentId": "f21844502f6d7ed5",
+          "children": [],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 43,
+          "annotation": {
+            "explanation": "Main line: e6, played in 61% of master games here. Eval +0.4."
+          },
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 43
+          }
+        },
+        "ccf509a09ad82405": {
+          "id": "ccf509a09ad82405",
+          "fen": "rnbq1rk1/ppppppbp/5np1/8/2PPP3/2N2N2/PP3PPP/R1BQKB1R b KQ - 0 5",
+          "san": "e4",
+          "uci": "e2e4",
+          "parentId": "c34d04eafeedb5d5",
+          "children": [
+            "c6bd78797e925bec"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.6273509722664966,
+          "evalCp": 51
+        },
+        "d08d69e88afaf04b": {
+          "id": "d08d69e88afaf04b",
+          "fen": "r1bq1rk1/ppp2pbp/2np1np1/8/2PNP3/2N1B2P/PP3PP1/R2QKB1R w KQ - 1 9",
+          "san": "Nc6",
+          "uci": "b8c6",
+          "parentId": "278dd1b9b7f2ef34",
+          "children": [
+            "4590730265c8b831"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "d14fc7aaa4552d9a": {
+          "id": "d14fc7aaa4552d9a",
+          "fen": "rnbq1rk1/ppp1ppbp/3p1np1/6B1/2PP4/2N2N2/PP2PPPP/R2QKB1R w KQ - 0 6",
+          "san": "d6",
+          "uci": "d7d6",
+          "parentId": "3a555bb1f17de257",
+          "children": [
+            "eed0c5316a804a85",
+            "453b4f290e95866b",
+            "a2521d2025fa0f06"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 34,
+          "annotation": {
+            "explanation": "Main line: d6, played in 53% of master games here. Eval +0.3."
+          }
+        },
+        "d1caeec0b5bc0942": {
+          "id": "d1caeec0b5bc0942",
+          "fen": "r1bq1rk1/ppp2pbp/2n2np1/4p3/2P1P3/2N1BN1P/PP3PP1/R2QKB1R w KQ - 2 9",
+          "san": "Nc6",
+          "uci": "b8c6",
+          "parentId": "9c0acbfbd5f6584b",
+          "children": [
+            "9984e875cd6edb70"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "d1cb187e643d9643": {
+          "id": "d1cb187e643d9643",
+          "fen": "rnbq1rk1/pp1nppbp/3p2p1/2p1P3/2PP1P1P/2N5/PP4P1/R1BQKBNR w KQ - 0 8",
+          "san": "c5",
+          "uci": "c7c5",
+          "parentId": "1496a9d6ec29c237",
+          "children": [
+            "663bfd3cfb797486"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "d1e1d26012ff15c1": {
+          "id": "d1e1d26012ff15c1",
+          "fen": "rn1q1rk1/pppnppbp/3p2p1/8/2PPP3/2N1BB2/PP3PPP/R2QK2R b KQ - 0 9",
+          "san": "Bxf3",
+          "uci": "e2f3",
+          "parentId": "2aafb3fd59c1e8df",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "d1fc68f5220612dd": {
+          "id": "d1fc68f5220612dd",
+          "fen": "rnbq1rk1/pp3pbp/3ppnp1/2pP4/2P1P3/2N2P2/PP2N1PP/R1BQKB1R w KQ - 0 8",
+          "san": "e6",
+          "uci": "e7e6",
+          "parentId": "4b8c99c57fd3ab86",
+          "children": [],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 47,
+          "annotation": {
+            "explanation": "Main line: e6, played in 89% of master games here. Eval +0.5."
+          },
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 47
+          }
+        },
+        "d217100a836f6ab9": {
+          "id": "d217100a836f6ab9",
+          "fen": "rnbqk2r/ppppppbp/5np1/8/2PP4/2N1P3/PP3PPP/R1BQKBNR b KQkq - 0 4",
+          "san": "e3",
+          "uci": "e2e3",
+          "parentId": "579c1e6c37dbbe76",
+          "children": [
+            "ba7bae0638396a31"
+          ],
+          "mover": "opponent",
+          "moveKind": "opponent_mistake",
+          "weight": 0.046711008905735533,
+          "evalCp": 4,
+          "annotation": {
+            "explanation": "e3? is popular at club level (5% of games) but rare in master play. Meet it with d5."
+          }
+        },
+        "d217110a836f6c6c": {
+          "id": "d217110a836f6c6c",
+          "fen": "rnbqk2r/ppppppbp/5np1/8/2PPP3/2N5/PP3PPP/R1BQKBNR b KQkq - 0 4",
+          "san": "e4",
+          "uci": "e2e4",
+          "parentId": "579c1e6c37dbbe76",
+          "children": [
+            "15906922fa6b70af"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.9169251080471795,
+          "evalCp": 46
+        },
+        "d2781c6aba0f49b9": {
+          "id": "d2781c6aba0f49b9",
+          "fen": "rnbq1rk1/ppp2pb1/3p1npp/4p3/2PPP3/2N1BN2/PP3PPP/R2QKB1R w KQ - 0 8",
+          "san": "e5",
+          "uci": "e7e5",
+          "parentId": "121d1f97da382c19",
+          "children": [
+            "1c36a21255206048"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "d2be4cb96e00c803": {
+          "id": "d2be4cb96e00c803",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/3Pp3/2P1P3/2N2N2/PP2BPPP/R1BQK2R b KQ - 0 7",
+          "san": "d5",
+          "uci": "d4d5",
+          "parentId": "dca7619788e365e0",
+          "children": [
+            "2aabeacf1a152b83"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.11321688706597836,
+          "evalCp": 46
+        },
+        "d2c150b96e0304a6": {
+          "id": "d2c150b96e0304a6",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/4P3/2P1P3/2N2N2/PP2BPPP/R1BQK2R b KQ - 0 7",
+          "san": "dxe5",
+          "uci": "d4e5",
+          "parentId": "dca7619788e365e0",
+          "children": [
+            "195fd38e7824ad8a"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.05617235933338048,
+          "evalCp": 34
+        },
+        "d2ce13a0bd7887d0": {
+          "id": "d2ce13a0bd7887d0",
+          "fen": "rnbq1rk1/pp2ppbp/3p1np1/2p3B1/2PPP3/2N2N2/PP2BPPP/R2QK2R b KQ - 1 7",
+          "san": "Nf3",
+          "uci": "g1f3",
+          "parentId": "e50e344a8b1ebee1",
+          "children": [
+            "c4fecda609430dc6"
+          ],
+          "mover": "opponent",
+          "moveKind": "opponent_mistake",
+          "weight": 0.05834844239327509,
+          "evalCp": 21,
+          "annotation": {
+            "explanation": "Nf3? is popular at club level (6% of games) but rare in master play. Meet it with Qa5."
+          }
+        },
+        "d43f4526af4717d7": {
+          "id": "d43f4526af4717d7",
+          "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2N2N1P/PP3PP1/R1BQKB1R b KQ - 0 6",
+          "san": "h3",
+          "uci": "h2h3",
+          "parentId": "c6bd78797e925bec",
+          "children": [
+            "a812ec938774f3cf"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.13090549378079833,
+          "evalCp": 56
+        },
+        "d53450f96c7d4c43": {
+          "id": "d53450f96c7d4c43",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/4p3/2PPP3/2N2N1P/PP3PP1/R1BQKB1R w KQ - 0 7",
+          "san": "e5",
+          "uci": "e7e5",
+          "parentId": "861bd46c67aca7d3",
+          "children": [
+            "572449c2b778d686",
+            "5720c5c2b775c063",
+            "76535ea891d46c11"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 52,
+          "annotation": {
+            "explanation": "Main line: e5, played in 67% of master games here. Eval +0.5."
+          }
+        },
+        "d603c47c229c4bed": {
+          "id": "d603c47c229c4bed",
+          "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2NB4/PP3PPP/R1BQK1NR w KQ - 2 6",
+          "san": "O-O",
+          "uci": "e8g8",
+          "parentId": "65a44a998e44b53d",
+          "children": [
+            "2d982df1c96d8890",
+            "2d94c6f1c96aa3b4",
+            "ac8e0f132174629f"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 37,
+          "annotation": {
+            "explanation": "Main line: O-O, played in 81% of master games here. Eval +0.4."
+          }
+        },
+        "d65d2fc5fab6653a": {
+          "id": "d65d2fc5fab6653a",
+          "fen": "rnbq1rk1/pp2ppbp/3p1np1/8/2PpPP2/2N2N2/PP2B1PP/R1BQK2R w KQ - 0 8",
+          "san": "cxd4",
+          "uci": "c5d4",
+          "parentId": "a3407d4a6bc89f3e",
+          "children": [],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 21,
+          "annotation": {
+            "explanation": "Main line: cxd4, played in 91% of master games here. Eval +0.2."
+          },
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 21
+          }
+        },
+        "d7dc490a147ecff1": {
+          "id": "d7dc490a147ecff1",
+          "fen": "rnbq1rk1/pp1nppbp/6p1/2pPp2P/2P2P2/2N5/PP4P1/R1BQKBNR b KQ - 0 9",
+          "san": "h5",
+          "uci": "h4h5",
+          "parentId": "8068c6a439674fea",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "d84ade1b87b162bf": {
+          "id": "d84ade1b87b162bf",
+          "fen": "rn1q1rk1/pppnppbp/3p2p1/8/2PPP3/2N2B2/PP3PPP/R1BQK2R w KQ - 1 9",
+          "san": "Nfd7",
+          "uci": "f6d7",
+          "parentId": "64879bd6edfda982",
+          "children": [
+            "ed5b5aba6c89e0ba"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "d89b2e91433f3426": {
+          "id": "d89b2e91433f3426",
+          "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/2PPP3/2N2N2/PP3PPP/R1BQKB1R b KQkq - 1 5",
+          "san": "Nf3",
+          "uci": "g1f3",
+          "parentId": "15906922fa6b70af",
+          "children": [
+            "f8fbd31e14a1a658"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.380568946336812,
+          "evalCp": 49
+        },
+        "d8fc41bdab492197": {
+          "id": "d8fc41bdab492197",
+          "fen": "rnb2rk1/pp2ppbp/3p1np1/q1P3B1/2P1P3/2N5/PP2BPPP/R2QK1NR w KQ - 1 8",
+          "san": "Qa5",
+          "uci": "d8a5",
+          "parentId": "b38a8abae30b841f",
+          "children": [],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 31,
+          "annotation": {
+            "explanation": "Main line: Qa5, played in 84% of master games here. Eval +0.3."
+          },
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 31
+          }
+        },
+        "da107cbf8057ec48": {
+          "id": "da107cbf8057ec48",
+          "fen": "r1bq1rk1/pp2ppbp/2np1np1/2p5/2PPP3/2N1BP2/PP2N1PP/R2QKB1R w KQ - 2 8",
+          "san": "Nc6",
+          "uci": "b8c6",
+          "parentId": "c8d457982f7adbd9",
+          "children": [],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 47,
+          "annotation": {
+            "explanation": "Main line: Nc6, played in 74% of master games here. Eval +0.5."
+          },
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 47
+          }
+        },
+        "dae973ac46a5e830": {
+          "id": "dae973ac46a5e830",
+          "fen": "rnbqk2r/pp2ppb1/3p2pp/2pP2B1/2P1P1n1/2N5/PP3PPP/R2QKBNR w KQkq - 0 8",
+          "san": "h6",
+          "uci": "h7h6",
+          "parentId": "bf28841b2a76b249",
+          "children": [
+            "10b4a547c9caaa04"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "db1639800230594b": {
+          "id": "db1639800230594b",
+          "fen": "rnbq1rk1/pp2ppbp/3p1np1/2pP4/2P1PP2/2N4P/PP4P1/R1BQKBNR b KQ - 0 7",
+          "san": "d5",
+          "uci": "d4d5",
+          "parentId": "1f7588aa1c003898",
+          "children": [
+            "95124a9a39ebce1e"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "dbbd167f6d8f04e6": {
+          "id": "dbbd167f6d8f04e6",
+          "fen": "r1bq1rk1/ppp2pbp/n2p1np1/3Pp3/2P1P3/2N1B2P/PP3PP1/R2QKBNR w KQ - 1 8",
+          "san": "Na6",
+          "uci": "b8a6",
+          "parentId": "f9719685e1f303b5",
+          "children": [],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 59,
+          "annotation": {
+            "explanation": "Main line: Na6, played in 53% of master games here. Eval +0.6."
+          },
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 59
+          }
+        },
+        "dc28e2b3c67f8950": {
+          "id": "dc28e2b3c67f8950",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/4p3/2PPPB2/2N2N2/PP3PPP/R2QKB1R w KQ - 0 7",
+          "san": "e5",
+          "uci": "e7e5",
+          "parentId": "3d43807cc97a5fca",
+          "children": [
+            "0a045ba47934f476"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 19,
+          "annotation": {
+            "explanation": "Punishes e4: e5 wins the advantage (+0.2 → +0.2). Play continues dxe5 dxe5 Qxd8 Rxd8."
+          }
+        },
+        "dc3d882ec043509f": {
+          "id": "dc3d882ec043509f",
+          "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2N5/PP2BPPP/R1BQK1NR w KQ - 2 6",
+          "san": "O-O",
+          "uci": "e8g8",
+          "parentId": "65a7cb998e47c647",
+          "children": [
+            "42d224410bf3e1b6",
+            "ae7e6261c89762a5",
+            "ae77f461c8923c0d",
+            "083893174d92df7a"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 59,
+          "annotation": {
+            "explanation": "Main line: O-O, played in 97% of master games here. Eval +0.6."
+          }
+        },
+        "dc5b31f6e80a2f91": {
+          "id": "dc5b31f6e80a2f91",
+          "fen": "r1bq1rk1/ppp2pbp/n2p1np1/3Pp3/2P1P3/2N1B3/PP2BPPP/R2QK1NR w KQ - 1 8",
+          "san": "Na6",
+          "uci": "b8a6",
+          "parentId": "def3737901f344bc",
+          "children": [],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 82,
+          "annotation": {
+            "explanation": "Main line: Na6, played in 55% of master games here. Eval +0.8."
+          },
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 82
+          }
+        },
+        "dc82da640bbecd96": {
+          "id": "dc82da640bbecd96",
+          "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPPP2/2N4P/PP4P1/R1BQKBNR b KQ - 0 6",
+          "san": "f4",
+          "uci": "f2f4",
+          "parentId": "2a8e8079f6884544",
+          "children": [
+            "1f7588aa1c003898"
+          ],
+          "mover": "opponent",
+          "moveKind": "opponent_mistake",
+          "weight": 0.06147951617945285,
+          "evalCp": -42,
+          "annotation": {
+            "explanation": "f4? is popular at club level (6% of games) but rare in master play and it concedes 0.9 pawns. Meet it with c5."
+          }
+        },
+        "dca7619788e365e0": {
+          "id": "dca7619788e365e0",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/4p3/2PPP3/2N2N2/PP2BPPP/R1BQK2R w KQ - 0 7",
+          "san": "e5",
+          "uci": "e7e5",
+          "parentId": "4f7a911a831a453a",
+          "children": [
+            "a107c5c26f327592",
+            "3793d7b08985a87c",
+            "d2be4cb96e00c803",
+            "d2c150b96e0304a6"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 49,
+          "annotation": {
+            "explanation": "Main line: e5, played in 78% of master games here. Eval +0.5."
+          }
+        },
+        "dce9480f303fe415": {
+          "id": "dce9480f303fe415",
+          "fen": "rnbq1rk1/pp3pbp/3p1pp1/8/2P5/2p4P/PP1B1PP1/R2QKBNR w KQ - 0 10",
+          "san": "dxc3",
+          "uci": "d4c3",
+          "parentId": "4e57cf133c913665",
+          "children": [
+            "f1993bb0be8d0a07"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "dcf252ae4095ee66": {
+          "id": "dcf252ae4095ee66",
+          "fen": "r1bq1rk1/ppp2pbp/2n2np1/3p4/2PNP3/2NBB2P/PP3PP1/R2QK2R w KQ - 0 10",
+          "san": "d5",
+          "uci": "d6d5",
+          "parentId": "4590730265c8b831",
+          "children": [
+            "214f5510de9a2302"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "dd087728734b4614": {
+          "id": "dd087728734b4614",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/4p3/2PPP3/2N2N2/PP2BPPP/R1BQK2R w KQ - 0 7",
+          "san": "e5",
+          "uci": "e7e5",
+          "parentId": "42d224410bf3e1b6",
+          "children": [
+            "f633cb48507fab5e",
+            "c8bd5d7af09d19f0",
+            "6c5c923f75d5001f",
+            "6c60163f75d81642"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 59,
+          "annotation": {
+            "explanation": "Main line: e5, played in 78% of master games here. Eval +0.6."
+          }
+        },
+        "dd212d27275c7c3e": {
+          "id": "dd212d27275c7c3e",
+          "fen": "r1bq1rk1/pp2ppbp/2np1np1/8/2P1P3/2N1BP2/PP1Q2PP/R3KBNR b KQ - 2 9",
+          "san": "Be3",
+          "uci": "d4e3",
+          "parentId": "9a0953570943c412",
+          "children": [
+            "5c85b757eaf30a59"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "de64cd348a058da8": {
+          "id": "de64cd348a058da8",
+          "fen": "r1bq1rk1/ppp2pbp/2n2np1/3P4/2PN4/2NBB2P/PP3PP1/R2QK2R b KQ - 0 10",
+          "san": "exd5",
+          "uci": "e4d5",
+          "parentId": "4f7d9715dc1add1e",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "deedadd7267bfc44": {
+          "id": "deedadd7267bfc44",
+          "fen": "r1bq1rk1/ppp2pbp/2np1np1/4p3/2PPP3/2N2NP1/PP3PBP/R1BQK2R w KQ - 0 8",
+          "san": "e5",
+          "uci": "e7e5",
+          "parentId": "ef6956b28a560b06",
+          "children": [
+            "ff08d4c9a40a3aef"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": -2,
+          "annotation": {
+            "explanation": "Punishes e4: e5 wins the advantage (+0.0 → -0.0). Play continues d5 Nd4 Nxd4 exd4."
+          }
+        },
+        "def3737901f344bc": {
+          "id": "def3737901f344bc",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/3Pp3/2P1P3/2N1B3/PP2BPPP/R2QK1NR b KQ - 0 7",
+          "san": "d5",
+          "uci": "d4d5",
+          "parentId": "25532277dc3da675",
+          "children": [
+            "dc5b31f6e80a2f91"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.9109518935516888,
+          "evalCp": 81
+        },
+        "df550c9a04151823": {
+          "id": "df550c9a04151823",
+          "fen": "rnbq1rk1/pp2pp1p/3p2p1/8/2PbP1P1/2NB4/PP4PP/2RQK1NR b K - 1 10",
+          "san": "Rc1",
+          "uci": "a1c1",
+          "parentId": "5b42e87d16f5143b",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "df75734f1ca25cdf": {
+          "id": "df75734f1ca25cdf",
+          "fen": "r2q1rk1/ppp1ppbp/2np1np1/5b2/2PP4/2N1PNP1/PP3PBP/R1BQK2R w KQ - 1 8",
+          "san": "Bf5",
+          "uci": "c8f5",
+          "parentId": "ef6959b28a56101f",
+          "children": [
+            "61ec3a9727b8f00f"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 30,
+          "annotation": {
+            "explanation": "Punishes e3: Bf5 wins the advantage (+0.3 → +0.3). Play continues O-O Qd7 Qe2 Ne4."
+          }
+        },
+        "dfd5f96e5a68da23": {
+          "id": "dfd5f96e5a68da23",
+          "fen": "rnbq1rk1/pp3pbp/3p1np1/2pPp3/2P1PP2/2N4P/PP4P1/R1BQKBNR w KQ e6 0 8",
+          "san": "e5",
+          "uci": "e7e5",
+          "parentId": "f94b179d832ed233",
+          "children": [
+            "611ae3bc512570dd"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "dfdef1a100b5de6b": {
+          "id": "dfdef1a100b5de6b",
+          "fen": "r1bq1rk1/ppp1ppbp/2np2p1/8/2PPP3/2NBQ3/PP3PPP/R3K1NR w KQ - 1 9",
+          "san": "Nc6",
+          "uci": "b8c6",
+          "parentId": "3d6532ea1d5d1454",
+          "children": [
+            "e1acce876e0b5ebe"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "e15bc3e6085701ae": {
+          "id": "e15bc3e6085701ae",
+          "fen": "r1bqr1k1/pppn1pb1/3p1npp/4p3/2PP3B/2NBPN2/PP3PPP/R2QK2R w KQ - 2 10",
+          "san": "Re8",
+          "uci": "f8e8",
+          "parentId": "ee3fa01aa9951947",
+          "children": [
+            "2438496758916f3c"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "e1acce876e0b5ebe": {
+          "id": "e1acce876e0b5ebe",
+          "fen": "r1bq1rk1/ppp1ppbp/2np2p1/3P4/2P1P3/2NBQ3/PP3PPP/R3K1NR b KQ - 0 9",
+          "san": "d5",
+          "uci": "d4d5",
+          "parentId": "dfdef1a100b5de6b",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "e22b411b188c4263": {
+          "id": "e22b411b188c4263",
+          "fen": "r1bq1rk1/ppp2pbp/2np1np1/8/2PNP3/2N1B2P/PP3PP1/R2QKB1R w KQ - 1 9",
+          "san": "Nc6",
+          "uci": "b8c6",
+          "parentId": "84744f43c5c9e00c",
+          "children": [
+            "9baad46ddf5bf019"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "e22e71d7d1b9b89c": {
+          "id": "e22e71d7d1b9b89c",
+          "fen": "rnbqk2r/ppppppbp/5np1/8/2PP1B2/2N5/PP2PPPP/R2QKBNR b KQkq - 3 4",
+          "san": "Bf4",
+          "uci": "c1f4",
+          "parentId": "579c1e6c37dbbe76",
+          "children": [
+            "cac5e266580dce32"
+          ],
+          "mover": "opponent",
+          "moveKind": "opponent_mistake",
+          "weight": 0.049052709444725555,
+          "evalCp": 28,
+          "annotation": {
+            "explanation": "Bf4? is popular at club level (5% of games) but rare in master play. Meet it with d5."
+          }
+        },
+        "e2f573ecea8eb591": {
+          "id": "e2f573ecea8eb591",
+          "fen": "rnbq1rk1/1pp2pbp/3p1np1/p2Pp3/2P1P3/2NB1N2/PP3PPP/R1BQK2R w KQ - 0 8",
+          "san": "a5",
+          "uci": "a7a5",
+          "parentId": "1bc7afd7a2babf49",
+          "children": [
+            "4ba0596538796e5b"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "e50e344a8b1ebee1": {
+          "id": "e50e344a8b1ebee1",
+          "fen": "rnbq1rk1/pp2ppbp/3p1np1/2p3B1/2PPP3/2N5/PP2BPPP/R2QK1NR w KQ - 0 7",
+          "san": "c5",
+          "uci": "c7c5",
+          "parentId": "ae7e6261c89762a5",
+          "children": [
+            "b3a20abae31f3c80",
+            "b38a8abae30b841f",
+            "d2ce13a0bd7887d0"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 41,
+          "annotation": {
+            "explanation": "Main line: c5, played in 33% of master games here. Eval +0.4."
+          }
+        },
+        "e5697b49f4226a54": {
+          "id": "e5697b49f4226a54",
+          "fen": "rnbq1rk1/pp3pbp/3ppnp1/2pP4/2P1PP2/2N4P/PP2B1P1/R1BQK1NR b KQ - 1 8",
+          "san": "Be2",
+          "uci": "f1e2",
+          "parentId": "95124a9a39ebce1e",
+          "children": [
+            "a2684458cfe43634"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "e5d7b2a2c7894cd8": {
+          "id": "e5d7b2a2c7894cd8",
+          "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2NB1P2/PP4PP/R1BQK1NR b KQ - 2 6",
+          "san": "Bd3",
+          "uci": "f1d3",
+          "parentId": "3ded66b8cabc4604",
+          "children": [
+            "adba2c48833b7925"
+          ],
+          "mover": "opponent",
+          "moveKind": "opponent_mistake",
+          "weight": 0.10667372309071373,
+          "evalCp": 35,
+          "annotation": {
+            "explanation": "Bd3? is popular at club level (11% of games) but rare in master play. Meet it with Nfd7."
+          }
+        },
+        "e67c535fe9a95fa0": {
+          "id": "e67c535fe9a95fa0",
+          "fen": "rnb2rk1/pp2ppbp/3p1np1/q1p3B1/2PPP3/2N2N2/PP2BPPP/R2Q1RK1 b - - 3 8",
+          "san": "O-O",
+          "uci": "e1g1",
+          "parentId": "c4fecda609430dc6",
+          "children": [
+            "f19532f5ef6ab2dc"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "e8ba248b125f90a8": {
+          "id": "e8ba248b125f90a8",
+          "fen": "rnbq1rk1/ppp1ppbp/5np1/3p4/2PP4/2N1PN2/PP2BPPP/R1BQK2R b KQ - 3 6",
+          "san": "Be2",
+          "uci": "f1e2",
+          "parentId": "ab2dedbf63e81cfa",
+          "children": [
+            "47de45fe0935b212"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "e91dec1b94809e08": {
+          "id": "e91dec1b94809e08",
+          "fen": "rnbqk2r/ppp1ppbp/3p2p1/6B1/2PPP1n1/2N5/PP3PPP/R2QKBNR b KQkq - 3 6",
+          "san": "Bg5",
+          "uci": "e3g5",
+          "parentId": "3e9507f2345aa694",
+          "children": [
+            "29f32a9a7e6d7cf2"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "ecc165b98111144a": {
+          "id": "ecc165b98111144a",
+          "fen": "r1br2k1/pp2ppbp/2n2np1/2pN2B1/2P1P3/5P2/PP2N1PP/R3KB1R b KQ - 1 10",
+          "san": "Nd5",
+          "uci": "c3d5",
+          "parentId": "015cb965d707f70d",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "ecc21cd7a87ecefb": {
+          "id": "ecc21cd7a87ecefb",
+          "fen": "rnbq1rk1/pp2ppbp/3p1np1/8/2PBP3/2N2P2/PP1Q2PP/R3KBNR b KQ - 0 8",
+          "san": "Bxd4",
+          "uci": "e3d4",
+          "parentId": "afee36aeabe03429",
+          "children": [
+            "9a0953570943c412"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "ed5b5aba6c89e0ba": {
+          "id": "ed5b5aba6c89e0ba",
+          "fen": "rn1q1rk1/pppnppbp/3p2p1/3P4/2P1P3/2N2B2/PP3PPP/R1BQK2R b KQ - 0 9",
+          "san": "d5",
+          "uci": "d4d5",
+          "parentId": "d84ade1b87b162bf",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "ed83f73a4968202e": {
+          "id": "ed83f73a4968202e",
+          "fen": "r1bq1rk1/pppnppbp/3p1np1/6B1/2PP4/2N1PN2/PPQ2PPP/R3KB1R b KQ - 2 7",
+          "san": "Qc2",
+          "uci": "d1c2",
+          "parentId": "f6ce70354e5e5af4",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.18541996830427893,
+          "evalCp": 41,
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 41
+          }
+        },
+        "ed98de9a9506b984": {
+          "id": "ed98de9a9506b984",
+          "fen": "r1b2rk1/pp2ppbp/2np1np1/q5B1/2P1P3/2N2N2/PP1QBPPP/R4RK1 b - - 2 10",
+          "san": "Qd2",
+          "uci": "d4d2",
+          "parentId": "5f54347bac091f4a",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "ee3fa01aa9951947": {
+          "id": "ee3fa01aa9951947",
+          "fen": "r1bq1rk1/pppn1pb1/3p1npp/4p3/2PP3B/2NBPN2/PP3PPP/R2QK2R b KQ - 1 9",
+          "san": "Bh4",
+          "uci": "g5h4",
+          "parentId": "98001be6db7c5071",
+          "children": [
+            "e15bc3e6085701ae"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "ee9dfc2d94d810f3": {
+          "id": "ee9dfc2d94d810f3",
+          "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PP4/2N2NP1/PP2PP1P/R1BQKB1R w KQ - 0 6",
+          "san": "d6",
+          "uci": "d7d6",
+          "parentId": "84664a8ec74df198",
+          "children": [
+            "5a681c16e14456f1"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 52,
+          "annotation": {
+            "explanation": "Main line: d6, played in 76% of master games here. Eval +0.5."
+          }
+        },
+        "eed0c5316a804a85": {
+          "id": "eed0c5316a804a85",
+          "fen": "rnbq1rk1/ppp1ppbp/3p1np1/6B1/2PP4/2N1PN2/PP3PPP/R2QKB1R b KQ - 0 6",
+          "san": "e3",
+          "uci": "e2e3",
+          "parentId": "d14fc7aaa4552d9a",
+          "children": [
+            "f6ce70354e5e5af4"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.9368478857770456,
+          "evalCp": 26
+        },
+        "eee9518301a0b5a6": {
+          "id": "eee9518301a0b5a6",
+          "fen": "rnbq1rk1/1pp2pb1/3p1npp/p2Pp1B1/2P1P3/2NB1N2/PP3PPP/R2QK2R w KQ - 0 9",
+          "san": "h6",
+          "uci": "h7h6",
+          "parentId": "4ba0596538796e5b",
+          "children": [
+            "b5a924afffdc69e6"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "ef6956b28a560b06": {
+          "id": "ef6956b28a560b06",
+          "fen": "r1bq1rk1/ppp1ppbp/2np1np1/8/2PPP3/2N2NP1/PP3PBP/R1BQK2R b KQ - 0 7",
+          "san": "e4",
+          "uci": "e2e4",
+          "parentId": "a8d3eadd95d92fe0",
+          "children": [
+            "deedadd7267bfc44"
+          ],
+          "mover": "opponent",
+          "moveKind": "opponent_mistake",
+          "weight": 0.07464096749811036,
+          "evalCp": 0,
+          "annotation": {
+            "explanation": "e4? is popular at club level (7% of games) but rare in master play. Meet it with e5."
+          }
+        },
+        "ef6959b28a56101f": {
+          "id": "ef6959b28a56101f",
+          "fen": "r1bq1rk1/ppp1ppbp/2np1np1/8/2PP4/2N1PNP1/PP3PBP/R1BQK2R b KQ - 0 7",
+          "san": "e3",
+          "uci": "e2e3",
+          "parentId": "a8d3eadd95d92fe0",
+          "children": [
+            "df75734f1ca25cdf"
+          ],
+          "mover": "opponent",
+          "moveKind": "opponent_mistake",
+          "weight": 0.03351187218182292,
+          "evalCp": 27,
+          "annotation": {
+            "explanation": "e3? is popular at club level (3% of games) but rare in master play. Meet it with Bf5."
+          }
+        },
+        "f114a86fdee91880": {
+          "id": "f114a86fdee91880",
+          "fen": "r1bq1rk1/ppp1pp1p/n2p1bp1/8/2PP4/2N1PN2/PP3PPP/R2QKB1R w KQ - 1 8",
+          "san": "Na6",
+          "uci": "b8a6",
+          "parentId": "4b35eff8304ac2bb",
+          "children": [
+            "8024c1e7271ab602"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "f185f6e55a031724": {
+          "id": "f185f6e55a031724",
+          "fen": "r1bq1rk1/ppp2pbp/2n2np1/3P4/2PN4/2NBB2P/PP3PP1/R2QK2R b KQ - 0 10",
+          "san": "exd5",
+          "uci": "e4d5",
+          "parentId": "0b949f0a889c98f2",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "f19532f5ef6ab2dc": {
+          "id": "f19532f5ef6ab2dc",
+          "fen": "rnb2rk1/pp2ppbp/3p1np1/q5B1/2PpP3/2N2N2/PP2BPPP/R2Q1RK1 w - - 0 9",
+          "san": "cxd4",
+          "uci": "c5d4",
+          "parentId": "e67c535fe9a95fa0",
+          "children": [
+            "462bf6d09262df93"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "f1993bb0be8d0a07": {
+          "id": "f1993bb0be8d0a07",
+          "fen": "rnbq1rk1/pp3pbp/3p1pp1/8/2P5/2B4P/PP3PP1/R2QKBNR b KQ - 0 10",
+          "san": "Bxc3",
+          "uci": "d2c3",
+          "parentId": "dce9480f303fe415",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "f20744502f5f0ba2": {
+          "id": "f20744502f5f0ba2",
+          "fen": "rnbq1rk1/pp2ppbp/3p1np1/2P3B1/2P1P3/2N2P2/PP4PP/R2QKBNR b KQ - 0 7",
+          "san": "dxc5",
+          "uci": "d4c5",
+          "parentId": "a72c1c7b67dbe876",
+          "children": [
+            "90692ea499a98cb4"
+          ],
+          "mover": "opponent",
+          "moveKind": "opponent_mistake",
+          "weight": 0.059665551839464884,
+          "evalCp": -40,
+          "annotation": {
+            "explanation": "dxc5? is popular at club level (6% of games) but rare in master play and it concedes 0.8 pawns. Meet it with dxc5."
+          }
+        },
+        "f21844502f6d7ed5": {
+          "id": "f21844502f6d7ed5",
+          "fen": "rnbq1rk1/pp2ppbp/3p1np1/2pP2B1/2P1P3/2N2P2/PP4PP/R2QKBNR b KQ - 0 7",
+          "san": "d5",
+          "uci": "d4d5",
+          "parentId": "a72c1c7b67dbe876",
+          "children": [
+            "cc745b6b3bac0a34"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.9888888888888889,
+          "evalCp": 36
+        },
+        "f3304622c5587a96": {
+          "id": "f3304622c5587a96",
+          "fen": "r1bq1rk1/ppp1ppbp/2np1np1/8/2PPP3/P1NB4/1P2NPPP/R1BQK2R b KQ - 0 7",
+          "san": "a3",
+          "uci": "a2a3",
+          "parentId": "18ae72839a37c0c7",
+          "children": [
+            "11e847433de54dcb"
+          ],
+          "mover": "opponent",
+          "moveKind": "opponent_mistake",
+          "weight": 0.14554313420980877,
+          "evalCp": 0,
+          "annotation": {
+            "explanation": "a3? is popular at club level (15% of games) but rare in master play. Meet it with Nd7."
+          }
+        },
+        "f3569dbc8d984bf2": {
+          "id": "f3569dbc8d984bf2",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/4p3/2PPP3/2NB1N2/PP3PPP/R1BQK2R w KQ - 0 7",
+          "san": "e5",
+          "uci": "e7e5",
+          "parentId": "2d94c6f1c96aa3b4",
+          "children": [
+            "1bc7afd7a2babf49"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 52,
+          "annotation": {
+            "explanation": "Punishes Nf3: e5 wins the advantage (+0.5 → +0.5). Play continues d5 a5 Bg5 h6."
+          }
+        },
+        "f3a6f5662ae01ef7": {
+          "id": "f3a6f5662ae01ef7",
+          "fen": "rnbq1rk1/pp2ppbp/3p1npB/2p5/2PP4/2N2N2/PP1QPPPP/R3KB1R b KQ - 1 7",
+          "san": "Bh6",
+          "uci": "g5h6",
+          "parentId": "96963dd7d6a69e1f",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.3939378238341969,
+          "evalCp": -29,
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": -29
+          }
+        },
+        "f3bc3b181e0c33d6": {
+          "id": "f3bc3b181e0c33d6",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/4p3/2PPP3/2N1B2P/PP3PP1/R2QKBNR w KQ - 0 7",
+          "san": "e5",
+          "uci": "e7e5",
+          "parentId": "050e2c8dbfb06340",
+          "children": [
+            "f9719685e1f303b5",
+            "2ef9f57d73e7e195",
+            "f9749285e1f532c0"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 67,
+          "annotation": {
+            "explanation": "Main line: e5, played in 40% of master games here. Eval +0.7."
+          }
+        },
+        "f46d7ecc6cc8e180": {
+          "id": "f46d7ecc6cc8e180",
+          "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2N1BP2/PP4PP/R2QKBNR b KQ - 2 6",
+          "san": "Be3",
+          "uci": "c1e3",
+          "parentId": "3ded66b8cabc4604",
+          "children": [
+            "3b125f7b1557bcda"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.6768676867686768,
+          "evalCp": 51
+        },
+        "f47490cc6ccf1ec4": {
+          "id": "f47490cc6ccf1ec4",
+          "fen": "rnbq1rk1/ppp1ppbp/3p1np1/6B1/2PPP3/2N2P2/PP4PP/R2QKBNR b KQ - 2 6",
+          "san": "Bg5",
+          "uci": "c1g5",
+          "parentId": "3ded66b8cabc4604",
+          "children": [
+            "a72c1c7b67dbe876"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.1744097486671744,
+          "evalCp": 37
+        },
+        "f4ecf2c4fe4e59ec": {
+          "id": "f4ecf2c4fe4e59ec",
+          "fen": "rnbq1rk1/ppp2pbp/5np1/4p3/2P1P3/2N1B2P/PP3PP1/R2QKBNR w KQ - 0 8",
+          "san": "dxe5",
+          "uci": "d6e5",
+          "parentId": "f9749285e1f532c0",
+          "children": [
+            "9c0acbfbd5f6584b"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": -2,
+          "annotation": {
+            "explanation": "Punishes dxe5: dxe5 wins the advantage (+0.0 → -0.0). Play continues Nf3 Nc6 Qd3 Nb4."
+          }
+        },
+        "f5f0d4e2c43de78d": {
+          "id": "f5f0d4e2c43de78d",
+          "fen": "rnbq1rk1/ppp2pbp/5np1/4p3/2P1P3/2N2N1P/PP3PP1/R1BQKB1R w KQ - 0 8",
+          "san": "dxe5",
+          "uci": "d6e5",
+          "parentId": "25e3566f195a025b",
+          "children": [],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 22,
+          "annotation": {
+            "explanation": "Main line: dxe5, played in 100% of master games here. Eval +0.2."
+          },
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 22
+          }
+        },
+        "f633cb48507fab5e": {
+          "id": "f633cb48507fab5e",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/4p3/2PPP3/2N2N2/PP2BPPP/R1BQ1RK1 b - - 1 7",
+          "san": "O-O",
+          "uci": "e1g1",
+          "parentId": "dd087728734b4614",
+          "children": [
+            "81656429a132b0cd"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.6837093086297528,
+          "evalCp": 62
+        },
+        "f67b04b28de39392": {
+          "id": "f67b04b28de39392",
+          "fen": "r1bq1rk1/ppp1ppbp/2np1np1/8/2PP4/2N2NP1/PP2PPBP/R1BQ1RK1 b - - 3 7",
+          "san": "O-O",
+          "uci": "e1g1",
+          "parentId": "a8d3eadd95d92fe0",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.8955059710873664,
+          "evalCp": 53,
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 53
+          }
+        },
+        "f6ce70354e5e5af4": {
+          "id": "f6ce70354e5e5af4",
+          "fen": "r1bq1rk1/pppnppbp/3p1np1/6B1/2PP4/2N1PN2/PP3PPP/R2QKB1R w KQ - 1 7",
+          "san": "Nbd7",
+          "uci": "b8d7",
+          "parentId": "eed0c5316a804a85",
+          "children": [
+            "023a6349bb15945e",
+            "ed83f73a4968202e",
+            "36a3e1171e6ba44f"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 50,
+          "annotation": {
+            "explanation": "Main line: Nbd7, played in 32% of master games here. Eval +0.5."
+          }
+        },
+        "f6dd20e4d526e133": {
+          "id": "f6dd20e4d526e133",
+          "fen": "rnbr2k1/ppp2pbp/5np1/4B3/2P1P3/2N2N2/PP3PPP/R3KB1R b KQ - 0 9",
+          "san": "Bxe5",
+          "uci": "f4e5",
+          "parentId": "42e8069c73525c69",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "f78224fdb7bf5827": {
+          "id": "f78224fdb7bf5827",
+          "fen": "rnbq1rk1/pp2ppbp/5np1/2Pp4/2P2B2/2N1P3/PP3PPP/2RQKBNR b K - 0 7",
+          "san": "dxc5",
+          "uci": "d4c5",
+          "parentId": "a5d239841881ed79",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "f7d6e6df3ac79df5": {
+          "id": "f7d6e6df3ac79df5",
+          "fen": "rnbq1rk1/pp2ppbp/3p1np1/2p3B1/2PPP3/2N2N1P/PP3PP1/R2QKB1R b KQ - 1 7",
+          "san": "Nf3",
+          "uci": "g1f3",
+          "parentId": "af90880936c949b6",
+          "children": [
+            "21ed9204a6aa95d1"
+          ],
+          "mover": "opponent",
+          "moveKind": "opponent_mistake",
+          "weight": 0.06716774039608685,
+          "evalCp": -50,
+          "annotation": {
+            "explanation": "Nf3? is popular at club level (7% of games) but rare in master play and it concedes 0.9 pawns. Meet it with Qa5."
+          }
+        },
+        "f84751f53872bcb5": {
+          "id": "f84751f53872bcb5",
+          "fen": "r1bq1rk1/pppnppbp/3p1np1/8/2PP1B2/2N1PN1P/PP3PP1/R2QKB1R b KQ - 0 7",
+          "san": "h3",
+          "uci": "h2h3",
+          "parentId": "13f122b23a716056",
+          "children": [],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.5723270440251572,
+          "evalCp": 31,
+          "endOfTheory": {
+            "reason": "clear_plan",
+            "evalCp": 31
+          }
+        },
+        "f8b6138c26010d47": {
+          "id": "f8b6138c26010d47",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/4P3/2P1P3/2N2N1P/PP3PP1/R1BQKB1R b KQ - 0 7",
+          "san": "dxe5",
+          "uci": "d4e5",
+          "parentId": "a812ec938774f3cf",
+          "children": [
+            "3f9644b2e4648d01"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.08000735699834467,
+          "evalCp": 20
+        },
+        "f8b9978c2604236a": {
+          "id": "f8b9978c2604236a",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/3Pp3/2P1P3/2N2N1P/PP3PP1/R1BQKB1R b KQ - 0 7",
+          "san": "d5",
+          "uci": "d4d5",
+          "parentId": "a812ec938774f3cf",
+          "children": [
+            "9112c8a92eaf0b58"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.9146588192017657,
+          "evalCp": 55
+        },
+        "f8fbd31e14a1a658": {
+          "id": "f8fbd31e14a1a658",
+          "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2N2N2/PP3PPP/R1BQKB1R w KQ - 2 6",
+          "san": "O-O",
+          "uci": "e8g8",
+          "parentId": "d89b2e91433f3426",
+          "children": [
+            "4f7a911a831a453a",
+            "95f2fea5cef5c98b",
+            "4f7e121a831d5644",
+            "1eb747ff9fb57f90"
+          ],
+          "mover": "user",
+          "moveKind": "mainline",
+          "evalCp": 49,
+          "annotation": {
+            "explanation": "Main line: O-O, played in 99% of master games here. Eval +0.5."
+          }
+        },
+        "f94b179d832ed233": {
+          "id": "f94b179d832ed233",
+          "fen": "rnbq1rk1/pp2ppbp/3p1np1/2pP4/2P1PP2/2N4P/PP4P1/R1BQKBNR b KQ - 0 7",
+          "san": "d5",
+          "uci": "d4d5",
+          "parentId": "c56e4eed054d1f30",
+          "children": [
+            "dfd5f96e5a68da23"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "f9719685e1f303b5": {
+          "id": "f9719685e1f303b5",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/3Pp3/2P1P3/2N1B2P/PP3PP1/R2QKBNR b KQ - 0 7",
+          "san": "d5",
+          "uci": "d4d5",
+          "parentId": "f3bc3b181e0c33d6",
+          "children": [
+            "dbbd167f6d8f04e6"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "weight": 0.9946476360392507,
+          "evalCp": 69
+        },
+        "f9749285e1f532c0": {
+          "id": "f9749285e1f532c0",
+          "fen": "rnbq1rk1/ppp2pbp/3p1np1/4P3/2P1P3/2N1B2P/PP3PP1/R2QKBNR b KQ - 0 7",
+          "san": "dxe5",
+          "uci": "d4e5",
+          "parentId": "f3bc3b181e0c33d6",
+          "children": [
+            "f4ecf2c4fe4e59ec"
+          ],
+          "mover": "opponent",
+          "moveKind": "opponent_mistake",
+          "weight": 0.0494504125021809,
+          "evalCp": 1,
+          "annotation": {
+            "explanation": "dxe5? is popular at club level (5% of games) but rare in master play. Meet it with dxe5."
+          }
+        },
+        "fdb6b561651f60d9": {
+          "id": "fdb6b561651f60d9",
+          "fen": "rnbQ1rk1/ppp2pbp/5np1/4p3/2P1PB2/2N2N2/PP3PPP/R3KB1R b KQ - 0 8",
+          "san": "Qxd8",
+          "uci": "d1d8",
+          "parentId": "28663db7701b4aba",
+          "children": [
+            "42e8069c73525c69"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "fec0cee48a67ba00": {
+          "id": "fec0cee48a67ba00",
+          "fen": "r1bq1rk1/ppp1ppbp/2np2p1/8/2PPP3/2NBn3/PP1QNPPP/R3K2R w KQ - 0 9",
+          "san": "Nxe3",
+          "uci": "g4e3",
+          "parentId": "6790eafa9fff9e15",
+          "children": [
+            "af808ad68432261a"
+          ],
+          "mover": "user",
+          "moveKind": "mainline"
+        },
+        "ff08d4c9a40a3aef": {
+          "id": "ff08d4c9a40a3aef",
+          "fen": "r1bq1rk1/ppp2pbp/2np1np1/3Pp3/2P1P3/2N2NP1/PP3PBP/R1BQK2R b KQ - 0 8",
+          "san": "d5",
+          "uci": "d4d5",
+          "parentId": "deedadd7267bfc44",
+          "children": [
+            "1fe607ce1f4c9c5c"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline"
+        },
+        "root": {
+          "id": "root",
+          "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+          "san": "",
+          "uci": "",
+          "parentId": null,
+          "children": [
+            "1a3da56815556813"
+          ],
+          "mover": "opponent",
+          "moveKind": "mainline",
+          "evalCp": 40
+        }
+      }
+    }
+  }
+}

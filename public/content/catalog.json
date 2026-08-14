@@ -1,9 +1,10 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-14T14:13:29.494Z",
+  "generatedAt": "2026-08-14T15:47:05.222Z",
   "sections": {
-    "B": "2026-08-14T14:13:29.457Z",
-    "C": "2026-08-14T14:13:29.475Z"
+    "B": "2026-08-14T15:31:51.152Z",
+    "C": "2026-08-14T15:41:08.884Z",
+    "E": "2026-08-14T15:47:05.216Z"
   },
   "entries": [
     {
@@ -16,6 +17,30 @@
       "nodeCount": 405,
       "userMoveCount": 162,
       "mistakeCount": 34,
+      "file": "content/eco-B.json"
+    },
+    {
+      "id": "b10-caro-kann-defense",
+      "eco": "B10",
+      "name": "Caro-Kann Defense",
+      "perspective": "black",
+      "line": "1. e4 c6",
+      "ply": 2,
+      "nodeCount": 400,
+      "userMoveCount": 172,
+      "mistakeCount": 36,
+      "file": "content/eco-B.json"
+    },
+    {
+      "id": "b12-caro-kann-defense-mar-czy-variation",
+      "eco": "B12",
+      "name": "Caro-Kann Defense: Maróczy Variation",
+      "perspective": "white",
+      "line": "1. e4 c6 2. d4 d5 3. f3",
+      "ply": 5,
+      "nodeCount": 406,
+      "userMoveCount": 144,
+      "mistakeCount": 26,
       "file": "content/eco-B.json"
     },
     {
@@ -52,6 +77,18 @@
       "nodeCount": 403,
       "userMoveCount": 170,
       "mistakeCount": 34,
+      "file": "content/eco-C.json"
+    },
+    {
+      "id": "c02-french-defense-advance-variation",
+      "eco": "C02",
+      "name": "French Defense: Advance Variation",
+      "perspective": "white",
+      "line": "1. e4 e6 2. d4 d5 3. e5",
+      "ply": 5,
+      "nodeCount": 406,
+      "userMoveCount": 142,
+      "mistakeCount": 23,
       "file": "content/eco-C.json"
     },
     {
@@ -115,6 +152,18 @@
       "file": "content/eco-C.json"
     },
     {
+      "id": "c47-four-knights-game-scotch-variation",
+      "eco": "C47",
+      "name": "Four Knights Game: Scotch Variation",
+      "perspective": "white",
+      "line": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4",
+      "ply": 7,
+      "nodeCount": 403,
+      "userMoveCount": 160,
+      "mistakeCount": 25,
+      "file": "content/eco-C.json"
+    },
+    {
       "id": "c50-four-knights-game-italian-variation",
       "eco": "C50",
       "name": "Four Knights Game: Italian Variation",
@@ -161,6 +210,18 @@
       "userMoveCount": 174,
       "mistakeCount": 28,
       "file": "content/eco-C.json"
+    },
+    {
+      "id": "e61-king-s-indian-defense",
+      "eco": "E61",
+      "name": "King's Indian Defense",
+      "perspective": "black",
+      "line": "1. d4 Nf6 2. c4 g6 3. Nc3",
+      "ply": 5,
+      "nodeCount": 400,
+      "userMoveCount": 176,
+      "mistakeCount": 35,
+      "file": "content/eco-E.json"
     }
   ]
 }

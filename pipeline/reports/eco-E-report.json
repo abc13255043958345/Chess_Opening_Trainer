@@ -1,0 +1,16 @@
+{
+  "openings": 1,
+  "totalNodes": 400,
+  "totalUserMoves": 176,
+  "totalMistakes": 35,
+  "liveRequests": 115,
+  "cacheHits": 29,
+  "cloudEvalMisses": 0,
+  "localEvals": 241,
+  "cloudSkippedBreakerOpen": 241,
+  "breakerOpened": false,
+  "punishLineMissing": 0,
+  "thinMastersNodes": 3,
+  "durationSec": 355.861,
+  "bytesWritten": 194732
+}
