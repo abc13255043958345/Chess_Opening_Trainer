@@ -3,13 +3,14 @@
   "totalNodes": 405,
   "totalUserMoves": 162,
   "totalMistakes": 34,
-  "liveRequests": 133,
-  "cacheHits": 13,
+  "liveRequests": 0,
+  "cacheHits": 144,
   "cloudEvalMisses": 0,
   "localEvals": 252,
   "cloudSkippedBreakerOpen": 252,
   "breakerOpened": false,
   "punishLineMissing": 0,
-  "durationSec": 435.998,
-  "bytesWritten": 576182
+  "thinMastersNodes": 0,
+  "durationSec": 121.676,
+  "bytesWritten": 575680
 }
