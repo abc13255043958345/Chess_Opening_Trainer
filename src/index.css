@@ -25,6 +25,13 @@ body,
   height: 100%;
 }
 
+html {
+  /* Painted here (not only on body) so any strip iOS exposes outside the layout
+     viewport — bottom overscroll, the standalone "chin" under the home indicator —
+     shows the app color instead of white/black. */
+  background: var(--bg);
+}
+
 body {
   background: var(--bg);
   color: var(--text);
@@ -37,19 +44,24 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  /* iOS standalone: 100dvh tracks the dynamic viewport, so the in-flow nav below
+     always ends exactly at the home indicator. The 100% line above is the fallback
+     for browsers without dvh support. */
+  height: 100dvh;
 }
 
 .app-main {
   flex: 1;
   overflow-y: auto;
-  padding-bottom: calc(56px + env(safe-area-inset-bottom));
+  /* Nav is in-flow below, so this is breathing room, not nav clearance. */
+  padding-bottom: 16px;
 }
 
+/* In-flow at the bottom of the .app column — NOT position: fixed. iOS standalone
+   PWAs detach fixed bottom bars from the visual viewport after scroll/keyboard
+   (the "chin gap"); an in-flow flex child inside a 100dvh column can't drift. */
 .bottom-nav {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  flex-shrink: 0;
   display: flex;
   background: var(--bg-raised);
   border-top: 1px solid var(--border);
