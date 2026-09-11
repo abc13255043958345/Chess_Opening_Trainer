@@ -2,7 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { HashRouter } from "react-router-dom";
 import App from "./App";
+import { installViewportHeal } from "./lib/viewportHeal";
 import "./index.css";
+
+installViewportHeal();
 
 // Ask the browser not to evict our IndexedDB data (training history lives only
 // on-device); best-effort, especially relevant on iOS for a rarely-opened PWA.

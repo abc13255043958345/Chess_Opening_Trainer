@@ -43,11 +43,20 @@ body {
 .app {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  /* iOS standalone: 100dvh tracks the dynamic viewport, so the in-flow nav below
-     always ends exactly at the home indicator. The 100% line above is the fallback
-     for browsers without dvh support. */
+  height: 100vh;
+  /* In-browser: dvh tracks the URL bar correctly. */
   height: 100dvh;
+}
+
+/* iOS standalone PWA: 100dvh reports a too-short viewport on cold start (it
+   reserves space for browser UI that doesn't exist) and only self-corrects
+   after a rotation — the app renders pushed up with a dead strip at the
+   bottom. 100vh is the one unit that equals the real screen height from cold
+   start in standalone mode, so it wins inside this media query. */
+@media (display-mode: standalone) {
+  .app {
+    height: 100vh;
+  }
 }
 
 .app-main {
